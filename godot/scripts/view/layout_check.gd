@@ -15,14 +15,16 @@ func run() -> void:
 	table.start_game()
 	table.awaken_tutorial("res.toby")
 	table.awaken_tutorial("res.mira")
+	table.clear_story()
 	table.select_resident("res.toby")
 	table.confirm_use("loc.pines", "chop", int(table.state.revision))
 	await process_frame
 	for child in table.screen.get_children():
-		if child is TextureRect:
-			check(child.size == Vector2(64, 48), "pine thumbnail has no card-name overlap")
+		if child is TextureRect and child.texture != null:
+			var original: Vector2 = child.texture.get_size()
+			check(child.size == original, "direct art stays native pixel size")
 		if child.get_script() == load("res://scripts/view/resident_token.gd"):
-			if child.position.y < 250:
+			if child.position.y < 284:
 				check(child.size == Vector2(24, 16), "compact assignment badge stays inside card")
 			else:
 				check(child.size == Vector2(74, 40), "resident hand token fits above status")

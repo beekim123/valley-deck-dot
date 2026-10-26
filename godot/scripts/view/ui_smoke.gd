@@ -64,4 +64,9 @@ func run() -> void:
 	table.finish_night()
 	check(table.mode == "table", "ending not repeated")
 	print("D1 UI integration: %d failures; true goal reached day %d" % [failures, table.state.day])
+	root.get_node("AudioService").stop_all()
+	table.queue_free()
+	await process_frame
+	await process_frame
+	await create_timer(0.2).timeout
 	quit(1 if failures else 0)

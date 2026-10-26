@@ -22,27 +22,36 @@ func run() -> void:
 		if arg.begins_with("--shots-dir="):
 			destination = arg.trim_prefix("--shots-dir=")
 	DirAccess.make_dir_recursive_absolute(destination)
+	var title = load("res://scenes/title.tscn").instantiate()
+	root.add_child(title)
+	await capture("d2-title")
+	title.queue_free()
+	await process_frame
 	var table = load("res://scenes/card_table.tscn").instantiate()
 	root.add_child(table)
 	await process_frame
 	table.save_enabled = false
-	await capture("d1-scroll-case")
+	await capture("d2-scroll-case")
 	table.show_intro()
-	await capture("d1-intro")
+	await capture("d2-intro")
 	table.start_game()
-	await capture("d1-day1-tutorial")
+	await capture("d2-day1-tutorial")
 	table.awaken_tutorial("res.toby")
+	await create_timer(3.1).timeout
+	await capture("d2-awaken-toby")
+	table.clear_story()
 	table.awaken_tutorial("res.mira")
-	await capture("d1-day1-table")
+	table.clear_story()
+	await capture("d2-day1-table")
 	table.select_resident(table.defs.balance.thaw_resident)
 	table.choose_location("loc.mill")
-	await capture("d1-insufficient-preview")
+	await capture("d2-insufficient-preview")
 	table.close_modal()
 	table.select_resident("res.toby")
 	table.show_preview("loc.pines")
-	await capture("d1-drag-preview")
+	await capture("d2-drag-preview")
 	table.choose_location("loc.pines")
-	await capture("d1-use-picker")
+	await capture("d2-use-picker")
 	table.confirm_use("loc.pines", "chop", int(table.state.revision))
 	table.select_resident("res.mira")
 	table.confirm_use("loc.flower_slope", "explore", int(table.state.revision))
@@ -55,13 +64,17 @@ func run() -> void:
 				if use.enabled:
 					table.confirm_use("loc.hut", use.id, int(table.state.revision))
 					break
-	await capture("d1-day1-assigned")
+	await capture("d2-day1-assigned")
 	table.begin_night()
-	await capture("d1-night")
+	while table.night_art.is_empty() and table.night_index < table.night_events.size():
+		table.clear_story()
+		table.play_next_event()
+	await create_timer(0.3).timeout
+	await capture("d2-night")
 	table.show_summary()
-	await capture("d1-summary")
+	await capture("d2-summary")
 	table.finish_night()
-	await capture("d1-day2")
+	await capture("d2-day2")
 	var bot := Bots.context("goal", 1)
 	var captured_awaken := false
 	while not table.state.chapter_complete and table.state.day <= 60:
@@ -71,7 +84,7 @@ func run() -> void:
 					table.render_table()
 					table.select_resident(table.defs.balance.thaw_resident)
 					table.choose_location(loc.id)
-					await capture("d1-public-awaken-preview")
+					await capture("d2-public-awaken-preview")
 					table.close_modal()
 					captured_awaken = true
 					break
@@ -89,10 +102,17 @@ func run() -> void:
 		push_error("Screenshot playthrough did not finish")
 		quit(1)
 		return
-	await capture("d1-ending")
+	await capture("d2-ending")
+	table.clear_story()
+	table.ending_pan()
+	await create_timer(1).timeout
+	await capture("d2-ending-pan")
 	table.freeplay()
-	await capture("d1-freeplay")
+	await capture("d2-freeplay")
 	table.show_panorama()
-	await capture("d1-panorama")
-	print("D1 real playthrough screenshots complete, day %d" % table.state.day)
+	await capture("d2-panorama")
+	table.close_modal()
+	table.show_settings()
+	await capture("d2-settings")
+	print("D2 real playthrough screenshots complete, day %d" % table.state.day)
 	quit()

@@ -65,13 +65,433 @@
       "id": "content.banter",
       "source": "content/story/banter.json",
       "path": "data/story/banter.json",
-      "sha256": "1e754569c832d40b0d573860614a4622025d6a278e3ebdc35deeb515a93d7827"
+      "sha256": "4f954c29f587b549cb488201f7f61ae2172d40b692ba99eb88dd5432aec90d17"
     },
     {
       "id": "content.pages",
       "source": "content/story/pages.json",
       "path": "data/story/pages.json",
-      "sha256": "d9bb746b8276de901fc3304f37518beb743e602f3f14ae0f6413659387612610"
+      "sha256": "627d6248788a214159cba7913d66e84cefdf96e8e72736e48ebd11243d8ad99e"
+    },
+    {
+      "id": "big.anuan.memory",
+      "source": "resources/art/export/big.anuan.memory.png",
+      "path": "resources/art/big.anuan.memory.png",
+      "sha256": "6207f731aae9c05965eb2ff976cf5940c28f4b872ee7f44d69407f828ab24295"
+    },
+    {
+      "id": "big.anuan",
+      "source": "resources/art/export/big.anuan.png",
+      "path": "resources/art/big.anuan.png",
+      "sha256": "37291f1c0fe73222da2016ce5ae0531dfad0291c06e35a614769bc3d710f87be"
+    },
+    {
+      "id": "big.baiweng.memory",
+      "source": "resources/art/export/big.baiweng.memory.png",
+      "path": "resources/art/big.baiweng.memory.png",
+      "sha256": "725c552c80436ef7a98cfebd320354a48d5a45b86622c4aa20e61ddfc23dff6a"
+    },
+    {
+      "id": "big.baiweng",
+      "source": "resources/art/export/big.baiweng.png",
+      "path": "resources/art/big.baiweng.png",
+      "sha256": "b0ce9c0bd8b5cfd8f0cfa05044e84a6016ba32bd0d43e2447adcb93708a8f770"
+    },
+    {
+      "id": "big.beavers.memory",
+      "source": "resources/art/export/big.beavers.memory.png",
+      "path": "resources/art/big.beavers.memory.png",
+      "sha256": "4e3282c18caafb6f0905565880a986660081ef5519c2f312bdb8aec746ae1c41"
+    },
+    {
+      "id": "big.beavers",
+      "source": "resources/art/export/big.beavers.png",
+      "path": "resources/art/big.beavers.png",
+      "sha256": "33841706f971a59805360862c9610bda698375027e0b64689de5b02b67034241"
+    },
+    {
+      "id": "big.gutu.memory",
+      "source": "resources/art/export/big.gutu.memory.png",
+      "path": "resources/art/big.gutu.memory.png",
+      "sha256": "d59c2ffc7d54e088412b39b71a3384e11c4a7a0818e192a7608fc8f5465a2c0f"
+    },
+    {
+      "id": "big.gutu",
+      "source": "resources/art/export/big.gutu.png",
+      "path": "resources/art/big.gutu.png",
+      "sha256": "b8c5d3fda19fd467566e9ab74815cc9f5390fcd9036a1d067d991f3baede1cb9"
+    },
+    {
+      "id": "big.mei.memory",
+      "source": "resources/art/export/big.mei.memory.png",
+      "path": "resources/art/big.mei.memory.png",
+      "sha256": "96e27f35b749a47a70343309c9471b3e56979476d07484cb438f3b5d02558d11"
+    },
+    {
+      "id": "big.mei",
+      "source": "resources/art/export/big.mei.png",
+      "path": "resources/art/big.mei.png",
+      "sha256": "2db2d66ec1b1b377999f78643bff6c6511cdb2008b062d33c3553e01c9273984"
+    },
+    {
+      "id": "big.mill_family.memory",
+      "source": "resources/art/export/big.mill_family.memory.png",
+      "path": "resources/art/big.mill_family.memory.png",
+      "sha256": "59984f9ba44a8b654c203913bb8c3afe633f6194cc08c6e4e13f70517f73fac7"
+    },
+    {
+      "id": "big.mill_family",
+      "source": "resources/art/export/big.mill_family.png",
+      "path": "resources/art/big.mill_family.png",
+      "sha256": "f46e7a3b0c5883c9bf9d6613296f489ee3bb145cedaee00353a80c3dc9377439"
+    },
+    {
+      "id": "big.mira.memory",
+      "source": "resources/art/export/big.mira.memory.png",
+      "path": "resources/art/big.mira.memory.png",
+      "sha256": "9848f3b618ce3127fd633769892f2121821eef4f9213d90dcb0ce27000f8ff19"
+    },
+    {
+      "id": "big.mira",
+      "source": "resources/art/export/big.mira.png",
+      "path": "resources/art/big.mira.png",
+      "sha256": "308752353e234ccfc95d4bfeb0b4754235c4259976294636cf757773dcf6f869"
+    },
+    {
+      "id": "big.toby.memory",
+      "source": "resources/art/export/big.toby.memory.png",
+      "path": "resources/art/big.toby.memory.png",
+      "sha256": "e4f488f6ca93087c6a0f28e0441f9952ab57463a9451fa455390ece80e99db7c"
+    },
+    {
+      "id": "big.toby",
+      "source": "resources/art/export/big.toby.png",
+      "path": "resources/art/big.toby.png",
+      "sha256": "99125cc09382b0332fe8bdabcebe17345b48237957b536671725a70c9c626404"
+    },
+    {
+      "id": "big.xiaosu.memory",
+      "source": "resources/art/export/big.xiaosu.memory.png",
+      "path": "resources/art/big.xiaosu.memory.png",
+      "sha256": "2bc5f9bb03a6e74363ccb9b5a8b9e3ab0f18181e45a51aab0a52d7285f3b4ae9"
+    },
+    {
+      "id": "big.xiaosu",
+      "source": "resources/art/export/big.xiaosu.png",
+      "path": "resources/art/big.xiaosu.png",
+      "sha256": "daab3309da8c6fd68f3d9e1916718a93ece09f2188382512c1f49d0b9c1c5333"
+    },
+    {
+      "id": "board.table",
+      "source": "resources/art/export/board.table.png",
+      "path": "resources/art/board.table.png",
+      "sha256": "691205b7d22de887cd44c99cd9a3cc345fb07b8f11a2009adc827aad60f786fb"
+    },
+    {
+      "id": "card.event_frame",
+      "source": "resources/art/export/card.event_frame.png",
+      "path": "resources/art/card.event_frame.png",
+      "sha256": "31f37c524f0f3144af6b76da50c5e8c65df5da0ec7d8d20e858f4a262022667d"
+    },
+    {
+      "id": "card.loc_frame.fog",
+      "source": "resources/art/export/card.loc_frame.fog.png",
+      "path": "resources/art/card.loc_frame.fog.png",
+      "sha256": "56d1ffff5b5936ce4ae6b92fe5cfc37d0ec9faf7c3df5ec83c6e6a6de82a80a4"
+    },
+    {
+      "id": "card.loc_frame.frozen",
+      "source": "resources/art/export/card.loc_frame.frozen.png",
+      "path": "resources/art/card.loc_frame.frozen.png",
+      "sha256": "cd37c9cd1750b3c0e10602f8fa84595f9277cdee298cd443ef56d09f421982ac"
+    },
+    {
+      "id": "card.loc_frame.restored",
+      "source": "resources/art/export/card.loc_frame.restored.png",
+      "path": "resources/art/card.loc_frame.restored.png",
+      "sha256": "c6fe3252cd02699e2701c6476f6e82b32b2082571ae6bb3485a38310615643ae"
+    },
+    {
+      "id": "card.loc_frame.thawed",
+      "source": "resources/art/export/card.loc_frame.thawed.png",
+      "path": "resources/art/card.loc_frame.thawed.png",
+      "sha256": "bc1e1923fc0e71a08fb2017400d84a7b2d6cc7c3397384af14c9d0eee7f6847d"
+    },
+    {
+      "id": "card.res_frame",
+      "source": "resources/art/export/card.res_frame.png",
+      "path": "resources/art/card.res_frame.png",
+      "sha256": "19c8397950d4659e9a52ea6d094db150ea72c691808db9973b50c74f57739f13"
+    },
+    {
+      "id": "card.spell_frame",
+      "source": "resources/art/export/card.spell_frame.png",
+      "path": "resources/art/card.spell_frame.png",
+      "sha256": "86c1a22b8d63841c0032d284f8f73074010d460c9f4114da2b613ce833cc8048"
+    },
+    {
+      "id": "char.ember",
+      "source": "resources/art/export/char.ember.png",
+      "path": "resources/art/char.ember.png",
+      "sha256": "48bfcaee135233e75f52d4cb08d25a5b6d89b913c3f525b498760b05cd5f235e"
+    },
+    {
+      "id": "deco.clock",
+      "source": "resources/art/export/deco.clock.png",
+      "path": "resources/art/deco.clock.png",
+      "sha256": "5658e810c17ca9cb014987bc0ae14bb0887aa9a3a83f39cd92c2866897060b86"
+    },
+    {
+      "id": "deco.lantern",
+      "source": "resources/art/export/deco.lantern.png",
+      "path": "resources/art/deco.lantern.png",
+      "sha256": "c3c25a44a364367aeb14930850289087fb5d1867280b1b2bcd7bfd6fe255dff7"
+    },
+    {
+      "id": "deco.pipe",
+      "source": "resources/art/export/deco.pipe.png",
+      "path": "resources/art/deco.pipe.png",
+      "sha256": "24e3afe7fb2e95e34c35b551195c748f1ba9b91167278a505db743c2508afe31"
+    },
+    {
+      "id": "deco.teacup",
+      "source": "resources/art/export/deco.teacup.png",
+      "path": "resources/art/deco.teacup.png",
+      "sha256": "e5d19b7c59cea5c097701b03318d62c6e00476382a5998952b5213ec54865ffc"
+    },
+    {
+      "id": "deco.window",
+      "source": "resources/art/export/deco.window.png",
+      "path": "resources/art/deco.window.png",
+      "sha256": "6b652914672f4d7f0fd8c814aec007a6eaee93467e7781edd2ae41b06760255a"
+    },
+    {
+      "id": "fx.ice_crack",
+      "source": "resources/art/export/fx.ice_crack.png",
+      "path": "resources/art/fx.ice_crack.png",
+      "sha256": "83a1e7cb9a793e95abde8cb1aee913bbada87e1fc69b6b22abfd98fec2aa74ea"
+    },
+    {
+      "id": "fx.ice_shatter",
+      "source": "resources/art/export/fx.ice_shatter.png",
+      "path": "resources/art/fx.ice_shatter.png",
+      "sha256": "49ca8ab06fb4becdaa295754735dc4f425e44eb75c18de5e9a11163d2db397a7"
+    },
+    {
+      "id": "icon.stone",
+      "source": "resources/art/export/icon.stone.png",
+      "path": "resources/art/icon.stone.png",
+      "sha256": "4ea26ad71ee463321c2b12a449e81470eea37bf753303aac6795fb0cc713b3e5"
+    },
+    {
+      "id": "icon.warmth",
+      "source": "resources/art/export/icon.warmth.png",
+      "path": "resources/art/icon.warmth.png",
+      "sha256": "02beef4ce55b5e18d9fa8f81b7af45f2114d45ba1710f07099a1f0f2e0fb4533"
+    },
+    {
+      "id": "icon.wood",
+      "source": "resources/art/export/icon.wood.png",
+      "path": "resources/art/icon.wood.png",
+      "sha256": "0600e95f9323fb0f7955edbe9636c2e7fec43ba5db86fe58aa160d1b7bf8e5e7"
+    },
+    {
+      "id": "locart.flood_beach.anim.shells",
+      "source": "resources/art/export/locart.flood_beach.anim.shells.png",
+      "path": "resources/art/locart.flood_beach.anim.shells.png",
+      "sha256": "d42b39a82cbff759c7b406b5a4a0b8127f496b54ce5f01db9ba75e83dac05c49"
+    },
+    {
+      "id": "locart.flood_beach.spring",
+      "source": "resources/art/export/locart.flood_beach.spring.png",
+      "path": "resources/art/locart.flood_beach.spring.png",
+      "sha256": "659cb9f3239576f4eef71a6a614b0eb066854622b6d1f4bbfa070d8ec1d6dd31"
+    },
+    {
+      "id": "locart.flood_beach.winter",
+      "source": "resources/art/export/locart.flood_beach.winter.png",
+      "path": "resources/art/locart.flood_beach.winter.png",
+      "sha256": "30afda8f379971cc2196a06e71f96a06dbb1a09a6d3db7be58673367f168c2f6"
+    },
+    {
+      "id": "locart.flower_slope.anim.herbs",
+      "source": "resources/art/export/locart.flower_slope.anim.herbs.png",
+      "path": "resources/art/locart.flower_slope.anim.herbs.png",
+      "sha256": "9583f4327c4167a043fbdec0ca56d807410b1f37b73cfbece416ea75c7a8a2db"
+    },
+    {
+      "id": "locart.flower_slope.anim.sun",
+      "source": "resources/art/export/locart.flower_slope.anim.sun.png",
+      "path": "resources/art/locart.flower_slope.anim.sun.png",
+      "sha256": "0cf154977dbce5770f60a7b7dc88519efa7e174f4b097116915d3a360677ccbb"
+    },
+    {
+      "id": "locart.flower_slope.spring",
+      "source": "resources/art/export/locart.flower_slope.spring.png",
+      "path": "resources/art/locart.flower_slope.spring.png",
+      "sha256": "6ad3861eee0984a454e1806a59b1a2b966ad2ab2279825335b70b2a1bbb23198"
+    },
+    {
+      "id": "locart.flower_slope.winter",
+      "source": "resources/art/export/locart.flower_slope.winter.png",
+      "path": "resources/art/locart.flower_slope.winter.png",
+      "sha256": "7fd44eaf8c761f3184db9a51ac0c0f97c3b254ac6c773aefbeb3e37cbdd1a185"
+    },
+    {
+      "id": "locart.gravel.anim.haul",
+      "source": "resources/art/export/locart.gravel.anim.haul.png",
+      "path": "resources/art/locart.gravel.anim.haul.png",
+      "sha256": "0114a2422cfcf6e18858fa164b32f3f1632b48ec7ed7e8ef9e7a64bb82e75bd2"
+    },
+    {
+      "id": "locart.gravel.anim.stones",
+      "source": "resources/art/export/locart.gravel.anim.stones.png",
+      "path": "resources/art/locart.gravel.anim.stones.png",
+      "sha256": "c00459a27a82aeb46acef216ffc4e015ea1eb735513fb50618427439086d67ef"
+    },
+    {
+      "id": "locart.gravel.spring",
+      "source": "resources/art/export/locart.gravel.spring.png",
+      "path": "resources/art/locart.gravel.spring.png",
+      "sha256": "8dca96ee096805a2df99cb831c24bbe293132f0985ba4c17bb37126c370fdbf2"
+    },
+    {
+      "id": "locart.gravel.winter",
+      "source": "resources/art/export/locart.gravel.winter.png",
+      "path": "resources/art/locart.gravel.winter.png",
+      "sha256": "b95a5cb6569a66fdb3e5211d4e92453029dc60b13031a2d290b2a4906fa828d8"
+    },
+    {
+      "id": "locart.herb_garden.anim.brew",
+      "source": "resources/art/export/locart.herb_garden.anim.brew.png",
+      "path": "resources/art/locart.herb_garden.anim.brew.png",
+      "sha256": "f382747f56e1a5a6e6eb492abc1958393bd13bc8c7dfba5d9fbe93fcca746496"
+    },
+    {
+      "id": "locart.herb_garden.anim.tea",
+      "source": "resources/art/export/locart.herb_garden.anim.tea.png",
+      "path": "resources/art/locart.herb_garden.anim.tea.png",
+      "sha256": "29db258a6fd3676c545910f19bdbf6ed658e888a71b37ade4370d0cdac5afcff"
+    },
+    {
+      "id": "locart.herb_garden.spring",
+      "source": "resources/art/export/locart.herb_garden.spring.png",
+      "path": "resources/art/locart.herb_garden.spring.png",
+      "sha256": "4d568491099f55d4416770ccf42257935d95c0c1ed78024ba8c22a44eb307036"
+    },
+    {
+      "id": "locart.herb_garden.winter",
+      "source": "resources/art/export/locart.herb_garden.winter.png",
+      "path": "resources/art/locart.herb_garden.winter.png",
+      "sha256": "4190973e55b8cc75bc828f9a3991af9a2a73893605a41f8d4a323922b83de42c"
+    },
+    {
+      "id": "locart.hut.anim.feed",
+      "source": "resources/art/export/locart.hut.anim.feed.png",
+      "path": "resources/art/locart.hut.anim.feed.png",
+      "sha256": "57ebac660f482f6b9d17b2702f0ba359f6ae0a057b77b0eb9a3aeed4fdca584c"
+    },
+    {
+      "id": "locart.hut.anim.fire",
+      "source": "resources/art/export/locart.hut.anim.fire.png",
+      "path": "resources/art/locart.hut.anim.fire.png",
+      "sha256": "763d88fb2360a6c428f79937acc2dc909b5928626d6d528d56207b2bd8d1bda7"
+    },
+    {
+      "id": "locart.hut.anim.read_notes",
+      "source": "resources/art/export/locart.hut.anim.read_notes.png",
+      "path": "resources/art/locart.hut.anim.read_notes.png",
+      "sha256": "a46bac70451bca7599e855a55ab0ff0c6e0bc833e17e4b2e4fdbcbd52a9ebc49"
+    },
+    {
+      "id": "locart.hut.spring",
+      "source": "resources/art/export/locart.hut.spring.png",
+      "path": "resources/art/locart.hut.spring.png",
+      "sha256": "1122a9084e26e8d0704965b2e329f5678b4b56472553047a339892eab635d14a"
+    },
+    {
+      "id": "locart.hut.winter",
+      "source": "resources/art/export/locart.hut.winter.png",
+      "path": "resources/art/locart.hut.winter.png",
+      "sha256": "b156ed92228cf78c1b063f852144e9494f8ee5122b0b51472fcae220e886a5bf"
+    },
+    {
+      "id": "locart.mill.anim.repair_wheel",
+      "source": "resources/art/export/locart.mill.anim.repair_wheel.png",
+      "path": "resources/art/locart.mill.anim.repair_wheel.png",
+      "sha256": "69563d637ef157daba56faab6a41d4a0d937aa6cb70af8a955e4e629024fd776"
+    },
+    {
+      "id": "locart.mill.anim.warm_family",
+      "source": "resources/art/export/locart.mill.anim.warm_family.png",
+      "path": "resources/art/locart.mill.anim.warm_family.png",
+      "sha256": "83ee5f4f8c0ce4b91d86481384cc1088b804f0e15a4c8826805ab83ce9b4e073"
+    },
+    {
+      "id": "locart.mill.spring",
+      "source": "resources/art/export/locart.mill.spring.png",
+      "path": "resources/art/locart.mill.spring.png",
+      "sha256": "75bec3fe1b95c391a757d59a4585fb6a62ea62050bfb5193ed6db488b481abcc"
+    },
+    {
+      "id": "locart.mill.winter",
+      "source": "resources/art/export/locart.mill.winter.png",
+      "path": "resources/art/locart.mill.winter.png",
+      "sha256": "5ae8bd47686f1eb4b7b69731e4a39b563a2be8a891c376ce4f329c957363851c"
+    },
+    {
+      "id": "locart.misty_bank.anim.gnaw",
+      "source": "resources/art/export/locart.misty_bank.anim.gnaw.png",
+      "path": "resources/art/locart.misty_bank.anim.gnaw.png",
+      "sha256": "9aea8a6f558242cf1628079ba1864f1f4995ce2e1f25c4804aaadd99040231f6"
+    },
+    {
+      "id": "locart.misty_bank.spring",
+      "source": "resources/art/export/locart.misty_bank.spring.png",
+      "path": "resources/art/locart.misty_bank.spring.png",
+      "sha256": "b10bff19e296c201ef7cfd7a76917be32006306f3fa0e2be2e261a051e172928"
+    },
+    {
+      "id": "locart.misty_bank.winter",
+      "source": "resources/art/export/locart.misty_bank.winter.png",
+      "path": "resources/art/locart.misty_bank.winter.png",
+      "sha256": "204b3f850cab30814ae820c0614d9d67d6da4040c06c6f7827d43d3010d70400"
+    },
+    {
+      "id": "locart.old_bridge.anim.reinforce",
+      "source": "resources/art/export/locart.old_bridge.anim.reinforce.png",
+      "path": "resources/art/locart.old_bridge.anim.reinforce.png",
+      "sha256": "30002a6a3734cbe9eb00d81557fd2e9330aee1433e28e48229f74f63d076f7df"
+    },
+    {
+      "id": "locart.old_bridge.anim.watch",
+      "source": "resources/art/export/locart.old_bridge.anim.watch.png",
+      "path": "resources/art/locart.old_bridge.anim.watch.png",
+      "sha256": "371a09e3d3e6d4c47382b0548ca734fffb32e1109ef32eb15d3c9e4a4884c226"
+    },
+    {
+      "id": "locart.old_bridge.spring",
+      "source": "resources/art/export/locart.old_bridge.spring.png",
+      "path": "resources/art/locart.old_bridge.spring.png",
+      "sha256": "6e55d725036a811388e593fe886b22b71c98963c058cf105d54b7abdcc163592"
+    },
+    {
+      "id": "locart.old_bridge.winter",
+      "source": "resources/art/export/locart.old_bridge.winter.png",
+      "path": "resources/art/locart.old_bridge.winter.png",
+      "sha256": "42cec3dfc6b3c5b5a8f22b69691b63393132094fea1e28dffdaa7099ba82d5b2"
+    },
+    {
+      "id": "locart.pines.anim.chop",
+      "source": "resources/art/export/locart.pines.anim.chop.png",
+      "path": "resources/art/locart.pines.anim.chop.png",
+      "sha256": "58f8b62178cd1c3effbda0113a3008a4e3fbe0c355009dfb31163c76f9c90e3b"
+    },
+    {
+      "id": "locart.pines.anim.gather",
+      "source": "resources/art/export/locart.pines.anim.gather.png",
+      "path": "resources/art/locart.pines.anim.gather.png",
+      "sha256": "1ecddd96f496294d3596aeec5c275bc4ca17a6ff0f68722dab0b6216a24fdb36"
     },
     {
       "id": "locart.pines.spring",
@@ -86,10 +506,262 @@
       "sha256": "3e7e5de89b7ff733f8a0374d67b267d4abada00a63addb9a3f22fa5a64bd244c"
     },
     {
+      "id": "locart.river_bend.anim.build_dam",
+      "source": "resources/art/export/locart.river_bend.anim.build_dam.png",
+      "path": "resources/art/locart.river_bend.anim.build_dam.png",
+      "sha256": "2965d8b4dd6a07a91329ab973c6df874716f10d10916aec810746fa5f787c4ea"
+    },
+    {
+      "id": "locart.river_bend.anim.chisel",
+      "source": "resources/art/export/locart.river_bend.anim.chisel.png",
+      "path": "resources/art/locart.river_bend.anim.chisel.png",
+      "sha256": "a94b73851b36068e7b9f82eb9404b420026daddae32a3ffca96d4ea65523f114"
+    },
+    {
+      "id": "locart.river_bend.anim.driftwood",
+      "source": "resources/art/export/locart.river_bend.anim.driftwood.png",
+      "path": "resources/art/locart.river_bend.anim.driftwood.png",
+      "sha256": "1b14624b5ca1268aaea5608d5ef3df712186ebddab44b75190a3ec89bce186f2"
+    },
+    {
+      "id": "locart.river_bend.spring",
+      "source": "resources/art/export/locart.river_bend.spring.png",
+      "path": "resources/art/locart.river_bend.spring.png",
+      "sha256": "09c3071a03fc27abb42eb516f67854f49b5197ba8189322a2153942a923ec129"
+    },
+    {
+      "id": "locart.river_bend.winter",
+      "source": "resources/art/export/locart.river_bend.winter.png",
+      "path": "resources/art/locart.river_bend.winter.png",
+      "sha256": "b16ec6c88fc129dfd199773bffc869bf8379ce148f4652394464068786b2cb2d"
+    },
+    {
+      "id": "locart.tree_hole.anim.search",
+      "source": "resources/art/export/locart.tree_hole.anim.search.png",
+      "path": "resources/art/locart.tree_hole.anim.search.png",
+      "sha256": "85cb9e3e25a742018452b86576c2e6f68c1a2dd872f4423809b32dc7b6e0358c"
+    },
+    {
+      "id": "locart.tree_hole.anim.shelter",
+      "source": "resources/art/export/locart.tree_hole.anim.shelter.png",
+      "path": "resources/art/locart.tree_hole.anim.shelter.png",
+      "sha256": "bae6db457dbd6d65790a8313ac523ff664d65ad38ed71ab08ccbad63c1ae1d38"
+    },
+    {
+      "id": "locart.tree_hole.spring",
+      "source": "resources/art/export/locart.tree_hole.spring.png",
+      "path": "resources/art/locart.tree_hole.spring.png",
+      "sha256": "5b9e25d6f966fe9d151533305ff1804c54986cc2a5c6d87b23429fccd349723b"
+    },
+    {
+      "id": "locart.tree_hole.winter",
+      "source": "resources/art/export/locart.tree_hole.winter.png",
+      "path": "resources/art/locart.tree_hole.winter.png",
+      "sha256": "17580929dac72091af6ba31e8cac2cf31d374480d07db23423f2ae0bf986745d"
+    },
+    {
       "id": "manifest.art",
       "source": "resources/art/export/manifest.json",
       "path": "resources/art/manifest.json",
-      "sha256": "ec3459963c179a64616ab503a8b54915d5e3cdd62b8ab9a2e8e42f3075b92196"
+      "sha256": "55dd5bd88fb72afeeef060e37a40a68d7e1af79d3059ee881245b4aa9321fb9c"
+    },
+    {
+      "id": "note.paper",
+      "source": "resources/art/export/note.paper.png",
+      "path": "resources/art/note.paper.png",
+      "sha256": "f5388453c2a62f7da45e1aaa88cf311d17549c516b2b57800145ee3e92eb0be7"
+    },
+    {
+      "id": "note.sketch.1",
+      "source": "resources/art/export/note.sketch.1.png",
+      "path": "resources/art/note.sketch.1.png",
+      "sha256": "1731085b615cb69355dc308f5cf3afed37cfa0855239993324603b4ab7489c2f"
+    },
+    {
+      "id": "note.sketch.2",
+      "source": "resources/art/export/note.sketch.2.png",
+      "path": "resources/art/note.sketch.2.png",
+      "sha256": "5e576eef6d76c79b0b936a4b554f06050cd519a9854ee725b99df3222f3639ee"
+    },
+    {
+      "id": "note.sketch.3",
+      "source": "resources/art/export/note.sketch.3.png",
+      "path": "resources/art/note.sketch.3.png",
+      "sha256": "dd9e66f0b738b8742b3aae7329e4625bcf7f58036ac5dda79c54c34c484da1ca"
+    },
+    {
+      "id": "pano.flood_beach.spring",
+      "source": "resources/art/export/pano.flood_beach.spring.png",
+      "path": "resources/art/pano.flood_beach.spring.png",
+      "sha256": "4742fa5cbaa993229282beb7e6d1b485f0637506074d41d23aa4463475f09cb8"
+    },
+    {
+      "id": "pano.flood_beach.winter",
+      "source": "resources/art/export/pano.flood_beach.winter.png",
+      "path": "resources/art/pano.flood_beach.winter.png",
+      "sha256": "a8dc6cfdfbb43e5d5f1430dc555a8ee32f67fab3052846148bf74e637e207923"
+    },
+    {
+      "id": "pano.flower_slope.spring",
+      "source": "resources/art/export/pano.flower_slope.spring.png",
+      "path": "resources/art/pano.flower_slope.spring.png",
+      "sha256": "5a1aa88c0d383f925b3a1e0a5fa58e29299d0685f40d2ec9e25e6ee3b9249116"
+    },
+    {
+      "id": "pano.flower_slope.winter",
+      "source": "resources/art/export/pano.flower_slope.winter.png",
+      "path": "resources/art/pano.flower_slope.winter.png",
+      "sha256": "e4be5776390edb8f187fbcd9981603379bcfce2ccb885c78f715d73488bb86a7"
+    },
+    {
+      "id": "pano.gravel.spring",
+      "source": "resources/art/export/pano.gravel.spring.png",
+      "path": "resources/art/pano.gravel.spring.png",
+      "sha256": "50be5c400ec7bd3172fbe8294692f0762b338ed304a6ba62a8e0bd9b3c9cbd7e"
+    },
+    {
+      "id": "pano.gravel.winter",
+      "source": "resources/art/export/pano.gravel.winter.png",
+      "path": "resources/art/pano.gravel.winter.png",
+      "sha256": "467f65b0c8ea7d43d5f25c3bd707d7abf9c3df93b7eb91386b43f454366cc127"
+    },
+    {
+      "id": "pano.herb_garden.spring",
+      "source": "resources/art/export/pano.herb_garden.spring.png",
+      "path": "resources/art/pano.herb_garden.spring.png",
+      "sha256": "a5ead6df24510b13fe5817063aa0337e4b737f05b857f8486686ccf9ab40e8de"
+    },
+    {
+      "id": "pano.herb_garden.winter",
+      "source": "resources/art/export/pano.herb_garden.winter.png",
+      "path": "resources/art/pano.herb_garden.winter.png",
+      "sha256": "21c702c410dca86dccb4abcd0f8a6a580f990c254d0da8a1d4a557b9d6c9a4ec"
+    },
+    {
+      "id": "pano.hut.spring",
+      "source": "resources/art/export/pano.hut.spring.png",
+      "path": "resources/art/pano.hut.spring.png",
+      "sha256": "b0ce5083e11f53d36e0d9c6922bd3fe9e44e95348c9409230ff5864f27e7ffa5"
+    },
+    {
+      "id": "pano.hut.winter",
+      "source": "resources/art/export/pano.hut.winter.png",
+      "path": "resources/art/pano.hut.winter.png",
+      "sha256": "b8612915b948fa57222bcadc14fe02ea97fccbf4e4feaa902cdda5afd191d945"
+    },
+    {
+      "id": "pano.mill.spring",
+      "source": "resources/art/export/pano.mill.spring.png",
+      "path": "resources/art/pano.mill.spring.png",
+      "sha256": "becc13b9fa2178018c4024557faa83b04a67c8729e47077470534bd58fdbde12"
+    },
+    {
+      "id": "pano.mill.winter",
+      "source": "resources/art/export/pano.mill.winter.png",
+      "path": "resources/art/pano.mill.winter.png",
+      "sha256": "a3c47af5e4825d5e82bc0302c18b58f0949f7bf4ba08519a67150c43b05104e7"
+    },
+    {
+      "id": "pano.misty_bank.spring",
+      "source": "resources/art/export/pano.misty_bank.spring.png",
+      "path": "resources/art/pano.misty_bank.spring.png",
+      "sha256": "82a39a2ad1ac4c62fba2b4f25fe44f37ea583c5621812b42ba9684ab6e27619b"
+    },
+    {
+      "id": "pano.misty_bank.winter",
+      "source": "resources/art/export/pano.misty_bank.winter.png",
+      "path": "resources/art/pano.misty_bank.winter.png",
+      "sha256": "f32f88f298385f3f58ba635280697c7c8029cc5d90e7029ac7aac077575fe981"
+    },
+    {
+      "id": "pano.old_bridge.spring",
+      "source": "resources/art/export/pano.old_bridge.spring.png",
+      "path": "resources/art/pano.old_bridge.spring.png",
+      "sha256": "5f77335bc3f4c7a67f2a8d8f3627c24eb10c30c5b7e53bebc1bef6220c70bf8a"
+    },
+    {
+      "id": "pano.old_bridge.winter",
+      "source": "resources/art/export/pano.old_bridge.winter.png",
+      "path": "resources/art/pano.old_bridge.winter.png",
+      "sha256": "f33eec5b63bd52b04a2c9522f37812e4a8bd95e9f0369e8bfeddc68ad62727f2"
+    },
+    {
+      "id": "pano.pines.spring",
+      "source": "resources/art/export/pano.pines.spring.png",
+      "path": "resources/art/pano.pines.spring.png",
+      "sha256": "aab6074aba18f736de45a03b47605e26ba46add15f621685f6a5d78937b4e6df"
+    },
+    {
+      "id": "pano.pines.winter",
+      "source": "resources/art/export/pano.pines.winter.png",
+      "path": "resources/art/pano.pines.winter.png",
+      "sha256": "48451943d45b382c339601d1c5df8b309a46b260e4bf92c59ae4e4f816775799"
+    },
+    {
+      "id": "pano.river_bend.spring",
+      "source": "resources/art/export/pano.river_bend.spring.png",
+      "path": "resources/art/pano.river_bend.spring.png",
+      "sha256": "ea2bf3666c210e179b61a4abbc8dcb2bdf12ea72b9581f3bcb5e16b848dcea97"
+    },
+    {
+      "id": "pano.river_bend.winter",
+      "source": "resources/art/export/pano.river_bend.winter.png",
+      "path": "resources/art/pano.river_bend.winter.png",
+      "sha256": "fddba75742ce89f54d920f049f3e48bd39a7b3d9d31d68b182c23efb97dd3d0f"
+    },
+    {
+      "id": "pano.tree_hole.spring",
+      "source": "resources/art/export/pano.tree_hole.spring.png",
+      "path": "resources/art/pano.tree_hole.spring.png",
+      "sha256": "2ea692aba1a360a751df981339bd222b5db5b108c7e5c681837b03438c5e8d29"
+    },
+    {
+      "id": "pano.tree_hole.winter",
+      "source": "resources/art/export/pano.tree_hole.winter.png",
+      "path": "resources/art/pano.tree_hole.winter.png",
+      "sha256": "e6f2781f55eba4f63d4b596402e5aded02e3cfd3a67717abe2fc5d0b46cb21a9"
+    },
+    {
+      "id": "portrait.anuan",
+      "source": "resources/art/export/portrait.anuan.png",
+      "path": "resources/art/portrait.anuan.png",
+      "sha256": "7e874a8b5938e607f39b133f8f9b69c9fbb6d9014195e7c80b4924aa0d814224"
+    },
+    {
+      "id": "portrait.baiweng",
+      "source": "resources/art/export/portrait.baiweng.png",
+      "path": "resources/art/portrait.baiweng.png",
+      "sha256": "4890fa572d7f8edcdd292d3ddcbeff45f8923a11deed11bb5c7b176896d5bf05"
+    },
+    {
+      "id": "portrait.beavers",
+      "source": "resources/art/export/portrait.beavers.png",
+      "path": "resources/art/portrait.beavers.png",
+      "sha256": "464c743325cb1038c7d8fd880a562412de4fdb3e8fe863cc6c2622182b771493"
+    },
+    {
+      "id": "portrait.gutu",
+      "source": "resources/art/export/portrait.gutu.png",
+      "path": "resources/art/portrait.gutu.png",
+      "sha256": "50e955d13d3972c527c160a1e20093c76d0f71b99645aebb3ec34bf56527ee4e"
+    },
+    {
+      "id": "portrait.mei",
+      "source": "resources/art/export/portrait.mei.png",
+      "path": "resources/art/portrait.mei.png",
+      "sha256": "b3645012f0b326654df069ad6bee2226b00054aba4097521b9c828742d0e67b7"
+    },
+    {
+      "id": "portrait.mill_family",
+      "source": "resources/art/export/portrait.mill_family.png",
+      "path": "resources/art/portrait.mill_family.png",
+      "sha256": "7b221e9022afd6724d9acd57ef845fca7a01c7a09b6864b01f40673809c4e6d5"
+    },
+    {
+      "id": "portrait.mira",
+      "source": "resources/art/export/portrait.mira.png",
+      "path": "resources/art/portrait.mira.png",
+      "sha256": "3644c3e405c34a51a1f92a7dd98629634fd0997c8b40b7426789a47cbaf41137"
     },
     {
       "id": "portrait.toby",
@@ -98,10 +770,220 @@
       "sha256": "9248ff2e40970ddd67e26fcf679b0bf39d15ce03b0049b67cfa9cd000ce8f29d"
     },
     {
+      "id": "portrait.xiaosu",
+      "source": "resources/art/export/portrait.xiaosu.png",
+      "path": "resources/art/portrait.xiaosu.png",
+      "sha256": "f3d02c15a76f0b9b4e845c7565aab8246ef2dca25a8e1edade974d013ecc0da3"
+    },
+    {
+      "id": "still.herb_garden.memory",
+      "source": "resources/art/export/still.herb_garden.memory.png",
+      "path": "resources/art/still.herb_garden.memory.png",
+      "sha256": "ee563171d2905c2ba4d384c44c80cc8f51a6c9742cc527b8fc681d051c4e3355"
+    },
+    {
+      "id": "still.herb_garden",
+      "source": "resources/art/export/still.herb_garden.png",
+      "path": "resources/art/still.herb_garden.png",
+      "sha256": "96eb855b531ef6f86d7eaf1cba29ba45e1e0640401b4cc895a42414d40211a1f"
+    },
+    {
+      "id": "still.hut.memory",
+      "source": "resources/art/export/still.hut.memory.png",
+      "path": "resources/art/still.hut.memory.png",
+      "sha256": "90d9d3e0b51edb7c1d016cbb5fcdc0ee09583aa20896ca3c2720a2cf4f1dd47e"
+    },
+    {
+      "id": "still.hut",
+      "source": "resources/art/export/still.hut.png",
+      "path": "resources/art/still.hut.png",
+      "sha256": "6c8a511b96fb460c32f80f756d4ee18c1a75e5c72c99ed2c56499ea12a8cdd6f"
+    },
+    {
+      "id": "still.mill.memory",
+      "source": "resources/art/export/still.mill.memory.png",
+      "path": "resources/art/still.mill.memory.png",
+      "sha256": "e69679d294cfb19298860be511d684dea67c0e9024aebfc0fcb57ac55f50cfd1"
+    },
+    {
+      "id": "still.mill",
+      "source": "resources/art/export/still.mill.png",
+      "path": "resources/art/still.mill.png",
+      "sha256": "b45a14db3e708643df18b6a506b4b88ca2a8aec45a5a7de8eef530f4f73dffb1"
+    },
+    {
+      "id": "still.pines.memory",
+      "source": "resources/art/export/still.pines.memory.png",
+      "path": "resources/art/still.pines.memory.png",
+      "sha256": "3a625e8621e434c4bea549ecff2d082bd00ccf81ef753e281b90f1f9045f3f47"
+    },
+    {
+      "id": "still.pines",
+      "source": "resources/art/export/still.pines.png",
+      "path": "resources/art/still.pines.png",
+      "sha256": "7d6184c17a1fd9813024a9fbc78d2dd08994af68222f5238f15df31b98c54e5e"
+    },
+    {
+      "id": "still.river.memory",
+      "source": "resources/art/export/still.river.memory.png",
+      "path": "resources/art/still.river.memory.png",
+      "sha256": "009ce5894fc8b6d5321473cba71da89cff99cc1238c74414ab391104888cb0ee"
+    },
+    {
+      "id": "still.river",
+      "source": "resources/art/export/still.river.png",
+      "path": "resources/art/still.river.png",
+      "sha256": "726d766c1d758e0fef70b98585f4f5c03c799cb50f818f53949066aa11a076f2"
+    },
+    {
+      "id": "still.valley_gate.memory",
+      "source": "resources/art/export/still.valley_gate.memory.png",
+      "path": "resources/art/still.valley_gate.memory.png",
+      "sha256": "adf5d19aa4d22d185ece4945ab012bb8147286f46c225ed7d57763fc593ad179"
+    },
+    {
+      "id": "still.valley_gate",
+      "source": "resources/art/export/still.valley_gate.png",
+      "path": "resources/art/still.valley_gate.png",
+      "sha256": "ec38be43563843d40520212b5f45026c1a4e71efdcaa76907dbfffeb5834ec77"
+    },
+    {
+      "id": "ui.panel.bubble",
+      "source": "resources/art/export/ui.panel.bubble.png",
+      "path": "resources/art/ui.panel.bubble.png",
+      "sha256": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+    },
+    {
+      "id": "ui.panel.paper",
+      "source": "resources/art/export/ui.panel.paper.png",
+      "path": "resources/art/ui.panel.paper.png",
+      "sha256": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+    },
+    {
+      "id": "ui.panel.preview",
+      "source": "resources/art/export/ui.panel.preview.png",
+      "path": "resources/art/ui.panel.preview.png",
+      "sha256": "3c176e9171d0b532c530ae658fb5f028b38170db6005e2a0b5bfba3aa8a5e14a"
+    },
+    {
+      "id": "ui.panel.wood",
+      "source": "resources/art/export/ui.panel.wood.png",
+      "path": "resources/art/ui.panel.wood.png",
+      "sha256": "d71dce68d05c4ccc3f9122e33a4b15daf94bd8b3bf4974a535dc8320f01f5dd9"
+    },
+    {
+      "id": "walker.anuan",
+      "source": "resources/art/export/walker.anuan.png",
+      "path": "resources/art/walker.anuan.png",
+      "sha256": "0c9711192d0361c31a2d887b302db5a0417cbaee213e8e5e71feb3cfa3587e39"
+    },
+    {
+      "id": "walker.baiweng",
+      "source": "resources/art/export/walker.baiweng.png",
+      "path": "resources/art/walker.baiweng.png",
+      "sha256": "ec738324cf8ff748fd8b5affd8e42ada756a38463f8613d788f4bdae815994f8"
+    },
+    {
+      "id": "walker.beavers",
+      "source": "resources/art/export/walker.beavers.png",
+      "path": "resources/art/walker.beavers.png",
+      "sha256": "a7675295b9344262e6f7c7480eee6af46eb0959658a19da86f65b6c576dafd62"
+    },
+    {
+      "id": "walker.gutu",
+      "source": "resources/art/export/walker.gutu.png",
+      "path": "resources/art/walker.gutu.png",
+      "sha256": "cb1c46c69d3bfdadfb71719796623cee4aa9e0e621e18f73d5fb9d3d1bbef6de"
+    },
+    {
+      "id": "walker.mei",
+      "source": "resources/art/export/walker.mei.png",
+      "path": "resources/art/walker.mei.png",
+      "sha256": "1de39656379f5ec58afabe20b143c19db9ec5287bc3f57d6afab0f2a69ec17e7"
+    },
+    {
+      "id": "walker.mill_family",
+      "source": "resources/art/export/walker.mill_family.png",
+      "path": "resources/art/walker.mill_family.png",
+      "sha256": "cad36c83cbda3b5f9f4fe7aaba0c1917612cfdfab25f338da5928d997054f1af"
+    },
+    {
+      "id": "walker.mira",
+      "source": "resources/art/export/walker.mira.png",
+      "path": "resources/art/walker.mira.png",
+      "sha256": "539302611f59b8771d791e076e7e914f4b51aa8508257a071a6e4ef552d1c4c0"
+    },
+    {
+      "id": "walker.toby",
+      "source": "resources/art/export/walker.toby.png",
+      "path": "resources/art/walker.toby.png",
+      "sha256": "ab930d854667ed390fb0c479d6c34296126e6e5ab8cc040ff2156dd16959a2f5"
+    },
+    {
+      "id": "walker.xiaosu",
+      "source": "resources/art/export/walker.xiaosu.png",
+      "path": "resources/art/walker.xiaosu.png",
+      "sha256": "cf87181194210d6cfaa1ddfb16cd67d1db9222841ea64c42aec48cd637174b7f"
+    },
+    {
+      "id": "amb.birds",
+      "source": "resources/audio/export/amb.birds.wav",
+      "path": "resources/audio/amb.birds.wav",
+      "sha256": "36b323f82f0bde57fc06423b26e77abcda6e5e6ae6e6e6a344daf66f94387594"
+    },
+    {
+      "id": "amb.wind",
+      "source": "resources/audio/export/amb.wind.wav",
+      "path": "resources/audio/amb.wind.wav",
+      "sha256": "561e1d9b31d8d411796b98d849b520c7aedf656adaa839d8c84ca9e97b47874a"
+    },
+    {
       "id": "manifest.audio",
       "source": "resources/audio/export/manifest.json",
       "path": "resources/audio/manifest.json",
-      "sha256": "d6a7ab80cbcbd71a79171d100c40b114a98da91187a67988c326abb05d369e37"
+      "sha256": "8f9cc17d52b215c52a0746566c16cdc97c832bfe82af1569fd3f764180b98258"
+    },
+    {
+      "id": "music.day.l1",
+      "source": "resources/audio/export/music.day.l1.wav",
+      "path": "resources/audio/music.day.l1.wav",
+      "sha256": "df49c0433bcc74bd75ea726df9ac681d71d91a25abdee90116df9be5cd3ac2ed"
+    },
+    {
+      "id": "music.day.l2",
+      "source": "resources/audio/export/music.day.l2.wav",
+      "path": "resources/audio/music.day.l2.wav",
+      "sha256": "424b18d461ae7ec2bcaa6cd66ec3b721006fe6e61bd4315e58462803c0180b7a"
+    },
+    {
+      "id": "music.day.l3",
+      "source": "resources/audio/export/music.day.l3.wav",
+      "path": "resources/audio/music.day.l3.wav",
+      "sha256": "d340de4ebe2b8a9f5cc3b8dab30e0c7d098397e4eb8e61dfd5e1ea7ea9b63d70"
+    },
+    {
+      "id": "music.ending",
+      "source": "resources/audio/export/music.ending.wav",
+      "path": "resources/audio/music.ending.wav",
+      "sha256": "c5368344ead391d3ca162636834ac2c16c3ef51ee5574ca686adfaf76e928863"
+    },
+    {
+      "id": "music.memory",
+      "source": "resources/audio/export/music.memory.wav",
+      "path": "resources/audio/music.memory.wav",
+      "sha256": "e6c5c34f3ad570a6de9132c05f6b8efef76130a787c5481095b0740f9c120a6d"
+    },
+    {
+      "id": "music.night",
+      "source": "resources/audio/export/music.night.wav",
+      "path": "resources/audio/music.night.wav",
+      "sha256": "0229b419b74313d5f7868d9a503d1f68e26ff8c3289f8afdf15bda2daf43e214"
+    },
+    {
+      "id": "music.preview",
+      "source": "resources/audio/export/music.preview.wav",
+      "path": "resources/audio/music.preview.wav",
+      "sha256": "ccf00763c9891d794ecbc2b11e89e85360a4bca3f5e1c683615f16289ce9987a"
     },
     {
       "id": "music.test",
@@ -110,16 +992,274 @@
       "sha256": "70527613d9fde638a96a61c703f9d9bf69280b8cb3c233e35e782ef240e2da2b"
     },
     {
+      "id": "music.title",
+      "source": "resources/audio/export/music.title.wav",
+      "path": "resources/audio/music.title.wav",
+      "sha256": "2b59a47237750829821df73b5c3544078b04508c725aa5e93a43ea39e9f8d184"
+    },
+    {
+      "id": "sfx.beaver_gnaw",
+      "source": "resources/audio/export/sfx.beaver_gnaw.wav",
+      "path": "resources/audio/sfx.beaver_gnaw.wav",
+      "sha256": "cdab45847defe06db347500b57a705948020461220a722f30413e435928dbf8f"
+    },
+    {
       "id": "sfx.card_drop",
       "source": "resources/audio/export/sfx.card_drop.wav",
       "path": "resources/audio/sfx.card_drop.wav",
       "sha256": "2cb508b68e501754fcab87e7dd9d4a755b62bbbed6c46a06c8a0fc50ffbab562"
     },
     {
+      "id": "sfx.card_flip",
+      "source": "resources/audio/export/sfx.card_flip.wav",
+      "path": "resources/audio/sfx.card_flip.wav",
+      "sha256": "63a015d6e96a5dccc4da405e84ec64616d4f55de638b4fe0ed0de3fe7bf11ea6"
+    },
+    {
+      "id": "sfx.card_pick",
+      "source": "resources/audio/export/sfx.card_pick.wav",
+      "path": "resources/audio/sfx.card_pick.wav",
+      "sha256": "5c6d6c341ed43f5c443cefdcf51db6987c29c59e5bdf2e7df6fa9b85e9bc3919"
+    },
+    {
+      "id": "sfx.card_return",
+      "source": "resources/audio/export/sfx.card_return.wav",
+      "path": "resources/audio/sfx.card_return.wav",
+      "sha256": "e5a07ee83626ee5c04aaa6b0021380b6d852d63d79e1e7e74c84ef52911efab4"
+    },
+    {
+      "id": "sfx.chop",
+      "source": "resources/audio/export/sfx.chop.wav",
+      "path": "resources/audio/sfx.chop.wav",
+      "sha256": "be6894e2975e6671dc986427abc192c2c6b31c373df3e918561761483f13d5ef"
+    },
+    {
+      "id": "sfx.clock_tick",
+      "source": "resources/audio/export/sfx.clock_tick.wav",
+      "path": "resources/audio/sfx.clock_tick.wav",
+      "sha256": "934e8bef2aa44a0f7918f5ddb5dbd8c8127a37e83084f9c08b15d0d8a31111a0"
+    },
+    {
+      "id": "sfx.ember_huff",
+      "source": "resources/audio/export/sfx.ember_huff.wav",
+      "path": "resources/audio/sfx.ember_huff.wav",
+      "sha256": "368fb97f4741d275a00c29a2d2b9bca9b6af4cd0eabcb9ffd6059a401968555c"
+    },
+    {
+      "id": "sfx.fire_crackle",
+      "source": "resources/audio/export/sfx.fire_crackle.wav",
+      "path": "resources/audio/sfx.fire_crackle.wav",
+      "sha256": "8e9fcb0e80bc67bc83ec015d497e96c4e0c2f2b787b369bafd8cf794ba36d602"
+    },
+    {
+      "id": "sfx.gain_stone",
+      "source": "resources/audio/export/sfx.gain_stone.wav",
+      "path": "resources/audio/sfx.gain_stone.wav",
+      "sha256": "79900972a173c9da461e4018e0f6ac88f98a42f0ce0b656a8b84eb70ffbcc909"
+    },
+    {
+      "id": "sfx.gain_warmth",
+      "source": "resources/audio/export/sfx.gain_warmth.wav",
+      "path": "resources/audio/sfx.gain_warmth.wav",
+      "sha256": "9d8b05f970e483c3614cb4c8e2bdce7e10479f8366d109f8262be264bf437175"
+    },
+    {
+      "id": "sfx.gain_wood",
+      "source": "resources/audio/export/sfx.gain_wood.wav",
+      "path": "resources/audio/sfx.gain_wood.wav",
+      "sha256": "91764ba0301cb0ff5186b682043dd6303907d5abb24088a83ad00cb0132cd6c7"
+    },
+    {
+      "id": "sfx.hammer",
+      "source": "resources/audio/export/sfx.hammer.wav",
+      "path": "resources/audio/sfx.hammer.wav",
+      "sha256": "8d9867a4eca4aeb44b2bcbd5a8ee2b56d3227d9bf417d7428dcfd49eb8c2be7e"
+    },
+    {
+      "id": "sfx.ice_crack_high",
+      "source": "resources/audio/export/sfx.ice_crack_high.wav",
+      "path": "resources/audio/sfx.ice_crack_high.wav",
+      "sha256": "3929d715871d48a5279f69bcb06b92a0ce4fa8adf26a9324454555bb2789cc39"
+    },
+    {
+      "id": "sfx.ice_crack_low",
+      "source": "resources/audio/export/sfx.ice_crack_low.wav",
+      "path": "resources/audio/sfx.ice_crack_low.wav",
+      "sha256": "4ee9a5143dd7077717ca8f2f52b438c831a404e4fd84d45445b6091d0240a580"
+    },
+    {
       "id": "sfx.ice_crack",
       "source": "resources/audio/export/sfx.ice_crack.wav",
       "path": "resources/audio/sfx.ice_crack.wav",
       "sha256": "be2f2415f30a8a7002785f78c33e236115e884958d4027b7afb7b6e7337b40e9"
+    },
+    {
+      "id": "sfx.ice_shatter",
+      "source": "resources/audio/export/sfx.ice_shatter.wav",
+      "path": "resources/audio/sfx.ice_shatter.wav",
+      "sha256": "4832614d5f149b872050bb9f9e4b4db4b9b28fdba66505d8d9a7b148f3079ab2"
+    },
+    {
+      "id": "sfx.page_turn",
+      "source": "resources/audio/export/sfx.page_turn.wav",
+      "path": "resources/audio/sfx.page_turn.wav",
+      "sha256": "6cf5a6fdcfe8cc2ab392dbcbcec3bc3e59eefd33447948424711a7eff2413af2"
+    },
+    {
+      "id": "sfx.pipe_puff",
+      "source": "resources/audio/export/sfx.pipe_puff.wav",
+      "path": "resources/audio/sfx.pipe_puff.wav",
+      "sha256": "90d8c44e3ba5eb9e3f8e104fb4bc34a27765f6812911d4c9f25c93157c2ed13d"
+    },
+    {
+      "id": "sfx.preview_tick",
+      "source": "resources/audio/export/sfx.preview_tick.wav",
+      "path": "resources/audio/sfx.preview_tick.wav",
+      "sha256": "4620bd8c49f1d36c7050420c6b8d5624ac690dfe1fea29452c127bda682e505c"
+    },
+    {
+      "id": "sfx.scroll_unroll",
+      "source": "resources/audio/export/sfx.scroll_unroll.wav",
+      "path": "resources/audio/sfx.scroll_unroll.wav",
+      "sha256": "c39cc1beec3ec4434f62bc7e162715280817b31588815ae7110ee24a493bd85e"
+    },
+    {
+      "id": "sfx.skip_stone",
+      "source": "resources/audio/export/sfx.skip_stone.wav",
+      "path": "resources/audio/sfx.skip_stone.wav",
+      "sha256": "40de3ca3fa70c3dcc4a371133192b553a571cf22a3c90e54edda6611da0898f6"
+    },
+    {
+      "id": "sfx.snow_puff",
+      "source": "resources/audio/export/sfx.snow_puff.wav",
+      "path": "resources/audio/sfx.snow_puff.wav",
+      "sha256": "23c81b9b80cd8ae553baa411bae66ccd850857f63b6cac3bd8027a7029feed05"
+    },
+    {
+      "id": "sfx.splash",
+      "source": "resources/audio/export/sfx.splash.wav",
+      "path": "resources/audio/sfx.splash.wav",
+      "sha256": "c4c5190b49a34e75202c04e5d7d39a13a81a98894d77ecac562c759310677443"
+    },
+    {
+      "id": "sfx.stone_clink",
+      "source": "resources/audio/export/sfx.stone_clink.wav",
+      "path": "resources/audio/sfx.stone_clink.wav",
+      "sha256": "ac66328fadaa43861e603cf7aeea9d82dbb6177bc9e5f4270ff5bff9870a31ed"
+    },
+    {
+      "id": "sfx.teacup",
+      "source": "resources/audio/export/sfx.teacup.wav",
+      "path": "resources/audio/sfx.teacup.wav",
+      "sha256": "6112aec74953e7268abe37a7942403bf5c7795df0d4ca24e58f188cb05ac084d"
+    },
+    {
+      "id": "sfx.ui_cancel",
+      "source": "resources/audio/export/sfx.ui_cancel.wav",
+      "path": "resources/audio/sfx.ui_cancel.wav",
+      "sha256": "89bb7df526e465994859bcea5c03263783b1712ce4a85b41fd08378c15f43c8b"
+    },
+    {
+      "id": "sfx.ui_click",
+      "source": "resources/audio/export/sfx.ui_click.wav",
+      "path": "resources/audio/sfx.ui_click.wav",
+      "sha256": "2ca7a92c2b45a290be3f26b7a79120a7982eaab1c320b8de90db54cc807af255"
+    },
+    {
+      "id": "sfx.ui_deny",
+      "source": "resources/audio/export/sfx.ui_deny.wav",
+      "path": "resources/audio/sfx.ui_deny.wav",
+      "sha256": "9673dc91f3583241a00fd939459c3fb1f119ce8341b86a5a59303a31109f81ed"
+    },
+    {
+      "id": "sfx.ui_hover",
+      "source": "resources/audio/export/sfx.ui_hover.wav",
+      "path": "resources/audio/sfx.ui_hover.wav",
+      "sha256": "85e1e4f19a4fc9c65852c5b572ddfd25467f096ff8d54aca5a3b0b59a8a23538"
+    },
+    {
+      "id": "sting.awaken",
+      "source": "resources/audio/export/sting.awaken.wav",
+      "path": "resources/audio/sting.awaken.wav",
+      "sha256": "b12bd15dfa4d2073e509d84abbc5af372e09ffb4167a326baf0a1544cd5054ad"
+    },
+    {
+      "id": "sting.combo",
+      "source": "resources/audio/export/sting.combo.wav",
+      "path": "resources/audio/sting.combo.wav",
+      "sha256": "cfb3c0665ac697041a3290ffb756fd5822e2480549f70c963bec11e449488601"
+    },
+    {
+      "id": "sting.dawn",
+      "source": "resources/audio/export/sting.dawn.wav",
+      "path": "resources/audio/sting.dawn.wav",
+      "sha256": "4cee55f740f096b4e284b5cb8669732187353eb8a86b009bc566bb336dec2364"
+    },
+    {
+      "id": "sting.event_done",
+      "source": "resources/audio/export/sting.event_done.wav",
+      "path": "resources/audio/sting.event_done.wav",
+      "sha256": "2dbc8eb72dd97ad97bb448d3bb84f223d11f26af42860c977efff3b2e96b30e1"
+    },
+    {
+      "id": "sting.event_expire",
+      "source": "resources/audio/export/sting.event_expire.wav",
+      "path": "resources/audio/sting.event_expire.wav",
+      "sha256": "cf7a5c2ff34aec34a3cf09e68c53ff14f7cdbeac0c5a7160b08636174467fd16"
+    },
+    {
+      "id": "sting.event_new",
+      "source": "resources/audio/export/sting.event_new.wav",
+      "path": "resources/audio/sting.event_new.wav",
+      "sha256": "d1cbda1366365bf923ff1f4c98fcddded290555c684a261d93613885ce2c6efa"
+    },
+    {
+      "id": "sting.goal_step",
+      "source": "resources/audio/export/sting.goal_step.wav",
+      "path": "resources/audio/sting.goal_step.wav",
+      "sha256": "74171d5e26376d9ad425f15cafed7c5046a18e9c059e833eac92b6d59559b6e5"
+    },
+    {
+      "id": "sting.restore",
+      "source": "resources/audio/export/sting.restore.wav",
+      "path": "resources/audio/sting.restore.wav",
+      "sha256": "b8c667272f32353756a98f105f7a0132f116a6b47c3b9bfd42399ef15047ae50"
+    },
+    {
+      "id": "talk.anuan",
+      "source": "resources/audio/export/talk.anuan.wav",
+      "path": "resources/audio/talk.anuan.wav",
+      "sha256": "1847e1d25292461a8a7c0aba27351ce74e6924c4f5c2979b5b869d9f121f4f60"
+    },
+    {
+      "id": "talk.beavers",
+      "source": "resources/audio/export/talk.beavers.wav",
+      "path": "resources/audio/talk.beavers.wav",
+      "sha256": "99d03afbabc1234e03b3f5dcb959045b287e8770abc04e8502febfb6415db8de"
+    },
+    {
+      "id": "talk.ember",
+      "source": "resources/audio/export/talk.ember.wav",
+      "path": "resources/audio/talk.ember.wav",
+      "sha256": "7e127285865548340e51eafb913a69a57f8609b7b2bcca92269a4b26a7472dc7"
+    },
+    {
+      "id": "talk.mei",
+      "source": "resources/audio/export/talk.mei.wav",
+      "path": "resources/audio/talk.mei.wav",
+      "sha256": "077452fb7427d7a9b7e1ce8997df9a11f84b95551a6ac2508f331b6931f02343"
+    },
+    {
+      "id": "talk.mira",
+      "source": "resources/audio/export/talk.mira.wav",
+      "path": "resources/audio/talk.mira.wav",
+      "sha256": "430bb0b388fce6a15ec7fabfcb8b591bebfd45dbe92d166d190d6f3bdceadaf9"
+    },
+    {
+      "id": "talk.toby",
+      "source": "resources/audio/export/talk.toby.wav",
+      "path": "resources/audio/talk.toby.wav",
+      "sha256": "d62a30e34e3237e6ac8337bd42da0b7b648724078b3e4ce616aeab17955fb8f2"
     },
     {
       "id": "font.fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2",

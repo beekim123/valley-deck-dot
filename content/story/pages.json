@@ -5,24 +5,108 @@
       "id": "story.intro",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.valley_gate",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.anuan",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                4,
+                0
+              ]
+            }
+          ],
           "speaker": "narrator",
-          "text": "十年了。"
+          "text": "十年了。",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.anuan",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "narrator",
-          "text": "师父说：春天来了就回来，把牌摆开。"
+          "text": "师父说：春天来了就回来，把牌摆开。",
+          "layout": "illustration"
         },
         {
-          "layers": [],
-          "speaker": "narrator",
-          "text": "冷死了冷死了！……咦？你长这么高了？"
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "char.ember",
+              "x": 222,
+              "y": 120,
+              "frames": 4,
+              "fps": 4
+            }
+          ],
+          "speaker": "ember",
+          "text": "冷死了冷死了！……咦？你长这么高了？",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.anuan",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "narrator",
-          "text": "那就……开始吧。"
+          "text": "那就……开始吧。",
+          "layout": "illustration"
         }
       ]
     },
@@ -30,13 +114,35 @@
       "id": "story.note1",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.1",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "霜牌里的时间是停的。人不会老，也不会忘，就是有点冷。",
           "layout": "note"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.1",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "阿暖：牌要一张一张摆，别急。",
           "layout": "note"
@@ -47,13 +153,35 @@
       "id": "story.note2",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.2",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "水磨的水轮，是我年轻时跟谷家老爷子一起做的。",
           "layout": "note"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.2",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "左边第三根辐条是我削歪的。他骂了我一整个冬天。",
           "layout": "note"
@@ -64,13 +192,35 @@
       "id": "story.note3",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.3",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "最后一张牌，得有人在里面守着火。",
           "layout": "note"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "note.paper",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "asset": "note.sketch.3",
+              "x": 0,
+              "y": 34
+            }
+          ],
           "speaker": "bo",
           "text": "老梅要是问起来，就说我去对岸了。",
           "layout": "note"
@@ -81,14 +231,54 @@
       "id": "story.wake.toby",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.pines.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.toby.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.toby",
-          "text": "那天他说：再劈一捆，就回家。"
+          "text": "那天他说：再劈一捆，就回家。",
+          "layout": "memory"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.pines",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.toby",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.toby",
-          "text": "……嗯？雪停了？"
+          "text": "……嗯？雪停了？",
+          "layout": "illustration"
         }
       ]
     },
@@ -96,14 +286,54 @@
       "id": "story.wake.mira",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.pines.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mira.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mira",
-          "text": "等等我！"
+          "text": "等等我！",
+          "layout": "memory"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.pines",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mira",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mira",
-          "text": "兔子呢？！"
+          "text": "兔子呢？！",
+          "layout": "illustration"
         }
       ]
     },
@@ -111,23 +341,83 @@
       "id": "story.wake.mei",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mei.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "快好了，谁都不许走。"
+          "text": "快好了，谁都不许走。",
+          "layout": "memory"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mei",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "我的姜茶呢？凉了十年了吧。"
+          "text": "我的姜茶呢？凉了十年了吧。",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mei",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
           "text": "……这花，是我种的。",
           "when": {
             "flag": "mira_flower",
             "value": true
-          }
+          },
+          "layout": "illustration"
         }
       ]
     },
@@ -135,14 +425,54 @@
       "id": "story.wake.beavers",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.river.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.beavers.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.beavers",
-          "text": "最后一根！！！"
+          "text": "最后一根！！！",
+          "layout": "memory"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.river",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.beavers",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.beavers",
-          "text": "……最后一根呢？？？"
+          "text": "……最后一根呢？？？",
+          "layout": "illustration"
         }
       ]
     },
@@ -150,9 +480,29 @@
       "id": "story.wake.mill_family",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mill_family",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mill_family",
-          "text": "水……水来了？"
+          "text": "水……水来了？",
+          "layout": "illustration"
         }
       ]
     },
@@ -160,9 +510,29 @@
       "id": "story.ice_fireflies",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.pines",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mira",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mira",
-          "text": "它们也睡了十年吗？"
+          "text": "它们也睡了十年吗？",
+          "layout": "illustration"
         }
       ]
     },
@@ -170,14 +540,54 @@
       "id": "story.mei_youth",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.baiweng.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "那老东西年轻时，可不是什么好人。"
+          "text": "那老东西年轻时，可不是什么好人。",
+          "layout": "memory"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.baiweng.memory",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "摘薄荷还要翻篱笆。门明明开着。"
+          "text": "摘薄荷还要翻篱笆。门明明开着。",
+          "layout": "memory"
         }
       ]
     },
@@ -185,14 +595,54 @@
       "id": "story.mei_cough",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mei",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "长冬那晚他来敲门，说：梅姐，冷一下就好。"
+          "text": "长冬那晚他来敲门，说：梅姐，冷一下就好。",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mei",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mei",
-          "text": "骗子。"
+          "text": "骗子。",
+          "layout": "illustration"
         }
       ]
     },
@@ -200,9 +650,29 @@
       "id": "story.bridge_light",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.river",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.anuan",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.anuan",
-          "text": "雾里，好像有一点灯光。"
+          "text": "雾里，好像有一点灯光。",
+          "layout": "illustration"
         }
       ]
     },
@@ -210,9 +680,29 @@
       "id": "story.beach_letter",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.river",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mira",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mira",
-          "text": "上面画了一盏灯！字却认不出来。"
+          "text": "上面画了一盏灯！字却认不出来。",
+          "layout": "illustration"
         }
       ]
     },
@@ -220,9 +710,22 @@
       "id": "story.peddler",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.valley_gate",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            }
+          ],
           "speaker": "peddler",
-          "text": "对岸夜里有灯。不是星星，是有人守着的灯。"
+          "text": "对岸夜里有灯。不是星星，是有人守着的灯。",
+          "layout": "illustration"
         }
       ]
     },
@@ -230,9 +733,29 @@
       "id": "story.robin",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "char.ember",
+              "x": 222,
+              "y": 120,
+              "frames": 4,
+              "fps": 4
+            }
+          ],
           "speaker": "ember",
-          "text": "那是我的火！不许叼！"
+          "text": "那是我的火！不许叼！",
+          "layout": "illustration"
         }
       ]
     },
@@ -240,9 +763,29 @@
       "id": "story.snowman",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.valley_gate",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mira",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "res.mira",
-          "text": "明年见。你还来这里，好吗？"
+          "text": "明年见。你还来这里，好吗？",
+          "layout": "illustration"
         }
       ]
     },
@@ -250,9 +793,22 @@
       "id": "story.paper",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.valley_gate",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            }
+          ],
           "speaker": "narrator",
-          "text": "最后一辆车开走时，谷里的灯还亮着。"
+          "text": "最后一辆车开走时，谷里的灯还亮着。",
+          "layout": "illustration"
         }
       ]
     },
@@ -260,9 +816,22 @@
       "id": "story.ember_memory",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.hut.memory",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            }
+          ],
           "speaker": "ember",
-          "text": "老头子总说，慢一点，火才烧得久。"
+          "text": "老头子总说，慢一点，火才烧得久。",
+          "layout": "memory"
         }
       ]
     },
@@ -270,9 +839,29 @@
       "id": "story.ginger",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.herb_garden",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "char.ember",
+              "x": 222,
+              "y": 120,
+              "frames": 4,
+              "fps": 4
+            }
+          ],
           "speaker": "ember",
-          "text": "闻到姜味了！"
+          "text": "闻到姜味了！",
+          "layout": "illustration"
         }
       ]
     },
@@ -280,29 +869,115 @@
       "id": "story.ending",
       "pages": [
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            }
+          ],
           "speaker": "narrator",
-          "text": "吱——呀——"
+          "text": "吱——呀——",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.mill_family",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "narrator",
-          "text": "爹，你胡子上有冰。"
+          "text": "爹，你胡子上有冰。",
+          "layout": "illustration"
         },
         {
-          "layers": [],
-          "speaker": "narrator",
-          "text": "老头子，你看见没？"
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "char.ember",
+              "x": 222,
+              "y": 120,
+              "frames": 4,
+              "fps": 4
+            }
+          ],
+          "speaker": "ember",
+          "text": "老头子，你看见没？",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            },
+            {
+              "asset": "big.anuan",
+              "x": 188,
+              "y": 84,
+              "frames": 2,
+              "fps": 2
+            }
+          ],
           "speaker": "narrator",
-          "text": "对岸的灯，替我——（后面被水泡糊了）"
+          "text": "对岸的灯，替我——（后面被水泡糊了）",
+          "layout": "illustration"
         },
         {
-          "layers": [],
+          "layers": [
+            {
+              "asset": "still.mill",
+              "x": 0,
+              "y": 0,
+              "frames": 2,
+              "fps": 2,
+              "pan": [
+                0,
+                0
+              ]
+            }
+          ],
           "speaker": "narrator",
-          "text": "第一卷「河湾」结束。第二卷「磨坊坡」：未完待续。"
+          "text": "第一卷「河湾」结束。第二卷「磨坊坡」：未完待续。",
+          "layout": "illustration"
         }
       ]
     }

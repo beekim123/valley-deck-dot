@@ -78,3 +78,44 @@ test('committed exports and metadata match source, not only repeated generation'
     assert.deepEqual(await readFile(new URL(`../resources/audio/export/${item.meta.file}`, import.meta.url)), item.wav);
   }
 });
+
+// D2 coverage is explicit; D0 fixtures above remain unchanged.
+import { cues as productionCues, theme } from '../resources/audio/cues/d2.ts';
+test('D2 complete score and sonic vocabulary, no duplicate identifiers', () => {
+  const ids = productionCues.map(c => c.id);
+  assert.equal(new Set(ids).size, ids.length);
+  for (const id of ['music.title','music.day.l1','music.day.l2','music.day.l3','music.night','music.memory','music.ending','amb.wind','amb.birds']) assert.ok(ids.includes(id), id);
+  assert.equal(ids.filter(id => id.startsWith('sting.')).length, 8);
+  assert.equal(ids.filter(id => id.startsWith('talk.')).length, 6);
+  assert.equal(ids.filter(id => id.startsWith('sfx.')).length + 2, 30);
+  assert.equal(theme.reduce((sum, [,length]) => sum+length, 0), 24);
+  assert.equal(theme.at(-1)[0], 'A4');
+  const ending = productionCues.find(c => c.id === 'music.ending');
+  const melody = ending.notes.filter(n => n.voice === 'bell');
+  assert.equal(melody.at(-1).frequency, noteHz('G4'));
+});
+for (const cue of productionCues) {
+  test(`${cue.id}: final PCM is deterministic, bounded, smoothly loopable`, () => {
+    const pcm = renderCue(cue);
+    assert.deepEqual(pcm, renderCue(cue));
+    assert.equal(pcm.length, Math.round(cue.duration*cue.sampleRate));
+    validateLevels(validateWav(encodeWav(pcm,cue.sampleRate),cue),cue);
+    if (cue.kind === 'music' && cue.loop) assert.ok(cue.duration >= 16 && cue.duration <= 32);
+  });
+}
+test('all day layers and every possible layer subset fit shared clock and un-clipped mix', () => {
+  const layers = productionCues.filter(c => c.layerGroup === 'day');
+  assert.equal(layers.length, 3);
+  const pcm = layers.map(renderCue);
+  assert.ok(pcm.every(p => p.length === pcm[0].length));
+  for (let mask=1;mask<8;mask++) {
+    let peak=0,energy=0;
+    for (let i=0;i<pcm[0].length;i++) {
+      let sum=0;
+      for(let j=0;j<3;j++) if(mask & (1<<j)) sum += pcm[j][i]/32768;
+      peak=Math.max(peak,Math.abs(sum)); energy+=sum*sum;
+    }
+    assert.ok(peak <= 10**(-1/20), `subset ${mask} peak ${20*Math.log10(peak)}`);
+    assert.ok(energy > 0);
+  }
+});

@@ -1,6 +1,6 @@
 extends Control
 const PAPER := Color("e8dcc0")
-const MUTED := Color("b9c6d3")
+const MUTED := Color("d4a06c")
 const INK := Color("1e1a24")
 const GOLD := Color("f8c25c")
 func setup_theme() -> void:
@@ -14,10 +14,12 @@ func panel(parent: Node, rect: Rect2, fill: Color = Color("23283a"), border: Col
 	node.position = rect.position
 	node.size = rect.size
 	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var style := StyleBoxFlat.new()
-	style.bg_color = fill
-	style.border_color = border
-	style.set_border_width_all(1)
+	var style: StyleBox = skin("ui.panel.wood")
+	if style == null:
+		style = StyleBoxFlat.new()
+		style.bg_color = fill
+		style.border_color = border
+		style.set_border_width_all(1)
 	node.add_theme_stylebox_override("panel", style)
 	parent.add_child(node)
 	return node
@@ -42,12 +44,33 @@ func button(parent: Node, text: String, rect: Rect2, action: Callable) -> Button
 	node.position = rect.position
 	node.size = rect.size
 	node.add_theme_color_override("font_color", PAPER)
-	for state_name: String in ["normal", "hover", "pressed", "focus"]:
-		var style := StyleBoxFlat.new()
-		style.bg_color = Color("4a5f7a") if state_name == "hover" else Color("293448")
-		style.border_color = GOLD if state_name == "focus" else Color("8fb4d6")
-		style.set_border_width_all(1)
+	node.add_theme_color_override("font_disabled_color", MUTED)
+	for state_name: String in ["normal", "hover", "pressed", "focus", "disabled"]:
+		var style: StyleBox = skin("ui.panel.preview" if state_name in ["hover", "focus"] else "ui.panel.wood")
+		if style == null:
+			style = StyleBoxFlat.new()
+			style.bg_color = Color("4a2f22")
+			style.border_color = GOLD
+			style.set_border_width_all(1)
 		node.add_theme_stylebox_override(state_name, style)
 	node.pressed.connect(action)
+	parent.add_child(node)
+	return node
+
+func skin(id: String) -> StyleBoxTexture:
+	if not AssetCatalog.has_art(id): return null
+	var style := StyleBoxTexture.new()
+	style.texture = AssetCatalog.texture(id)
+	for side in [SIDE_LEFT, SIDE_TOP, SIDE_RIGHT, SIDE_BOTTOM]:
+		style.set_texture_margin(side, 4)
+		style.set_content_margin(side, 4)
+	return style
+func picture(parent: Node, id: String, position_at: Vector2, factor: int = 1, frame: int = 0) -> TextureRect:
+	var node := TextureRect.new()
+	if AssetCatalog.has_art(id): node.texture = AssetCatalog.texture(id, frame)
+	node.position = position_at
+	if node.texture != null: node.size = node.texture.get_size() * maxi(1, factor)
+	node.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(node)
 	return node

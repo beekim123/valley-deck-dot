@@ -21,10 +21,38 @@ var status := "小烬：把人物拖到地点，先看看，再决定。"
 var cards: Dictionary = {}
 var mode := "case"
 var save_enabled := true
+const Panorama = preload("res://scripts/view/panorama.gd")
+const Settings = preload("res://scripts/view/settings_panel.gd")
+const StoryPlayer = preload("res://scripts/story/story_player.gd")
+const AwakenDirector = preload("res://scripts/story/awaken_director.gd")
+const BanterDirector = preload("res://scripts/story/banter_director.gd")
+var settings: Dictionary = {}
+var panorama: Control
+var story_player: Control
+var banter: Node
+var keyboard_location := 0
+var night_picture: TextureRect
+var night_art := ""
+var night_clock := 0.0
+var night_auto := false
+var night_duration := 2.2
+var night_generation := 0
+var deco_counts: Dictionary = {}
+var ember_sulk_day := -1
+var deco_nodes: Dictionary = {}
+var idle_clock := 0.0
+var deco_poke_until: Dictionary = {}
+var pending_restores: Array[String] = []
 
 func _ready() -> void:
 	setup_theme()
 	defs = Loader.load_defs()
+	settings = Settings.read_values()
+	Settings.apply_configuration(settings)
+	short_night = bool(settings.short_night)
+	banter = BanterDirector.new()
+	add_child(banter)
+	banter.bubble_requested.connect(_bubble)
 	show_case()
 
 func clear_screen() -> void:
@@ -38,26 +66,43 @@ func clear_screen() -> void:
 	screen = Control.new()
 	screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(screen)
-	panel(screen, Rect2(0, 0, 640, 360), INK, INK)
+	picture(screen, "board.table", Vector2.ZERO)
 
 func show_case() -> void:
 	mode = "case"
+	locked = false
+	clear_story()
 	clear_screen()
-	label(screen, "卷轴匣 · 一副山谷", Rect2(80, 45, 480, 32), GOLD)
-	label(screen, "第一卷　河湾\n让老水磨重新转起来。\n\n第二卷　磨坊坡 · 尚未开启", Rect2(80, 100, 480, 110))
-	button(screen, "展开第一卷", Rect2(80, 240, 150, 30), show_intro)
-	button(screen, "继续 · 清晨存档", Rect2(250, 240, 190, 30), continue_game)
-	button(screen, "返回标题", Rect2(460, 240, 100, 30), func(): get_tree().change_scene_to_file("res://scenes/title.tscn"))
-	label(screen, "D1 灰盒 · 图形与演出将在后续制作", Rect2(80, 300, 500, 20), MUTED)
+	picture(screen, "still.hut", Vector2.ZERO, 2)
+	panel(screen, Rect2(60, 40, 520, 268))
+	label(screen, "柏翁的卷轴匣", Rect2(88, 58, 464, 32), GOLD)
+	label(screen, "第一卷　河湾
+让老水磨重新转起来。", Rect2(88, 106, 464, 52))
+	label(screen, "第二卷　磨坊坡 · 尚未开启
+纸条上只留下半句话：对岸的灯，替我——", Rect2(88, 168, 464, 48), MUTED)
+	button(screen, "展开第一卷", Rect2(88, 244, 140, 32), show_intro)
+	button(screen, "继续清晨存档", Rect2(240, 244, 158, 32), continue_game)
+	button(screen, "返回标题", Rect2(410, 244, 140, 32), func(): get_tree().change_scene_to_file("res://scenes/title.tscn"))
+	AudioService.play_music("music.title")
 
 func show_intro() -> void:
 	mode = "intro"
 	clear_screen()
-	label(screen, "第一卷 · 河湾", Rect2(80, 45, 480, 26), GOLD)
-	label(screen, story_text("story.intro"), Rect2(80, 90, 480, 190), PAPER, true)
-	button(screen, "把牌摆开", Rect2(240, 302, 160, 28), start_game)
+	play_story("story.intro", start_game)
+
+func clear_story() -> void:
+	if is_instance_valid(story_player):
+		story_player.queue_free()
+	story_player = null
+func play_story(id: String, callback: Callable) -> void:
+	clear_story()
+	story_player = StoryPlayer.new()
+	add_child(story_player)
+	story_player.text_speed = int(settings.get("text_speed", 25))
+	story_player.play(id, state if not state.is_empty() else {"defs": defs}, func(): clear_story(); callback.call())
 
 func start_game() -> void:
+	clear_story()
 	if not defs.has("residents"):
 		status = "内容未准备好，无法开始。"
 		show_notice(status)
@@ -77,7 +122,7 @@ func continue_game() -> void:
 		render_table()
 
 func _save_dawn() -> void:
-	if save_enabled and SaveService.write_dawn(state, {"short_night": short_night}) != OK:
+	if save_enabled and SaveService.write_dawn(state, settings) != OK:
 		status = "清晨存档未写入，请不要退出。"
 
 func record(collection: String, id: String) -> Dictionary:
@@ -99,16 +144,25 @@ func render_table() -> void:
 	mode = "table"
 	clear_screen()
 	cards.clear()
-	# Twelve true slots at 72x88; no overlapping oversized placeholder cards.
-	button(screen, "山谷长卷 · 点击展开　　D1 灰盒", Rect2(6, 4, 628, 26), show_panorama)
+	panorama = Panorama.new()
+	panorama.position = Vector2(0, 0)
+	panorama.size = Vector2(640, 80)
+	screen.add_child(panorama)
+	panorama.configure(state)
+	panorama.opened.connect(show_panorama)
+	panorama.walker_clicked.connect(func(id: String): status = display_name(id) + "：春天的路，慢慢走。"; _bubble(id, "春天的路，慢慢走。"))
+	for id: String in pending_restores: panorama.restore_segment(id)
+	pending_restores.clear()
+	AudioService.set_restored_count(restored_count())
+	AudioService.play_music("music.day")
 	var all_locations: Array = defs.get("locations", [])
 	for loc: Dictionary in all_locations:
 		var mutable: Dictionary = state.locations[loc.id]
 		var slot: Array = loc.slot
 		var x := 8 + int(slot[1]) * 76
-		var y := 60 + int(slot[0]) * 96
+		var y := 104 + int(slot[0]) * 90
 		if mutable.state == "hidden":
-			panel(screen, Rect2(x, y, 72, 88), Color("24242d"), Color("383744"))
+			picture(screen, "card.loc_frame.fog", Vector2(x, y)).modulate = Color(0.5, 0.5, 0.5)
 			continue
 		var card := Card.new()
 		card.board = self
@@ -116,51 +170,45 @@ func render_table() -> void:
 		card.position = Vector2(x, y)
 		card.size = Vector2(72, 88)
 		card.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		card.text = ("雾中的牌" if mutable.state == "fog" else loc.name) + "\n" + state_word(mutable.state) + ("\n暂时被淹" if mutable.get("blocked_until_day", 0) >= state.day else "")
-		if mutable.state == "frozen":
-			var thaw_preview: Dictionary = Rules.preview(state, defs.balance.thaw_resident, loc.id)
-			if not thaw_preview.uses.is_empty():
-				card.text += "\n" + amounts(thaw_preview.uses[0].cost)
-		card.add_theme_color_override("font_color", PAPER)
-		var style := StyleBoxFlat.new()
-		style.bg_color = {"fog": Color("373348"), "frozen": Color("42617b"), "thawed": Color("343946"), "restored": Color("294b37")}.get(mutable.state, INK)
-		style.border_color = MUTED
-		style.set_border_width_all(1)
-		card.add_theme_stylebox_override("normal", style)
+		card.text = ""
+		for style_name: String in ["normal", "hover", "pressed", "focus"]:
+			var frame := StyleBoxTexture.new()
+			frame.texture = AssetCatalog.texture("card.loc_frame." + str(mutable.state))
+			card.add_theme_stylebox_override(style_name, frame)
 		card.pressed.connect(choose_location.bind(loc.id))
 		card.mouse_entered.connect(show_preview.bind(loc.id))
+		card.mouse_exited.connect(func(): banter.clear_hover())
 		screen.add_child(card)
 		cards[loc.id] = card
-		if loc.id == "loc.pines":
-			var picture := TextureRect.new()
-			picture.texture = AssetCatalog.texture("locart.pines.spring" if mutable.state == "restored" else "locart.pines.winter")
-			picture.position = Vector2(x + 4, y + 2)
-			picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			picture.size = Vector2(64, 48)
-			picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-			picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
-			screen.add_child(picture)
-			picture.size = Vector2(64, 48)
-			card.text = ""
-			label(screen, "松林·" + state_word(mutable.state), Rect2(x + 4, y + 51, 64, 18))
+		if mutable.state != "fog":
+			picture(card, "locart." + str(loc.id).trim_prefix("loc.") + (".spring" if mutable.state == "restored" else ".winter"), Vector2(4, 4))
+			if mutable.state == "frozen":
+				picture(card, "card.loc_frame.frozen", Vector2.ZERO)
+		label(card, "雾中的牌" if mutable.state == "fog" else loc.name, Rect2(4, 51, 64, 16), PAPER if mutable.state == "fog" else INK)
+		var state_label := state_word(mutable.state)
+		if mutable.state == "frozen":
+			var thaw_preview: Dictionary = Rules.preview(state, defs.balance.thaw_resident, loc.id)
+			if not thaw_preview.uses.is_empty(): state_label += " " + amounts(thaw_preview.uses[0].cost)
+		label(card, state_label, Rect2(4, 66, 64, 18), PAPER if mutable.state == "fog" else INK)
 		if not mutable.progress.is_empty():
 			var values: Array = []
 			for key: String in mutable.progress:
 				values.append(str(mutable.progress[key]))
-			label(screen, "进度 " + "/".join(values), Rect2(x + 3, y + 61, 68, 14), GOLD)
+			label(screen, "进度 " + "/".join(values), Rect2(x + 4, y + 4, 64, 14), GOLD)
 		var local: Array = []
 		for assignment: Dictionary in state.assignments:
 			if assignment.location_id == loc.id:
 				local.append(assignment)
 		for index in local.size():
 			var assignment: Dictionary = local[index]
-			make_token(assignment.resident_id, assignment.id, Rect2(x + index * 23, y + 72, 24, 16), true)
-	label(screen, "第 %d 天　木 %s　石 %s　暖意 %s" % [state.day, resource_text("wood"), resource_text("stone"), resource_text("warmth")], Rect2(8, 34, 450, 22))
+			make_token(assignment.resident_id, assignment.id, Rect2(x + index * 23, y + 34, 24, 16), true)
+	panel(screen, Rect2(4, 80, 632, 23))
+	label(screen, "第 %d 天　木 %s　石 %s　暖意 %s" % [state.day, resource_text("wood"), resource_text("stone"), resource_text("warmth")], Rect2(8, 82, 450, 20))
 	build_sidebar()
 	var hand := ReturnZone.new()
 	hand.board = self
-	hand.position = Vector2(4, 258)
-	hand.size = Vector2(464, 50)
+	hand.position = Vector2(4, 284)
+	hand.size = Vector2(464, 44)
 	screen.add_child(hand)
 	var index := 0
 	for resident: Dictionary in defs.get("residents", []):
@@ -169,7 +217,7 @@ func render_table() -> void:
 		var current: Dictionary = state.residents[resident.id]
 		if current.status != "awake":
 			if state.day == 1 and resident.id in ["res.toby", "res.mira"]:
-				button(screen, "焐醒" + resident.name, Rect2(8 + index * 78, 263, 74, 40), awaken_tutorial.bind(resident.id))
+				button(screen, "焐醒" + resident.name, Rect2(8 + index * 78, 286, 74, 40), awaken_tutorial.bind(resident.id))
 				index += 1
 			continue
 		var assignment_id := ""
@@ -182,13 +230,15 @@ func render_table() -> void:
 				assigned_count += 1
 		if state.day_modifiers.get("two_actions_resident", "") == resident.id and assigned_count < 2:
 			assignment_id = ""
-		make_token(resident.id, assignment_id, Rect2(8 + index * 78, 263, 74, 40))
+		make_token(resident.id, assignment_id, Rect2(8 + index * 78, 286, 74, 40))
 		index += 1
-	button(screen, "冬眠诀", Rect2(400, 263, 62, 40), show_spells)
-	button(screen, "入夜", Rect2(478, 263, 70, 40), begin_night)
-	button(screen, "暂停", Rect2(554, 263, 78, 40), show_pause)
-	label(screen, status, Rect2(8, 311, 624, 38), GOLD, true)
+	button(screen, "冬眠诀", Rect2(400, 286, 62, 40), show_spells)
+	button(screen, "入夜", Rect2(478, 286, 70, 40), begin_night)
+	button(screen, "暂停", Rect2(554, 286, 78, 40), show_pause)
+	label(screen, status, Rect2(42, 332, 440, 26), GOLD, true)
+	build_decorations()
 	update_highlights()
+	banter.trigger("day_start", {"day": state.day}, state)
 
 func state_word(value: String) -> String:
 	return {"fog": "探路翻开", "frozen": "霜封", "thawed": "解冻", "restored": "回春"}.get(value, value)
@@ -200,10 +250,10 @@ func resource_text(resource: String) -> String:
 	return "%d→%d" % [state.resources[resource] + reserved, state.resources[resource]] if reserved > 0 else str(int(state.resources[resource]))
 
 func build_sidebar() -> void:
-	panel(screen, Rect2(470, 34, 164, 222))
+	panel(screen, Rect2(470, 104, 164, 178))
 	var scroll := ScrollContainer.new()
-	scroll.position = Vector2(476, 38)
-	scroll.size = Vector2(154, 212)
+	scroll.position = Vector2(476, 108)
+	scroll.size = Vector2(154, 170)
 	screen.add_child(scroll)
 	var column := VBoxContainer.new()
 	column.custom_minimum_size.x = 140
@@ -213,6 +263,8 @@ func build_sidebar() -> void:
 	column.add_child(heading)
 	for goal: Dictionary in defs.get("goals", []):
 		var row := Button.new()
+		for style_name: String in ["normal", "hover", "pressed", "focus", "disabled"]:
+			row.add_theme_stylebox_override(style_name, skin("ui.panel.wood"))
 		row.text = ("✓ " if state.goal_steps.get(goal.id, false) else "□ ") + goal.label
 		row.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		row.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -226,6 +278,8 @@ func build_sidebar() -> void:
 		if event.is_empty():
 			event = record("visitors", active.id)
 		var row := Button.new()
+		for style_name: String in ["normal", "hover", "pressed", "focus", "disabled"]:
+			row.add_theme_stylebox_override(style_name, skin("ui.panel.wood"))
 		row.text = "%s · %d天\n%s\n成：%s\n逾：%s" % [event.get("name", active.id), active.remaining, event.get("requirement_text", ""), event.get("done_text", ""), event.get("expire_text", "")]
 		row.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		row.custom_minimum_size = Vector2(140, 90)
@@ -239,18 +293,32 @@ func make_token(id: String, assignment_id: String, rect: Rect2, compact: bool = 
 	token.resident_id = id
 	token.assignment_id = assignment_id
 	for style_name: String in ["normal", "hover", "pressed", "focus"]:
-		var style := StyleBoxFlat.new()
-		style.bg_color = Color("4a5f7a") if style_name == "hover" else Color("293448")
-		style.border_color = GOLD if style_name == "focus" else MUTED
-		style.set_border_width_all(1)
+		var style: StyleBox = skin("ui.panel.wood")
 		style.set_content_margin_all(0)
+		if not compact:
+			style = StyleBoxTexture.new()
+			style.texture = AssetCatalog.texture("card.res_frame")
 		token.add_theme_stylebox_override(style_name, style)
-	token.text = display_name(id).left(1) if compact else display_name(id) + ("\n已分派" if not assignment_id.is_empty() else "\n拖到地点")
+	token.text = ""
+	token.tooltip_text = display_name(id) + (" · 右键撤销" if compact else "")
 	token.position = rect.position
 	token.size = rect.size
 	token.pressed.connect(select_resident.bind(id, assignment_id))
 	screen.add_child(token)
 	token.size = rect.size
+	if compact:
+		var crop := AtlasTexture.new()
+		crop.atlas = AssetCatalog.texture("portrait." + id.trim_prefix("res."))
+		crop.region = Rect2(8, 8, 24, 16)
+		var face := TextureRect.new()
+		face.texture = crop
+		face.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		token.add_child(face)
+	else:
+		picture(token, "portrait." + id.trim_prefix("res."), Vector2.ZERO)
+		label(token, "海狸" if id == "res.beavers" else display_name(id), Rect2(40, 4, 34, 16), INK)
+		label(token, "已派" if not assignment_id.is_empty() else "待命", Rect2(40, 22, 34, 14), INK)
+		if not assignment_id.is_empty(): token.modulate = Color(0.75, 0.75, 0.75)
 
 func select_resident(id: String, assignment_id: String = "") -> void:
 	if locked:
@@ -284,14 +352,15 @@ func show_preview(loc: String) -> void:
 	if selected.is_empty() or locked:
 		return
 	hovered = loc
+	banter.hover(selected, loc, state)
 	var preview: Dictionary = Rules.preview(state, selected, loc, replacing)
 	var lines := display_name(selected) + " → " + display_name(loc)
 	for use: Dictionary in preview.get("uses", []):
 		lines += "\n" + use_text(use)
 	if is_instance_valid(preview_box):
 		preview_box.queue_free()
-	preview_box = panel(screen, Rect2(470, 34, 164, 222), INK, GOLD)
-	label(preview_box, lines, Rect2(6, 6, 152, 210), PAPER, true)
+	preview_box = panel(screen, Rect2(470, 104, 164, 178), INK, GOLD)
+	label(preview_box, lines, Rect2(6, 6, 152, 166), PAPER, true)
 
 func amounts(values: Dictionary) -> String:
 	var chunks: PackedStringArray = []
@@ -382,9 +451,10 @@ func _drop_data(_position: Vector2, data: Variant) -> void:
 
 func awaken_tutorial(id: String) -> void:
 	var result: Dictionary = Rules.tutorial_awaken(state, id)
-	status = display_name(id) + "醒来了！今天的教学不消耗暖意。" if result.ok else reason(result.reason_code)
+	status = display_name(id) + "醒来了！教学免费，不耗暖意。" if result.ok else reason(result.reason_code)
 	_save_dawn()
 	render_table()
+	if result.ok: play_awaken(id, func(): pass)
 
 func open_modal(title: String) -> void:
 	if is_instance_valid(modal):
@@ -397,6 +467,7 @@ func open_modal(title: String) -> void:
 	panel(modal, Rect2(26, 32, 588, 302), INK, GOLD)
 	label(modal, title, Rect2(50, 48, 540, 24), GOLD)
 func clear_preview() -> void:
+	banter.clear_hover()
 	if is_instance_valid(preview_box):
 		preview_box.queue_free()
 	preview_box = null
@@ -412,14 +483,16 @@ func show_notice(text: String) -> void:
 	button(modal, "知道了", Rect2(240, 294, 160, 28), close_modal)
 
 func show_pause() -> void:
-	if locked:
-		return
+	if locked: return
 	open_modal("暂停 · 退出后回到本日清晨")
-	button(modal, "继续", Rect2(200, 90, 240, 28), close_modal)
-	button(modal, "夜间：" + ("简短" if short_night else "正常"), Rect2(200, 132, 240, 28), func(): short_night = not short_night; show_pause())
-	button(modal, "主音量开关", Rect2(200, 174, 240, 28), func(): AudioServer.set_bus_mute(0, not AudioServer.is_bus_mute(0)))
-	button(modal, "全屏开关", Rect2(200, 216, 240, 28), func(): DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN))
-	button(modal, "回到卷轴匣", Rect2(200, 270, 240, 28), show_case)
+	button(modal, "继续", Rect2(200, 110, 240, 32), close_modal)
+	button(modal, "设置", Rect2(200, 164, 240, 32), show_settings)
+	button(modal, "回到卷轴匣", Rect2(200, 224, 240, 32), show_case)
+func show_settings() -> void:
+	var view := Settings.new()
+	view.name = "SettingsPanel"
+	add_child(view)
+	view.open(settings, func(values: Dictionary): settings = values; short_night = bool(settings.short_night); _save_dawn())
 
 func show_spells() -> void:
 	open_modal("冬眠诀 · 当天生效，一次使用")
@@ -454,26 +527,74 @@ func begin_night() -> void:
 		locked = false
 		show_notice(reason(night_result.reason_code))
 		return
+	AudioService.play_music("music.night")
 	night_events = night_result.get("events", [])
 	night_index = 0
 	_save_dawn()
 	play_next_event()
 
 func play_next_event() -> void:
+	night_auto = false
+	night_art = ""
+	night_picture = null
+	night_generation += 1
 	if night_index >= night_events.size():
 		show_summary()
 		return
 	var event: Dictionary = night_events[night_index]
 	night_index += 1
+	var payload: Dictionary = event.get("payload", {})
+	var kind := str(event.get("type", ""))
+	banter.trigger(kind, payload, state)
+	if kind == "restore":
+		pending_restores.append(str(payload.get("loc", "")))
+		if is_instance_valid(panorama):
+			panorama.snapshot.locations[payload.loc].state = "restored"
+			panorama.restore_segment(str(payload.loc))
+	if kind == "story":
+		close_modal()
+		play_story(str(payload.id), play_next_event)
+		return
+	if kind == "awaken":
+		close_modal()
+		play_awaken(str(payload.resident), play_next_event)
+		return
 	open_modal("夜里 · %d / %d" % [night_index, night_events.size()])
-	label(modal, event_text(event), Rect2(60, 104, 520, 150), PAPER, true)
-	button(modal, "下一条", Rect2(100, 288, 180, 30), play_next_event)
-	button(modal, "跳过演出 → 小结", Rect2(310, 288, 230, 30), show_summary)
-	if short_night:
-		var expected := night_index
-		await get_tree().create_timer(0.12).timeout
-		if locked and night_index == expected and night_index <= night_events.size():
-			play_next_event()
+	night_clock = 0
+	night_auto = true
+	night_duration = 0.6 if short_night else 1.8
+	if kind == "resolve":
+		var suffix := str(payload.location_id).trim_prefix("loc.")
+		night_art = "locart." + suffix + ".anim." + str(payload.use_id)
+		if not AssetCatalog.has_art(night_art):
+			# Generic explore/thaw use the authored winter card, never another location.
+			night_art = "locart." + suffix + ".winter"
+		night_picture = picture(modal, night_art, Vector2(192, 82), 4)
+		night_clock = 0.0
+		night_auto = true
+		night_duration = 0.8 if short_night else 2.4
+		label(modal, event_text(event), Rect2(60, 264, 520, 20), GOLD)
+	elif kind in ["restore", "flip", "thaw"]:
+		var reveal := preload("res://scripts/view/card_reveal.gd").new()
+		reveal.art = str(payload.loc).trim_prefix("loc.")
+		reveal.kind = kind
+		reveal.position = Vector2(192, 82)
+		reveal.size = Vector2(256, 192)
+		reveal.duration = 0.6 if short_night else 2.0
+		night_duration = reveal.duration + 0.2
+		modal.add_child(reveal)
+		label(modal, event_text(event), Rect2(60, 264, 520, 20), GOLD)
+	else:
+		label(modal, event_text(event), Rect2(60, 104, 520, 150), PAPER, true)
+		if kind == "gain":
+			var art := "icon." + str(payload.get("res", "warmth"))
+			var icon := picture(modal, art, Vector2(306, 200), 2)
+			night_art = art
+			night_picture = icon
+			var tween := create_tween()
+			tween.tween_method(func(value: Vector2): if is_instance_valid(icon): icon.position = value.round(), Vector2(306, 200), Vector2(80, 80), 0.6)
+	button(modal, "下一条 / 按住加速", Rect2(80, 294, 220, 28), play_next_event)
+	button(modal, "跳过演出 → 小结", Rect2(330, 294, 230, 28), show_summary)
 
 func story_text(id: String) -> String:
 	var story := record("pages", id)
@@ -507,6 +628,11 @@ func event_text(event: Dictionary) -> String:
 	return {"story": "柏翁的笔记：春天来了，把牌一张张摆开。", "night_empty": "今晚没有分派。休息也没关系。", "summary": "一天过去了，新的清晨就在前面。", "dawn": "晨光照进山谷。", "chapter_complete": "水轮转起来了！", "progress": "大家的工作又向前一步。", "goal_step": "水磨的一步完成了。", "flood": "水涨起来了。过几天就会退去。", "flood_end": "水退了，河滩露了出来。"}.get(kind, "山谷里又有了一点变化。")
 
 func show_summary() -> void:
+	night_auto = false
+	night_art = ""
+	night_picture = null
+	night_generation += 1
+	clear_story()
 	night_index = night_events.size() + 1
 	open_modal("一日小结 · 第 %d 天清晨" % state.day)
 	var texts: PackedStringArray = []
@@ -524,29 +650,45 @@ func finish_night() -> void:
 func show_ending() -> void:
 	mode = "ending"
 	clear_screen()
-	label(screen, "第一卷 · 河湾　完", Rect2(70, 40, 500, 30), GOLD)
-	label(screen, "水轮吱呀一声开始转，冰碴从水槽里冲出来。\n\n谷叔揉着眼睛，小粟抱住他的腿：\n“爹，你胡子上有冰。”\n\n小烬：老头子，你看见没？\n桌上半页笔记写着：对岸的灯，替我——\n\n第二卷 · 磨坊坡　未完待续", Rect2(70, 85, 500, 200), PAPER, true)
+	AudioService.play_music("music.ending")
+	play_story("story.ending", ending_pan)
+func ending_pan() -> void:
+	clear_screen()
+	panorama = Panorama.new()
+	panorama.position = Vector2(0, 60)
+	panorama.size = Vector2(640, 160)
+	screen.add_child(panorama)
+	panorama.configure(state, 2)
+	panorama.ending_pan = true
+	panel(screen, Rect2(60, 16, 520, 36))
+	label(screen, "第一卷 · 河湾　完", Rect2(70, 24, 500, 30), GOLD)
+	panel(screen, Rect2(60, 238, 520, 36))
+	label(screen, "对岸的灯，替我——　　第二卷 · 磨坊坡　未完待续", Rect2(70, 246, 500, 24))
 	button(screen, "继续在山谷里待着", Rect2(140, 300, 220, 30), freeplay)
 	button(screen, "回卷轴匣", Rect2(390, 300, 120, 30), func(): freeplay(); show_case())
 func freeplay() -> void:
+	clear_story()
 	state.ending_seen = true
 	state.phase = "day"
 	state.dawn_snapshot = SaveService._serializable(state)
 	_save_dawn()
 	render_table()
 func show_panorama() -> void:
-	open_modal("山谷长卷 · 真实回春成果（灰盒）")
-	var index := 0
-	for loc: Dictionary in defs.get("locations", []):
-		var restored: bool = state.locations[loc.id].state == "restored"
-		var x := 50 + (index % 6) * 90
-		var y := 100 + (index / 6) * 76
-		panel(modal, Rect2(x, y, 84, 64), Color("294b37") if restored else Color("42617b"))
-		label(modal, ("未发现" if state.locations[loc.id].state == "hidden" else loc.name) + "\n" + ("春" if restored else "冬"), Rect2(x + 4, y + 8, 80, 48))
-		index += 1
+	open_modal("山谷长卷 · 拖动 / 滚轮 / 方向键左右看")
+	var full := Panorama.new()
+	full.name = "FullPanorama"
+	full.position = Vector2(0, 90)
+	full.size = Vector2(640, 160)
+	modal.add_child(full)
+	full.configure(state, 2)
+	full.walker_clicked.connect(func(id: String): _bubble(id, "春天的路，慢慢走。"))
+	button(modal, "←", Rect2(60, 294, 64, 28), func(): full.pan(-128))
 	button(modal, "回到牌桌", Rect2(240, 294, 160, 28), close_modal)
+	button(modal, "→", Rect2(516, 294, 64, 28), func(): full.pan(128))
 
 func _input(event: InputEvent) -> void:
+	if event is InputEventMouse or event is InputEventKey: idle_clock = 0
+	if is_instance_valid(story_player) or has_node("SettingsPanel"): return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT and not locked:
 		selected = ""
 		replacing = ""
@@ -554,7 +696,31 @@ func _input(event: InputEvent) -> void:
 		close_modal()
 		update_highlights()
 	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_ESCAPE:
+		if event.keycode >= KEY_1 and event.keycode <= KEY_9 and mode == "table" and not locked and not is_instance_valid(modal):
+			var available: Array = []
+			for resident: Dictionary in defs.residents:
+				if resident.get("playable", true) and state.residents[resident.id].status == "awake": available.append(resident.id)
+			var index := int(event.keycode - KEY_1)
+			if index < available.size():
+				var old := ""
+				for assignment: Dictionary in state.assignments:
+					if assignment.resident_id == available[index]: old = assignment.id
+				select_resident(available[index], old)
+		elif event.keycode in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN] and mode == "table":
+			if is_instance_valid(modal) and modal.has_node("FullPanorama"):
+				modal.get_node("FullPanorama").pan(-128 if event.keycode in [KEY_LEFT, KEY_UP] else 128)
+			elif not is_instance_valid(modal) and not cards.is_empty() and not selected.is_empty():
+				keyboard_location = posmod(keyboard_location + (-1 if event.keycode in [KEY_LEFT, KEY_UP] else 1), cards.size())
+				var loc: String = cards.keys()[keyboard_location]
+				cards[loc].grab_focus()
+				show_preview(loc)
+			get_viewport().set_input_as_handled()
+		elif event.keycode == KEY_V and mode == "table" and not locked: show_panorama()
+		elif event.keycode in [KEY_ENTER, KEY_SPACE] and locked:
+			if night_index > night_events.size(): finish_night()
+			else: play_next_event()
+			get_viewport().set_input_as_handled()
+		elif event.keycode == KEY_ESCAPE:
 			if is_instance_valid(modal) and not locked:
 				close_modal()
 			elif mode == "table":
@@ -563,3 +729,91 @@ func _input(event: InputEvent) -> void:
 			begin_night()
 		elif event.keycode == KEY_BACKSPACE and not replacing.is_empty():
 			cancel_assignment(replacing)
+
+func restored_count() -> int:
+	var count := 0
+	for loc: Dictionary in state.get("locations", {}).values():
+		if loc.state == "restored": count += 1
+	return count
+
+func play_awaken(id: String, callback: Callable) -> void:
+	clear_story()
+	story_player = AwakenDirector.new()
+	add_child(story_player)
+	story_player.play_awaken(id, state, func(): clear_story(); callback.call())
+
+func _bubble(speaker: String, text: String) -> void:
+	if int(state.get("day", 0)) == ember_sulk_day and speaker in ["ember", "res.ember"]: return
+	status = ("小烬" if speaker in ["ember", "res.ember"] else display_name(speaker)) + "：" + text
+	if mode == "table" and is_instance_valid(screen):
+		var old := screen.get_node_or_null("BanterBubble")
+		if old != null: old.queue_free()
+		var bubble := panel(screen, Rect2(38, 328, 444, 30))
+		bubble.name = "BanterBubble"
+		label(bubble, status, Rect2(6, 3, 432, 24), GOLD, true)
+		var timer := Timer.new()
+		timer.one_shot = true
+		bubble.add_child(timer)
+		timer.timeout.connect(bubble.queue_free)
+		timer.start(2.5 + text.length() * 0.08)
+
+func build_decorations() -> void:
+	deco_nodes.clear()
+	var objects := {"ember": Vector2(10, 327), "teacup": Vector2(490, 328), "pipe": Vector2(528, 332), "clock": Vector2(438, 242)}
+	for id: String in objects:
+		var art := "char.ember" if id == "ember" else "deco." + id
+		var node := picture(screen, art, objects[id])
+		node.mouse_filter = Control.MOUSE_FILTER_STOP
+		node.gui_input.connect(func(event: InputEvent):
+			if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed: poke(id))
+		deco_nodes[id] = node
+	# Window's four authored seasonal stages, clipped rather than downscaled.
+	var window := picture(screen, "deco.window", Vector2(392, 194), 1, mini(3, restored_count() / 3))
+	window.mouse_filter = Control.MOUSE_FILTER_STOP
+	window.gui_input.connect(func(event: InputEvent):
+		if event is InputEventMouseButton and event.pressed: poke("window"))
+	deco_nodes["window"] = window
+func poke(id: String) -> void:
+	deco_counts[id] = int(deco_counts.get(id, 0)) + 1
+	deco_poke_until[id] = Time.get_ticks_msec() + 1200
+	var count := int(deco_counts[id])
+	var sound: String = {"teacup": "sfx.teacup", "pipe": "sfx.pipe_puff", "ember": "sfx.ember_huff", "window": "sfx.ui_click"}.get(id, "")
+	if not sound.is_empty() and AssetCatalog.has_audio(sound): AudioService.play_sfx(sound)
+	if id == "teacup": _bubble("ember", "别往我身上倒！" if count % 5 == 0 else "茶还热着呢。")
+	elif id == "pipe": _bubble("ember", "烟圈怎么套我头上了！" if count % 3 == 0 else "噗，一个圈。")
+	elif id == "ember":
+		if count % 10 == 0: ember_sulk_day = int(state.day)
+		else: _bubble("ember", "干嘛！")
+	elif id == "clock" and state.get("ending_seen", false):
+		if AssetCatalog.has_audio("sfx.clock_tick"): AudioService.play_sfx("sfx.clock_tick")
+	if deco_nodes.has(id):
+		var node: TextureRect = deco_nodes[id]
+		var origin := node.position
+		var tween := create_tween()
+		tween.tween_method(func(value: float): if is_instance_valid(node): node.position.y = roundf(value), origin.y, origin.y - 2, 0.12)
+		tween.tween_method(func(value: float): if is_instance_valid(node): node.position.y = roundf(value), origin.y - 2, origin.y, 0.12)
+
+func _process(delta: float) -> void:
+	idle_clock += delta
+	if mode == "table" and not locked and idle_clock > 30:
+		idle_clock = 0
+		banter.trigger("idle", {}, state)
+	if locked and night_auto:
+		night_clock += delta * (2 if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) else 1)
+	if is_instance_valid(night_picture) and not night_art.is_empty():
+		var frames := int(AssetCatalog.metadata(night_art).get("frames", 1))
+		night_picture.texture = AssetCatalog.texture(night_art, int(night_clock * 6) % frames)
+	if night_auto and night_clock > night_duration:
+		night_auto = false
+		play_next_event()
+	if mode == "table":
+		for id: String in deco_nodes:
+			var node: TextureRect = deco_nodes[id]
+			if not is_instance_valid(node): continue
+			var art := "char.ember" if id == "ember" else "deco." + id
+			var frame := 0
+			if id == "ember": frame = 10 + int(Time.get_ticks_msec() / 400) % 2 if ember_sulk_day == int(state.day) else (6 + int(Time.get_ticks_msec() / 100) % 4 if int(deco_poke_until.get(id, 0)) > Time.get_ticks_msec() else int(Time.get_ticks_msec() / 250) % 4)
+			elif id == "clock": frame = int(Time.get_ticks_msec() / 800) % 2 if state.get("ending_seen", false) else 0
+			elif id == "window": frame = mini(3, restored_count() / 3)
+			else: frame = int(Time.get_ticks_msec() / 150) % 4 if int(deco_poke_until.get(id, 0)) > Time.get_ticks_msec() else 0
+			if AssetCatalog.has_art(art): node.texture = AssetCatalog.texture(art, frame)

@@ -2,6 +2,1905 @@
   "format": "art-manifest/1",
   "assets": [
     {
+      "id": "big.anuan",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.anuan.png",
+      "hash": "37291f1c0fe73222da2016ce5ae0531dfad0291c06e35a614769bc3d710f87be"
+    },
+    {
+      "id": "big.anuan.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.anuan.memory.png",
+      "hash": "6207f731aae9c05965eb2ff976cf5940c28f4b872ee7f44d69407f828ab24295"
+    },
+    {
+      "id": "big.baiweng",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.baiweng.png",
+      "hash": "b0ce9c0bd8b5cfd8f0cfa05044e84a6016ba32bd0d43e2447adcb93708a8f770"
+    },
+    {
+      "id": "big.baiweng.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.baiweng.memory.png",
+      "hash": "725c552c80436ef7a98cfebd320354a48d5a45b86622c4aa20e61ddfc23dff6a"
+    },
+    {
+      "id": "big.beavers",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.beavers.png",
+      "hash": "33841706f971a59805360862c9610bda698375027e0b64689de5b02b67034241"
+    },
+    {
+      "id": "big.beavers.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.beavers.memory.png",
+      "hash": "4e3282c18caafb6f0905565880a986660081ef5519c2f312bdb8aec746ae1c41"
+    },
+    {
+      "id": "big.gutu",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.gutu.png",
+      "hash": "b8c5d3fda19fd467566e9ab74815cc9f5390fcd9036a1d067d991f3baede1cb9"
+    },
+    {
+      "id": "big.gutu.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.gutu.memory.png",
+      "hash": "d59c2ffc7d54e088412b39b71a3384e11c4a7a0818e192a7608fc8f5465a2c0f"
+    },
+    {
+      "id": "big.mei",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mei.png",
+      "hash": "2db2d66ec1b1b377999f78643bff6c6511cdb2008b062d33c3553e01c9273984"
+    },
+    {
+      "id": "big.mei.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mei.memory.png",
+      "hash": "96e27f35b749a47a70343309c9471b3e56979476d07484cb438f3b5d02558d11"
+    },
+    {
+      "id": "big.mill_family",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mill_family.png",
+      "hash": "f46e7a3b0c5883c9bf9d6613296f489ee3bb145cedaee00353a80c3dc9377439"
+    },
+    {
+      "id": "big.mill_family.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mill_family.memory.png",
+      "hash": "59984f9ba44a8b654c203913bb8c3afe633f6194cc08c6e4e13f70517f73fac7"
+    },
+    {
+      "id": "big.mira",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mira.png",
+      "hash": "308752353e234ccfc95d4bfeb0b4754235c4259976294636cf757773dcf6f869"
+    },
+    {
+      "id": "big.mira.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.mira.memory.png",
+      "hash": "9848f3b618ce3127fd633769892f2121821eef4f9213d90dcb0ce27000f8ff19"
+    },
+    {
+      "id": "big.toby",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.toby.png",
+      "hash": "99125cc09382b0332fe8bdabcebe17345b48237957b536671725a70c9c626404"
+    },
+    {
+      "id": "big.toby.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.toby.memory.png",
+      "hash": "e4f488f6ca93087c6a0f28e0441f9952ab57463a9451fa455390ece80e99db7c"
+    },
+    {
+      "id": "big.xiaosu",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.xiaosu.png",
+      "hash": "daab3309da8c6fd68f3d9e1916718a93ece09f2188382512c1f49d0b9c1c5333"
+    },
+    {
+      "id": "big.xiaosu.memory",
+      "category": "big",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "big.xiaosu.memory.png",
+      "hash": "2bc5f9bb03a6e74363ccb9b5a8b9e3ab0f18181e45a51aab0a52d7285f3b4ae9"
+    },
+    {
+      "id": "board.table",
+      "category": "board",
+      "size": [
+        640,
+        360
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "board.table.png",
+      "hash": "691205b7d22de887cd44c99cd9a3cc345fb07b8f11a2009adc827aad60f786fb"
+    },
+    {
+      "id": "card.event_frame",
+      "category": "card",
+      "size": [
+        112,
+        72
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.event_frame.png",
+      "hash": "31f37c524f0f3144af6b76da50c5e8c65df5da0ec7d8d20e858f4a262022667d"
+    },
+    {
+      "id": "card.loc_frame.fog",
+      "category": "card",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.loc_frame.fog.png",
+      "hash": "56d1ffff5b5936ce4ae6b92fe5cfc37d0ec9faf7c3df5ec83c6e6a6de82a80a4"
+    },
+    {
+      "id": "card.loc_frame.frozen",
+      "category": "card",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.loc_frame.frozen.png",
+      "hash": "cd37c9cd1750b3c0e10602f8fa84595f9277cdee298cd443ef56d09f421982ac"
+    },
+    {
+      "id": "card.loc_frame.restored",
+      "category": "card",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.loc_frame.restored.png",
+      "hash": "c6fe3252cd02699e2701c6476f6e82b32b2082571ae6bb3485a38310615643ae"
+    },
+    {
+      "id": "card.loc_frame.thawed",
+      "category": "card",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.loc_frame.thawed.png",
+      "hash": "bc1e1923fc0e71a08fb2017400d84a7b2d6cc7c3397384af14c9d0eee7f6847d"
+    },
+    {
+      "id": "card.res_frame",
+      "category": "card",
+      "size": [
+        74,
+        40
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.res_frame.png",
+      "hash": "19c8397950d4659e9a52ea6d094db150ea72c691808db9973b50c74f57739f13"
+    },
+    {
+      "id": "card.spell_frame",
+      "category": "card",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "card.spell_frame.png",
+      "hash": "86c1a22b8d63841c0032d284f8f73074010d460c9f4114da2b613ce833cc8048"
+    },
+    {
+      "id": "char.ember",
+      "category": "char",
+      "size": [
+        24,
+        32
+      ],
+      "anchor": [
+        12,
+        32
+      ],
+      "frames": 12,
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "fps": 8,
+          "loop": true,
+          "frames": [
+            4,
+            5
+          ]
+        },
+        "jump": {
+          "fps": 8,
+          "loop": false,
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "sulk": {
+          "fps": 3,
+          "loop": true,
+          "frames": [
+            10,
+            11
+          ]
+        }
+      },
+      "file": "char.ember.png",
+      "hash": "48bfcaee135233e75f52d4cb08d25a5b6d89b913c3f525b498760b05cd5f235e"
+    },
+    {
+      "id": "deco.clock",
+      "category": "deco",
+      "size": [
+        36,
+        40
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 2,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "poke": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            0,
+            1
+          ]
+        },
+        "go": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0,
+            1
+          ]
+        }
+      },
+      "file": "deco.clock.png",
+      "hash": "5658e810c17ca9cb014987bc0ae14bb0887aa9a3a83f39cd92c2866897060b86"
+    },
+    {
+      "id": "deco.lantern",
+      "category": "deco",
+      "size": [
+        26,
+        32
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "poke": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "deco.lantern.png",
+      "hash": "c3c25a44a364367aeb14930850289087fb5d1867280b1b2bcd7bfd6fe255dff7"
+    },
+    {
+      "id": "deco.pipe",
+      "category": "deco",
+      "size": [
+        32,
+        24
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "poke": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "deco.pipe.png",
+      "hash": "24e3afe7fb2e95e34c35b551195c748f1ba9b91167278a505db743c2508afe31"
+    },
+    {
+      "id": "deco.teacup",
+      "category": "deco",
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "poke": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "deco.teacup.png",
+      "hash": "e5d19b7c59cea5c097701b03318d62c6e00476382a5998952b5213ec54865ffc"
+    },
+    {
+      "id": "deco.window",
+      "category": "deco",
+      "size": [
+        52,
+        56
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "poke": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "stage0": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "stage1": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            1
+          ]
+        },
+        "stage2": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            2
+          ]
+        },
+        "stage3": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "deco.window.png",
+      "hash": "6b652914672f4d7f0fd8c814aec007a6eaee93467e7781edd2ae41b06760255a"
+    },
+    {
+      "id": "fx.ice_crack",
+      "category": "fx",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        36,
+        44
+      ],
+      "frames": 3,
+      "animations": {
+        "play": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      "file": "fx.ice_crack.png",
+      "hash": "83a1e7cb9a793e95abde8cb1aee913bbada87e1fc69b6b22abfd98fec2aa74ea"
+    },
+    {
+      "id": "fx.ice_shatter",
+      "category": "fx",
+      "size": [
+        72,
+        88
+      ],
+      "anchor": [
+        36,
+        44
+      ],
+      "frames": 6,
+      "animations": {
+        "play": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      "file": "fx.ice_shatter.png",
+      "hash": "49ca8ab06fb4becdaa295754735dc4f425e44eb75c18de5e9a11163d2db397a7"
+    },
+    {
+      "id": "icon.stone",
+      "category": "icon",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "bounce": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "icon.stone.png",
+      "hash": "4ea26ad71ee463321c2b12a449e81470eea37bf753303aac6795fb0cc713b3e5"
+    },
+    {
+      "id": "icon.warmth",
+      "category": "icon",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "bounce": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "icon.warmth.png",
+      "hash": "02beef4ce55b5e18d9fa8f81b7af45f2114d45ba1710f07099a1f0f2e0fb4533"
+    },
+    {
+      "id": "icon.wood",
+      "category": "icon",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "bounce": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "icon.wood.png",
+      "hash": "0600e95f9323fb0f7955edbe9636c2e7fec43ba5db86fe58aa160d1b7bf8e5e7"
+    },
+    {
+      "id": "locart.flood_beach.anim.shells",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.flood_beach.anim.shells.png",
+      "hash": "d42b39a82cbff759c7b406b5a4a0b8127f496b54ce5f01db9ba75e83dac05c49"
+    },
+    {
+      "id": "locart.flood_beach.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.flood_beach.spring.png",
+      "hash": "659cb9f3239576f4eef71a6a614b0eb066854622b6d1f4bbfa070d8ec1d6dd31"
+    },
+    {
+      "id": "locart.flood_beach.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.flood_beach.winter.png",
+      "hash": "30afda8f379971cc2196a06e71f96a06dbb1a09a6d3db7be58673367f168c2f6"
+    },
+    {
+      "id": "locart.flower_slope.anim.herbs",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.flower_slope.anim.herbs.png",
+      "hash": "9583f4327c4167a043fbdec0ca56d807410b1f37b73cfbece416ea75c7a8a2db"
+    },
+    {
+      "id": "locart.flower_slope.anim.sun",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.flower_slope.anim.sun.png",
+      "hash": "0cf154977dbce5770f60a7b7dc88519efa7e174f4b097116915d3a360677ccbb"
+    },
+    {
+      "id": "locart.flower_slope.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.flower_slope.spring.png",
+      "hash": "6ad3861eee0984a454e1806a59b1a2b966ad2ab2279825335b70b2a1bbb23198"
+    },
+    {
+      "id": "locart.flower_slope.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.flower_slope.winter.png",
+      "hash": "7fd44eaf8c761f3184db9a51ac0c0f97c3b254ac6c773aefbeb3e37cbdd1a185"
+    },
+    {
+      "id": "locart.gravel.anim.haul",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.gravel.anim.haul.png",
+      "hash": "0114a2422cfcf6e18858fa164b32f3f1632b48ec7ed7e8ef9e7a64bb82e75bd2"
+    },
+    {
+      "id": "locart.gravel.anim.stones",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.gravel.anim.stones.png",
+      "hash": "c00459a27a82aeb46acef216ffc4e015ea1eb735513fb50618427439086d67ef"
+    },
+    {
+      "id": "locart.gravel.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.gravel.spring.png",
+      "hash": "8dca96ee096805a2df99cb831c24bbe293132f0985ba4c17bb37126c370fdbf2"
+    },
+    {
+      "id": "locart.gravel.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.gravel.winter.png",
+      "hash": "b95a5cb6569a66fdb3e5211d4e92453029dc60b13031a2d290b2a4906fa828d8"
+    },
+    {
+      "id": "locart.herb_garden.anim.brew",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.herb_garden.anim.brew.png",
+      "hash": "f382747f56e1a5a6e6eb492abc1958393bd13bc8c7dfba5d9fbe93fcca746496"
+    },
+    {
+      "id": "locart.herb_garden.anim.tea",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.herb_garden.anim.tea.png",
+      "hash": "29db258a6fd3676c545910f19bdbf6ed658e888a71b37ade4370d0cdac5afcff"
+    },
+    {
+      "id": "locart.herb_garden.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.herb_garden.spring.png",
+      "hash": "4d568491099f55d4416770ccf42257935d95c0c1ed78024ba8c22a44eb307036"
+    },
+    {
+      "id": "locart.herb_garden.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.herb_garden.winter.png",
+      "hash": "4190973e55b8cc75bc828f9a3991af9a2a73893605a41f8d4a323922b83de42c"
+    },
+    {
+      "id": "locart.hut.anim.feed",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.hut.anim.feed.png",
+      "hash": "57ebac660f482f6b9d17b2702f0ba359f6ae0a057b77b0eb9a3aeed4fdca584c"
+    },
+    {
+      "id": "locart.hut.anim.fire",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.hut.anim.fire.png",
+      "hash": "763d88fb2360a6c428f79937acc2dc909b5928626d6d528d56207b2bd8d1bda7"
+    },
+    {
+      "id": "locart.hut.anim.read_notes",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.hut.anim.read_notes.png",
+      "hash": "a46bac70451bca7599e855a55ab0ff0c6e0bc833e17e4b2e4fdbcbd52a9ebc49"
+    },
+    {
+      "id": "locart.hut.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.hut.spring.png",
+      "hash": "1122a9084e26e8d0704965b2e329f5678b4b56472553047a339892eab635d14a"
+    },
+    {
+      "id": "locart.hut.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.hut.winter.png",
+      "hash": "b156ed92228cf78c1b063f852144e9494f8ee5122b0b51472fcae220e886a5bf"
+    },
+    {
+      "id": "locart.mill.anim.repair_wheel",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.mill.anim.repair_wheel.png",
+      "hash": "69563d637ef157daba56faab6a41d4a0d937aa6cb70af8a955e4e629024fd776"
+    },
+    {
+      "id": "locart.mill.anim.warm_family",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.mill.anim.warm_family.png",
+      "hash": "83ee5f4f8c0ce4b91d86481384cc1088b804f0e15a4c8826805ab83ce9b4e073"
+    },
+    {
+      "id": "locart.mill.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.mill.spring.png",
+      "hash": "75bec3fe1b95c391a757d59a4585fb6a62ea62050bfb5193ed6db488b481abcc"
+    },
+    {
+      "id": "locart.mill.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.mill.winter.png",
+      "hash": "5ae8bd47686f1eb4b7b69731e4a39b563a2be8a891c376ce4f329c957363851c"
+    },
+    {
+      "id": "locart.misty_bank.anim.gnaw",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.misty_bank.anim.gnaw.png",
+      "hash": "9aea8a6f558242cf1628079ba1864f1f4995ce2e1f25c4804aaadd99040231f6"
+    },
+    {
+      "id": "locart.misty_bank.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.misty_bank.spring.png",
+      "hash": "b10bff19e296c201ef7cfd7a76917be32006306f3fa0e2be2e261a051e172928"
+    },
+    {
+      "id": "locart.misty_bank.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.misty_bank.winter.png",
+      "hash": "204b3f850cab30814ae820c0614d9d67d6da4040c06c6f7827d43d3010d70400"
+    },
+    {
+      "id": "locart.old_bridge.anim.reinforce",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.old_bridge.anim.reinforce.png",
+      "hash": "30002a6a3734cbe9eb00d81557fd2e9330aee1433e28e48229f74f63d076f7df"
+    },
+    {
+      "id": "locart.old_bridge.anim.watch",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.old_bridge.anim.watch.png",
+      "hash": "371a09e3d3e6d4c47382b0548ca734fffb32e1109ef32eb15d3c9e4a4884c226"
+    },
+    {
+      "id": "locart.old_bridge.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.old_bridge.spring.png",
+      "hash": "6e55d725036a811388e593fe886b22b71c98963c058cf105d54b7abdcc163592"
+    },
+    {
+      "id": "locart.old_bridge.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.old_bridge.winter.png",
+      "hash": "42cec3dfc6b3c5b5a8f22b69691b63393132094fea1e28dffdaa7099ba82d5b2"
+    },
+    {
+      "id": "locart.pines.anim.chop",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.pines.anim.chop.png",
+      "hash": "58f8b62178cd1c3effbda0113a3008a4e3fbe0c355009dfb31163c76f9c90e3b"
+    },
+    {
+      "id": "locart.pines.anim.gather",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.pines.anim.gather.png",
+      "hash": "1ecddd96f496294d3596aeec5c275bc4ca17a6ff0f68722dab0b6216a24fdb36"
+    },
+    {
       "id": "locart.pines.spring",
       "category": "location",
       "size": [
@@ -50,6 +1949,1176 @@
       "hash": "3e7e5de89b7ff733f8a0374d67b267d4abada00a63addb9a3f22fa5a64bd244c"
     },
     {
+      "id": "locart.river_bend.anim.build_dam",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.river_bend.anim.build_dam.png",
+      "hash": "2965d8b4dd6a07a91329ab973c6df874716f10d10916aec810746fa5f787c4ea"
+    },
+    {
+      "id": "locart.river_bend.anim.chisel",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.river_bend.anim.chisel.png",
+      "hash": "a94b73851b36068e7b9f82eb9404b420026daddae32a3ffca96d4ea65523f114"
+    },
+    {
+      "id": "locart.river_bend.anim.driftwood",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.river_bend.anim.driftwood.png",
+      "hash": "1b14624b5ca1268aaea5608d5ef3df712186ebddab44b75190a3ec89bce186f2"
+    },
+    {
+      "id": "locart.river_bend.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.river_bend.spring.png",
+      "hash": "09c3071a03fc27abb42eb516f67854f49b5197ba8189322a2153942a923ec129"
+    },
+    {
+      "id": "locart.river_bend.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.river_bend.winter.png",
+      "hash": "b16ec6c88fc129dfd199773bffc869bf8379ce148f4652394464068786b2cb2d"
+    },
+    {
+      "id": "locart.tree_hole.anim.search",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.tree_hole.anim.search.png",
+      "hash": "85cb9e3e25a742018452b86576c2e6f68c1a2dd872f4423809b32dc7b6e0358c"
+    },
+    {
+      "id": "locart.tree_hole.anim.shelter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "file": "locart.tree_hole.anim.shelter.png",
+      "hash": "bae6db457dbd6d65790a8313ac523ff664d65ad38ed71ab08ccbad63c1ae1d38"
+    },
+    {
+      "id": "locart.tree_hole.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.tree_hole.spring.png",
+      "hash": "5b9e25d6f966fe9d151533305ff1804c54986cc2a5c6d87b23429fccd349723b"
+    },
+    {
+      "id": "locart.tree_hole.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.tree_hole.winter.png",
+      "hash": "17580929dac72091af6ba31e8cac2cf31d374480d07db23423f2ae0bf986745d"
+    },
+    {
+      "id": "note.paper",
+      "category": "note",
+      "size": [
+        320,
+        200
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "note.paper.png",
+      "hash": "f5388453c2a62f7da45e1aaa88cf311d17549c516b2b57800145ee3e92eb0be7"
+    },
+    {
+      "id": "note.sketch.1",
+      "category": "note",
+      "size": [
+        160,
+        120
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "note.sketch.1.png",
+      "hash": "1731085b615cb69355dc308f5cf3afed37cfa0855239993324603b4ab7489c2f"
+    },
+    {
+      "id": "note.sketch.2",
+      "category": "note",
+      "size": [
+        160,
+        120
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "note.sketch.2.png",
+      "hash": "5e576eef6d76c79b0b936a4b554f06050cd519a9854ee725b99df3222f3639ee"
+    },
+    {
+      "id": "note.sketch.3",
+      "category": "note",
+      "size": [
+        160,
+        120
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "note.sketch.3.png",
+      "hash": "dd9e66f0b738b8742b3aae7329e4625bcf7f58036ac5dda79c54c34c484da1ca"
+    },
+    {
+      "id": "pano.flood_beach.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.flood_beach.spring.png",
+      "hash": "4742fa5cbaa993229282beb7e6d1b485f0637506074d41d23aa4463475f09cb8"
+    },
+    {
+      "id": "pano.flood_beach.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.flood_beach.winter.png",
+      "hash": "a8dc6cfdfbb43e5d5f1430dc555a8ee32f67fab3052846148bf74e637e207923"
+    },
+    {
+      "id": "pano.flower_slope.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.flower_slope.spring.png",
+      "hash": "5a1aa88c0d383f925b3a1e0a5fa58e29299d0685f40d2ec9e25e6ee3b9249116"
+    },
+    {
+      "id": "pano.flower_slope.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.flower_slope.winter.png",
+      "hash": "e4be5776390edb8f187fbcd9981603379bcfce2ccb885c78f715d73488bb86a7"
+    },
+    {
+      "id": "pano.gravel.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.gravel.spring.png",
+      "hash": "50be5c400ec7bd3172fbe8294692f0762b338ed304a6ba62a8e0bd9b3c9cbd7e"
+    },
+    {
+      "id": "pano.gravel.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.gravel.winter.png",
+      "hash": "467f65b0c8ea7d43d5f25c3bd707d7abf9c3df93b7eb91386b43f454366cc127"
+    },
+    {
+      "id": "pano.herb_garden.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.herb_garden.spring.png",
+      "hash": "a5ead6df24510b13fe5817063aa0337e4b737f05b857f8486686ccf9ab40e8de"
+    },
+    {
+      "id": "pano.herb_garden.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.herb_garden.winter.png",
+      "hash": "21c702c410dca86dccb4abcd0f8a6a580f990c254d0da8a1d4a557b9d6c9a4ec"
+    },
+    {
+      "id": "pano.hut.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.hut.spring.png",
+      "hash": "b0ce5083e11f53d36e0d9c6922bd3fe9e44e95348c9409230ff5864f27e7ffa5"
+    },
+    {
+      "id": "pano.hut.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.hut.winter.png",
+      "hash": "b8612915b948fa57222bcadc14fe02ea97fccbf4e4feaa902cdda5afd191d945"
+    },
+    {
+      "id": "pano.mill.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.mill.spring.png",
+      "hash": "becc13b9fa2178018c4024557faa83b04a67c8729e47077470534bd58fdbde12"
+    },
+    {
+      "id": "pano.mill.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.mill.winter.png",
+      "hash": "a3c47af5e4825d5e82bc0302c18b58f0949f7bf4ba08519a67150c43b05104e7"
+    },
+    {
+      "id": "pano.misty_bank.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.misty_bank.spring.png",
+      "hash": "82a39a2ad1ac4c62fba2b4f25fe44f37ea583c5621812b42ba9684ab6e27619b"
+    },
+    {
+      "id": "pano.misty_bank.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.misty_bank.winter.png",
+      "hash": "f32f88f298385f3f58ba635280697c7c8029cc5d90e7029ac7aac077575fe981"
+    },
+    {
+      "id": "pano.old_bridge.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.old_bridge.spring.png",
+      "hash": "5f77335bc3f4c7a67f2a8d8f3627c24eb10c30c5b7e53bebc1bef6220c70bf8a"
+    },
+    {
+      "id": "pano.old_bridge.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.old_bridge.winter.png",
+      "hash": "f33eec5b63bd52b04a2c9522f37812e4a8bd95e9f0369e8bfeddc68ad62727f2"
+    },
+    {
+      "id": "pano.pines.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.pines.spring.png",
+      "hash": "aab6074aba18f736de45a03b47605e26ba46add15f621685f6a5d78937b4e6df"
+    },
+    {
+      "id": "pano.pines.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.pines.winter.png",
+      "hash": "48451943d45b382c339601d1c5df8b309a46b260e4bf92c59ae4e4f816775799"
+    },
+    {
+      "id": "pano.river_bend.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.river_bend.spring.png",
+      "hash": "ea2bf3666c210e179b61a4abbc8dcb2bdf12ea72b9581f3bcb5e16b848dcea97"
+    },
+    {
+      "id": "pano.river_bend.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.river_bend.winter.png",
+      "hash": "fddba75742ce89f54d920f049f3e48bd39a7b3d9d31d68b182c23efb97dd3d0f"
+    },
+    {
+      "id": "pano.tree_hole.spring",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.tree_hole.spring.png",
+      "hash": "2ea692aba1a360a751df981339bd222b5db5b108c7e5c681837b03438c5e8d29"
+    },
+    {
+      "id": "pano.tree_hole.winter",
+      "category": "panorama",
+      "size": [
+        128,
+        80
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "pano.tree_hole.winter.png",
+      "hash": "e6f2781f55eba4f63d4b596402e5aded02e3cfd3a67717abe2fc5d0b46cb21a9"
+    },
+    {
+      "id": "portrait.anuan",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.anuan.png",
+      "hash": "7e874a8b5938e607f39b133f8f9b69c9fbb6d9014195e7c80b4924aa0d814224"
+    },
+    {
+      "id": "portrait.baiweng",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.baiweng.png",
+      "hash": "4890fa572d7f8edcdd292d3ddcbeff45f8923a11deed11bb5c7b176896d5bf05"
+    },
+    {
+      "id": "portrait.beavers",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.beavers.png",
+      "hash": "464c743325cb1038c7d8fd880a562412de4fdb3e8fe863cc6c2622182b771493"
+    },
+    {
+      "id": "portrait.gutu",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.gutu.png",
+      "hash": "50e955d13d3972c527c160a1e20093c76d0f71b99645aebb3ec34bf56527ee4e"
+    },
+    {
+      "id": "portrait.mei",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.mei.png",
+      "hash": "b3645012f0b326654df069ad6bee2226b00054aba4097521b9c828742d0e67b7"
+    },
+    {
+      "id": "portrait.mill_family",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.mill_family.png",
+      "hash": "7b221e9022afd6724d9acd57ef845fca7a01c7a09b6864b01f40673809c4e6d5"
+    },
+    {
+      "id": "portrait.mira",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.mira.png",
+      "hash": "3644c3e405c34a51a1f92a7dd98629634fd0997c8b40b7426789a47cbaf41137"
+    },
+    {
       "id": "portrait.toby",
       "category": "portrait",
       "size": [
@@ -93,6 +3162,900 @@
       "frames": 4,
       "file": "portrait.toby.png",
       "hash": "9248ff2e40970ddd67e26fcf679b0bf39d15ce03b0049b67cfa9cd000ce8f29d"
+    },
+    {
+      "id": "portrait.xiaosu",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "frames": 4,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "file": "portrait.xiaosu.png",
+      "hash": "f3d02c15a76f0b9b4e845c7565aab8246ef2dca25a8e1edade974d013ecc0da3"
+    },
+    {
+      "id": "still.herb_garden",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.herb_garden.png",
+      "hash": "96eb855b531ef6f86d7eaf1cba29ba45e1e0640401b4cc895a42414d40211a1f"
+    },
+    {
+      "id": "still.herb_garden.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.herb_garden.memory.png",
+      "hash": "ee563171d2905c2ba4d384c44c80cc8f51a6c9742cc527b8fc681d051c4e3355"
+    },
+    {
+      "id": "still.hut",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.hut.png",
+      "hash": "6c8a511b96fb460c32f80f756d4ee18c1a75e5c72c99ed2c56499ea12a8cdd6f"
+    },
+    {
+      "id": "still.hut.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.hut.memory.png",
+      "hash": "90d9d3e0b51edb7c1d016cbb5fcdc0ee09583aa20896ca3c2720a2cf4f1dd47e"
+    },
+    {
+      "id": "still.mill",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.mill.png",
+      "hash": "b45a14db3e708643df18b6a506b4b88ca2a8aec45a5a7de8eef530f4f73dffb1"
+    },
+    {
+      "id": "still.mill.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.mill.memory.png",
+      "hash": "e69679d294cfb19298860be511d684dea67c0e9024aebfc0fcb57ac55f50cfd1"
+    },
+    {
+      "id": "still.pines",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.pines.png",
+      "hash": "7d6184c17a1fd9813024a9fbc78d2dd08994af68222f5238f15df31b98c54e5e"
+    },
+    {
+      "id": "still.pines.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.pines.memory.png",
+      "hash": "3a625e8621e434c4bea549ecff2d082bd00ccf81ef753e281b90f1f9045f3f47"
+    },
+    {
+      "id": "still.river",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.river.png",
+      "hash": "726d766c1d758e0fef70b98585f4f5c03c799cb50f818f53949066aa11a076f2"
+    },
+    {
+      "id": "still.river.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.river.memory.png",
+      "hash": "009ce5894fc8b6d5321473cba71da89cff99cc1238c74414ab391104888cb0ee"
+    },
+    {
+      "id": "still.valley_gate",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.valley_gate.png",
+      "hash": "ec38be43563843d40520212b5f45026c1a4e71efdcaa76907dbfffeb5834ec77"
+    },
+    {
+      "id": "still.valley_gate.memory",
+      "category": "still",
+      "size": [
+        320,
+        180
+      ],
+      "frames": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "file": "still.valley_gate.memory.png",
+      "hash": "adf5d19aa4d22d185ece4945ab012bb8147286f46c225ed7d57763fc593ad179"
+    },
+    {
+      "id": "ui.panel.bubble",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "nineSlice": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "ui.panel.bubble.png",
+      "hash": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+    },
+    {
+      "id": "ui.panel.paper",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "nineSlice": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "ui.panel.paper.png",
+      "hash": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+    },
+    {
+      "id": "ui.panel.preview",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "nineSlice": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "ui.panel.preview.png",
+      "hash": "3c176e9171d0b532c530ae658fb5f028b38170db6005e2a0b5bfba3aa8a5e14a"
+    },
+    {
+      "id": "ui.panel.wood",
+      "category": "ui",
+      "size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "nineSlice": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "ui.panel.wood.png",
+      "hash": "d71dce68d05c4ccc3f9122e33a4b15daf94bd8b3bf4974a535dc8320f01f5dd9"
+    },
+    {
+      "id": "walker.anuan",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.anuan.png",
+      "hash": "0c9711192d0361c31a2d887b302db5a0417cbaee213e8e5e71feb3cfa3587e39"
+    },
+    {
+      "id": "walker.baiweng",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.baiweng.png",
+      "hash": "ec738324cf8ff748fd8b5affd8e42ada756a38463f8613d788f4bdae815994f8"
+    },
+    {
+      "id": "walker.beavers",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.beavers.png",
+      "hash": "a7675295b9344262e6f7c7480eee6af46eb0959658a19da86f65b6c576dafd62"
+    },
+    {
+      "id": "walker.gutu",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.gutu.png",
+      "hash": "cb1c46c69d3bfdadfb71719796623cee4aa9e0e621e18f73d5fb9d3d1bbef6de"
+    },
+    {
+      "id": "walker.mei",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.mei.png",
+      "hash": "1de39656379f5ec58afabe20b143c19db9ec5287bc3f57d6afab0f2a69ec17e7"
+    },
+    {
+      "id": "walker.mill_family",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.mill_family.png",
+      "hash": "cad36c83cbda3b5f9f4fe7aaba0c1917612cfdfab25f338da5928d997054f1af"
+    },
+    {
+      "id": "walker.mira",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.mira.png",
+      "hash": "539302611f59b8771d791e076e7e914f4b51aa8508257a071a6e4ef552d1c4c0"
+    },
+    {
+      "id": "walker.toby",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.toby.png",
+      "hash": "ab930d854667ed390fb0c479d6c34296126e6e5ab8cc040ff2156dd16959a2f5"
+    },
+    {
+      "id": "walker.xiaosu",
+      "category": "walker",
+      "size": [
+        16,
+        24
+      ],
+      "anchor": [
+        8,
+        24
+      ],
+      "frames": 10,
+      "animations": {
+        "walk": {
+          "fps": 6,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "work": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "idle": {
+          "fps": 2,
+          "loop": true,
+          "frames": [
+            8,
+            9
+          ]
+        }
+      },
+      "file": "walker.xiaosu.png",
+      "hash": "cf87181194210d6cfaa1ddfb16cd67d1db9222841ea64c42aec48cd637174b7f"
     }
   ]
 }

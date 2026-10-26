@@ -7,7 +7,7 @@ import { checkContent,resourcePreview,validateLocations,validateRegistry,validat
 const root=path.resolve(import.meta.dirname,'..');
 const registry=JSON.parse(await readFile(path.join(root,'content/registry.json')));
 const defs={};for(const f of registry.files)defs[f.id]=JSON.parse(await readFile(path.join(root,'content',f.path)))[f.id];
-const artIds=new Set(['locart.pines.winter','locart.pines.spring']);
+const artIds=new Set(JSON.parse(await readFile(path.join(root,'resources/art/export/manifest.json'))).assets.map(a=>a.id));
 function modified(edit){const x=structuredClone(defs);edit(x);return x;}
 function reject(edit,re){assert.throws(()=>validateContent(modified(edit),{artIds}),re);}
 test('D1 complete immutable collections and free recovery edges',()=>{
@@ -64,11 +64,14 @@ test('event counts, public gain text, finite timers and exact previews cannot dr
  reject(d=>d.visitors[0].expire_text='',/public event/);
  reject(d=>d.spells[0].effect='teleport',/spell/);
 });
-test('only real art references and text-only D1 pages are accepted',()=>{
+test('only real art references and validated D2 layers are accepted',()=>{
  assert.throws(()=>validateLocations({format:'content/1',locations:defs.locations},{artIds:new Set()}),/missing art asset/);
  reject(d=>d.locations[0].art.spring='',/invalid spring/);
- reject(d=>d.pages[0].pages[0].layers=[{art:'missing'}],/text-only/);
+ reject(d=>d.pages[0].pages[0].layers=[{art:'missing'}],/unsupported field|missing field/);
  reject(d=>d.pages[0].pages[0].text='字'.repeat(51),/page text/);
+ reject(d=>d.pages[0].pages[0].layers=[{asset:'still.missing',x:0,y:0}],/missing story asset/);
+ reject(d=>d.pages[0].pages[0].layers=[{asset:'still.hut',x:0.5,y:0}],/coordinates/);
+ reject(d=>d.pages[0].pages[0].layers=[{asset:'still.hut',x:0,y:0,pan:[0.2,0]}],/integer pan/);
  reject(d=>d.banter[0].lines=['字'.repeat(19)],/banter text/);
 });
 test('registry rejects unsafe paths and duplicate ids/files',()=>{

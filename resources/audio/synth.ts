@@ -1,5 +1,5 @@
 /** Pure offline synthesis: no I/O, engine, wall-clock time, or global RNG. */
-export type Voice = 'bell' | 'flute' | 'wood' | 'ice';
+export type Voice = 'bell' | 'flute' | 'wood' | 'ice' | 'pad' | 'pluck' | 'wind' | 'triangle' | 'pulse';
 export interface Note {
   at: number;
   duration: number;
@@ -43,7 +43,7 @@ function finite(value: number, name: string, min: number, max: number): void {
 }
 
 export function renderCue(cue: Cue): Int16Array {
-  if (!/^(music|sfx)\.[a-z0-9_.]+$/.test(cue.id)) throw new Error('Invalid cue id');
+  if (!/^(music|sfx|sting|amb|talk)\.[a-z0-9_.]+$/.test(cue.id)) throw new Error('Invalid cue id');
   if (cue.kind !== 'music' && cue.kind !== 'sfx') throw new Error('Invalid cue kind');
   if (cue.sampleRate !== (cue.kind === 'music' ? 22050 : 44100)) throw new Error('Invalid sample rate');
   finite(cue.duration, 'duration', 0.01, 40);
@@ -57,11 +57,13 @@ export function renderCue(cue: Cue): Int16Array {
     finite(note.frequency, 'frequency', 20, cue.sampleRate / 8);
     finite(note.gain, 'gain', 0, 4);
     if (note.at + note.duration > cue.duration + 1e-9) throw new Error('Note exceeds cue');
-    if (!['bell', 'flute', 'wood', 'ice'].includes(note.voice)) throw new Error('Invalid voice');
+    if (!['bell', 'flute', 'wood', 'ice', 'pad', 'pluck', 'wind', 'triangle', 'pulse'].includes(note.voice)) throw new Error('Invalid voice');
     const random = seededNoise(note.seed ?? 1);
     const start = Math.round(note.at * cue.sampleRate);
     const length = Math.round(note.duration * cue.sampleRate);
     let lowpass = 0;
+    const delay = new Float64Array(Math.max(2, Math.round(cue.sampleRate / note.frequency)));
+    if (note.voice === 'pluck') for (let k = 0; k < delay.length; k++) delay[k] = random();
     for (let i = 0; i < length && start + i < count; i++) {
       const t = i / cue.sampleRate;
       const phase = 2 * Math.PI * note.frequency * t;
@@ -77,6 +79,20 @@ export function renderCue(cue: Cue): Int16Array {
       } else if (note.voice === 'wood') {
         lowpass += 0.14 * (random() - lowpass);
         value = (0.5 * Math.sin(phase * (1 - 0.15 * position)) + lowpass) * Math.exp(-5 * position);
+      } else if (note.voice === 'pad') {
+        const tri = (p: number) => 2 / Math.PI * Math.asin(Math.sin(p));
+        value = (tri(phase) + tri(phase * 1.002)) * 0.35 * Math.sin(Math.PI * position);
+      } else if (note.voice === 'pluck') {
+        const k = i % delay.length;
+        value = delay[k];
+        delay[k] = 0.498 * (delay[k] + delay[(k + 1) % delay.length]);
+      } else if (note.voice === 'wind') {
+        lowpass += 0.018 * (random() - lowpass);
+        value = lowpass * (0.6 + 0.4 * Math.sin(2 * Math.PI * t / 4) ** 2);
+      } else if (note.voice === 'triangle') {
+        value = 2 / Math.PI * Math.asin(Math.sin(phase)) * Math.sin(Math.PI * position);
+      } else if (note.voice === 'pulse') {
+        value = (Math.sin(phase) + Math.sin(phase * 3) / 3 + Math.sin(phase * 5) / 5) * Math.sin(Math.PI * position);
       } else {
         const noise = random();
         lowpass += 0.12 * (noise - lowpass);

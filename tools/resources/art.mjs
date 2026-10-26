@@ -47,9 +47,17 @@ export async function run(command){
   for(const a of assets){const actual=await readFile(path.join(output,a.entry.file));if(!actual.equals(a.png))throw new Error(`${a.meta.id}: stale PNG`);const decoded=decodePNG(actual);if(decoded.width!==a.meta.size[0]*a.meta.frames||decoded.height!==a.meta.size[1])throw new Error('PNG dimensions differ');validatePixels(decoded);}
   const again=await renderAssets();for(let i=0;i<assets.length;i++)if(!assets[i].png.equals(again[i].png))throw new Error('Nondeterministic draw');await references(assets);console.log(`art: verified ${assets.length} PNGs, palette, alpha, metadata, determinism and content references`);
  }else if(command==='sheet'){
-  const width=320,height=assets.reduce((h,a)=>h+Math.max(...a.meta.size.slice(1))+19,14);const g=new PixelCanvas(width,height).fill('ink');text(g,'VALLEY DECK - D0 ART',8,5);let y=20;
-  for(const a of assets){text(g,a.meta.id,8,y);y+=8;a.frames.forEach((f,i)=>g.stamp(f,8+i*(f.width+7),y));y+=a.meta.size[1]+11;}
-  const enlarged=new PixelCanvas(width*3,height*3).stamp(g,0,0,3);await mkdir(path.join(output,'sheets'),{recursive:true});await writeFile(path.join(output,'sheets/d0.png'),encodePNG(enlarged.width,enlarged.height,enlarged.pixels));console.log('art: sheet resources/art/export/sheets/d0.png (3x nearest neighbor)');
+  const directory=path.join(output,'sheets');await mkdir(directory,{recursive:true});
+  const groups=new Map();for(const a of assets){const group=a.meta.id.split('.')[0];if(!groups.has(group))groups.set(group,[]);groups.get(group).push(a);}
+  const index=[];
+  for(const [group,items] of groups){let pages=[],page=[],used=20;
+   for(const a of items){const framesPerRow=Math.max(1,Math.floor(640/(a.meta.size[0]+7)));const h=Math.ceil(a.frames.length/framesPerRow)*(a.meta.size[1]+4)+16;if(page.length&&used+h>560){pages.push(page);page=[];used=20;}page.push({a,h,framesPerRow});used+=h;}if(page.length)pages.push(page);
+   for(let pi=0;pi<pages.length;pi++){const rows=pages[pi],height=rows.reduce((n,r)=>n+r.h,20);const g=new PixelCanvas(656,height).fill('ink');text(g,`VALLEY DECK - ${group} ${pi+1}`,8,6);let y=22;
+    for(const {a,h,framesPerRow} of rows){text(g,a.meta.id,8,y);a.frames.forEach((f,i)=>g.stamp(f,8+(i%framesPerRow)*(f.width+7),y+8+Math.floor(i/framesPerRow)*(f.height+4)));y+=h;}
+    const out=new PixelCanvas(g.width*3,g.height*3).stamp(g,0,0,3);const file=`${group}-${String(pi+1).padStart(2,'0')}.png`;await writeFile(path.join(directory,file),encodePNG(out.width,out.height,out.pixels));index.push({file,assets:rows.map(r=>r.a.meta.id)});
+   }
+  }
+  await writeFile(path.join(directory,'index.json'),JSON.stringify(index,null,2)+'\n');console.log(`art: ${index.length} paginated 3x proof sheets (no frames clipped)`);
  }else throw new Error('Usage: node tools/resources/art.mjs build|verify|sheet');
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))run(process.argv[2]).catch(e=>{console.error(e.message);process.exitCode=1;});

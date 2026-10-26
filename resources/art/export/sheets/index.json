@@ -1,0 +1,348 @@
+[
+  {
+    "file": "big-01.png",
+    "assets": [
+      "big.anuan",
+      "big.anuan.memory",
+      "big.baiweng",
+      "big.baiweng.memory"
+    ]
+  },
+  {
+    "file": "big-02.png",
+    "assets": [
+      "big.beavers",
+      "big.beavers.memory",
+      "big.gutu",
+      "big.gutu.memory"
+    ]
+  },
+  {
+    "file": "big-03.png",
+    "assets": [
+      "big.mei",
+      "big.mei.memory",
+      "big.mill_family",
+      "big.mill_family.memory"
+    ]
+  },
+  {
+    "file": "big-04.png",
+    "assets": [
+      "big.mira",
+      "big.mira.memory",
+      "big.toby",
+      "big.toby.memory"
+    ]
+  },
+  {
+    "file": "big-05.png",
+    "assets": [
+      "big.xiaosu",
+      "big.xiaosu.memory"
+    ]
+  },
+  {
+    "file": "board-01.png",
+    "assets": [
+      "board.table"
+    ]
+  },
+  {
+    "file": "card-01.png",
+    "assets": [
+      "card.event_frame",
+      "card.loc_frame.fog",
+      "card.loc_frame.frozen",
+      "card.loc_frame.restored",
+      "card.loc_frame.thawed"
+    ]
+  },
+  {
+    "file": "card-02.png",
+    "assets": [
+      "card.res_frame",
+      "card.spell_frame"
+    ]
+  },
+  {
+    "file": "char-01.png",
+    "assets": [
+      "char.ember"
+    ]
+  },
+  {
+    "file": "deco-01.png",
+    "assets": [
+      "deco.clock",
+      "deco.lantern",
+      "deco.pipe",
+      "deco.teacup",
+      "deco.window"
+    ]
+  },
+  {
+    "file": "fx-01.png",
+    "assets": [
+      "fx.ice_crack",
+      "fx.ice_shatter"
+    ]
+  },
+  {
+    "file": "icon-01.png",
+    "assets": [
+      "icon.stone",
+      "icon.warmth",
+      "icon.wood"
+    ]
+  },
+  {
+    "file": "locart-01.png",
+    "assets": [
+      "locart.flood_beach.anim.shells",
+      "locart.flood_beach.spring",
+      "locart.flood_beach.winter",
+      "locart.flower_slope.anim.herbs",
+      "locart.flower_slope.anim.sun",
+      "locart.flower_slope.spring",
+      "locart.flower_slope.winter"
+    ]
+  },
+  {
+    "file": "locart-02.png",
+    "assets": [
+      "locart.gravel.anim.haul",
+      "locart.gravel.anim.stones",
+      "locart.gravel.spring",
+      "locart.gravel.winter",
+      "locart.herb_garden.anim.brew",
+      "locart.herb_garden.anim.tea",
+      "locart.herb_garden.spring"
+    ]
+  },
+  {
+    "file": "locart-03.png",
+    "assets": [
+      "locart.herb_garden.winter",
+      "locart.hut.anim.feed",
+      "locart.hut.anim.fire",
+      "locart.hut.anim.read_notes",
+      "locart.hut.spring",
+      "locart.hut.winter",
+      "locart.mill.anim.repair_wheel"
+    ]
+  },
+  {
+    "file": "locart-04.png",
+    "assets": [
+      "locart.mill.anim.warm_family",
+      "locart.mill.spring",
+      "locart.mill.winter",
+      "locart.misty_bank.anim.gnaw",
+      "locart.misty_bank.spring",
+      "locart.misty_bank.winter",
+      "locart.old_bridge.anim.reinforce"
+    ]
+  },
+  {
+    "file": "locart-05.png",
+    "assets": [
+      "locart.old_bridge.anim.watch",
+      "locart.old_bridge.spring",
+      "locart.old_bridge.winter",
+      "locart.pines.anim.chop",
+      "locart.pines.anim.gather",
+      "locart.pines.spring",
+      "locart.pines.winter"
+    ]
+  },
+  {
+    "file": "locart-06.png",
+    "assets": [
+      "locart.river_bend.anim.build_dam",
+      "locart.river_bend.anim.chisel",
+      "locart.river_bend.anim.driftwood",
+      "locart.river_bend.spring",
+      "locart.river_bend.winter",
+      "locart.tree_hole.anim.search",
+      "locart.tree_hole.anim.shelter"
+    ]
+  },
+  {
+    "file": "locart-07.png",
+    "assets": [
+      "locart.tree_hole.spring",
+      "locart.tree_hole.winter"
+    ]
+  },
+  {
+    "file": "note-01.png",
+    "assets": [
+      "note.paper",
+      "note.sketch.1",
+      "note.sketch.2"
+    ]
+  },
+  {
+    "file": "note-02.png",
+    "assets": [
+      "note.sketch.3"
+    ]
+  },
+  {
+    "file": "pano-01.png",
+    "assets": [
+      "pano.flood_beach.spring",
+      "pano.flood_beach.winter",
+      "pano.flower_slope.spring",
+      "pano.flower_slope.winter",
+      "pano.gravel.spring"
+    ]
+  },
+  {
+    "file": "pano-02.png",
+    "assets": [
+      "pano.gravel.winter",
+      "pano.herb_garden.spring",
+      "pano.herb_garden.winter",
+      "pano.hut.spring",
+      "pano.hut.winter"
+    ]
+  },
+  {
+    "file": "pano-03.png",
+    "assets": [
+      "pano.mill.spring",
+      "pano.mill.winter",
+      "pano.misty_bank.spring",
+      "pano.misty_bank.winter",
+      "pano.old_bridge.spring"
+    ]
+  },
+  {
+    "file": "pano-04.png",
+    "assets": [
+      "pano.old_bridge.winter",
+      "pano.pines.spring",
+      "pano.pines.winter",
+      "pano.river_bend.spring",
+      "pano.river_bend.winter"
+    ]
+  },
+  {
+    "file": "pano-05.png",
+    "assets": [
+      "pano.tree_hole.spring",
+      "pano.tree_hole.winter"
+    ]
+  },
+  {
+    "file": "portrait-01.png",
+    "assets": [
+      "portrait.anuan",
+      "portrait.baiweng",
+      "portrait.beavers",
+      "portrait.gutu",
+      "portrait.mei",
+      "portrait.mill_family",
+      "portrait.mira",
+      "portrait.toby",
+      "portrait.xiaosu"
+    ]
+  },
+  {
+    "file": "still-01.png",
+    "assets": [
+      "still.herb_garden"
+    ]
+  },
+  {
+    "file": "still-02.png",
+    "assets": [
+      "still.herb_garden.memory"
+    ]
+  },
+  {
+    "file": "still-03.png",
+    "assets": [
+      "still.hut"
+    ]
+  },
+  {
+    "file": "still-04.png",
+    "assets": [
+      "still.hut.memory"
+    ]
+  },
+  {
+    "file": "still-05.png",
+    "assets": [
+      "still.mill"
+    ]
+  },
+  {
+    "file": "still-06.png",
+    "assets": [
+      "still.mill.memory"
+    ]
+  },
+  {
+    "file": "still-07.png",
+    "assets": [
+      "still.pines"
+    ]
+  },
+  {
+    "file": "still-08.png",
+    "assets": [
+      "still.pines.memory"
+    ]
+  },
+  {
+    "file": "still-09.png",
+    "assets": [
+      "still.river"
+    ]
+  },
+  {
+    "file": "still-10.png",
+    "assets": [
+      "still.river.memory"
+    ]
+  },
+  {
+    "file": "still-11.png",
+    "assets": [
+      "still.valley_gate"
+    ]
+  },
+  {
+    "file": "still-12.png",
+    "assets": [
+      "still.valley_gate.memory"
+    ]
+  },
+  {
+    "file": "ui-01.png",
+    "assets": [
+      "ui.panel.bubble",
+      "ui.panel.paper",
+      "ui.panel.preview",
+      "ui.panel.wood"
+    ]
+  },
+  {
+    "file": "walker-01.png",
+    "assets": [
+      "walker.anuan",
+      "walker.baiweng",
+      "walker.beavers",
+      "walker.gutu",
+      "walker.mei",
+      "walker.mill_family",
+      "walker.mira",
+      "walker.toby",
+      "walker.xiaosu"
+    ]
+  }
+]

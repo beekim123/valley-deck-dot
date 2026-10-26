@@ -326,6 +326,150 @@
       "chance": 1,
       "priority": 50,
       "match_id": "combo.anuan_hut_note3"
+    },
+    {
+      "id": "banter.hover.toby.pines",
+      "event": "drag_hover",
+      "speaker": "res.toby",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "嗯……老伙计，干活了。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.toby",
+      "match_location": "loc.pines"
+    },
+    {
+      "id": "banter.hover.toby.hut",
+      "event": "drag_hover",
+      "speaker": "res.toby",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "嗯……这椅子还是我做的。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.toby",
+      "match_location": "loc.hut"
+    },
+    {
+      "id": "banter.hover.mira.river",
+      "event": "drag_hover",
+      "speaker": "res.mira",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "我能打水漂吗？能吗？"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.mira",
+      "match_location": "loc.river_bend"
+    },
+    {
+      "id": "banter.hover.mira.misty_bank",
+      "event": "drag_hover",
+      "speaker": "res.mira",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "里面有什么？有什么？"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.mira",
+      "match_location": "loc.misty_bank"
+    },
+    {
+      "id": "banter.hover.mei.flower_slope",
+      "event": "drag_hover",
+      "speaker": "res.mei",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "这里的姜最辣。别冻着。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.mei",
+      "match_location": "loc.flower_slope"
+    },
+    {
+      "id": "banter.hover.mei.hut",
+      "event": "drag_hover",
+      "speaker": "res.mei",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "那老东西，屋子还这么乱。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.mei",
+      "match_location": "loc.hut"
+    },
+    {
+      "id": "banter.hover.beavers.river",
+      "event": "drag_hover",
+      "speaker": "res.beavers",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "这里！！！坝！！！"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.beavers",
+      "match_location": "loc.river_bend"
+    },
+    {
+      "id": "banter.hover.beavers.pines",
+      "event": "drag_hover",
+      "speaker": "res.beavers",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "好多木头！！！"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.beavers",
+      "match_location": "loc.pines"
+    },
+    {
+      "id": "banter.hover.anuan.mill",
+      "event": "drag_hover",
+      "speaker": "res.anuan",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "焐得开吗……"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 20,
+      "match_resident": "res.anuan",
+      "match_location": "loc.mill"
     }
   ]
 }

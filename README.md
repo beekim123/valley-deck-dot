@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-D0 地基已验收并推送。D1 灰盒牌桌按明确修订的验收v2已通过，正在进入D2叙事与正式美术；不是最终Demo。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
+D0 地基已验收并推送。D1 灰盒牌桌按明确修订的验收v2已通过，D2叙事与正式美术已接入，正在实机复验；不是最终Demo。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
 
 ## 目录
 

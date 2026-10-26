@@ -4,6 +4,7 @@ var _art: Dictionary = {}
 var _audio: Dictionary = {}
 var _cache: Dictionary = {}
 var _font: FontFile
+const PIXEL_FONT := "res://resources/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2"
 
 func _ready() -> void:
 	_art = _read_manifest("res://resources/art/manifest.json")
@@ -66,17 +67,12 @@ func sound(id: String) -> AudioStream:
 func pixel_font() -> FontFile:
 	if _font != null:
 		return _font
-	var paths := _font_paths("res://resources/fonts")
-	paths.sort()
-	for path: String in paths:
-		if "zh_hans" in path or "zh-hans" in path:
-			paths.erase(path)
-			paths.push_front(path)
-			break
-	if paths.is_empty():
+	# Explicit imported resource identity works both loose and inside export PCKs.
+	# DirAccess extension scanning cannot discover a remapped exported font.
+	if not ResourceLoader.exists(PIXEL_FONT):
 		push_error("Fusion Pixel font missing; run npm run sync")
 		return null
-	_font = load(paths[0]) as FontFile
+	_font = load(PIXEL_FONT) as FontFile
 	_font.antialiasing = TextServer.FONT_ANTIALIASING_NONE
 	_font.hinting = TextServer.HINTING_NONE
 	_font.subpixel_positioning = TextServer.SUBPIXEL_POSITIONING_DISABLED

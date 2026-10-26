@@ -11,7 +11,7 @@ func expect(condition: bool, label: String) -> void:
 		push_error("FAIL: " + label)
 
 func _run() -> void:
-	var title: Node = load("res://scenes/title.tscn").instantiate()
+	var title: Node = load("res://scenes/pipeline_preview.tscn").instantiate()
 	root.add_child(title)
 	await process_frame
 	var catalog := root.get_node("AssetCatalog")

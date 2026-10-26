@@ -2,7 +2,9 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
-import { cues } from '../../resources/audio/cues/d0.ts';
+import { cues as d0 } from '../../resources/audio/cues/d0.ts';
+import { cues as d2 } from '../../resources/audio/cues/d2.ts';
+export const cues = [...d0, ...d2];
 import { renderCue, measure } from '../../resources/audio/synth.ts';
 import type { Cue } from '../../resources/audio/synth.ts';
 
@@ -49,7 +51,7 @@ export function validateLevels(samples: Int16Array, cue: Cue) {
 export function renderPack() {
   const seen = new Set<string>();
   const layers = new Map<string, string>();
-  return cues.map(cue => {
+  const pack = cues.map(cue => {
     if (seen.has(cue.id)) throw new Error(`Duplicate audio id: ${cue.id}`);
     seen.add(cue.id);
     const samples = renderCue(cue);
@@ -69,6 +71,19 @@ export function renderPack() {
       peakDbfs: Number(stats.peakDbfs.toFixed(6)), rmsDbfs: Number(stats.rmsDbfs.toFixed(6)), seamDelta: stats.seamDelta,
     } };
   });
+  // Verify the actual sum using float arithmetic, never an overflowing Int16 accumulator.
+  const day = pack.filter(item => item.meta.layerGroup === 'day');
+  const pcm = day.map(item => validateWav(item.wav, cues.find(cue => cue.id === item.meta.id)!));
+  for (const active of [1, 2, 3]) {
+    let peak = 0;
+    for (let frame=0; frame<pcm[0].length; frame++) {
+      let sample = 0;
+      for (let layer=0; layer<active; layer++) sample += pcm[layer][frame] / 32768;
+      peak = Math.max(peak, Math.abs(sample));
+    }
+    if (peak > 10 ** (-1/20)) throw new Error(`Day ${active}-layer sum exceeds -1 dBFS; revise arrangement`);
+  }
+  return pack;
 }
 
 export async function run(command: string) {
