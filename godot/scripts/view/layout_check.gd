@@ -20,7 +20,7 @@ func run() -> void:
 	await process_frame
 	for child in table.screen.get_children():
 		if child is TextureRect:
-			check(child.size == Vector2(32, 24), "pine thumbnail has no card-name overlap")
+			check(child.size == Vector2(64, 48), "pine thumbnail has no card-name overlap")
 		if child.get_script() == load("res://scripts/view/resident_token.gd"):
 			if child.position.y < 250:
 				check(child.size == Vector2(24, 16), "compact assignment badge stays inside card")

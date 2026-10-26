@@ -117,6 +117,10 @@ func render_table() -> void:
 		card.size = Vector2(72, 88)
 		card.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		card.text = ("雾中的牌" if mutable.state == "fog" else loc.name) + "\n" + state_word(mutable.state) + ("\n暂时被淹" if mutable.get("blocked_until_day", 0) >= state.day else "")
+		if mutable.state == "frozen":
+			var thaw_preview: Dictionary = Rules.preview(state, defs.balance.thaw_resident, loc.id)
+			if not thaw_preview.uses.is_empty():
+				card.text += "\n" + amounts(thaw_preview.uses[0].cost)
 		card.add_theme_color_override("font_color", PAPER)
 		var style := StyleBoxFlat.new()
 		style.bg_color = {"fog": Color("373348"), "frozen": Color("42617b"), "thawed": Color("343946"), "restored": Color("294b37")}.get(mutable.state, INK)
@@ -132,12 +136,13 @@ func render_table() -> void:
 			picture.texture = AssetCatalog.texture("locart.pines.spring" if mutable.state == "restored" else "locart.pines.winter")
 			picture.position = Vector2(x + 4, y + 2)
 			picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			picture.size = Vector2(64, 24)
+			picture.size = Vector2(64, 48)
 			picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 			picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			screen.add_child(picture)
-			picture.size = Vector2(32, 24)
-			picture.position.x = x + 20
+			picture.size = Vector2(64, 48)
+			card.text = ""
+			label(screen, "松林·" + state_word(mutable.state), Rect2(x + 4, y + 51, 64, 18))
 		if not mutable.progress.is_empty():
 			var values: Array = []
 			for key: String in mutable.progress:
@@ -285,8 +290,8 @@ func show_preview(loc: String) -> void:
 		lines += "\n" + use_text(use)
 	if is_instance_valid(preview_box):
 		preview_box.queue_free()
-	preview_box = panel(screen, Rect2(20, 165, 430, 90), INK, GOLD)
-	label(preview_box, lines, Rect2(8, 6, 412, 78), PAPER, true)
+	preview_box = panel(screen, Rect2(470, 34, 164, 222), INK, GOLD)
+	label(preview_box, lines, Rect2(6, 6, 152, 210), PAPER, true)
 
 func amounts(values: Dictionary) -> String:
 	var chunks: PackedStringArray = []
@@ -305,9 +310,28 @@ func use_text(use: Dictionary) -> String:
 		text += "　✦ 新鲜事"
 	if not use.get("cost", {}).is_empty() and not use.get("remaining", {}).is_empty():
 		text += "　剩 " + amounts(use.remaining)
+	for outcome: Dictionary in use.get("outcomes", []):
+		text += "\n" + outcome_text(outcome)
 	if not use.get("enabled", false):
-		text += "　" + reason(use.get("blocked_reason", "requirements_unmet"))
+		text += "\n不可用：" + reason(use.get("blocked_reason", "requirements_unmet"))
+		var args: Dictionary = use.get("reason_args", {})
+		if args.has("have") and args.has("need"):
+			text += "（%d/%d）" % [args.have, args.need]
 	return text
+
+func outcome_text(outcome: Dictionary) -> String:
+	var payload: Dictionary = outcome.get("payload", {})
+	match outcome.get("type", ""):
+		"thaw": return "融开" + display_name(payload.loc) + "的霜"
+		"awaken": return "唤醒" + display_name(payload.resident)
+		"flip": return "翻开这张雾牌"
+		"reveal": return "发现一张新地点"
+		"progress": return "%s %d→%d/%d" % [{"wheel": "水轮", "dam": "筑坝", "haul": "清理"}.get(payload.key, "进度"), payload.before, payload.after, payload.max]
+		"goal_step": return "目标：" + record("goals", payload.id).get("label", "完成一步")
+		"restore": return display_name(payload.loc) + "回春"
+		"grant_spell": return "获得" + display_name(payload.id)
+		"story": return "读一段往事"
+	return ""
 
 func reason(code: String) -> String:
 	return {"insufficient_resource": "资源不够", "action_limit": "今天已分派", "wrong_resident": "需要别的伙伴", "requirements_unmet": "条件未满足", "location_flooded": "暂时被淹", "fog_occupied": "已有伙伴探路", "location_full": "地点已满", "progress_complete": "已经完成", "resident_frozen": "还未醒来", "same_location": "不能重复同地"}.get(code, code)
@@ -317,12 +341,18 @@ func choose_location(loc: String) -> void:
 		return
 	var preview: Dictionary = Rules.preview(state, selected, loc, replacing)
 	open_modal("选择用法 · " + display_name(loc))
-	var y := 80
+	var scroll := ScrollContainer.new()
+	scroll.position = Vector2(50, 78)
+	scroll.size = Vector2(540, 208)
+	modal.add_child(scroll)
+	var column := VBoxContainer.new()
+	column.custom_minimum_size.x = 524
+	scroll.add_child(column)
 	for use: Dictionary in preview.get("uses", []):
-		var option := button(modal, use_text(use), Rect2(50, y, 540, 34), confirm_use.bind(loc, use.id, int(preview.revision)))
+		var option := button(column, use_text(use), Rect2(0, 0, 524, 34), confirm_use.bind(loc, use.id, int(preview.revision)))
 		option.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		option.custom_minimum_size = Vector2(524, 34)
 		option.disabled = not use.get("enabled", false)
-		y += 38
 	button(modal, "取消 · 不扣资源", Rect2(220, 294, 200, 28), close_modal)
 
 func confirm_use(loc: String, use_id: String, revision: int) -> void:
@@ -366,7 +396,13 @@ func open_modal(title: String) -> void:
 	add_child(modal)
 	panel(modal, Rect2(26, 32, 588, 302), INK, GOLD)
 	label(modal, title, Rect2(50, 48, 540, 24), GOLD)
+func clear_preview() -> void:
+	if is_instance_valid(preview_box):
+		preview_box.queue_free()
+	preview_box = null
+
 func close_modal() -> void:
+	clear_preview()
 	if is_instance_valid(modal):
 		modal.queue_free()
 	modal = null
@@ -510,10 +546,11 @@ func show_panorama() -> void:
 		index += 1
 	button(modal, "回到牌桌", Rect2(240, 294, 160, 28), close_modal)
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT and not locked:
 		selected = ""
 		replacing = ""
+		clear_preview()
 		close_modal()
 		update_highlights()
 	if event is InputEventKey and event.pressed:

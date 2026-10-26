@@ -225,6 +225,23 @@ func run() -> void:
 	expect(s.queued_events.size() == 2, "queued events do not lose duration")
 	Rules.end_day(s)
 	expect(s.active_events.size() == 2 and s.active_events[0].remaining == 2, "queued events start full timer on issue")
+	# Public deterministic outcomes obey preview-first without exposing surprises.
+	s = fresh()
+	s.locations["loc.misty_bank"].state = "frozen"
+	var bank_preview := use(s, "res.anuan", "loc.misty_bank", "thaw")
+	expect(bank_preview.outcomes.any(func(o): return o.type == "awaken" and o.payload.resident == "res.beavers"), "bank thaw publicly previews beaver awakening")
+	var fog_preview := use(s, "res.mira", "loc.flower_slope", "explore")
+	expect(fog_preview.outcomes == [{"type": "flip", "payload": {"loc": "loc.flower_slope", "unknown": true}}], "fog preview promises flip without revealing destination content")
+	s.locations["loc.misty_bank"].state = "thawed"
+	s.residents["res.beavers"].status = "awake"
+	var secret := use(s, "res.mira", "loc.misty_bank", "combo:combo.mira_bank_kits")
+	expect(secret.combo_hint and secret.outcomes.is_empty() and secret.gain.is_empty(), "synthetic combo remains surprise hint without hidden progress")
+	s.locations["loc.mill"].state = "thawed"
+	s.locations["loc.mill"].progress.wheel = 1
+	var progress_preview := use(s, "res.toby", "loc.mill", "repair_wheel")
+	var progress_outcome: Dictionary = progress_preview.outcomes.filter(func(o): return o.type == "progress")[0].payload
+	expect(progress_outcome.before == 1 and progress_outcome.after == 2 and progress_outcome.n == 1 and progress_outcome.completes, "progress preview makes completion explicit")
+	expect(progress_preview.outcomes.any(func(o): return o.type == "goal_step" and o.payload.id == "goal.wheel"), "ordinary progress predicts public goal completion")
 	content_fixtures()
 	print("D1 rules: %d assertions, %d failures; replay %s" % [assertions, failures, Data.state_hash(two)])
 	quit(0 if failures == 0 else 1)

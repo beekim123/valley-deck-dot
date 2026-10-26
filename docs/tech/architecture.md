@@ -1,5 +1,6 @@
 # 技术架构
 
+> 2026-10-26 验证修订：D1 的最终门槛以 [验收口径 v2](../plan/acceptance-v2.md) 为准。下文原始指标保留作基线，不改写已失败的结果。
 目录与模块边界见 [repository-layout.md](repository-layout.md)。本文的【定】：
 
 - 引擎 **Godot 4.7.x（与 rpg2d-dot 相同的 4.7.2）+ GDScript**，渲染器 Compatibility。

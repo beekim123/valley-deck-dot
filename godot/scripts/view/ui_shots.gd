@@ -34,6 +34,10 @@ func run() -> void:
 	table.awaken_tutorial("res.toby")
 	table.awaken_tutorial("res.mira")
 	await capture("d1-day1-table")
+	table.select_resident(table.defs.balance.thaw_resident)
+	table.choose_location("loc.mill")
+	await capture("d1-insufficient-preview")
+	table.close_modal()
 	table.select_resident("res.toby")
 	table.show_preview("loc.pines")
 	await capture("d1-drag-preview")
@@ -59,7 +63,18 @@ func run() -> void:
 	table.finish_night()
 	await capture("d1-day2")
 	var bot := Bots.context("goal", 1)
+	var captured_awaken := false
 	while not table.state.chapter_complete and table.state.day <= 60:
+		if not captured_awaken:
+			for loc: Dictionary in table.defs.locations:
+				if table.state.locations[loc.id].state == "frozen" and not loc.get("awaken", []).is_empty():
+					table.render_table()
+					table.select_resident(table.defs.balance.thaw_resident)
+					table.choose_location(loc.id)
+					await capture("d1-public-awaken-preview")
+					table.close_modal()
+					captured_awaken = true
+					break
 		var played: Dictionary = Bots.play_day(table.state, bot)
 		if not played.errors.is_empty():
 			push_error("Screenshot playthrough command failure")

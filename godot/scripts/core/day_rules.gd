@@ -104,8 +104,40 @@ static func base_reason(s: Dictionary, resident: String, loc: String) -> String:
 	if occupants >= int(s.defs.balance.location_capacity): return "location_full"
 	return ""
 
+static func public_outcomes(s: Dictionary, loc: String, u: Dictionary) -> Array:
+	# Only ordinary, already-known use operations are public. Never inspect combo ops.
+	if u.id == "explore": return [{"type": "flip", "payload": {"loc": loc, "unknown": true}}]
+	var outcomes := []
+	for op in u.ops:
+		match op.op:
+			"thaw":
+				outcomes.append({"type": "thaw", "payload": {"loc": op.loc}})
+				for resident in Data.record(s.defs, "locations", op.loc).get("awaken", []):
+					if s.residents[resident].status == "frozen": outcomes.append({"type": "awaken", "payload": {"resident": resident}})
+			"awaken":
+				if s.residents[op.resident].status == "frozen": outcomes.append({"type": "awaken", "payload": {"resident": op.resident}})
+			"progress":
+				var before: int = s.locations[op.loc].progress.get(op.key, 0)
+				var after := mini(int(op.max), before + int(op.n))
+				outcomes.append({"type": "progress", "payload": {"loc": op.loc, "key": op.key, "n": after - before, "max": int(op.max), "before": before, "after": after, "completes": before < op.max and after == op.max}})
+			"restore": outcomes.append({"type": "restore", "payload": {"loc": op.loc}})
+			"reveal": outcomes.append({"type": "reveal", "payload": {"unknown": true}})
+			"goal_step": outcomes.append({"type": "goal_step", "payload": {"id": op.id}})
+			"story": outcomes.append({"type": "story", "payload": {"id": op.id}})
+			"grant_spell": outcomes.append({"type": "grant_spell", "payload": {"id": op.id}})
+	# Predict independent goal steps from this ordinary use alone, never other bookings
+	# or surprise operations. This is a disposable state; preview remains read-only.
+	if u.ops.any(func(op): return op.op in ["thaw", "awaken", "progress", "set_flag", "goal_step", "restore"]):
+		var predicted := Data.clone(s)
+		if Data.ops(predicted, u.ops, [], true):
+			for goal in Data.records(s.defs, "goals"):
+				if not s.goal_steps.get(goal.id, false) and Data.condition(predicted, goal.when):
+					var already := outcomes.any(func(o): return o.type == "goal_step" and o.payload.id == goal.id)
+					if not already: outcomes.append({"type": "goal_step", "payload": {"id": goal.id}})
+	return outcomes
+
 static func compile(s: Dictionary, resident: String, loc: String, u: Dictionary) -> Dictionary:
-	var out := {"id": u.id, "label": u.label, "enabled": true, "blocked_reason": "", "reason_args": {}, "cost": {}, "gain": {}, "remaining": s.resources.duplicate(true), "combo_hint": false, "priority": 0, "once_keys": []}
+	var out := {"id": u.id, "label": u.label, "enabled": true, "blocked_reason": "", "reason_args": {}, "cost": {}, "gain": {}, "remaining": s.resources.duplicate(true), "combo_hint": false, "priority": 0, "once_keys": [], "outcomes": public_outcomes(s, loc, u)}
 	var reason := base_reason(s, resident, loc)
 	if reason == "" and not who_matches(s, u.who, resident): reason = "wrong_resident"
 	if reason == "" and not Data.requirements(s, u.get("requires", [])): reason = "requirements_unmet"

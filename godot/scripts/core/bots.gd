@@ -99,6 +99,7 @@ static func play_day(state: Dictionary, bot: Dictionary) -> Dictionary:
 				var result: Dictionary = Rules.tutorial_awaken(state, id)
 				commands.append({"op": "tutorial_awaken", "resident_id": id, "ok": result.ok})
 				events.append_array(result.events)
+				_observe(bot, state)
 				if not result.ok: errors.append(result)
 	var awake := residents(state)
 	if awake.is_empty(): return {"commands": commands, "errors": errors, "events": events}
@@ -116,7 +117,7 @@ static func play_day(state: Dictionary, bot: Dictionary) -> Dictionary:
 			var options := choices(state, resident)
 			if options.is_empty(): continue
 			bot.cursor = (index + 1) % roster.size()
-			_apply(state, _best(state, options, bot), commands, errors)
+			_apply(state, _best(state, options, bot), commands, errors, bot)
 			break
 	elif bot.strategy in ["random", "exploratory_random"]:
 		# Fisher–Yates order, then uniform over all legal (location,use) + REST.
@@ -141,7 +142,7 @@ static func play_day(state: Dictionary, bot: Dictionary) -> Dictionary:
 						break
 			else: index = _draw(bot, options.size() + 1)
 			if index == options.size(): commands.append({"op": "rest", "resident_id": resident})
-			else: _apply(state, options[index], commands, errors)
+			else: _apply(state, options[index], commands, errors, bot)
 	else:
 		bot.preference = int(state.seed) % 3
 		# Select globally so constrained specialist actions win over generic chores.
@@ -149,11 +150,15 @@ static func play_day(state: Dictionary, bot: Dictionary) -> Dictionary:
 			var options: Array = []
 			for resident in awake: options.append_array(choices(state, resident))
 			if options.is_empty(): break
-			_apply(state, _best(state, options, bot), commands, errors)
+			_apply(state, _best(state, options, bot), commands, errors, bot)
 	return {"commands": commands, "errors": errors, "events": events}
 
-static func _apply(state: Dictionary, choice: Dictionary, commands: Array, errors: Array) -> void:
+static func _apply(state: Dictionary, choice: Dictionary, commands: Array, errors: Array, bot: Dictionary) -> void:
 	if choice.is_empty(): return
 	var result: Dictionary = Rules.assign(state, choice.resident_id, choice.location_id, choice.use_id)
 	commands.append({"op": "assign", "resident_id": choice.resident_id, "location_id": choice.location_id, "use_id": choice.use_id, "ok": result.ok, "resources_after": state.resources.duplicate()})
 	if not result.ok: errors.append(result)
+	_observe(bot, state)
+
+static func _observe(bot: Dictionary, state: Dictionary) -> void:
+	if bot.has("observer") and bot.observer is Callable: bot.observer.call(state)

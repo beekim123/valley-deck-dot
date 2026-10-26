@@ -30,7 +30,11 @@ func label(parent: Node, text: String, rect: Rect2, color: Color = PAPER, wrap: 
 	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	if wrap:
 		node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		node.clip_text = true
 	parent.add_child(node)
+	# Set bounds after inherited font/theme and wrapping remove the initial
+	# unwrapped minimum width; otherwise long previews keep an oversized rect.
+	node.size = rect.size
 	return node
 func button(parent: Node, text: String, rect: Rect2, action: Callable) -> Button:
 	var node := Button.new()

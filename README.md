@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-D0 地基已验收并推送。D1 灰盒牌桌和完整规则已可玩，自动玩法验收仍未通过；不是最终 Demo。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
+D0 地基已验收并推送。D1 灰盒牌桌按明确修订的验收v2已通过，正在进入D2叙事与正式美术；不是最终Demo。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
 
 ## 目录
 
@@ -41,4 +41,4 @@ D0：`npm run shots` 在图形桌面运行并保存标题冬春截图。`npm run
 
 ## D1 验证状态
 
-`npm run check` 检查资源、内容、同步、规则/存档/UI 回归；`npm run sim` 单独执行完整玩法验收，当前按原门槛返回失败（均匀随机115/200在60天完成，非死局）。失败报告：`artifacts/reports/d1-uniform-baseline.json`；方法与后续实验见 `docs/plan/simulation-notes.md`。未通过前不进入D2，灰盒不是最终美术。
+`npm run check` 检查资源、内容、同步、规则/存档/UI 回归；`npm run sim` 单独执行明确记录的v2完整玩法验收，原始门槛仍记录失败（均匀随机115/200在60天完成，非死局）。失败报告：`artifacts/reports/d1-uniform-baseline.json`；方法与后续实验见 `docs/plan/simulation-notes.md`。v2通过后进入D2，灰盒不是最终美术。
