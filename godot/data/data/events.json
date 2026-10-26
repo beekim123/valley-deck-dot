@@ -1,0 +1,256 @@
+{
+  "format": "content/1",
+  "events": [
+    {
+      "id": "ev.dull_axe",
+      "name": "托比的斧头钝了",
+      "trigger": {
+        "day_at_least": 2
+      },
+      "duration": 4,
+      "related_locations": [
+        "loc.gravel"
+      ],
+      "complete_when": {
+        "combo_done": "combo.toby_gravel_axe"
+      },
+      "done_ops": [
+        {
+          "op": "set_flag",
+          "key": "axe_sharp",
+          "value": true
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "让托比到翻开的碎石滩磨斧头",
+      "done_text": "伐木以后每次 +3 木",
+      "expire_text": "凑合用吧：伐木仍 +2 木",
+      "done_preview": "",
+      "expire_preview": ""
+    },
+    {
+      "id": "ev.ice_fireflies",
+      "name": "米拉想看冰萤",
+      "trigger": {
+        "day_at_least": 4
+      },
+      "duration": 4,
+      "related_locations": [
+        "loc.pines"
+      ],
+      "complete_when": {
+        "all": [
+          {
+            "assigned": "res.mira",
+            "loc": "loc.pines"
+          },
+          {
+            "assigned": "res.anuan",
+            "loc": "loc.pines"
+          }
+        ]
+      },
+      "done_ops": [
+        {
+          "op": "set_flag",
+          "key": "mira_explore_bonus",
+          "value": true
+        },
+        {
+          "op": "story",
+          "id": "story.ice_fireflies"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "米拉和阿暖同一天去松林",
+      "done_text": "看冰萤；米拉以后探路额外 +1 木",
+      "expire_text": "春天还会有萤火虫",
+      "done_preview": "",
+      "expire_preview": ""
+    },
+    {
+      "id": "ev.storm",
+      "name": "暴雨将至",
+      "trigger": {
+        "day_at_least": 5
+      },
+      "duration": 3,
+      "related_locations": [
+        "loc.river_bend"
+      ],
+      "complete_when": {
+        "progress_at_least": "dam",
+        "loc": "loc.river_bend",
+        "n": 2
+      },
+      "done_ops": [
+        {
+          "op": "restore",
+          "loc": "loc.river_bend"
+        },
+        {
+          "op": "set_flag",
+          "key": "storm_passed",
+          "value": true
+        }
+      ],
+      "expire_ops": [
+        {
+          "op": "flood",
+          "locations": [
+            "loc.river_bend",
+            "loc.old_bridge"
+          ],
+          "days": 3
+        }
+      ],
+      "requirement_text": "在河湾筑好坝：进度满两次",
+      "done_text": "河湾回春，旧桥平安",
+      "expire_text": "河湾和旧桥淹 3 天；水退后出现河滩",
+      "done_preview": "",
+      "expire_preview": ""
+    },
+    {
+      "id": "ev.peddler",
+      "name": "货郎路过",
+      "trigger": {
+        "day_at_least": 6
+      },
+      "duration": 2,
+      "related_locations": [
+        "loc.old_bridge",
+        "loc.river_bend"
+      ],
+      "complete_when": {
+        "any": [
+          {
+            "any": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.old_bridge"
+              },
+              {
+                "assigned": "res.toby",
+                "loc": "loc.old_bridge"
+              },
+              {
+                "assigned": "res.mira",
+                "loc": "loc.old_bridge"
+              },
+              {
+                "assigned": "res.mei",
+                "loc": "loc.old_bridge"
+              },
+              {
+                "assigned": "res.beavers",
+                "loc": "loc.old_bridge"
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.river_bend"
+              },
+              {
+                "assigned": "res.toby",
+                "loc": "loc.river_bend"
+              },
+              {
+                "assigned": "res.mira",
+                "loc": "loc.river_bend"
+              },
+              {
+                "assigned": "res.mei",
+                "loc": "loc.river_bend"
+              },
+              {
+                "assigned": "res.beavers",
+                "loc": "loc.river_bend"
+              }
+            ]
+          }
+        ]
+      },
+      "done_ops": [
+        {
+          "op": "gain",
+          "res": "warmth",
+          "n": 3
+        },
+        {
+          "op": "story",
+          "id": "story.peddler"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "派任何人去已焐开的旧桥或河湾",
+      "done_text": "+3 暖意；听一段对岸的传闻",
+      "expire_text": "货郎说下一季再来",
+      "pause_mode": "all",
+      "done_preview": "+3 暖意",
+      "expire_preview": ""
+    },
+    {
+      "id": "ev.mei_cough",
+      "name": "老梅的旧咳嗽",
+      "trigger": {
+        "days_since": "awaken",
+        "target": "res.mei",
+        "n": 1
+      },
+      "duration": 3,
+      "related_locations": [
+        "loc.flower_slope"
+      ],
+      "complete_when": {
+        "use_resolved": "herbs",
+        "loc": "loc.flower_slope",
+        "resident": "res.mei"
+      },
+      "done_ops": [
+        {
+          "op": "story",
+          "id": "story.mei_cough"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "让老梅去花坡采一次药",
+      "done_text": "老梅讲起长冬那一晚",
+      "expire_text": "死不了。以后仍能采药回春",
+      "done_preview": "",
+      "expire_preview": ""
+    },
+    {
+      "id": "ev.bridge_ice",
+      "name": "旧桥上的冰溜子",
+      "trigger": {
+        "days_since": "thaw",
+        "target": "loc.old_bridge",
+        "n": 1
+      },
+      "duration": 4,
+      "related_locations": [
+        "loc.old_bridge"
+      ],
+      "complete_when": {
+        "flag": "bridge_reinforced",
+        "value": true
+      },
+      "done_ops": [
+        {
+          "op": "set_flag",
+          "key": "bridge_reinforced",
+          "value": true
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "让托比去旧桥加固：花费 2 木",
+      "done_text": "桥已加固，等暴雨过去便回春",
+      "expire_text": "冰自行化了；以后仍能加固",
+      "done_preview": "",
+      "expire_preview": ""
+    }
+  ]
+}

@@ -5,26 +5,647 @@
       "id": "loc.pines",
       "name": "松林",
       "start": "thawed",
-      "slot": [0, 0],
+      "slot": [
+        0,
+        0
+      ],
       "uses": [
         {
           "id": "chop",
-          "who": { "tag": "伐木" },
           "label": "伐木",
-          "preview": "+2 木（斧头磨好后 +3 木）",
+          "who": {
+            "resident": "res.toby"
+          },
+          "requires": [],
           "ops": [
-            { "op": "gain", "res": "wood", "n": 2, "bonus_flag": "axe_sharp", "bonus": 1 }
-          ]
+            {
+              "op": "gain",
+              "res": "wood",
+              "n": 2,
+              "bonus_flag": "axe_sharp",
+              "bonus": 1
+            }
+          ],
+          "preview": "+2 木（斧头磨好后 +3 木）"
         },
         {
           "id": "gather",
-          "who": "any",
           "label": "拾柴",
-          "preview": "+1 木",
-          "ops": [ { "op": "gain", "res": "wood", "n": 1 } ]
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "wood",
+              "n": 1
+            }
+          ],
+          "preview": "+1 木"
         }
       ],
-      "art": { "winter": "locart.pines.winter", "spring": "locart.pines.spring" }
+      "restore_when": {
+        "combo_done": "combo.toby_mira_pines"
+      },
+      "daily": {
+        "res": "wood",
+        "n": 1
+      },
+      "art": {
+        "winter": "locart.pines.winter",
+        "spring": "locart.pines.spring"
+      }
+    },
+    {
+      "id": "loc.hut",
+      "name": "柏翁小屋",
+      "start": "thawed",
+      "slot": [
+        0,
+        1
+      ],
+      "uses": [
+        {
+          "id": "fire",
+          "label": "生火",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "spend",
+              "res": "wood",
+              "n": 1
+            },
+            {
+              "op": "gain",
+              "res": "warmth",
+              "n": 1
+            }
+          ],
+          "preview": "-1 木，+1 暖意"
+        },
+        {
+          "id": "read_notes",
+          "label": "读笔记",
+          "who": {
+            "resident": "res.anuan"
+          },
+          "requires": [
+            {
+              "any": [
+                {
+                  "not": {
+                    "combo_done": "combo.anuan_hut_note1"
+                  }
+                },
+                {
+                  "all": [
+                    {
+                      "goal_done": "goal.wheel"
+                    },
+                    {
+                      "not": {
+                        "combo_done": "combo.anuan_hut_note3"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ops": [],
+          "preview": ""
+        },
+        {
+          "id": "feed",
+          "label": "喂鸟",
+          "who": "any",
+          "requires": [
+            {
+              "event_active": "vis.robin"
+            }
+          ],
+          "ops": [],
+          "preview": ""
+        }
+      ],
+      "restore_when": {
+        "goal_done": "goal.family"
+      }
+    },
+    {
+      "id": "loc.flower_slope",
+      "name": "花坡",
+      "start": "fog",
+      "slot": [
+        0,
+        2
+      ],
+      "uses": [
+        {
+          "id": "sun",
+          "label": "晒太阳",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "warmth",
+              "n": 1
+            }
+          ],
+          "preview": "+1 暖意"
+        },
+        {
+          "id": "herbs",
+          "label": "采药",
+          "who": {
+            "resident": "res.mei"
+          },
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "warmth",
+              "n": 1
+            }
+          ],
+          "preview": "+1 暖意"
+        }
+      ],
+      "restore_when": {
+        "combo_done": "combo.mei_slope_tea"
+      },
+      "reveal_state": "thawed",
+      "daily": {
+        "res": "warmth",
+        "n": 1
+      }
+    },
+    {
+      "id": "loc.herb_garden",
+      "name": "药圃",
+      "start": "hidden",
+      "slot": [
+        0,
+        3
+      ],
+      "uses": [
+        {
+          "id": "brew",
+          "label": "熬药",
+          "who": {
+            "resident": "res.mei"
+          },
+          "requires": [
+            {
+              "not": {
+                "flag": "mei_brewed",
+                "value": true
+              }
+            }
+          ],
+          "ops": [
+            {
+              "op": "set_flag",
+              "key": "mei_brewed",
+              "value": true
+            },
+            {
+              "op": "story",
+              "id": "story.mei_cough"
+            }
+          ],
+          "preview": ""
+        },
+        {
+          "id": "tea",
+          "label": "喝姜茶",
+          "who": "any",
+          "requires": [
+            {
+              "awake": "res.mei"
+            }
+          ],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "warmth",
+              "n": 1
+            }
+          ],
+          "preview": "+1 暖意"
+        }
+      ],
+      "restore_when": {
+        "flag": "mei_brewed",
+        "value": true
+      },
+      "reveal_state": "frozen",
+      "thaw_cost": {
+        "warmth": 3
+      },
+      "awaken": [
+        "res.mei"
+      ]
+    },
+    {
+      "id": "loc.river_bend",
+      "name": "河湾",
+      "start": "thawed",
+      "slot": [
+        0,
+        4
+      ],
+      "uses": [
+        {
+          "id": "driftwood",
+          "label": "捡浮木",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "wood",
+              "n": 1
+            }
+          ],
+          "preview": "+1 木"
+        },
+        {
+          "id": "chisel",
+          "label": "凿冰",
+          "who": {
+            "resident": "res.toby"
+          },
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "stone",
+              "n": 1
+            }
+          ],
+          "preview": "+1 石"
+        },
+        {
+          "id": "build_dam",
+          "label": "筑坝",
+          "who": {
+            "resident": "res.beavers"
+          },
+          "requires": [
+            {
+              "not": {
+                "progress_at_least": "dam",
+                "loc": "loc.river_bend",
+                "n": 2
+              }
+            }
+          ],
+          "ops": [
+            {
+              "op": "progress",
+              "loc": "loc.river_bend",
+              "key": "dam",
+              "n": 1,
+              "max": 2
+            }
+          ],
+          "progress_key": "dam",
+          "preview": ""
+        }
+      ],
+      "restore_when": {
+        "progress_at_least": "dam",
+        "loc": "loc.river_bend",
+        "n": 2
+      }
+    },
+    {
+      "id": "loc.misty_bank",
+      "name": "雾中河岸",
+      "start": "hidden",
+      "slot": [
+        0,
+        5
+      ],
+      "uses": [
+        {
+          "id": "gnaw",
+          "label": "啃木",
+          "who": {
+            "resident": "res.beavers"
+          },
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "wood",
+              "n": 2
+            }
+          ],
+          "preview": "+2 木"
+        }
+      ],
+      "restore_when": {
+        "progress_at_least": "dam",
+        "loc": "loc.river_bend",
+        "n": 2
+      },
+      "reveal_state": "frozen",
+      "thaw_cost": {
+        "warmth": 2
+      },
+      "awaken": [
+        "res.beavers"
+      ]
+    },
+    {
+      "id": "loc.tree_hole",
+      "name": "树洞",
+      "start": "hidden",
+      "slot": [
+        1,
+        0
+      ],
+      "uses": [
+        {
+          "id": "shelter",
+          "label": "躲风",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "warmth",
+              "n": 1
+            }
+          ],
+          "preview": "+1 暖意"
+        },
+        {
+          "id": "search",
+          "label": "掏树洞",
+          "who": {
+            "resident": "res.anuan"
+          },
+          "requires": [
+            {
+              "not": {
+                "combo_done": "combo.anuan_treehole"
+              }
+            }
+          ],
+          "ops": [],
+          "preview": ""
+        }
+      ],
+      "restore_when": {
+        "location_state": "loc.pines",
+        "value": "restored"
+      },
+      "reveal_entry_state": "thawed"
+    },
+    {
+      "id": "loc.mill",
+      "name": "老水磨",
+      "start": "frozen",
+      "slot": [
+        1,
+        1
+      ],
+      "uses": [
+        {
+          "id": "repair_wheel",
+          "label": "修水轮",
+          "who": {
+            "resident": "res.toby"
+          },
+          "requires": [
+            {
+              "not": {
+                "progress_at_least": "wheel",
+                "loc": "loc.mill",
+                "n": 2
+              }
+            }
+          ],
+          "ops": [
+            {
+              "op": "spend",
+              "res": "wood",
+              "n": 3,
+              "once_key": "mill.wheel_materials"
+            },
+            {
+              "op": "spend",
+              "res": "stone",
+              "n": 2,
+              "once_key": "mill.wheel_materials"
+            },
+            {
+              "op": "progress",
+              "loc": "loc.mill",
+              "key": "wheel",
+              "n": 1,
+              "max": 2
+            }
+          ],
+          "progress_key": "wheel",
+          "preview": "-3 木（仅首次），-2 石（仅首次）"
+        },
+        {
+          "id": "warm_family",
+          "label": "焐磨坊一家",
+          "who": {
+            "resident": "res.anuan"
+          },
+          "requires": [
+            {
+              "goal_done": "goal.wheel"
+            },
+            {
+              "goal_done": "goal.water"
+            },
+            {
+              "not": {
+                "awake": "res.mill_family"
+              }
+            }
+          ],
+          "ops": [
+            {
+              "op": "spend",
+              "res": "warmth",
+              "n": 3
+            },
+            {
+              "op": "awaken",
+              "resident": "res.mill_family"
+            }
+          ],
+          "preview": "-3 暖意"
+        }
+      ],
+      "restore_when": {
+        "goal_done": "goal.family"
+      },
+      "thaw_cost": {
+        "warmth": 4
+      },
+      "awaken": []
+    },
+    {
+      "id": "loc.gravel",
+      "name": "碎石滩",
+      "start": "fog",
+      "slot": [
+        1,
+        2
+      ],
+      "uses": [
+        {
+          "id": "stones",
+          "label": "捡石头",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "stone",
+              "n": 1
+            }
+          ],
+          "preview": "+1 石"
+        },
+        {
+          "id": "haul",
+          "label": "搬石",
+          "who": {
+            "resident": "res.toby"
+          },
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "stone",
+              "n": 2
+            },
+            {
+              "op": "progress",
+              "loc": "loc.gravel",
+              "key": "hauling",
+              "n": 1,
+              "max": 2
+            }
+          ],
+          "preview": "+2 石"
+        }
+      ],
+      "restore_when": {
+        "progress_at_least": "hauling",
+        "loc": "loc.gravel",
+        "n": 2
+      },
+      "reveal_state": "thawed",
+      "daily": {
+        "res": "stone",
+        "n": 1
+      }
+    },
+    {
+      "id": "loc.old_bridge",
+      "name": "旧桥",
+      "start": "frozen",
+      "slot": [
+        1,
+        3
+      ],
+      "uses": [
+        {
+          "id": "watch",
+          "label": "守桥",
+          "who": "any",
+          "requires": [],
+          "ops": [],
+          "preview": ""
+        },
+        {
+          "id": "reinforce",
+          "label": "加固",
+          "who": {
+            "resident": "res.toby"
+          },
+          "requires": [
+            {
+              "not": {
+                "flag": "bridge_reinforced",
+                "value": true
+              }
+            }
+          ],
+          "ops": [
+            {
+              "op": "spend",
+              "res": "wood",
+              "n": 2
+            },
+            {
+              "op": "set_flag",
+              "key": "bridge_reinforced",
+              "value": true
+            }
+          ],
+          "preview": "-2 木"
+        }
+      ],
+      "restore_when": {
+        "all": [
+          {
+            "flag": "bridge_reinforced",
+            "value": true
+          },
+          {
+            "flag": "storm_passed",
+            "value": true
+          }
+        ]
+      },
+      "thaw_cost": {
+        "warmth": 2
+      },
+      "awaken": []
+    },
+    {
+      "id": "loc.flood_beach",
+      "name": "涨水后的河滩",
+      "start": "hidden",
+      "slot": [
+        1,
+        4
+      ],
+      "uses": [
+        {
+          "id": "shells",
+          "label": "捡贝壳",
+          "who": "any",
+          "requires": [],
+          "ops": [
+            {
+              "op": "gain",
+              "res": "stone",
+              "n": 1
+            }
+          ],
+          "preview": "+1 石"
+        }
+      ],
+      "restore_when": {
+        "days_since": "reveal",
+        "target": "loc.flood_beach",
+        "n": 2
+      },
+      "reveal_entry_state": "thawed"
     }
   ]
 }

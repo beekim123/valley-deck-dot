@@ -1,0 +1,396 @@
+{
+  "format": "content/1",
+  "combos": [
+    {
+      "id": "combo.anuan_hut_note1",
+      "loc": "loc.hut",
+      "who": [
+        "res.anuan"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.note1"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.anuan",
+        "text": "师父的字还是这么丑。"
+      },
+      "use_id": "read_notes"
+    },
+    {
+      "id": "combo.mira_river_skip",
+      "loc": "loc.river_bend",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "reveal",
+          "loc": "loc.misty_bank"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "跳了七下！跳进雾里了？"
+      }
+    },
+    {
+      "id": "combo.toby_river_fish",
+      "loc": "loc.river_bend",
+      "who": [
+        "res.toby"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "gain",
+          "res": "stone",
+          "n": 1
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.toby",
+        "text": "嗯……春天见。"
+      },
+      "use_id": "chisel"
+    },
+    {
+      "id": "combo.mira_pines_hole",
+      "loc": "loc.pines",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "reveal",
+          "loc": "loc.tree_hole"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "这棵树在打呼噜！"
+      }
+    },
+    {
+      "id": "combo.toby_mira_pines",
+      "loc": "loc.pines",
+      "who": [
+        "res.toby",
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "restore",
+          "loc": "loc.pines"
+        }
+      ],
+      "priority": 100,
+      "once": true,
+      "line": {
+        "speaker": "res.toby",
+        "text": "嗯……你出生那年种的。"
+      }
+    },
+    {
+      "id": "combo.anuan_treehole",
+      "loc": "loc.tree_hole",
+      "who": [
+        "res.anuan"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.note2"
+        },
+        {
+          "op": "grant_spell",
+          "id": "spell.two_actions"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.anuan",
+        "text": "藏东西的地方还没变。"
+      },
+      "use_id": "search"
+    },
+    {
+      "id": "combo.mira_slope_flower",
+      "loc": "loc.flower_slope",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "set_flag",
+          "key": "mira_flower",
+          "value": true
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "它不冷吗？它不冷吗？"
+      }
+    },
+    {
+      "id": "combo.mei_slope_tea",
+      "loc": "loc.flower_slope",
+      "who": [
+        "res.mei"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "gain",
+          "res": "warmth",
+          "n": 2
+        },
+        {
+          "op": "restore",
+          "loc": "loc.flower_slope"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mei",
+        "text": "喝！谁冻着了我可不管。"
+      },
+      "use_id": "herbs",
+      "replace_use_gain": true
+    },
+    {
+      "id": "combo.mira_gravel_glow",
+      "loc": "loc.gravel",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "grant_spell",
+          "id": "spell.extra_flip"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "它在眨眼！"
+      }
+    },
+    {
+      "id": "combo.toby_gravel_axe",
+      "loc": "loc.gravel",
+      "who": [
+        "res.toby"
+      ],
+      "requires": [
+        {
+          "event_active": "ev.dull_axe"
+        }
+      ],
+      "ops": [
+        {
+          "op": "set_flag",
+          "key": "axe_sharp",
+          "value": true
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.toby",
+        "text": "嗯。老伙计，又亮了。"
+      }
+    },
+    {
+      "id": "combo.beavers_pines",
+      "loc": "loc.pines",
+      "who": [
+        "res.beavers"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "gain",
+          "res": "wood",
+          "n": 3
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.beavers",
+        "text": "这棵好啃！！！"
+      }
+    },
+    {
+      "id": "combo.toby_bank_contest",
+      "loc": "loc.misty_bank",
+      "who": [
+        "res.toby"
+      ],
+      "requires": [
+        {
+          "awake": "res.beavers"
+        }
+      ],
+      "ops": [
+        {
+          "op": "gain",
+          "res": "wood",
+          "n": 2
+        },
+        {
+          "op": "progress",
+          "loc": "loc.river_bend",
+          "key": "dam",
+          "n": 1,
+          "max": 2
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.toby",
+        "text": "嗯……再来！"
+      }
+    },
+    {
+      "id": "combo.mira_bank_kits",
+      "loc": "loc.misty_bank",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [
+        {
+          "awake": "res.beavers"
+        }
+      ],
+      "ops": [
+        {
+          "op": "progress",
+          "loc": "loc.river_bend",
+          "key": "dam",
+          "n": 1,
+          "max": 2
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "它们咬我裤子！"
+      }
+    },
+    {
+      "id": "combo.mei_hut_handwriting",
+      "loc": "loc.hut",
+      "who": [
+        "res.mei"
+      ],
+      "requires": [
+        {
+          "awake": "res.mei"
+        }
+      ],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.mei_youth"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mei",
+        "text": "那老东西……去对岸了吧？"
+      }
+    },
+    {
+      "id": "combo.anuan_bridge_lookout",
+      "loc": "loc.old_bridge",
+      "who": [
+        "res.anuan"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.bridge_light"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.anuan",
+        "text": "……那边，有人吗？"
+      }
+    },
+    {
+      "id": "combo.mira_beach_letter",
+      "loc": "loc.flood_beach",
+      "who": [
+        "res.mira"
+      ],
+      "requires": [],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.beach_letter"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.mira",
+        "text": "上面画了一盏灯！"
+      }
+    },
+    {
+      "id": "combo.anuan_hut_note3",
+      "loc": "loc.hut",
+      "who": [
+        "res.anuan"
+      ],
+      "requires": [
+        {
+          "goal_done": "goal.wheel"
+        }
+      ],
+      "ops": [
+        {
+          "op": "story",
+          "id": "story.note3"
+        }
+      ],
+      "priority": 50,
+      "once": true,
+      "line": {
+        "speaker": "res.anuan",
+        "text": "师父……"
+      },
+      "use_id": "read_notes"
+    }
+  ]
+}

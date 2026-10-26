@@ -2,16 +2,76 @@
   "format": "resource-pack/1",
   "files": [
     {
+      "id": "content.balance",
+      "source": "content/data/balance.json",
+      "path": "data/data/balance.json",
+      "sha256": "96a9be29439bef0d61693d284c5aa447167648fdbd72420f29eb69a8164b4d31"
+    },
+    {
+      "id": "content.combos",
+      "source": "content/data/combos.json",
+      "path": "data/data/combos.json",
+      "sha256": "d5998c7898eaa2692c12201201d17e22673acc88e6c507042a6d9d71698c6236"
+    },
+    {
+      "id": "content.events",
+      "source": "content/data/events.json",
+      "path": "data/data/events.json",
+      "sha256": "d83bd7f245ec9f25bb460f1661fbb7b6904f975cbb15ffd2b72517c06e80eeed"
+    },
+    {
+      "id": "content.goals",
+      "source": "content/data/goals.json",
+      "path": "data/data/goals.json",
+      "sha256": "5b58e3934a51e23a733ae180c4a1046d884a0e61fe6f06db8d375e058b963d03"
+    },
+    {
       "id": "content.locations",
       "source": "content/data/locations.json",
       "path": "data/data/locations.json",
-      "sha256": "45aa3061534765e261d02b3727b7efcb7c3f408d03be7d0c9cdaa512a48dbaf8"
+      "sha256": "255b86cbd9b5007eb58d995868ec2678ec9ed234d40a2c6a6d8b7730010b80df"
+    },
+    {
+      "id": "content.residents",
+      "source": "content/data/residents.json",
+      "path": "data/data/residents.json",
+      "sha256": "af453c79fa0750f6f4063eec16c2e77d545cf030c663c829aa080fe8683ef6d1"
+    },
+    {
+      "id": "content.schedule",
+      "source": "content/data/schedule.json",
+      "path": "data/data/schedule.json",
+      "sha256": "83ee447e24a48a174b8675a8693f51c7fe70c84467cfa86bf34eca7d2667da1f"
+    },
+    {
+      "id": "content.spells",
+      "source": "content/data/spells.json",
+      "path": "data/data/spells.json",
+      "sha256": "4a5fafcca5d8068f1396d8116933bc76275483cdb59b010fcfac855605bb1c48"
+    },
+    {
+      "id": "content.visitors",
+      "source": "content/data/visitors.json",
+      "path": "data/data/visitors.json",
+      "sha256": "4b34c3fcb60c22fde1b861ff27cffd4708fda234f865015e9a6aa2e14d93b25a"
     },
     {
       "id": "registry.content",
       "source": "content/registry.json",
       "path": "data/registry.json",
-      "sha256": "3e07b42ee2db4315fe3d98912aaf77caceb3863c2c12924fd82a720db5958ba7"
+      "sha256": "f330416ab631bc7151209fe9ffdb911d1f539e74fb9d55fdaea281a16ddd3b7e"
+    },
+    {
+      "id": "content.banter",
+      "source": "content/story/banter.json",
+      "path": "data/story/banter.json",
+      "sha256": "1e754569c832d40b0d573860614a4622025d6a278e3ebdc35deeb515a93d7827"
+    },
+    {
+      "id": "content.pages",
+      "source": "content/story/pages.json",
+      "path": "data/story/pages.json",
+      "sha256": "d9bb746b8276de901fc3304f37518beb743e602f3f14ae0f6413659387612610"
     },
     {
       "id": "locart.pines.spring",

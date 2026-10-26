@@ -1,0 +1,48 @@
+{
+  "format": "content/1",
+  "balance": {
+    "content_version": "d1.1",
+    "initial_resources": {
+      "wood": 2,
+      "stone": 0,
+      "warmth": 3
+    },
+    "location_capacity": 3,
+    "event_capacity": 3,
+    "idle_reminder_threshold": 3,
+    "thaw_resident": "res.anuan",
+    "tutorial_residents": [
+      "res.toby",
+      "res.mira"
+    ],
+    "flood_reveal_location": "loc.flood_beach",
+    "flood_end_flag": "storm_passed",
+    "fallback_story": "story.ember_memory",
+    "explorer_bonus": {
+      "resident": "res.mira",
+      "flag": "mira_explorer_bonus",
+      "res": "wood",
+      "n": 1
+    },
+    "awaken_bonus": {
+      "resident": "res.mei",
+      "flag": "mira_flower",
+      "res": "warmth",
+      "n": 1
+    },
+    "progress_caps": {
+      "wheel": 2,
+      "dam": 2,
+      "hauling": 2
+    },
+    "test_strategies": {
+      "random_runs": 200,
+      "max_days": 60,
+      "goal_min_days": 10,
+      "goal_max_days": 14,
+      "lazy_max_days": 40,
+      "random_idle_max": 0.1,
+      "combo_mean_min": 0.6
+    }
+  }
+}

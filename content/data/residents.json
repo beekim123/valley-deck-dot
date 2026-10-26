@@ -1,0 +1,65 @@
+{
+  "format": "content/1",
+  "residents": [
+    {
+      "id": "res.anuan",
+      "name": "阿暖",
+      "tags": [
+        "焐"
+      ],
+      "initial_status": "awake",
+      "home": "loc.hut",
+      "playable": true
+    },
+    {
+      "id": "res.toby",
+      "name": "托比",
+      "tags": [
+        "伐木",
+        "修理"
+      ],
+      "initial_status": "frozen",
+      "home": "loc.pines",
+      "playable": true
+    },
+    {
+      "id": "res.mira",
+      "name": "米拉",
+      "tags": [
+        "好奇"
+      ],
+      "initial_status": "frozen",
+      "home": "loc.hut",
+      "playable": true
+    },
+    {
+      "id": "res.mei",
+      "name": "老梅",
+      "tags": [
+        "草药"
+      ],
+      "initial_status": "frozen",
+      "home": "loc.herb_garden",
+      "playable": true
+    },
+    {
+      "id": "res.beavers",
+      "name": "海狸一家",
+      "tags": [
+        "筑坝",
+        "啃木"
+      ],
+      "initial_status": "frozen",
+      "home": "loc.misty_bank",
+      "playable": true
+    },
+    {
+      "id": "res.mill_family",
+      "name": "磨坊一家",
+      "tags": [],
+      "initial_status": "frozen",
+      "home": "loc.mill",
+      "playable": false
+    }
+  ]
+}

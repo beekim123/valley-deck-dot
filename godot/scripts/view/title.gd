@@ -106,7 +106,7 @@ func _build() -> void:
 	quote_label = _label("", Rect2(30, 284, 580, 16), PAPER, 12, true)
 	switch_button = _button("看看春天", Rect2(150, 302, 156, 24), _switch_season)
 	music_button = _button("试听春醒谣", Rect2(334, 302, 156, 24), _play_music)
-	_label("D0 素材预览 · 完整牌桌开发中", Rect2(30, 327, 580, 14), MUTED, 12, true)
+	_button("打开卷轴匣 · 开始 / 继续", Rect2(194, 331, 252, 24), func(): get_tree().change_scene_to_file("res://scenes/card_table.tscn"))
 
 func _switch_season() -> void:
 	AudioService.unlock()

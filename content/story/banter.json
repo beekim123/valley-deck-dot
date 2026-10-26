@@ -1,0 +1,331 @@
+{
+  "format": "content/1",
+  "banter": [
+    {
+      "id": "banter.morning",
+      "event": "day_start",
+      "speaker": "ember",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "早！今天也冷死了！",
+        "太阳不错，火也想伸个懒腰。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 10
+    },
+    {
+      "id": "banter.empty",
+      "event": "night_empty",
+      "speaker": "ember",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "今天歇着？也行。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 10
+    },
+    {
+      "id": "banter.idle",
+      "event": "idle",
+      "speaker": "ember",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "老头子以前摆牌也这么慢。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 10
+    },
+    {
+      "id": "banter.restore",
+      "event": "restore",
+      "speaker": "ember",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "看上面！那一块变绿了！"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 10
+    },
+    {
+      "id": "banter.spell",
+      "event": "spell_used",
+      "speaker": "ember",
+      "when": {
+        "all": []
+      },
+      "lines": [
+        "老头子的字，还真管用。"
+      ],
+      "once": false,
+      "chance": 1,
+      "priority": 10
+    },
+    {
+      "id": "banter.anuan_hut_note1",
+      "event": "combo",
+      "speaker": "res.anuan",
+      "when": {
+        "combo_done": "combo.anuan_hut_note1"
+      },
+      "lines": [
+        "师父的字还是这么丑。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.anuan_hut_note1"
+    },
+    {
+      "id": "banter.mira_river_skip",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_river_skip"
+      },
+      "lines": [
+        "跳了七下！跳进雾里了？"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_river_skip"
+    },
+    {
+      "id": "banter.toby_river_fish",
+      "event": "combo",
+      "speaker": "res.toby",
+      "when": {
+        "combo_done": "combo.toby_river_fish"
+      },
+      "lines": [
+        "嗯……春天见。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.toby_river_fish"
+    },
+    {
+      "id": "banter.mira_pines_hole",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_pines_hole"
+      },
+      "lines": [
+        "这棵树在打呼噜！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_pines_hole"
+    },
+    {
+      "id": "banter.toby_mira_pines",
+      "event": "combo",
+      "speaker": "res.toby",
+      "when": {
+        "combo_done": "combo.toby_mira_pines"
+      },
+      "lines": [
+        "嗯……你出生那年种的。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.toby_mira_pines"
+    },
+    {
+      "id": "banter.anuan_treehole",
+      "event": "combo",
+      "speaker": "res.anuan",
+      "when": {
+        "combo_done": "combo.anuan_treehole"
+      },
+      "lines": [
+        "藏东西的地方还没变。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.anuan_treehole"
+    },
+    {
+      "id": "banter.mira_slope_flower",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_slope_flower"
+      },
+      "lines": [
+        "它不冷吗？它不冷吗？"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_slope_flower"
+    },
+    {
+      "id": "banter.mei_slope_tea",
+      "event": "combo",
+      "speaker": "res.mei",
+      "when": {
+        "combo_done": "combo.mei_slope_tea"
+      },
+      "lines": [
+        "喝！谁冻着了我可不管。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mei_slope_tea"
+    },
+    {
+      "id": "banter.mira_gravel_glow",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_gravel_glow"
+      },
+      "lines": [
+        "它在眨眼！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_gravel_glow"
+    },
+    {
+      "id": "banter.toby_gravel_axe",
+      "event": "combo",
+      "speaker": "res.toby",
+      "when": {
+        "combo_done": "combo.toby_gravel_axe"
+      },
+      "lines": [
+        "嗯。老伙计，又亮了。"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.toby_gravel_axe"
+    },
+    {
+      "id": "banter.beavers_pines",
+      "event": "combo",
+      "speaker": "res.beavers",
+      "when": {
+        "combo_done": "combo.beavers_pines"
+      },
+      "lines": [
+        "这棵好啃！！！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.beavers_pines"
+    },
+    {
+      "id": "banter.toby_bank_contest",
+      "event": "combo",
+      "speaker": "res.toby",
+      "when": {
+        "combo_done": "combo.toby_bank_contest"
+      },
+      "lines": [
+        "嗯……再来！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.toby_bank_contest"
+    },
+    {
+      "id": "banter.mira_bank_kits",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_bank_kits"
+      },
+      "lines": [
+        "它们咬我裤子！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_bank_kits"
+    },
+    {
+      "id": "banter.mei_hut_handwriting",
+      "event": "combo",
+      "speaker": "res.mei",
+      "when": {
+        "combo_done": "combo.mei_hut_handwriting"
+      },
+      "lines": [
+        "那老东西……去对岸了吧？"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mei_hut_handwriting"
+    },
+    {
+      "id": "banter.anuan_bridge_lookout",
+      "event": "combo",
+      "speaker": "res.anuan",
+      "when": {
+        "combo_done": "combo.anuan_bridge_lookout"
+      },
+      "lines": [
+        "……那边，有人吗？"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.anuan_bridge_lookout"
+    },
+    {
+      "id": "banter.mira_beach_letter",
+      "event": "combo",
+      "speaker": "res.mira",
+      "when": {
+        "combo_done": "combo.mira_beach_letter"
+      },
+      "lines": [
+        "上面画了一盏灯！"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.mira_beach_letter"
+    },
+    {
+      "id": "banter.anuan_hut_note3",
+      "event": "combo",
+      "speaker": "res.anuan",
+      "when": {
+        "combo_done": "combo.anuan_hut_note3"
+      },
+      "lines": [
+        "师父……"
+      ],
+      "once": true,
+      "chance": 1,
+      "priority": 50,
+      "match_id": "combo.anuan_hut_note3"
+    }
+  ]
+}

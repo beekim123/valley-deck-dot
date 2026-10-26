@@ -1,0 +1,19 @@
+{
+  "format": "content/1",
+  "schedule": [
+    {
+      "id": "schedule.herb_garden",
+      "day": 3,
+      "ops": [
+        {
+          "op": "reveal",
+          "loc": "loc.herb_garden"
+        },
+        {
+          "op": "story",
+          "id": "story.ginger"
+        }
+      ]
+    }
+  ]
+}

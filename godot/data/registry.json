@@ -1,6 +1,49 @@
 {
   "format": "content/1",
   "files": [
-    { "id": "locations", "path": "data/locations.json" }
+    {
+      "id": "locations",
+      "path": "data/locations.json"
+    },
+    {
+      "id": "residents",
+      "path": "data/residents.json"
+    },
+    {
+      "id": "combos",
+      "path": "data/combos.json"
+    },
+    {
+      "id": "events",
+      "path": "data/events.json"
+    },
+    {
+      "id": "visitors",
+      "path": "data/visitors.json"
+    },
+    {
+      "id": "spells",
+      "path": "data/spells.json"
+    },
+    {
+      "id": "goals",
+      "path": "data/goals.json"
+    },
+    {
+      "id": "schedule",
+      "path": "data/schedule.json"
+    },
+    {
+      "id": "balance",
+      "path": "data/balance.json"
+    },
+    {
+      "id": "pages",
+      "path": "story/pages.json"
+    },
+    {
+      "id": "banter",
+      "path": "story/banter.json"
+    }
   ]
 }

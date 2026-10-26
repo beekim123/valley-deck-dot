@@ -1,0 +1,310 @@
+{
+  "format": "content/1",
+  "pages": [
+    {
+      "id": "story.intro",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "十年了。"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "师父说：春天来了就回来，把牌摆开。"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "冷死了冷死了！……咦？你长这么高了？"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "那就……开始吧。"
+        }
+      ]
+    },
+    {
+      "id": "story.note1",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "霜牌里的时间是停的。人不会老，也不会忘，就是有点冷。",
+          "layout": "note"
+        },
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "阿暖：牌要一张一张摆，别急。",
+          "layout": "note"
+        }
+      ]
+    },
+    {
+      "id": "story.note2",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "水磨的水轮，是我年轻时跟谷家老爷子一起做的。",
+          "layout": "note"
+        },
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "左边第三根辐条是我削歪的。他骂了我一整个冬天。",
+          "layout": "note"
+        }
+      ]
+    },
+    {
+      "id": "story.note3",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "最后一张牌，得有人在里面守着火。",
+          "layout": "note"
+        },
+        {
+          "layers": [],
+          "speaker": "bo",
+          "text": "老梅要是问起来，就说我去对岸了。",
+          "layout": "note"
+        }
+      ]
+    },
+    {
+      "id": "story.wake.toby",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.toby",
+          "text": "那天他说：再劈一捆，就回家。"
+        },
+        {
+          "layers": [],
+          "speaker": "res.toby",
+          "text": "……嗯？雪停了？"
+        }
+      ]
+    },
+    {
+      "id": "story.wake.mira",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mira",
+          "text": "等等我！"
+        },
+        {
+          "layers": [],
+          "speaker": "res.mira",
+          "text": "兔子呢？！"
+        }
+      ]
+    },
+    {
+      "id": "story.wake.mei",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "快好了，谁都不许走。"
+        },
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "我的姜茶呢？凉了十年了吧。"
+        },
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "……这花，是我种的。",
+          "when": {
+            "flag": "mira_flower",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "story.wake.beavers",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.beavers",
+          "text": "最后一根！！！"
+        },
+        {
+          "layers": [],
+          "speaker": "res.beavers",
+          "text": "……最后一根呢？？？"
+        }
+      ]
+    },
+    {
+      "id": "story.wake.mill_family",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mill_family",
+          "text": "水……水来了？"
+        }
+      ]
+    },
+    {
+      "id": "story.ice_fireflies",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mira",
+          "text": "它们也睡了十年吗？"
+        }
+      ]
+    },
+    {
+      "id": "story.mei_youth",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "那老东西年轻时，可不是什么好人。"
+        },
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "摘薄荷还要翻篱笆。门明明开着。"
+        }
+      ]
+    },
+    {
+      "id": "story.mei_cough",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "长冬那晚他来敲门，说：梅姐，冷一下就好。"
+        },
+        {
+          "layers": [],
+          "speaker": "res.mei",
+          "text": "骗子。"
+        }
+      ]
+    },
+    {
+      "id": "story.bridge_light",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.anuan",
+          "text": "雾里，好像有一点灯光。"
+        }
+      ]
+    },
+    {
+      "id": "story.beach_letter",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mira",
+          "text": "上面画了一盏灯！字却认不出来。"
+        }
+      ]
+    },
+    {
+      "id": "story.peddler",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "peddler",
+          "text": "对岸夜里有灯。不是星星，是有人守着的灯。"
+        }
+      ]
+    },
+    {
+      "id": "story.robin",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "ember",
+          "text": "那是我的火！不许叼！"
+        }
+      ]
+    },
+    {
+      "id": "story.snowman",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "res.mira",
+          "text": "明年见。你还来这里，好吗？"
+        }
+      ]
+    },
+    {
+      "id": "story.paper",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "最后一辆车开走时，谷里的灯还亮着。"
+        }
+      ]
+    },
+    {
+      "id": "story.ember_memory",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "ember",
+          "text": "老头子总说，慢一点，火才烧得久。"
+        }
+      ]
+    },
+    {
+      "id": "story.ginger",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "ember",
+          "text": "闻到姜味了！"
+        }
+      ]
+    },
+    {
+      "id": "story.ending",
+      "pages": [
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "吱——呀——"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "爹，你胡子上有冰。"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "老头子，你看见没？"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "对岸的灯，替我——（后面被水泡糊了）"
+        },
+        {
+          "layers": [],
+          "speaker": "narrator",
+          "text": "第一卷「河湾」结束。第二卷「磨坊坡」：未完待续。"
+        }
+      ]
+    }
+  ]
+}

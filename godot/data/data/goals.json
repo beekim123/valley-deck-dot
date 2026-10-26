@@ -1,0 +1,65 @@
+{
+  "format": "content/1",
+  "goals": [
+    {
+      "id": "goal.thaw_mill",
+      "label": "融开水磨的冰",
+      "when": {
+        "any": [
+          {
+            "location_state": "loc.mill",
+            "value": "thawed"
+          },
+          {
+            "location_state": "loc.mill",
+            "value": "restored"
+          }
+        ]
+      },
+      "hint": "阿暖带四份暖意去水磨。",
+      "related_locations": [
+        "loc.mill"
+      ]
+    },
+    {
+      "id": "goal.wheel",
+      "label": "修好水轮",
+      "when": {
+        "progress_at_least": "wheel",
+        "loc": "loc.mill",
+        "n": 2
+      },
+      "hint": "托比修两次；首次需木三、石二。",
+      "related_locations": [
+        "loc.mill",
+        "loc.gravel",
+        "loc.pines"
+      ]
+    },
+    {
+      "id": "goal.water",
+      "label": "把河水引过来",
+      "when": {
+        "progress_at_least": "dam",
+        "loc": "loc.river_bend",
+        "n": 2
+      },
+      "hint": "让米拉去河湾看看，再找海狸。",
+      "related_locations": [
+        "loc.river_bend",
+        "loc.misty_bank"
+      ]
+    },
+    {
+      "id": "goal.family",
+      "label": "唤醒磨坊一家",
+      "when": {
+        "awake": "res.mill_family"
+      },
+      "hint": "水轮与坝备好后，阿暖带三份暖意。",
+      "related_locations": [
+        "loc.mill"
+      ]
+    }
+  ]
+}

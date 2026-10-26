@@ -1,0 +1,15 @@
+{
+  "format": "content/1",
+  "spells": [
+    {
+      "id": "spell.two_actions",
+      "name": "一人两用",
+      "effect": "two_actions"
+    },
+    {
+      "id": "spell.extra_flip",
+      "name": "多翻一张",
+      "effect": "extra_flip"
+    }
+  ]
+}

@@ -34,7 +34,8 @@ try {
  if(mode==='test') {
   await run(['--headless','--script','res://tests/run.gd']);
   await run(['--headless','--script','res://tests/title_smoke.gd']);
- }else if(mode==='sim')await run(['--headless','--script','res://tests/sim.gd']);
+  for(const test of ['tests/rules_d1.gd','tests/save_validation.gd','scripts/view/ui_smoke.gd'])if(fs.existsSync(path.join(root,'godot',test)))await run(['--headless','--script','res://'+test]);
+ }else if(mode==='sim')await run(['--headless','--script','res://tests/sim.gd'],600000);
  else if(mode==='shots')await run(['--','--shots','--shots-dir='+path.join(root,'artifacts/screenshots')]);
  else if(mode==='dev')await run([],0);
 }catch(error){console.error(error.message);process.exitCode=1;}

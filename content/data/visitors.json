@@ -1,0 +1,347 @@
+{
+  "format": "content/1",
+  "visitors": [
+    {
+      "id": "vis.robin",
+      "name": "红胸鸟",
+      "trigger": {
+        "all": []
+      },
+      "duration": 1,
+      "related_locations": [
+        "loc.hut"
+      ],
+      "complete_when": {
+        "any": [
+          {
+            "assigned": "res.anuan",
+            "loc": "loc.hut"
+          },
+          {
+            "assigned": "res.toby",
+            "loc": "loc.hut"
+          },
+          {
+            "assigned": "res.mira",
+            "loc": "loc.hut"
+          },
+          {
+            "assigned": "res.mei",
+            "loc": "loc.hut"
+          },
+          {
+            "assigned": "res.beavers",
+            "loc": "loc.hut"
+          }
+        ]
+      },
+      "done_ops": [
+        {
+          "op": "gain",
+          "res": "warmth",
+          "n": 1
+        },
+        {
+          "op": "story",
+          "id": "story.robin"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "派任何人去柏翁小屋喂鸟",
+      "done_text": "+1 暖意；小烬和鸟吵架",
+      "expire_text": "鸟去找别家的屋檐",
+      "done_preview": "+1 暖意",
+      "expire_preview": ""
+    },
+    {
+      "id": "vis.snowman",
+      "name": "化了一半的雪人",
+      "trigger": {
+        "all": []
+      },
+      "duration": 1,
+      "related_locations": [
+        "loc.river_bend"
+      ],
+      "complete_when": {
+        "assigned": "res.mira",
+        "loc": "loc.river_bend"
+      },
+      "done_ops": [
+        {
+          "op": "gain",
+          "res": "wood",
+          "n": 1
+        },
+        {
+          "op": "story",
+          "id": "story.snowman"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "派米拉去河湾与雪人告别",
+      "done_text": "+1 木；向冬天说再见",
+      "expire_text": "雪人安静地融进溪水",
+      "done_preview": "+1 木",
+      "expire_preview": ""
+    },
+    {
+      "id": "vis.paper",
+      "name": "风吹来的纸片",
+      "trigger": {
+        "all": []
+      },
+      "duration": 1,
+      "related_locations": [
+        "loc.pines",
+        "loc.hut",
+        "loc.flower_slope",
+        "loc.herb_garden",
+        "loc.river_bend",
+        "loc.misty_bank",
+        "loc.tree_hole",
+        "loc.mill",
+        "loc.gravel",
+        "loc.old_bridge",
+        "loc.flood_beach"
+      ],
+      "complete_when": {
+        "any": [
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.pines"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.pines",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.pines",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.hut"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.hut",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.hut",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.flower_slope"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.flower_slope",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.flower_slope",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.herb_garden"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.herb_garden",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.herb_garden",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.river_bend"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.river_bend",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.river_bend",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.misty_bank"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.misty_bank",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.misty_bank",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.tree_hole"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.tree_hole",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.tree_hole",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.mill"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.mill",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.mill",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.gravel"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.gravel",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.gravel",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.old_bridge"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.old_bridge",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.old_bridge",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "assigned": "res.anuan",
+                "loc": "loc.flood_beach"
+              },
+              {
+                "any": [
+                  {
+                    "location_state": "loc.flood_beach",
+                    "value": "thawed"
+                  },
+                  {
+                    "location_state": "loc.flood_beach",
+                    "value": "restored"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "done_ops": [
+        {
+          "op": "story",
+          "id": "story.paper"
+        }
+      ],
+      "expire_ops": [],
+      "requirement_text": "派阿暖去任意解冻的地点读纸片",
+      "done_text": "读到长冬来时的一段旧事",
+      "expire_text": "纸片又随风飘远",
+      "pause_mode": "all",
+      "done_preview": "",
+      "expire_preview": ""
+    }
+  ]
+}
