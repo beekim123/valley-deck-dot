@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一副山谷 · 第一卷「河湾」</title>
+$GODOT_HEAD_INCLUDE
+<style>html,body{margin:0;width:100%;height:100%;background:#1e1a24;color:#f6e9cb;font-family:system-ui,sans-serif;overflow:hidden}canvas{display:block;width:100%;height:100%;image-rendering:pixelated;outline:none}#loading{position:fixed;inset:0;display:grid;place-content:center;text-align:center;background:#1e1a24;gap:18px;padding:24px}h1{font-size:36px;letter-spacing:.2em;margin:0}p{margin:0;line-height:1.7}progress{width:280px;max-width:80vw;accent-color:#a4bb8b;margin:auto}button{background:#ead3a5;color:#28212d;border:0;border-radius:4px;padding:14px 28px;font-size:18px;cursor:pointer}#error{color:#f1ad92;white-space:pre-wrap;max-width:680px}small{color:#c4b6a5}</style></head>
+<body><canvas id="canvas" tabindex="0">你的浏览器需要支持 WebGL 2。</canvas><section id="loading"><h1>一副山谷</h1><p>第一卷 · 河湾<br>整座山谷冻在一副牌里。春天来了，把它一张张焐暖。</p><progress id="progress"></progress><p id="status">准备山谷……</p><button id="start" hidden>进入山谷</button><small>鼠标拖放 · 点击后开启声音 · 进度保存在当前浏览器</small><p id="error" role="alert"></p></section>
+<script src="$GODOT_URL"></script><script>
+'use strict';
+const config=$GODOT_CONFIG;
+const engine=new Engine(config);
+const overlay=document.getElementById('loading'), status=document.getElementById('status'), progress=document.getElementById('progress'), start=document.getElementById('start');
+function fail(e,hint='请使用包内 serve.py 启动，访问 http://127.0.0.1:8060/；勿直接双击 HTML。'){status.textContent='暂时无法打开山谷';document.getElementById('error').textContent=String(e?.message||e)+'\n'+hint;progress.hidden=true;}
+const missing=Engine.getMissingFeatures({threads:$GODOT_THREADS_ENABLED});
+if(location.protocol==='file:')fail('浏览器禁止从 file:// 加载游戏文件。');
+else if(missing.length)fail('浏览器缺少支持：'+missing.join(', '),'当前浏览器或设备未提供所需的图形能力。请换用支持 WebGL 2 的桌面浏览器和设备；无需修改安全设置。');
+else{
+ status.textContent='点击进入，开始加载';progress.hidden=true;start.hidden=false;
+ start.onclick=()=>{start.disabled=true;start.hidden=true;progress.hidden=false;status.textContent='正在展开山谷……';engine.startGame({canvas:document.getElementById('canvas'),onProgress:(current,total)=>{if(total>0){progress.max=total;progress.value=current;status.textContent='正在展开山谷…… '+Math.floor(current/total*100)+'%';}},onExit:()=>{overlay.style.display='grid';status.textContent='山谷已合上，刷新页面可再次进入。';progress.hidden=true;}}).then(()=>{overlay.style.display='none';document.getElementById('canvas').focus();}).catch(fail);};
+}
+</script></body></html>
