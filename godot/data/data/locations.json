@@ -1,0 +1,30 @@
+{
+  "format": "content/1",
+  "locations": [
+    {
+      "id": "loc.pines",
+      "name": "松林",
+      "start": "thawed",
+      "slot": [0, 0],
+      "uses": [
+        {
+          "id": "chop",
+          "who": { "tag": "伐木" },
+          "label": "伐木",
+          "preview": "+2 木（斧头磨好后 +3 木）",
+          "ops": [
+            { "op": "gain", "res": "wood", "n": 2, "bonus_flag": "axe_sharp", "bonus": 1 }
+          ]
+        },
+        {
+          "id": "gather",
+          "who": "any",
+          "label": "拾柴",
+          "preview": "+1 木",
+          "ops": [ { "op": "gain", "res": "wood", "n": 1 } ]
+        }
+      ],
+      "art": { "winter": "locart.pines.winter", "spring": "locart.pines.spring" }
+    }
+  ]
+}

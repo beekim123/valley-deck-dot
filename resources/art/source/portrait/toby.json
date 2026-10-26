@@ -1,0 +1,177 @@
+{
+  "format": "art/1",
+  "id": "portrait.toby",
+  "category": "portrait",
+  "size": [
+    40,
+    40
+  ],
+  "anchor": [
+    20,
+    40
+  ],
+  "animations": {
+    "idle": {
+      "fps": 1,
+      "loop": true,
+      "frames": [
+        0
+      ]
+    },
+    "happy": {
+      "fps": 1,
+      "loop": false,
+      "frames": [
+        1
+      ]
+    },
+    "surprised": {
+      "fps": 1,
+      "loop": false,
+      "frames": [
+        2
+      ]
+    },
+    "frozen": {
+      "fps": 1,
+      "loop": false,
+      "frames": [
+        3
+      ]
+    }
+  },
+  "frames": [
+    [
+      "........................................",
+      "........................................",
+      "...............AAAAAAAAAA...............",
+      ".............AAUUUUUUUUUUAA.............",
+      "............AUUUUUUUUUUUUUUA............",
+      "...........AUUVVVVVVUUUUUUUUA...........",
+      "...........AUVVVVVVVVVVUUUUUA...........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      ".........AATTTTTTTTTTTTTTTTTTAA.........",
+      ".........ATTTTTTTTTTTTTTTTTTTTA.........",
+      "..........ATTppppppppppppppTTA..........",
+      "..........ATppqqppppppppppppTA..........",
+      ".........AoppqqppppppppppppppoA.........",
+      ".........AoppppAAAppppAAAppppoA.........",
+      ".........AopppppBppppppBpppppoA.........",
+      "..........ApppppBppppppBpppppA..........",
+      "..........ApphhpppppppppphhppA..........",
+      "..........ApphhppppoopppphhppA..........",
+      "...........AppppTTppppTTppppA...........",
+      "...........ATTTTTTppppTTTTTTA...........",
+      "...........ATTTUUUTTTTUUUTTTA...........",
+      "...........ATTUUUUUUUUUUUUTTA...........",
+      "............ATUUUUUBBUUUUUTA............",
+      "............ATUUUUUUUUUUUUTA............",
+      ".............AUUUUUUUUUUUUA.............",
+      "...........AAAUUUUUUUUUUUUAAA...........",
+      ".........AAPPOAUUUUUUUUUUAOPPAA.........",
+      "........APQPPOOAAUUUUUUAAOOPPPA.........",
+      ".......APQQPPOOOAAAAAAAAOOOPPPPA........",
+      "......APQQQPPOOOOPPPPPPOOOOPPPPPA.......",
+      "......APQQQPPOOOOPXXXPPOOOOPPPPPA.......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPXXXPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.....",
+      "........................................",
+      "........................................",
+      "........................................",
+      "........................................"
+    ],
+    [
+      "........................................",
+      "........................................",
+      "...............AAAAAAAAAA...............",
+      ".............AAUUUUUUUUUUAA.............",
+      "............AUUUUUUUUUUUUUUA............",
+      "...........AUUVVVVVVUUUUUUUUA...........",
+      "...........AUVVVVVVVVVVUUUUUA...........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      ".........AATTTTTTTTTTTTTTTTTTAA.........",
+      ".........ATTTTTTTTTTTTTTTTTTTTA.........",
+      "..........ATTppppppppppppppTTA..........",
+      "..........ATppqqppppppppppppTA..........",
+      ".........AoppqqppppppppppppppoA.........",
+      ".........AoppppAAAppppAAAppppoA.........",
+      ".........AopppppBppppppBpppppoA.........",
+      "..........AppppBpBppppBpBppppA..........",
+      "..........ApphhpppppppppphhppA..........",
+      "..........ApphhppppoopppphhppA..........",
+      "...........AppppTTppppTTppppA...........",
+      "...........ATTTTTTppppTTTTTTA...........",
+      "...........ATTTUUUTTTTUUUTTTA...........",
+      "...........ATTUUUUUUUUUUUUTTA...........",
+      "............ATUUUUUBBUUUUUTA............",
+      "............ATUUUUUUUUUUUUTA............",
+      ".............AUUUUUUUUUUUUA.............",
+      "...........AAAUUUUUUUUUUUUAAA...........",
+      ".........AAPPOAUUUUUUUUUUAOPPAA.........",
+      "........APQPPOOAAUUUUUUAAOOPPPA.........",
+      ".......APQQPPOOOAAAAAAAAOOOPPPPA........",
+      "......APQQQPPOOOOPPPPPPOOOOPPPPPA.......",
+      "......APQQQPPOOOOPXXXPPOOOOPPPPPA.......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPXXXPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.....",
+      "........................................",
+      "........................................",
+      "........................................",
+      "........................................"
+    ],
+    [
+      "........................................",
+      "........................................",
+      "...............AAAAAAAAAA...............",
+      ".............AAUUUUUUUUUUAA.............",
+      "............AUUUUUUUUUUUUUUA............",
+      "...........AUUVVVVVVUUUUUUUUA...........",
+      "...........AUVVVVVVVVVVUUUUUA...........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      "..........AUUUUUUUUUUUUUUUUUUA..........",
+      ".........AATTTTTTTTTTTTTTTTTTAA.........",
+      ".........ATTTTTTTTTTTTTTTTTTTTA.........",
+      "..........ATTppppppppppppppTTA..........",
+      "..........ATppqqppppppppppppTA..........",
+      ".........AoppqqppppppppppppppoA.........",
+      ".........AoppppAAAppppAAAppppoA.........",
+      ".........AopppppBppppppBpppppoA.........",
+      "..........ApppppBppppppBpppppA..........",
+      "..........ApphhpppppppppphhppA..........",
+      "..........ApphhppppoopppphhppA..........",
+      "...........AppppTTppppTTppppA...........",
+      "...........ATTTTTTppppTTTTTTA...........",
+      "...........ATTTUUUTTTTUUUTTTA...........",
+      "...........ATTUUUUUUUUUUUUTTA...........",
+      "............ATUUUUUAAUUUUUTA............",
+      "............ATUUUUUAAUUUUUTA............",
+      ".............AUUUUUUUUUUUUA.............",
+      "...........AAAUUUUUUUUUUUUAAA...........",
+      ".........AAPPOAUUUUUUUUUUAOPPAA.........",
+      "........APQPPOOAAUUUUUUAAOOPPPA.........",
+      ".......APQQPPOOOAAAAAAAAOOOPPPPA........",
+      "......APQQQPPOOOOPPPPPPOOOOPPPPPA.......",
+      "......APQQQPPOOOOPXXXPPOOOOPPPPPA.......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPXXXPPOOOOPPPPPPA......",
+      ".....APQQQQPPOOOOPPPPPPOOOOPPPPPPA......",
+      ".....AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.....",
+      "........................................",
+      "........................................",
+      "........................................",
+      "........................................"
+    ]
+  ],
+  "variants": [
+    {
+      "sourceFrame": 0,
+      "recolor": "memory"
+    }
+  ]
+}

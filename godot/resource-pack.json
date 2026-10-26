@@ -1,0 +1,107 @@
+{
+  "format": "resource-pack/1",
+  "files": [
+    {
+      "id": "content.locations",
+      "source": "content/data/locations.json",
+      "path": "data/data/locations.json",
+      "sha256": "45aa3061534765e261d02b3727b7efcb7c3f408d03be7d0c9cdaa512a48dbaf8"
+    },
+    {
+      "id": "registry.content",
+      "source": "content/registry.json",
+      "path": "data/registry.json",
+      "sha256": "3e07b42ee2db4315fe3d98912aaf77caceb3863c2c12924fd82a720db5958ba7"
+    },
+    {
+      "id": "locart.pines.spring",
+      "source": "resources/art/export/locart.pines.spring.png",
+      "path": "resources/art/locart.pines.spring.png",
+      "sha256": "96b0ed5164f5a335f93d5870899a1efbede5f5db1d939429a5d65f13f0603ceb"
+    },
+    {
+      "id": "locart.pines.winter",
+      "source": "resources/art/export/locart.pines.winter.png",
+      "path": "resources/art/locart.pines.winter.png",
+      "sha256": "3e7e5de89b7ff733f8a0374d67b267d4abada00a63addb9a3f22fa5a64bd244c"
+    },
+    {
+      "id": "manifest.art",
+      "source": "resources/art/export/manifest.json",
+      "path": "resources/art/manifest.json",
+      "sha256": "ec3459963c179a64616ab503a8b54915d5e3cdd62b8ab9a2e8e42f3075b92196"
+    },
+    {
+      "id": "portrait.toby",
+      "source": "resources/art/export/portrait.toby.png",
+      "path": "resources/art/portrait.toby.png",
+      "sha256": "9248ff2e40970ddd67e26fcf679b0bf39d15ce03b0049b67cfa9cd000ce8f29d"
+    },
+    {
+      "id": "manifest.audio",
+      "source": "resources/audio/export/manifest.json",
+      "path": "resources/audio/manifest.json",
+      "sha256": "d6a7ab80cbcbd71a79171d100c40b114a98da91187a67988c326abb05d369e37"
+    },
+    {
+      "id": "music.test",
+      "source": "resources/audio/export/music.test.wav",
+      "path": "resources/audio/music.test.wav",
+      "sha256": "70527613d9fde638a96a61c703f9d9bf69280b8cb3c233e35e782ef240e2da2b"
+    },
+    {
+      "id": "sfx.card_drop",
+      "source": "resources/audio/export/sfx.card_drop.wav",
+      "path": "resources/audio/sfx.card_drop.wav",
+      "sha256": "2cb508b68e501754fcab87e7dd9d4a755b62bbbed6c46a06c8a0fc50ffbab562"
+    },
+    {
+      "id": "sfx.ice_crack",
+      "source": "resources/audio/export/sfx.ice_crack.wav",
+      "path": "resources/audio/sfx.ice_crack.wav",
+      "sha256": "be2f2415f30a8a7002785f78c33e236115e884958d4027b7afb7b6e7337b40e9"
+    },
+    {
+      "id": "font.fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2",
+      "source": "third_party/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2",
+      "path": "resources/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2",
+      "sha256": "0ebd99e6f1e9b650a793a3f759c1c3dfa99f0c5b6502e78569b48ddb43767e40"
+    },
+    {
+      "id": "font.fusion-pixel-12px/LICENSES/ark-pixel/OFL.txt",
+      "source": "third_party/fonts/fusion-pixel-12px/LICENSES/ark-pixel/OFL.txt",
+      "path": "resources/fonts/fusion-pixel-12px/LICENSES/ark-pixel/OFL.txt",
+      "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee"
+    },
+    {
+      "id": "font.fusion-pixel-12px/LICENSES/cubic-11/OFL.txt",
+      "source": "third_party/fonts/fusion-pixel-12px/LICENSES/cubic-11/OFL.txt",
+      "path": "resources/fonts/fusion-pixel-12px/LICENSES/cubic-11/OFL.txt",
+      "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188"
+    },
+    {
+      "id": "font.fusion-pixel-12px/LICENSES/galmuri/LICENSE.txt",
+      "source": "third_party/fonts/fusion-pixel-12px/LICENSES/galmuri/LICENSE.txt",
+      "path": "resources/fonts/fusion-pixel-12px/LICENSES/galmuri/LICENSE.txt",
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
+    },
+    {
+      "id": "font.fusion-pixel-12px/OFL.txt",
+      "source": "third_party/fonts/fusion-pixel-12px/OFL.txt",
+      "path": "resources/fonts/fusion-pixel-12px/OFL.txt",
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    {
+      "id": "font.fusion-pixel-12px/PROVENANCE.json",
+      "source": "third_party/fonts/fusion-pixel-12px/PROVENANCE.json",
+      "path": "resources/fonts/fusion-pixel-12px/PROVENANCE.json",
+      "sha256": "520c7ba7991474577b25f47c094a820156d6ac04fe17078b9e359cf83ef7f1b6"
+    },
+    {
+      "id": "font.fusion-pixel-12px/README.md",
+      "source": "third_party/fonts/fusion-pixel-12px/README.md",
+      "path": "resources/fonts/fusion-pixel-12px/README.md",
+      "sha256": "2e5863f7e394de7052c80424cbdebacdaa2b12ff8e94bda41124d66d1e2e356d"
+    }
+  ]
+}

@@ -8,21 +8,21 @@
 
 ## D0 · 地基
 
-- [ ] 目录骨架、`.gitignore`、`README.md` 补运行方式
-- [ ] `package.json` 脚本
-- [ ] 拷贝 Fusion Pixel 12px 字体和全部许可证到 `third_party/fonts/`
-- [ ] `resources/art/palette.json`（48 色）+ 换色表 `winter` / `memory`
-- [ ] `resources/art/lib/png.mjs`、`pixel.mjs`（含 `recolor`、`snowcap`、`dissolve`）
-- [ ] `tools/resources/art.mjs`：build / verify / sheet
-- [ ] 素材：`portrait.toby`（字符画）、`locart.pines.spring` + 自动生成的 `.winter`
-- [ ] `resources/audio/synth.ts` + `audio-pack.ts` + `audio:check`
-- [ ] 音效 `sfx.card_drop`、`sfx.ice_crack`；8 秒测试旋律
-- [ ] `content/registry.json`、最小 `locations.json`、`tools/qa/content-check`
-- [ ] `tools/resources/sync-godot.mjs`（含 `--verify`）
-- [ ] Godot 工程设置、AssetCatalog、AudioService、SaveService 空壳
-- [ ] 标题画面
-- [ ] 无界面测试框架 + `tools/godot/cli.mjs`
-- [ ] D0 验收
+- [x] 目录骨架、`.gitignore`、`README.md` 补运行方式
+- [x] `package.json` 脚本
+- [x] 拷贝 Fusion Pixel 12px 字体和全部许可证到 `third_party/fonts/`
+- [x] `resources/art/palette.json`（48 色）+ 换色表 `winter` / `memory`
+- [x] `resources/art/lib/png.mjs`、`pixel.mjs`（含 `recolor`、`snowcap`、`dissolve`）
+- [x] `tools/resources/art.mjs`：build / verify / sheet
+- [x] 素材：`portrait.toby`（字符画）、`locart.pines.spring` + 自动生成的 `.winter`
+- [x] `resources/audio/synth.ts` + `audio-pack.ts` + `audio:check`
+- [x] 音效 `sfx.card_drop`、`sfx.ice_crack`；8 秒测试旋律
+- [x] `content/registry.json`、最小 `locations.json`、`tools/qa/content-check`
+- [x] `tools/resources/sync-godot.mjs`（含 `--verify`）
+- [x] Godot 工程设置、AssetCatalog、AudioService、SaveService 空壳
+- [x] 标题画面
+- [x] 无界面测试框架 + `tools/godot/cli.mjs`
+- [x] D0 验收
 
 ## D1 · 规则可玩
 

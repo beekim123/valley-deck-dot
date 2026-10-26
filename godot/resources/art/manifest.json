@@ -1,0 +1,98 @@
+{
+  "format": "art-manifest/1",
+  "assets": [
+    {
+      "id": "locart.pines.spring",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.pines.spring.png",
+      "hash": "96b0ed5164f5a335f93d5870899a1efbede5f5db1d939429a5d65f13f0603ceb"
+    },
+    {
+      "id": "locart.pines.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "locart.pines.winter.png",
+      "hash": "3e7e5de89b7ff733f8a0374d67b267d4abada00a63addb9a3f22fa5a64bd244c"
+    },
+    {
+      "id": "portrait.toby",
+      "category": "portrait",
+      "size": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        40
+      ],
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        },
+        "happy": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            1
+          ]
+        },
+        "surprised": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            2
+          ]
+        },
+        "frozen": {
+          "fps": 1,
+          "loop": false,
+          "frames": [
+            3
+          ]
+        }
+      },
+      "frames": 4,
+      "file": "portrait.toby.png",
+      "hash": "9248ff2e40970ddd67e26fcf679b0bf39d15ce03b0049b67cfa9cd000ce8f29d"
+    }
+  ]
+}

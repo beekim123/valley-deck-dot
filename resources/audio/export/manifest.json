@@ -1,0 +1,50 @@
+{
+  "format": "audio/1",
+  "assets": [
+    {
+      "id": "music.test",
+      "file": "music.test.wav",
+      "kind": "music",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 176400,
+      "duration": 8,
+      "loop": true,
+      "hash": "70527613d9fde638a96a61c703f9d9bf69280b8cb3c233e35e782ef240e2da2b",
+      "peakDbfs": -11.676791,
+      "rmsDbfs": -20.000264,
+      "seamDelta": 0
+    },
+    {
+      "id": "sfx.card_drop",
+      "file": "sfx.card_drop.wav",
+      "kind": "sfx",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 10584,
+      "duration": 0.24,
+      "loop": false,
+      "hash": "2cb508b68e501754fcab87e7dd9d4a755b62bbbed6c46a06c8a0fc50ffbab562",
+      "peakDbfs": -3.144209,
+      "rmsDbfs": -18.000259,
+      "seamDelta": 0
+    },
+    {
+      "id": "sfx.ice_crack",
+      "file": "sfx.ice_crack.wav",
+      "kind": "sfx",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 21168,
+      "duration": 0.48,
+      "loop": false,
+      "hash": "be2f2415f30a8a7002785f78c33e236115e884958d4027b7afb7b6e7337b40e9",
+      "peakDbfs": -1.209359,
+      "rmsDbfs": -18.000266,
+      "seamDelta": 0
+    }
+  ]
+}

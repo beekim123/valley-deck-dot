@@ -1,0 +1,45 @@
+{
+  "upstream": "https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.09.25",
+  "source_repository": "https://github.com/beekim123/rpg2d-dot",
+  "source_commit": "84830b12d3d8fada811dd7bba401eb04d062f7af",
+  "retrieved_utc": "2026-10-26",
+  "modifications": "None; files copied byte-for-byte, including all four licenses and original README.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 673,
+      "sha256": "2e5863f7e394de7052c80424cbdebacdaa2b12ff8e94bda41124d66d1e2e356d",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/README.md"
+    },
+    {
+      "path": "OFL.txt",
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/OFL.txt"
+    },
+    {
+      "path": "fusion-pixel-12px-proportional-zh_hans.otf.woff2",
+      "bytes": 666264,
+      "sha256": "0ebd99e6f1e9b650a793a3f759c1c3dfa99f0c5b6502e78569b48ddb43767e40",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2"
+    },
+    {
+      "path": "LICENSES/ark-pixel/OFL.txt",
+      "bytes": 4412,
+      "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/LICENSES/ark-pixel/OFL.txt"
+    },
+    {
+      "path": "LICENSES/cubic-11/OFL.txt",
+      "bytes": 5364,
+      "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/LICENSES/cubic-11/OFL.txt"
+    },
+    {
+      "path": "LICENSES/galmuri/LICENSE.txt",
+      "bytes": 4360,
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1",
+      "url": "https://raw.githubusercontent.com/beekim123/rpg2d-dot/84830b12d3d8fada811dd7bba401eb04d062f7af/third_party/fonts/fusion-pixel-12px/LICENSES/galmuri/LICENSE.txt"
+    }
+  ]
+}

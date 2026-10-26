@@ -1,0 +1,6 @@
+{
+  "format": "content/1",
+  "files": [
+    { "id": "locations", "path": "data/locations.json" }
+  ]
+}

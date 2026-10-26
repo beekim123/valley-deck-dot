@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-尚未开工，只有设计文档。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
+D0 地基已实现，正在验收；完整牌桌玩法从 D1 开始。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
 
 ## 目录
 
@@ -25,12 +25,16 @@
 
 详细规则见 [docs/tech/repository-layout.md](docs/tech/repository-layout.md)。
 
-## 运行（开发开始后补全）
+## 运行与验证
 
 需要 Node.js 22.13+ 和 Godot 4.7.2。
 
 ```sh
 npm ci
-npm run sync
+# 若 PATH 中不是 4.7.2，先设置 GODOT_BIN 为你的 Godot 4.7.2 可执行文件
+npm run build
+npm run check
 npm run dev
 ```
+
+D0：`npm run shots` 在图形桌面运行并保存标题冬春截图。`npm run sim` 在 D1 实现，D0 不伪报模拟通过。声音已做数值/播放状态检查；当前云端无音频设备，尚未实际试听。
