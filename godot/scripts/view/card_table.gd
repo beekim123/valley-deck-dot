@@ -17,6 +17,7 @@ var short_night := false
 var night_events: Array = []
 var night_index := 0
 var night_result: Dictionary = {}
+var night_initial_locations: Dictionary = {}
 var status := "小烬：把人物拖到地点，先看看，再决定。"
 var cards: Dictionary = {}
 var mode := "case"
@@ -32,6 +33,8 @@ var story_player: Control
 var banter: Node
 var keyboard_location := 0
 var night_picture: TextureRect
+var night_actor: TextureRect
+var night_actor_art := ""
 var night_art := ""
 var night_clock := 0.0
 var night_auto := false
@@ -43,6 +46,7 @@ var deco_nodes: Dictionary = {}
 var idle_clock := 0.0
 var deco_poke_until: Dictionary = {}
 var pending_restores: Array[String] = []
+var banter_day := -1
 
 func _ready() -> void:
 	setup_theme()
@@ -191,10 +195,8 @@ func render_table() -> void:
 			if not thaw_preview.uses.is_empty(): state_label += " " + amounts(thaw_preview.uses[0].cost)
 		label(card, state_label, Rect2(4, 66, 64, 18), PAPER if mutable.state == "fog" else INK)
 		if not mutable.progress.is_empty():
-			var values: Array = []
-			for key: String in mutable.progress:
-				values.append(str(mutable.progress[key]))
-			label(screen, "进度 " + "/".join(values), Rect2(x + 4, y + 4, 64, 14), GOLD)
+			panel(screen, Rect2(x + 2, y + 2, 68, 20))
+			label(screen, progress_text(mutable.progress), Rect2(x + 5, y + 4, 62, 16), GOLD)
 		var local: Array = []
 		for assignment: Dictionary in state.assignments:
 			if assignment.location_id == loc.id:
@@ -238,7 +240,19 @@ func render_table() -> void:
 	label(screen, status, Rect2(42, 332, 440, 26), GOLD, true)
 	build_decorations()
 	update_highlights()
-	banter.trigger("day_start", {"day": state.day}, state)
+	if banter_day != int(state.day):
+		banter_day = int(state.day)
+		banter.trigger("day_start", {"day": state.day}, state)
+
+func progress_text(progress: Dictionary) -> String:
+	var values: PackedStringArray = []
+	for key: String in progress:
+		var cap := int(defs.balance.get("progress_caps", {}).get(key, 0))
+		if cap <= 0:
+			push_error("Missing positive progress display cap: " + key)
+			return "进度资料缺失"
+		values.append("%d/%d" % [int(progress[key]), cap])
+	return "进度 " + " ".join(values)
 
 func state_word(value: String) -> String:
 	return {"fog": "探路翻开", "frozen": "霜封", "thawed": "解冻", "restored": "回春"}.get(value, value)
@@ -292,6 +306,9 @@ func make_token(id: String, assignment_id: String, rect: Rect2, compact: bool = 
 	token.board = self
 	token.resident_id = id
 	token.assignment_id = assignment_id
+	if compact:
+		for assignment: Dictionary in state.assignments:
+			if assignment.id == assignment_id: token.target_location = str(assignment.location_id)
 	for style_name: String in ["normal", "hover", "pressed", "focus"]:
 		var style: StyleBox = skin("ui.panel.wood")
 		style.set_content_margin_all(0)
@@ -326,7 +343,7 @@ func select_resident(id: String, assignment_id: String = "") -> void:
 	selected = id
 	replacing = assignment_id
 	AudioService.unlock()
-	AudioService.play_sfx("sfx.card_drop")
+	AudioService.play_sfx("sfx.card_pick")
 	update_highlights()
 
 func can_place(id: String, loc: String, old: String = "") -> bool:
@@ -417,28 +434,35 @@ func choose_location(loc: String) -> void:
 	var column := VBoxContainer.new()
 	column.custom_minimum_size.x = 524
 	scroll.add_child(column)
+	var first_option: Button
 	for use: Dictionary in preview.get("uses", []):
 		var option := button(column, use_text(use), Rect2(0, 0, 524, 34), confirm_use.bind(loc, use.id, int(preview.revision)))
 		option.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		option.custom_minimum_size = Vector2(524, 34)
 		option.disabled = not use.get("enabled", false)
-	button(modal, "取消 · 不扣资源", Rect2(220, 294, 200, 28), close_modal)
+		if not option.disabled and first_option == null: first_option = option
+	var cancel := button(modal, "取消 · 不扣资源", Rect2(220, 294, 200, 28), close_modal)
+	if first_option != null: first_option.grab_focus()
+	else: cancel.grab_focus()
 
 func confirm_use(loc: String, use_id: String, revision: int) -> void:
 	if revision != int(state.revision):
 		show_notice("状态已变化，请重新选择。")
 		return
+	var assigned_resident := selected
 	var result: Dictionary = Rules.assign(state, selected, loc, use_id, replacing)
 	status = display_name(selected) + "：好，晚上见。" if result.ok else reason(result.reason_code)
 	selected = ""
 	replacing = ""
-	AudioService.play_sfx("sfx.card_drop")
+	AudioService.play_sfx("sfx.card_drop" if result.ok else "sfx.ui_deny")
 	render_table()
+	if result.ok: banter.trigger("assign", {"resident_id": assigned_resident, "location_id": loc, "use_id": use_id}, state)
 
 func cancel_assignment(id: String) -> void:
 	if locked or id.is_empty():
 		return
 	var result: Dictionary = Rules.unassign(state, id)
+	AudioService.play_sfx("sfx.card_return" if result.ok else "sfx.ui_deny")
 	status = "已撤销，预扣资源全数退回。" if result.ok else reason(result.reason_code)
 	selected = ""
 	replacing = ""
@@ -522,6 +546,7 @@ func begin_night() -> void:
 		return
 	locked = true
 	selected = ""
+	night_initial_locations = state.locations.duplicate(true)
 	night_result = Rules.end_day(state)
 	if not night_result.ok:
 		locked = false
@@ -537,6 +562,8 @@ func play_next_event() -> void:
 	night_auto = false
 	night_art = ""
 	night_picture = null
+	night_actor = null
+	night_actor_art = ""
 	night_generation += 1
 	if night_index >= night_events.size():
 		show_summary()
@@ -565,29 +592,31 @@ func play_next_event() -> void:
 	night_duration = 0.6 if short_night else 1.8
 	if kind == "resolve":
 		var suffix := str(payload.location_id).trim_prefix("loc.")
+		var cue: String = {"chop": "sfx.chop", "stones": "sfx.stone_clink", "haul": "sfx.stone_clink", "chisel": "sfx.stone_clink", "gnaw": "sfx.beaver_gnaw", "build_dam": "sfx.beaver_gnaw", "repair_wheel": "sfx.hammer", "reinforce": "sfx.hammer", "fire": "sfx.fire_crackle", "brew": "sfx.fire_crackle", "driftwood": "sfx.splash"}.get(str(payload.use_id), "")
+		if not cue.is_empty(): AudioService.play_sfx(cue)
+		picture(modal, "portrait." + str(payload.resident_id).trim_prefix("res."), Vector2(80, 124), 2)
+		label(modal, display_name(str(payload.resident_id)), Rect2(80, 208, 96, 20), GOLD)
 		night_art = "locart." + suffix + ".anim." + str(payload.use_id)
-		if not AssetCatalog.has_art(night_art):
-			# Generic explore/thaw use the authored winter card, never another location.
-			night_art = "locart." + suffix + ".winter"
-		night_picture = picture(modal, night_art, Vector2(192, 82), 4)
+		if str(payload.use_id) in ["explore", "thaw"]:
+			night_art = ""
+			mount_reveal(suffix, "flip" if str(payload.use_id) == "explore" else "thaw")
+		else:
+			if night_initial_locations.get(str(payload.location_id), {}).get("state", "thawed") != "restored": night_art += ".winter"
+			night_picture = picture(modal, night_art, Vector2(192, 82), 4)
+			night_actor_art = "walker." + str(payload.resident_id).trim_prefix("res.")
+			night_actor = picture(modal, night_actor_art, Vector2(296, 162), 4, 4)
 		night_clock = 0.0
 		night_auto = true
 		night_duration = 0.8 if short_night else 2.4
 		label(modal, event_text(event), Rect2(60, 264, 520, 20), GOLD)
 	elif kind in ["restore", "flip", "thaw"]:
-		var reveal := preload("res://scripts/view/card_reveal.gd").new()
-		reveal.art = str(payload.loc).trim_prefix("loc.")
-		reveal.kind = kind
-		reveal.position = Vector2(192, 82)
-		reveal.size = Vector2(256, 192)
-		reveal.duration = 0.6 if short_night else 2.0
-		night_duration = reveal.duration + 0.2
-		modal.add_child(reveal)
+		mount_reveal(str(payload.loc).trim_prefix("loc."), kind)
 		label(modal, event_text(event), Rect2(60, 264, 520, 20), GOLD)
 	else:
 		label(modal, event_text(event), Rect2(60, 104, 520, 150), PAPER, true)
 		if kind == "gain":
 			var art := "icon." + str(payload.get("res", "warmth"))
+			AudioService.play_sfx("sfx.gain_" + str(payload.get("res", "warmth")))
 			var icon := picture(modal, art, Vector2(306, 200), 2)
 			night_art = art
 			night_picture = icon
@@ -595,6 +624,19 @@ func play_next_event() -> void:
 			tween.tween_method(func(value: Vector2): if is_instance_valid(icon): icon.position = value.round(), Vector2(306, 200), Vector2(80, 80), 0.6)
 	button(modal, "下一条 / 按住加速", Rect2(80, 294, 220, 28), play_next_event)
 	button(modal, "跳过演出 → 小结", Rect2(330, 294, 230, 28), show_summary)
+
+func mount_reveal(suffix: String, kind: String) -> void:
+	var reveal := preload("res://scripts/view/card_reveal.gd").new()
+	reveal.name = "CardReveal"
+	reveal.art = suffix
+	reveal.kind = kind
+	if kind == "flip": AudioService.play_sfx("sfx.card_flip")
+	elif kind == "thaw": AudioService.play_sfx("sfx.ice_crack")
+	reveal.position = Vector2(192, 82)
+	reveal.size = Vector2(256, 192)
+	reveal.duration = 0.6 if short_night else 2.0
+	night_duration = reveal.duration + 0.2
+	modal.add_child(reveal)
 
 func story_text(id: String) -> String:
 	var story := record("pages", id)
@@ -631,6 +673,8 @@ func show_summary() -> void:
 	night_auto = false
 	night_art = ""
 	night_picture = null
+	night_actor = null
+	night_actor_art = ""
 	night_generation += 1
 	clear_story()
 	night_index = night_events.size() + 1
@@ -706,6 +750,9 @@ func _input(event: InputEvent) -> void:
 				for assignment: Dictionary in state.assignments:
 					if assignment.resident_id == available[index]: old = assignment.id
 				select_resident(available[index], old)
+				keyboard_location = 0
+				if not cards.is_empty(): cards[cards.keys()[0]].grab_focus()
+				get_viewport().set_input_as_handled()
 		elif event.keycode in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN] and mode == "table":
 			if is_instance_valid(modal) and modal.has_node("FullPanorama"):
 				modal.get_node("FullPanorama").pan(-128 if event.keycode in [KEY_LEFT, KEY_UP] else 128)
@@ -782,7 +829,9 @@ func poke(id: String) -> void:
 	if id == "teacup": _bubble("ember", "别往我身上倒！" if count % 5 == 0 else "茶还热着呢。")
 	elif id == "pipe": _bubble("ember", "烟圈怎么套我头上了！" if count % 3 == 0 else "噗，一个圈。")
 	elif id == "ember":
-		if count % 10 == 0: ember_sulk_day = int(state.day)
+		if count % 10 == 0:
+			ember_sulk_day = int(state.day)
+			banter.mute_for_day("ember", int(state.day))
 		else: _bubble("ember", "干嘛！")
 	elif id == "clock" and state.get("ending_seen", false):
 		if AssetCatalog.has_audio("sfx.clock_tick"): AudioService.play_sfx("sfx.clock_tick")
@@ -803,6 +852,8 @@ func _process(delta: float) -> void:
 	if is_instance_valid(night_picture) and not night_art.is_empty():
 		var frames := int(AssetCatalog.metadata(night_art).get("frames", 1))
 		night_picture.texture = AssetCatalog.texture(night_art, int(night_clock * 6) % frames)
+	if is_instance_valid(night_actor) and not night_actor_art.is_empty():
+		night_actor.texture = AssetCatalog.texture(night_actor_art, 4 + int(night_clock * 6) % 4)
 	if night_auto and night_clock > night_duration:
 		night_auto = false
 		play_next_event()

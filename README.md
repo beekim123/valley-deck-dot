@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-D0 地基已验收并推送。D1 灰盒牌桌按明确修订的验收v2已通过，D2叙事与正式美术已接入，正在实机复验；不是最终Demo。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
+D0 地基已验收并推送。D1 灰盒牌桌按明确修订的验收v2已通过，D2技术检查与云端实机复验已完成；真实Mac启动和主观听感仍待试玩，不是正式demo-1。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
 
 ## 目录
 
@@ -42,3 +42,7 @@ D0：`npm run shots` 在图形桌面运行并保存标题冬春截图。`npm run
 ## D1 验证状态
 
 `npm run check` 检查资源、内容、同步、规则/存档/UI 回归；`npm run sim` 单独执行明确记录的v2完整玩法验收，原始门槛仍记录失败（均匀随机115/200在60天完成，非死局）。失败报告：`artifacts/reports/d1-uniform-baseline.json`；方法与后续实验见 `docs/plan/simulation-notes.md`。v2通过后进入D2，灰盒不是最终美术。
+
+## 试玩候选交付
+
+参阅 [开始试玩](docs/playtest/START-HERE.md) 与 [macOS 候选包说明](docs/plan/macos-candidate.md)。当前为第一卷0.1.0候选，不是已在干净Mac验收的demo-1；主观听感与真实Mac启动等待试玩反馈。

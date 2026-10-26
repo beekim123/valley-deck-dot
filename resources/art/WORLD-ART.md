@@ -7,7 +7,7 @@ All work is repository-authored integer PixelCanvas geometry, using only the exi
 | IDs | Count | Frame size | Frames |
 |---|---:|---:|---:|
 | `locart.<location>.spring`, `.winter` | 22 | 64 × 48 | 1 |
-| `locart.<location>.anim.<use>` | 22 | 64 × 48 | 4 |
+| `locart.<location>.anim.<use>` and `.winter` | 44 | 64 × 48 | 4 |
 | `pano.<location>.spring`, `.winter` | 22 | 128 × 80 | 1 |
 | `still.<scene>`, `still.<scene>.memory` | 12 | 320 × 180 | 2 |
 
@@ -31,7 +31,7 @@ Existing D0 `source/location/pines.mjs` and its two semantic IDs remain unchange
 | old_bridge | two stone piers, raised wooden span | watch, reinforce |
 | flood_beach | sandy flood line, shells, washed-up envelope | shells |
 
-Night scenes show their action through objects and poses, not just a palette swap: raised/lowered axe and chips, lifting stones, herb stalks into baskets, steaming kettle or cup, open notebook, hopping robin, ice chisel/cracks, beavers/logs, mallet/wheel, lantern, and spreading warmth. Characters here are tiny scene actors, not substitutes for the resident portrait/walker assets.
+Night scenes show their action through objects and poses, not just a palette swap: raised/lowered axe and chips, lifting stones, herb stalks into baskets, steaming kettle or cup, open notebook, hopping robin, ice chisel/cracks, beavers/logs, mallet/wheel, lantern, and spreading warmth. Night strips contain no baked human/beaver actor or skin-arm strokes. The view overlays the actual assigned resident's `walker.<resident>` work frames at top-left `[26,20]`, foot `[34,44]`, also recorded as `actor_anchor` metadata. Original animation IDs are spring; additive `.winter` IDs retain real snow. Choose based on pre-night location state: restored uses spring, other states winter.
 
 ## Panorama topology
 
@@ -47,4 +47,6 @@ Local review entrypoint: `.local/world-review/render.mjs` (scratch only, not run
 - `panorama.png`: narrative strip, winter above spring.
 - `stills.png`: six backgrounds, two columns × three rows.
 
-Reviewed all four proofs: seasonal landmark identity retained, snow forms caps rather than noise, tool/action props differ, panorama edge columns are checked exactly. All 78 assets / 156 frames passed metadata, 48-color and binary-alpha checks. Parent runs the shared build/verify/paginated proof gallery and Godot sync after both art workers freeze sources. Runtime typography, cropping, actual card size and panorama transitions remain part of that integration review.
+Reviewed all four proofs: seasonal landmark identity retained, snow forms caps rather than noise, tool/action props differ, panorama edge columns are checked exactly. The updated 100 assets / 244 frames retain metadata, 48-color and binary-alpha constraints. All 44 night strips / 176 frames were explicitly revalidated; each strip has four distinct frames. Parent runs the shared build/verify/paginated proof gallery and Godot sync after both art workers freeze sources. Runtime typography, cropping, actual card size and panorama transitions remain part of that integration review.
+
+Integration correction proof: `.local/world-review/night-season-actors.png` shows five actions with actual resident overlays, spring left / winter right. It is a composition proof, not an in-game screenshot. The valley-gate still no longer bakes in an extra tiny Anuan: the StoryPlayer actor layer supplies the sole protagonist.

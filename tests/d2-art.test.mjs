@@ -19,16 +19,16 @@ test('D2 inventory explicitly covers every character, landmark, content use, ill
   for (const name of landmarks) for (const prefix of ['locart', 'pano']) for (const season of ['spring', 'winter']) required.add(`${prefix}.${name}.${season}`);
   const { locations } = await json('data/locations.json');
   assert.deepEqual(locations.map(l => l.id.slice(4)).sort(), [...landmarks].sort());
-  for (const location of locations) for (const use of location.uses) required.add(`locart.${location.id.slice(4)}.anim.${use.id}`);
+  for (const location of locations) for (const use of location.uses) for(const season of ['', '.winter']) required.add(`locart.${location.id.slice(4)}.anim.${use.id}${season}`);
   for (const scene of scenes) for (const suffix of ['', '.memory']) required.add(`still.${scene}${suffix}`);
-  for (const id of ['board.table', 'char.ember', 'card.res_frame', 'card.event_frame', 'card.spell_frame', 'fx.ice_crack', 'fx.ice_shatter', 'note.paper']) required.add(id);
+  for (const id of ['board.table', 'icon.app', 'char.ember', 'card.res_frame', 'card.event_frame', 'card.spell_frame', 'fx.ice_crack', 'fx.ice_shatter', 'note.paper']) required.add(id);
   for (const state of ['fog', 'frozen', 'thawed', 'restored']) required.add(`card.loc_frame.${state}`);
   for (const name of ['clock', 'lantern', 'pipe', 'teacup', 'window']) required.add(`deco.${name}`);
   for (const name of ['wood', 'stone', 'warmth']) required.add(`icon.${name}`);
   for (const name of ['bubble', 'paper', 'preview', 'wood']) required.add(`ui.panel.${name}`);
   for (const n of [1, 2, 3]) required.add(`note.sketch.${n}`);
   for (const id of required) assert.ok(assets.has(id), `missing required D2 asset ${id}`);
-  assert.equal(required.size, 141, 'review baseline changes by semantic group, not by weakening a total');
+  assert.equal(required.size, 164, 'review baseline changes by semantic group, not by weakening a total');
   assert.ok(assets.size >= required.size);
 });
 
@@ -92,4 +92,8 @@ test('all story layer references exist and requested frames fit the exact author
     assert.ok(Number.isInteger(layer.x) && Number.isInteger(layer.y));
     if (layer.pan) assert.ok(layer.pan.every(Number.isInteger));
   }
+});
+
+test('first-party application icon is a deterministic native 128px asset, not engine branding', async () => {
+ const icon=(await map()).get('icon.app');assert.ok(icon);assert.deepEqual(icon.meta.size,[128,128]);assert.equal(icon.meta.frames,1);validatePixels(icon.frames[0]);
 });

@@ -2,6 +2,7 @@ extends Node
 ## Native synchronized day stems share a playback clock; no seeking/polling approximation.
 const MAX_SFX := 6
 var enabled := false
+var _shutdown_started := false
 var _sfx: Array[AudioStreamPlayer] = []
 var _music: Array[AudioStreamPlayer] = []
 var _ambient: Array[AudioStreamPlayer] = []
@@ -15,6 +16,9 @@ var _restored_count := 0
 var _day_stream: AudioStreamSynchronized
 
 func _ready() -> void:
+	# _exit_tree alone is too late: the audio thread needs a live tree to drain.
+	get_tree().auto_accept_quit = false
+	get_tree().root.close_requested.connect(_on_close_requested)
 	for bus_name: String in ["Music", "SFX"]:
 		if AudioServer.get_bus_index(bus_name) < 0:
 			AudioServer.add_bus()
@@ -44,7 +48,7 @@ func _input(event: InputEvent) -> void:
 		unlock()
 
 func unlock() -> void:
-	if enabled:
+	if _shutdown_started or enabled:
 		return
 	enabled = true
 	if not _pending_id.is_empty():
@@ -54,7 +58,7 @@ func play_sound(id: String) -> void:
 	play_sfx(id)
 
 func play_sfx(id: String) -> void:
-	if not enabled:
+	if _shutdown_started or not enabled:
 		return
 	var stream := AssetCatalog.sound(id)
 	if stream == null:
@@ -66,6 +70,8 @@ func play_sfx(id: String) -> void:
 	player.play()
 
 func play_music(id: String) -> void:
+	if _shutdown_started:
+		return
 	var canonical := "music.day" if id.begins_with("music.day") else id
 	_pending_id = canonical
 	if not enabled or canonical == _current_id:
@@ -108,6 +114,8 @@ func _layer_db(index: int) -> float:
 	return 0.0 if index == 0 or (index == 1 and _restored_count >= 2) or (index == 2 and _restored_count >= 5) else -60.0
 
 func set_restored_count(count: int) -> void:
+	if _shutdown_started:
+		return
 	_restored_count = maxi(0, count)
 	if _layer_tween != null:
 		_layer_tween.kill()
@@ -155,9 +163,25 @@ func stop_all() -> void:
 	for player: AudioStreamPlayer in _sfx + _music + _ambient:
 		player.stop()
 		player.stream = null
+	_music_tween = null
+	_layer_tween = null
 	_current_id = ""
 	_pending_id = ""
 	_day_stream = null
+
+func _on_close_requested() -> void:
+	if _shutdown_started:
+		return
+	_shutdown_started = true
+	enabled = false
+	stop_all()
+	# No waiting on an unbounded hardware callback. Process even when paused and
+	# ignore game time scale; repeated close requests do not restart this timer.
+	var tree := get_tree()
+	await tree.process_frame
+	await tree.process_frame
+	await tree.create_timer(0.3, true, false, true).timeout
+	tree.quit()
 
 func _exit_tree() -> void:
 	stop_all()

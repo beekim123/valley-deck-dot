@@ -1,0 +1,26 @@
+{
+  "status": "candidate_package_validated_not_macOS_tested",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "sourceManifestSha256": "2dab29fdcfe97b3dae42669c91392298ee7cba02df3bbc2bdc4ad7e440a7296b",
+  "templateSha512": "0310a772b1acf3a63acc74a2a44352bb3a20cb3bee4a8112cc124e6f078dbef2109629f07b87e561a0a87966ee15d595fbc9dc9d2a6b49bd38aa7f9278f62c27",
+  "archive": "valley-deck-0.1.0-macos-candidate.zip",
+  "bytes": 74756455,
+  "sha256": "69e09ced52d665294dac91c676219a44ab9e2699ce5020e744f507144bb8387b",
+  "sha512": "0f991570f3c77eac5382445d8b81636cadad08aee8d6ada1ec5ed3410667814f5c1312423b3b3e8782fade1b95ac4992e2e34f958398b723619a1eb13a6fc7bf",
+  "presetSha256": "b60be237fb6c60b8d8f021cfaa6d3dc69d13c2cb4149a1ad4b55e9ae1454f1b9",
+  "resourcePackSha256": "0c3fc83448de53ef5e441a108bde81138d44a61653dd44cfaf417d92fdd4827b",
+  "macOSLaunchTested": false,
+  "notarized": false,
+  "packProbe": {
+    "checks": 283,
+    "failures": 0
+  },
+  "rawAudit": {
+    "raw_wav": 55,
+    "raw_json": 15,
+    "font_files": 1,
+    "license_files": 4,
+    "failures": 0
+  },
+  "sourceIdentity": "Exact source-manifest.json snapshot, including uncommitted changes; not claimed to equal Git HEAD."
+}

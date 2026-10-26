@@ -31,6 +31,9 @@ func run() -> void:
 	root.add_child(table)
 	await process_frame
 	table.save_enabled = false
+	# Capture complete captions deterministically without changing any rule state.
+	table.settings.text_speed = 0
+	table.short_night = false
 	await capture("d2-scroll-case")
 	table.show_intro()
 	await capture("d2-intro")

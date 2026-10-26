@@ -473,7 +473,7 @@
         }
       },
       "file": "board.table.png",
-      "hash": "691205b7d22de887cd44c99cd9a3cc345fb07b8f11a2009adc827aad60f786fb"
+      "hash": "9bef64d934671ad4100db9cb94a62e4d78a34eff2b4b5daf33b2b251cdc27a1f"
     },
     {
       "id": "card.event_frame",
@@ -956,6 +956,30 @@
       "hash": "49ca8ab06fb4becdaa295754735dc4f425e44eb75c18de5e9a11163d2db397a7"
     },
     {
+      "id": "icon.app",
+      "category": "icon",
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "animations": {
+        "idle": {
+          "fps": 1,
+          "loop": true,
+          "frames": [
+            0
+          ]
+        }
+      },
+      "file": "icon.app.png",
+      "hash": "75461104877d2e2c3ce13939acd252e665b24c21949aa693a0a6dfd1812fb08d"
+    },
+    {
       "id": "icon.stone",
       "category": "icon",
       "size": [
@@ -1081,8 +1105,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.flood_beach.anim.shells.png",
-      "hash": "d42b39a82cbff759c7b406b5a4a0b8127f496b54ce5f01db9ba75e83dac05c49"
+      "hash": "3da21a10e0d8e68439a940e2fa11f0aae52352d959720ca9e5dba60376783e5c"
+    },
+    {
+      "id": "locart.flood_beach.anim.shells.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.flood_beach.anim.shells.winter.png",
+      "hash": "f357973882597c20fc40facb8c8bdaa0977671a2741c8a6b0a9529077499f556"
     },
     {
       "id": "locart.flood_beach.spring",
@@ -1156,8 +1215,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.flower_slope.anim.herbs.png",
-      "hash": "9583f4327c4167a043fbdec0ca56d807410b1f37b73cfbece416ea75c7a8a2db"
+      "hash": "6eb808afcdadb28189e3a6f933e1f8edbfcddb0459cd8c6bcf710bc9667fc3d7"
+    },
+    {
+      "id": "locart.flower_slope.anim.herbs.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.flower_slope.anim.herbs.winter.png",
+      "hash": "c950c22f4f8dd2465655be9b7c4bca3c78067a51cb318b0cfa07d323a5c217f8"
     },
     {
       "id": "locart.flower_slope.anim.sun",
@@ -1183,8 +1277,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.flower_slope.anim.sun.png",
-      "hash": "0cf154977dbce5770f60a7b7dc88519efa7e174f4b097116915d3a360677ccbb"
+      "hash": "28804de9af1bb07f47dd3ee97e4239c1b16b401ee1897220876fa00a9e74f5fb"
+    },
+    {
+      "id": "locart.flower_slope.anim.sun.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.flower_slope.anim.sun.winter.png",
+      "hash": "fead2f64fd19abad9d2bcdae7734a04f90e12f247d871cbcb6966d626df7635f"
     },
     {
       "id": "locart.flower_slope.spring",
@@ -1258,8 +1387,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.gravel.anim.haul.png",
-      "hash": "0114a2422cfcf6e18858fa164b32f3f1632b48ec7ed7e8ef9e7a64bb82e75bd2"
+      "hash": "0b10d3d85b662852b902a7b3b7c8732a9f13a7de821bad8e86c8b7fdf4f95914"
+    },
+    {
+      "id": "locart.gravel.anim.haul.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.gravel.anim.haul.winter.png",
+      "hash": "b5093bd8911c9124c85f27c4a42e3500d73028b4feb815ba41deb703c10c244b"
     },
     {
       "id": "locart.gravel.anim.stones",
@@ -1285,8 +1449,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.gravel.anim.stones.png",
-      "hash": "c00459a27a82aeb46acef216ffc4e015ea1eb735513fb50618427439086d67ef"
+      "hash": "67763c238561e5ba65023bebfa9fbe6ce0f40a4d608095be5862499d36d2e435"
+    },
+    {
+      "id": "locart.gravel.anim.stones.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.gravel.anim.stones.winter.png",
+      "hash": "0cee5f7a899c08412b53859f2e8dcc24c55dc801cd5f80ae4d152aa49daf4192"
     },
     {
       "id": "locart.gravel.spring",
@@ -1360,8 +1559,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.herb_garden.anim.brew.png",
-      "hash": "f382747f56e1a5a6e6eb492abc1958393bd13bc8c7dfba5d9fbe93fcca746496"
+      "hash": "d4a3ca816f42d8d088a3976c452c17418e173af17671a7f81fc45362acb14751"
+    },
+    {
+      "id": "locart.herb_garden.anim.brew.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.herb_garden.anim.brew.winter.png",
+      "hash": "ab6b6f1173e7acac75b67d9a4322a932b3cb7a67f1fa649afa9d5262b0fd4ee4"
     },
     {
       "id": "locart.herb_garden.anim.tea",
@@ -1387,8 +1621,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.herb_garden.anim.tea.png",
-      "hash": "29db258a6fd3676c545910f19bdbf6ed658e888a71b37ade4370d0cdac5afcff"
+      "hash": "20cf72cfc459949f2d22ce9f1d08d6a0d547d874d48ff1e4e23b04de9b0b2169"
+    },
+    {
+      "id": "locart.herb_garden.anim.tea.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.herb_garden.anim.tea.winter.png",
+      "hash": "59dadcd99a2cd6c1ffe8f46fd1567d5b7d61928b619550c0a102e7a31790375f"
     },
     {
       "id": "locart.herb_garden.spring",
@@ -1462,8 +1731,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.hut.anim.feed.png",
-      "hash": "57ebac660f482f6b9d17b2702f0ba359f6ae0a057b77b0eb9a3aeed4fdca584c"
+      "hash": "e8b56a1fcdb5b6cafb99132ee5c526d4ddf03fec0f2dc0f3c37060c417451dbd"
+    },
+    {
+      "id": "locart.hut.anim.feed.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.hut.anim.feed.winter.png",
+      "hash": "ebda1d4b08cafe52f0aaecd9a4a5a3e8ef7b868893eec8e01ccf420e9f1dddf1"
     },
     {
       "id": "locart.hut.anim.fire",
@@ -1489,8 +1793,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.hut.anim.fire.png",
-      "hash": "763d88fb2360a6c428f79937acc2dc909b5928626d6d528d56207b2bd8d1bda7"
+      "hash": "a0cdb9d2fdf3227e02531587020d485a2e4e769937a72551018f10aff35ca302"
+    },
+    {
+      "id": "locart.hut.anim.fire.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.hut.anim.fire.winter.png",
+      "hash": "fd1a1db0e16f1c3ce782a32be0238eb71d6b019b61cab905136a7e3800003b09"
     },
     {
       "id": "locart.hut.anim.read_notes",
@@ -1516,8 +1855,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.hut.anim.read_notes.png",
-      "hash": "a46bac70451bca7599e855a55ab0ff0c6e0bc833e17e4b2e4fdbcbd52a9ebc49"
+      "hash": "1c5606a99b199d86266f186aa06f551e55c705ef829ee9e8e7fad354c4a38613"
+    },
+    {
+      "id": "locart.hut.anim.read_notes.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.hut.anim.read_notes.winter.png",
+      "hash": "864f08d1a8f85c3eb5bc7ce3217ff51df9cd4250380bb317312b92df160f9697"
     },
     {
       "id": "locart.hut.spring",
@@ -1591,8 +1965,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.mill.anim.repair_wheel.png",
-      "hash": "69563d637ef157daba56faab6a41d4a0d937aa6cb70af8a955e4e629024fd776"
+      "hash": "c4ab03bdf391728b94df5224d56a26eebd1cc9cadf3c1415deea70970f48a036"
+    },
+    {
+      "id": "locart.mill.anim.repair_wheel.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.mill.anim.repair_wheel.winter.png",
+      "hash": "f88d61e6f792d6ec9444108301c922b5639eab8c1aadfb9fc2284a0a9e931810"
     },
     {
       "id": "locart.mill.anim.warm_family",
@@ -1618,8 +2027,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.mill.anim.warm_family.png",
-      "hash": "83ee5f4f8c0ce4b91d86481384cc1088b804f0e15a4c8826805ab83ce9b4e073"
+      "hash": "ac43f12252f92b38f89d304e1e232329b2f4c0c004e9a8e39763ecc35b109afc"
+    },
+    {
+      "id": "locart.mill.anim.warm_family.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.mill.anim.warm_family.winter.png",
+      "hash": "08f6b5af72ecc20cbe00f7e8eea401ef8dd9eb87e5fddc460a34432b1a9e8abe"
     },
     {
       "id": "locart.mill.spring",
@@ -1693,8 +2137,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.misty_bank.anim.gnaw.png",
-      "hash": "9aea8a6f558242cf1628079ba1864f1f4995ce2e1f25c4804aaadd99040231f6"
+      "hash": "0743cdaa841f89f048b56744ee4fbbb5ba9f570baa4a1fe831348cb27c889806"
+    },
+    {
+      "id": "locart.misty_bank.anim.gnaw.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.misty_bank.anim.gnaw.winter.png",
+      "hash": "b346748b662a537341eb684ded085f9f7d732628e29c35e559b63b923ae5d2ad"
     },
     {
       "id": "locart.misty_bank.spring",
@@ -1768,8 +2247,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.old_bridge.anim.reinforce.png",
-      "hash": "30002a6a3734cbe9eb00d81557fd2e9330aee1433e28e48229f74f63d076f7df"
+      "hash": "cbe1e1774ab6076730ee80b46dffdcab1ef5100b10f32babcf6a7a2e840fe5ff"
+    },
+    {
+      "id": "locart.old_bridge.anim.reinforce.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.old_bridge.anim.reinforce.winter.png",
+      "hash": "336db018b280408c3116937233a14dda37adfacb98003eca0be14ff0de966121"
     },
     {
       "id": "locart.old_bridge.anim.watch",
@@ -1795,8 +2309,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.old_bridge.anim.watch.png",
-      "hash": "371a09e3d3e6d4c47382b0548ca734fffb32e1109ef32eb15d3c9e4a4884c226"
+      "hash": "01a98482da565cc6a90fdde9c7e1118e3bb18ced4f8e67a1c65d3b6014d83644"
+    },
+    {
+      "id": "locart.old_bridge.anim.watch.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.old_bridge.anim.watch.winter.png",
+      "hash": "96aa54977275f6d6979d9a19b59b01e90ed81c15d049ed173c234b29e6b206f0"
     },
     {
       "id": "locart.old_bridge.spring",
@@ -1870,8 +2419,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.pines.anim.chop.png",
-      "hash": "58f8b62178cd1c3effbda0113a3008a4e3fbe0c355009dfb31163c76f9c90e3b"
+      "hash": "4fd33b78a69ce8560a8d439e3de6b952088bd99805ff94c4bd363a15fedca530"
+    },
+    {
+      "id": "locart.pines.anim.chop.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.pines.anim.chop.winter.png",
+      "hash": "fee05910d68d8f608afb64799f8963273db020628ded34868301a754706d6b55"
     },
     {
       "id": "locart.pines.anim.gather",
@@ -1897,8 +2481,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.pines.anim.gather.png",
-      "hash": "1ecddd96f496294d3596aeec5c275bc4ca17a6ff0f68722dab0b6216a24fdb36"
+      "hash": "92b4cbc3bee4241099a8dce7b35871feb3ba8a8a1cc14323fda595f049bd4c96"
+    },
+    {
+      "id": "locart.pines.anim.gather.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.pines.anim.gather.winter.png",
+      "hash": "33f544cc539190c1f3836a34c4995c11d03bab579c82329efa148106f4166152"
     },
     {
       "id": "locart.pines.spring",
@@ -1972,8 +2591,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.river_bend.anim.build_dam.png",
-      "hash": "2965d8b4dd6a07a91329ab973c6df874716f10d10916aec810746fa5f787c4ea"
+      "hash": "49138e5b2947ab108857e4e3df6f1358d0c13767621b62bfd5437300eae2fcd6"
+    },
+    {
+      "id": "locart.river_bend.anim.build_dam.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.river_bend.anim.build_dam.winter.png",
+      "hash": "5416e5e27730fcd8b0be465ec05b05dc8c4b06ab038533569ed22d9a614ff1b3"
     },
     {
       "id": "locart.river_bend.anim.chisel",
@@ -1999,8 +2653,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.river_bend.anim.chisel.png",
-      "hash": "a94b73851b36068e7b9f82eb9404b420026daddae32a3ffca96d4ea65523f114"
+      "hash": "c91f1809bfa2dda465e86640f9aae9d3f07805d26879de1502b78e52a81ec134"
+    },
+    {
+      "id": "locart.river_bend.anim.chisel.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.river_bend.anim.chisel.winter.png",
+      "hash": "0e5a7684d19437c28478fe405e8816c69da1cd5dd8120c7147d78393e2af381d"
     },
     {
       "id": "locart.river_bend.anim.driftwood",
@@ -2026,8 +2715,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.river_bend.anim.driftwood.png",
-      "hash": "1b14624b5ca1268aaea5608d5ef3df712186ebddab44b75190a3ec89bce186f2"
+      "hash": "6ed31c5c18990d257db96fee7b0eed17b6c61fd04726d153a1780ab63dc9d40c"
+    },
+    {
+      "id": "locart.river_bend.anim.driftwood.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.river_bend.anim.driftwood.winter.png",
+      "hash": "47fa4a9743d97945596db1a2247167a1ccf28fb5f45c2657b57d8de0f21ac2cf"
     },
     {
       "id": "locart.river_bend.spring",
@@ -2101,8 +2825,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.tree_hole.anim.search.png",
-      "hash": "85cb9e3e25a742018452b86576c2e6f68c1a2dd872f4423809b32dc7b6e0358c"
+      "hash": "82476cf5e313345b09e7b62e4ae44577eeb6c3e6f92269910dc0c937e16489f3"
+    },
+    {
+      "id": "locart.tree_hole.anim.search.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.tree_hole.anim.search.winter.png",
+      "hash": "c8aee28b8690d95e93b76387d275d2bc15dfa2e0386a88c30a309c94f0f571c6"
     },
     {
       "id": "locart.tree_hole.anim.shelter",
@@ -2128,8 +2887,43 @@
           ]
         }
       },
+      "actor_anchor": [
+        34,
+        44
+      ],
       "file": "locart.tree_hole.anim.shelter.png",
-      "hash": "bae6db457dbd6d65790a8313ac523ff664d65ad38ed71ab08ccbad63c1ae1d38"
+      "hash": "65c8b88b84841fc1bb5682e4188a8b009475d110a38784a79a01e75cae599368"
+    },
+    {
+      "id": "locart.tree_hole.anim.shelter.winter",
+      "category": "location",
+      "size": [
+        64,
+        48
+      ],
+      "frames": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "actor_anchor": [
+        34,
+        44
+      ],
+      "file": "locart.tree_hole.anim.shelter.winter.png",
+      "hash": "8655d79e20fff66687bda10eac33aa21d1659a94e399ec813d46b414d7660c84"
     },
     {
       "id": "locart.tree_hole.spring",
@@ -2225,7 +3019,7 @@
         }
       },
       "file": "note.sketch.1.png",
-      "hash": "1731085b615cb69355dc308f5cf3afed37cfa0855239993324603b4ab7489c2f"
+      "hash": "5e576eef6d76c79b0b936a4b554f06050cd519a9854ee725b99df3222f3639ee"
     },
     {
       "id": "note.sketch.2",
@@ -2249,7 +3043,7 @@
         }
       },
       "file": "note.sketch.2.png",
-      "hash": "5e576eef6d76c79b0b936a4b554f06050cd519a9854ee725b99df3222f3639ee"
+      "hash": "2336bdace0d2e420123cb274f9ab4e62471e2d9d23853bf01615b3a6c5475b61"
     },
     {
       "id": "note.sketch.3",
@@ -2273,7 +3067,7 @@
         }
       },
       "file": "note.sketch.3.png",
-      "hash": "dd9e66f0b738b8742b3aae7329e4625bcf7f58036ac5dda79c54c34c484da1ca"
+      "hash": "9c6f75cf2b590f62208efb9114424326216de12f2f162d8e2d50741a99d73b48"
     },
     {
       "id": "pano.flood_beach.spring",

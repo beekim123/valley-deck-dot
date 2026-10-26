@@ -67,7 +67,7 @@ func skin(id: String) -> StyleBoxTexture:
 	return style
 func picture(parent: Node, id: String, position_at: Vector2, factor: int = 1, frame: int = 0) -> TextureRect:
 	var node := TextureRect.new()
-	if AssetCatalog.has_art(id): node.texture = AssetCatalog.texture(id, frame)
+	node.texture = AssetCatalog.texture(id, frame)
 	node.position = position_at
 	if node.texture != null: node.size = node.texture.get_size() * maxi(1, factor)
 	node.expand_mode = TextureRect.EXPAND_IGNORE_SIZE

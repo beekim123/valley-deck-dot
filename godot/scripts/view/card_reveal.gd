@@ -26,4 +26,4 @@ func _draw() -> void:
 					draw_texture_rect_region(AssetCatalog.texture(spring), Rect2(col * 16, row * 16, 16, 16), Rect2(col * 4, row * 4, 4, 4))
 	elif kind == "thaw" and progress < 0.9:
 		var frame := mini(2, int(progress * 4))
-		draw_texture_rect(AssetCatalog.texture("fx.ice_crack", frame), Rect2(56, 0, 144, 192), false)
+		draw_texture_rect(AssetCatalog.texture("fx.ice_crack", frame), Rect2(56, 8, 144, 176), false)

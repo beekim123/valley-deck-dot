@@ -91,6 +91,7 @@
   {
     "file": "icon-01.png",
     "assets": [
+      "icon.app",
       "icon.stone",
       "icon.warmth",
       "icon.wood"
@@ -100,77 +101,114 @@
     "file": "locart-01.png",
     "assets": [
       "locart.flood_beach.anim.shells",
+      "locart.flood_beach.anim.shells.winter",
       "locart.flood_beach.spring",
       "locart.flood_beach.winter",
       "locart.flower_slope.anim.herbs",
-      "locart.flower_slope.anim.sun",
-      "locart.flower_slope.spring",
-      "locart.flower_slope.winter"
+      "locart.flower_slope.anim.herbs.winter",
+      "locart.flower_slope.anim.sun"
     ]
   },
   {
     "file": "locart-02.png",
     "assets": [
+      "locart.flower_slope.anim.sun.winter",
+      "locart.flower_slope.spring",
+      "locart.flower_slope.winter",
       "locart.gravel.anim.haul",
+      "locart.gravel.anim.haul.winter",
       "locart.gravel.anim.stones",
-      "locart.gravel.spring",
-      "locart.gravel.winter",
-      "locart.herb_garden.anim.brew",
-      "locart.herb_garden.anim.tea",
-      "locart.herb_garden.spring"
+      "locart.gravel.anim.stones.winter"
     ]
   },
   {
     "file": "locart-03.png",
     "assets": [
-      "locart.herb_garden.winter",
-      "locart.hut.anim.feed",
-      "locart.hut.anim.fire",
-      "locart.hut.anim.read_notes",
-      "locart.hut.spring",
-      "locart.hut.winter",
-      "locart.mill.anim.repair_wheel"
+      "locart.gravel.spring",
+      "locart.gravel.winter",
+      "locart.herb_garden.anim.brew",
+      "locart.herb_garden.anim.brew.winter",
+      "locart.herb_garden.anim.tea",
+      "locart.herb_garden.anim.tea.winter",
+      "locart.herb_garden.spring"
     ]
   },
   {
     "file": "locart-04.png",
     "assets": [
-      "locart.mill.anim.warm_family",
-      "locart.mill.spring",
-      "locart.mill.winter",
-      "locart.misty_bank.anim.gnaw",
-      "locart.misty_bank.spring",
-      "locart.misty_bank.winter",
-      "locart.old_bridge.anim.reinforce"
+      "locart.herb_garden.winter",
+      "locart.hut.anim.feed",
+      "locart.hut.anim.feed.winter",
+      "locart.hut.anim.fire",
+      "locart.hut.anim.fire.winter",
+      "locart.hut.anim.read_notes",
+      "locart.hut.anim.read_notes.winter"
     ]
   },
   {
     "file": "locart-05.png",
     "assets": [
-      "locart.old_bridge.anim.watch",
-      "locart.old_bridge.spring",
-      "locart.old_bridge.winter",
-      "locart.pines.anim.chop",
-      "locart.pines.anim.gather",
-      "locart.pines.spring",
-      "locart.pines.winter"
+      "locart.hut.spring",
+      "locart.hut.winter",
+      "locart.mill.anim.repair_wheel",
+      "locart.mill.anim.repair_wheel.winter",
+      "locart.mill.anim.warm_family",
+      "locart.mill.anim.warm_family.winter",
+      "locart.mill.spring"
     ]
   },
   {
     "file": "locart-06.png",
     "assets": [
-      "locart.river_bend.anim.build_dam",
-      "locart.river_bend.anim.chisel",
-      "locart.river_bend.anim.driftwood",
-      "locart.river_bend.spring",
-      "locart.river_bend.winter",
-      "locart.tree_hole.anim.search",
-      "locart.tree_hole.anim.shelter"
+      "locart.mill.winter",
+      "locart.misty_bank.anim.gnaw",
+      "locart.misty_bank.anim.gnaw.winter",
+      "locart.misty_bank.spring",
+      "locart.misty_bank.winter",
+      "locart.old_bridge.anim.reinforce",
+      "locart.old_bridge.anim.reinforce.winter"
     ]
   },
   {
     "file": "locart-07.png",
     "assets": [
+      "locart.old_bridge.anim.watch",
+      "locart.old_bridge.anim.watch.winter",
+      "locart.old_bridge.spring",
+      "locart.old_bridge.winter",
+      "locart.pines.anim.chop",
+      "locart.pines.anim.chop.winter",
+      "locart.pines.anim.gather"
+    ]
+  },
+  {
+    "file": "locart-08.png",
+    "assets": [
+      "locart.pines.anim.gather.winter",
+      "locart.pines.spring",
+      "locart.pines.winter",
+      "locart.river_bend.anim.build_dam",
+      "locart.river_bend.anim.build_dam.winter",
+      "locart.river_bend.anim.chisel",
+      "locart.river_bend.anim.chisel.winter"
+    ]
+  },
+  {
+    "file": "locart-09.png",
+    "assets": [
+      "locart.river_bend.anim.driftwood",
+      "locart.river_bend.anim.driftwood.winter",
+      "locart.river_bend.spring",
+      "locart.river_bend.winter",
+      "locart.tree_hole.anim.search",
+      "locart.tree_hole.anim.search.winter",
+      "locart.tree_hole.anim.shelter"
+    ]
+  },
+  {
+    "file": "locart-10.png",
+    "assets": [
+      "locart.tree_hole.anim.shelter.winter",
       "locart.tree_hole.spring",
       "locart.tree_hole.winter"
     ]

@@ -1,0 +1,2138 @@
+[
+  {
+    "path": "data/data/balance.json",
+    "sha256": "96a9be29439bef0d61693d284c5aa447167648fdbd72420f29eb69a8164b4d31"
+  },
+  {
+    "path": "data/data/combos.json",
+    "sha256": "d5998c7898eaa2692c12201201d17e22673acc88e6c507042a6d9d71698c6236"
+  },
+  {
+    "path": "data/data/events.json",
+    "sha256": "d83bd7f245ec9f25bb460f1661fbb7b6904f975cbb15ffd2b72517c06e80eeed"
+  },
+  {
+    "path": "data/data/goals.json",
+    "sha256": "5b58e3934a51e23a733ae180c4a1046d884a0e61fe6f06db8d375e058b963d03"
+  },
+  {
+    "path": "data/data/locations.json",
+    "sha256": "255b86cbd9b5007eb58d995868ec2678ec9ed234d40a2c6a6d8b7730010b80df"
+  },
+  {
+    "path": "data/data/residents.json",
+    "sha256": "af453c79fa0750f6f4063eec16c2e77d545cf030c663c829aa080fe8683ef6d1"
+  },
+  {
+    "path": "data/data/schedule.json",
+    "sha256": "83ee447e24a48a174b8675a8693f51c7fe70c84467cfa86bf34eca7d2667da1f"
+  },
+  {
+    "path": "data/data/spells.json",
+    "sha256": "4a5fafcca5d8068f1396d8116933bc76275483cdb59b010fcfac855605bb1c48"
+  },
+  {
+    "path": "data/data/visitors.json",
+    "sha256": "4b34c3fcb60c22fde1b861ff27cffd4708fda234f865015e9a6aa2e14d93b25a"
+  },
+  {
+    "path": "data/registry.json",
+    "sha256": "f330416ab631bc7151209fe9ffdb911d1f539e74fb9d55fdaea281a16ddd3b7e"
+  },
+  {
+    "path": "data/story/banter.json",
+    "sha256": "4f954c29f587b549cb488201f7f61ae2172d40b692ba99eb88dd5432aec90d17"
+  },
+  {
+    "path": "data/story/pages.json",
+    "sha256": "627d6248788a214159cba7913d66e84cefdf96e8e72736e48ebd11243d8ad99e"
+  },
+  {
+    "path": "export_presets.cfg",
+    "sha256": "b60be237fb6c60b8d8f021cfaa6d3dc69d13c2cb4149a1ad4b55e9ae1454f1b9"
+  },
+  {
+    "path": "project.godot",
+    "sha256": "aed374d929133d557d44595d22f9e2a22ba2dfbb8a8a2f22324f4a3251e32d9c"
+  },
+  {
+    "path": "resource-pack.json",
+    "sha256": "0c3fc83448de53ef5e441a108bde81138d44a61653dd44cfaf417d92fdd4827b"
+  },
+  {
+    "path": "resources/art/big.anuan.memory.png",
+    "sha256": "6207f731aae9c05965eb2ff976cf5940c28f4b872ee7f44d69407f828ab24295"
+  },
+  {
+    "path": "resources/art/big.anuan.memory.png.import",
+    "sha256": "bf2de830b4cf645fabf008dd0e9b73b9fcd129f4142d12562d894887e118c7a6"
+  },
+  {
+    "path": "resources/art/big.anuan.png",
+    "sha256": "37291f1c0fe73222da2016ce5ae0531dfad0291c06e35a614769bc3d710f87be"
+  },
+  {
+    "path": "resources/art/big.anuan.png.import",
+    "sha256": "caf1198d1a715d5184f7efd557cfc1e6f55c92ba43fa6b114a9d85791a5d8522"
+  },
+  {
+    "path": "resources/art/big.baiweng.memory.png",
+    "sha256": "725c552c80436ef7a98cfebd320354a48d5a45b86622c4aa20e61ddfc23dff6a"
+  },
+  {
+    "path": "resources/art/big.baiweng.memory.png.import",
+    "sha256": "c5c1c686f0d892c5e459a17a55fcf8fd48d945b7934f21a3805206bb1f5c6385"
+  },
+  {
+    "path": "resources/art/big.baiweng.png",
+    "sha256": "b0ce9c0bd8b5cfd8f0cfa05044e84a6016ba32bd0d43e2447adcb93708a8f770"
+  },
+  {
+    "path": "resources/art/big.baiweng.png.import",
+    "sha256": "0089c54a247e541cde37f3d760a2a1f2b498a5b7034a66db11a02fd5997bcd9e"
+  },
+  {
+    "path": "resources/art/big.beavers.memory.png",
+    "sha256": "4e3282c18caafb6f0905565880a986660081ef5519c2f312bdb8aec746ae1c41"
+  },
+  {
+    "path": "resources/art/big.beavers.memory.png.import",
+    "sha256": "5c6c584504f2f8b3500116eb59daa5a7907b75c8145b0730f4c1ddf0b0175fd5"
+  },
+  {
+    "path": "resources/art/big.beavers.png",
+    "sha256": "33841706f971a59805360862c9610bda698375027e0b64689de5b02b67034241"
+  },
+  {
+    "path": "resources/art/big.beavers.png.import",
+    "sha256": "6ff2515f53f84986f2851d2a427ff333325581332dfaaf36501bb689bdff1226"
+  },
+  {
+    "path": "resources/art/big.gutu.memory.png",
+    "sha256": "d59c2ffc7d54e088412b39b71a3384e11c4a7a0818e192a7608fc8f5465a2c0f"
+  },
+  {
+    "path": "resources/art/big.gutu.memory.png.import",
+    "sha256": "4fe3a01ba6a0c887d657e6d38f2dfcd7853c7eb9f9dfdfa0128ecd049a568044"
+  },
+  {
+    "path": "resources/art/big.gutu.png",
+    "sha256": "b8c5d3fda19fd467566e9ab74815cc9f5390fcd9036a1d067d991f3baede1cb9"
+  },
+  {
+    "path": "resources/art/big.gutu.png.import",
+    "sha256": "b5262e698c60dbf777b5fb8f19d1746f5e6a77fb7643cd683a003eec72f4e4ec"
+  },
+  {
+    "path": "resources/art/big.mei.memory.png",
+    "sha256": "96e27f35b749a47a70343309c9471b3e56979476d07484cb438f3b5d02558d11"
+  },
+  {
+    "path": "resources/art/big.mei.memory.png.import",
+    "sha256": "90a64d917f7c69a448c2fba4c3549271d6d843df51d69d64e715a484407b4a66"
+  },
+  {
+    "path": "resources/art/big.mei.png",
+    "sha256": "2db2d66ec1b1b377999f78643bff6c6511cdb2008b062d33c3553e01c9273984"
+  },
+  {
+    "path": "resources/art/big.mei.png.import",
+    "sha256": "37eb6001ec553e296a299c385133cf4751aee56562f4c2bcc25b2a876e4d9115"
+  },
+  {
+    "path": "resources/art/big.mill_family.memory.png",
+    "sha256": "59984f9ba44a8b654c203913bb8c3afe633f6194cc08c6e4e13f70517f73fac7"
+  },
+  {
+    "path": "resources/art/big.mill_family.memory.png.import",
+    "sha256": "0f2c40b17ad487fcba5cb090007569358a654d046045f208fdcac5d323dc1c63"
+  },
+  {
+    "path": "resources/art/big.mill_family.png",
+    "sha256": "f46e7a3b0c5883c9bf9d6613296f489ee3bb145cedaee00353a80c3dc9377439"
+  },
+  {
+    "path": "resources/art/big.mill_family.png.import",
+    "sha256": "5cbfbb4e946866547f96aa9002ccc0f2d1dd1fc5adcf0f839fa17f91600bfdb5"
+  },
+  {
+    "path": "resources/art/big.mira.memory.png",
+    "sha256": "9848f3b618ce3127fd633769892f2121821eef4f9213d90dcb0ce27000f8ff19"
+  },
+  {
+    "path": "resources/art/big.mira.memory.png.import",
+    "sha256": "7e1b564b4d26897fe7e1e422d66cb6c6f6c2ac093cacac1699bafdbf0244aa34"
+  },
+  {
+    "path": "resources/art/big.mira.png",
+    "sha256": "308752353e234ccfc95d4bfeb0b4754235c4259976294636cf757773dcf6f869"
+  },
+  {
+    "path": "resources/art/big.mira.png.import",
+    "sha256": "0ccbc3b98c9608392b9523c19e060e277bee2a1174e895a31c6abf306c26516f"
+  },
+  {
+    "path": "resources/art/big.toby.memory.png",
+    "sha256": "e4f488f6ca93087c6a0f28e0441f9952ab57463a9451fa455390ece80e99db7c"
+  },
+  {
+    "path": "resources/art/big.toby.memory.png.import",
+    "sha256": "c16b908a0698d3a9b61934fc74c741161caf56bbbda8220d5288064028a7bdd1"
+  },
+  {
+    "path": "resources/art/big.toby.png",
+    "sha256": "99125cc09382b0332fe8bdabcebe17345b48237957b536671725a70c9c626404"
+  },
+  {
+    "path": "resources/art/big.toby.png.import",
+    "sha256": "af72c7198e8157bb27c08ec13cdeb815277caedf0f71d5337e8b0809fb3fd725"
+  },
+  {
+    "path": "resources/art/big.xiaosu.memory.png",
+    "sha256": "2bc5f9bb03a6e74363ccb9b5a8b9e3ab0f18181e45a51aab0a52d7285f3b4ae9"
+  },
+  {
+    "path": "resources/art/big.xiaosu.memory.png.import",
+    "sha256": "cbf471352ed4aa43f244ff4df4157b31a00f9c5cdd18ad22595d346c0bb21574"
+  },
+  {
+    "path": "resources/art/big.xiaosu.png",
+    "sha256": "daab3309da8c6fd68f3d9e1916718a93ece09f2188382512c1f49d0b9c1c5333"
+  },
+  {
+    "path": "resources/art/big.xiaosu.png.import",
+    "sha256": "df345c02a3154f156b67be370839224a0f5ce9dfd86b24b73e29649027af4e16"
+  },
+  {
+    "path": "resources/art/board.table.png",
+    "sha256": "9bef64d934671ad4100db9cb94a62e4d78a34eff2b4b5daf33b2b251cdc27a1f"
+  },
+  {
+    "path": "resources/art/board.table.png.import",
+    "sha256": "a2536af8e576e5046eb9d13e2e1f5c79c29b17c50719285d182002af13ba829f"
+  },
+  {
+    "path": "resources/art/card.event_frame.png",
+    "sha256": "31f37c524f0f3144af6b76da50c5e8c65df5da0ec7d8d20e858f4a262022667d"
+  },
+  {
+    "path": "resources/art/card.event_frame.png.import",
+    "sha256": "bc9866f59ab05b07850cd3b1f4cc52601334ea986740bf457ff3955692db14ed"
+  },
+  {
+    "path": "resources/art/card.loc_frame.fog.png",
+    "sha256": "56d1ffff5b5936ce4ae6b92fe5cfc37d0ec9faf7c3df5ec83c6e6a6de82a80a4"
+  },
+  {
+    "path": "resources/art/card.loc_frame.fog.png.import",
+    "sha256": "e6f740c13b00062634fe9b885a93b0da14e6f28018983fdb3b23368729e32bfc"
+  },
+  {
+    "path": "resources/art/card.loc_frame.frozen.png",
+    "sha256": "cd37c9cd1750b3c0e10602f8fa84595f9277cdee298cd443ef56d09f421982ac"
+  },
+  {
+    "path": "resources/art/card.loc_frame.frozen.png.import",
+    "sha256": "185cb94e5e04f30482c7e13f5f997990e77ea958812280baea2da9a4140e18bb"
+  },
+  {
+    "path": "resources/art/card.loc_frame.restored.png",
+    "sha256": "c6fe3252cd02699e2701c6476f6e82b32b2082571ae6bb3485a38310615643ae"
+  },
+  {
+    "path": "resources/art/card.loc_frame.restored.png.import",
+    "sha256": "20b9b07f35763e6150b27453cd48f81206059100fe2e15a379e10097a92fff97"
+  },
+  {
+    "path": "resources/art/card.loc_frame.thawed.png",
+    "sha256": "bc1e1923fc0e71a08fb2017400d84a7b2d6cc7c3397384af14c9d0eee7f6847d"
+  },
+  {
+    "path": "resources/art/card.loc_frame.thawed.png.import",
+    "sha256": "e9c57d42f75abe897019f60b56963dac6d2d1637acd438cbd9b4990ea93f9976"
+  },
+  {
+    "path": "resources/art/card.res_frame.png",
+    "sha256": "19c8397950d4659e9a52ea6d094db150ea72c691808db9973b50c74f57739f13"
+  },
+  {
+    "path": "resources/art/card.res_frame.png.import",
+    "sha256": "88ff13531fd01f68447df2037bc602a4c1aef36cba1645ecda5ebc6b5f127a79"
+  },
+  {
+    "path": "resources/art/card.spell_frame.png",
+    "sha256": "86c1a22b8d63841c0032d284f8f73074010d460c9f4114da2b613ce833cc8048"
+  },
+  {
+    "path": "resources/art/card.spell_frame.png.import",
+    "sha256": "ce7e5869feb125b9e6653bf950110bdec2935c4e54d59ea01a1db462474b1566"
+  },
+  {
+    "path": "resources/art/char.ember.png",
+    "sha256": "48bfcaee135233e75f52d4cb08d25a5b6d89b913c3f525b498760b05cd5f235e"
+  },
+  {
+    "path": "resources/art/char.ember.png.import",
+    "sha256": "846785c9bb62d4229f8fdf2adf46ee6fed4454cc116f9b6b650ed5a279663940"
+  },
+  {
+    "path": "resources/art/deco.clock.png",
+    "sha256": "5658e810c17ca9cb014987bc0ae14bb0887aa9a3a83f39cd92c2866897060b86"
+  },
+  {
+    "path": "resources/art/deco.clock.png.import",
+    "sha256": "63b0f9281cca9eca914a8388122ce7cbfa1a92c0b57070ddae4b7d12476a015e"
+  },
+  {
+    "path": "resources/art/deco.lantern.png",
+    "sha256": "c3c25a44a364367aeb14930850289087fb5d1867280b1b2bcd7bfd6fe255dff7"
+  },
+  {
+    "path": "resources/art/deco.lantern.png.import",
+    "sha256": "3955f507c19618fd4b4c97bd0b5dd96bda09faca05621bd7fb4b60963096d761"
+  },
+  {
+    "path": "resources/art/deco.pipe.png",
+    "sha256": "24e3afe7fb2e95e34c35b551195c748f1ba9b91167278a505db743c2508afe31"
+  },
+  {
+    "path": "resources/art/deco.pipe.png.import",
+    "sha256": "4a1de203809b41a992a5ff7fa48a3913e676c21e24088c57b7d2cd149681e23d"
+  },
+  {
+    "path": "resources/art/deco.teacup.png",
+    "sha256": "e5d19b7c59cea5c097701b03318d62c6e00476382a5998952b5213ec54865ffc"
+  },
+  {
+    "path": "resources/art/deco.teacup.png.import",
+    "sha256": "836698457ff60a920a342ecc02254a0f979fc956abf6ae30bbe22eb53d698603"
+  },
+  {
+    "path": "resources/art/deco.window.png",
+    "sha256": "6b652914672f4d7f0fd8c814aec007a6eaee93467e7781edd2ae41b06760255a"
+  },
+  {
+    "path": "resources/art/deco.window.png.import",
+    "sha256": "e785bf94da8e7bfef2494e18783375fc901499a2799eec0256fd815c68333a65"
+  },
+  {
+    "path": "resources/art/fx.ice_crack.png",
+    "sha256": "83a1e7cb9a793e95abde8cb1aee913bbada87e1fc69b6b22abfd98fec2aa74ea"
+  },
+  {
+    "path": "resources/art/fx.ice_crack.png.import",
+    "sha256": "fbfcc094a5098d9d4f88ab1e3e68a7ab0521b2facfad1fd58d4f235a55c261eb"
+  },
+  {
+    "path": "resources/art/fx.ice_shatter.png",
+    "sha256": "49ca8ab06fb4becdaa295754735dc4f425e44eb75c18de5e9a11163d2db397a7"
+  },
+  {
+    "path": "resources/art/fx.ice_shatter.png.import",
+    "sha256": "8f50f4115f8b1102820f83ed73b429b2ceef34b88d6e00f4071a08de446ae856"
+  },
+  {
+    "path": "resources/art/icon.app.png",
+    "sha256": "75461104877d2e2c3ce13939acd252e665b24c21949aa693a0a6dfd1812fb08d"
+  },
+  {
+    "path": "resources/art/icon.app.png.import",
+    "sha256": "4d7f18d7987e4207d28f5a70a8085bdca9891edb22583339dce8aca8e71bd63f"
+  },
+  {
+    "path": "resources/art/icon.stone.png",
+    "sha256": "4ea26ad71ee463321c2b12a449e81470eea37bf753303aac6795fb0cc713b3e5"
+  },
+  {
+    "path": "resources/art/icon.stone.png.import",
+    "sha256": "eb58b8eb057364f0cc5f320f373d314b184fd9fb0080d812c69b067f2ad79f81"
+  },
+  {
+    "path": "resources/art/icon.warmth.png",
+    "sha256": "02beef4ce55b5e18d9fa8f81b7af45f2114d45ba1710f07099a1f0f2e0fb4533"
+  },
+  {
+    "path": "resources/art/icon.warmth.png.import",
+    "sha256": "facb186ffbf2c1c311fac0cde869e1751dfd2e6cdfda4eb086a6e29499766aa1"
+  },
+  {
+    "path": "resources/art/icon.wood.png",
+    "sha256": "0600e95f9323fb0f7955edbe9636c2e7fec43ba5db86fe58aa160d1b7bf8e5e7"
+  },
+  {
+    "path": "resources/art/icon.wood.png.import",
+    "sha256": "34f472364b23512f3ae21a09605facaa28e09d6104815c45087aebe19a621466"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.anim.shells.png",
+    "sha256": "3da21a10e0d8e68439a940e2fa11f0aae52352d959720ca9e5dba60376783e5c"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.anim.shells.png.import",
+    "sha256": "2ff99e2f3c4ad47497e2ed98bcc766026de2ce3d27c43a3e15761893211ad7c8"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.anim.shells.winter.png",
+    "sha256": "f357973882597c20fc40facb8c8bdaa0977671a2741c8a6b0a9529077499f556"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.anim.shells.winter.png.import",
+    "sha256": "77776ef3760daeeaf1de30b8a3a18f264674ee6fa11e3c6f697d102c7db99f25"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.spring.png",
+    "sha256": "659cb9f3239576f4eef71a6a614b0eb066854622b6d1f4bbfa070d8ec1d6dd31"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.spring.png.import",
+    "sha256": "bb723bdd2031fb1549696a2f9b94b69d36e9332b4ac0628aa3ad7ac4d2160865"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.winter.png",
+    "sha256": "30afda8f379971cc2196a06e71f96a06dbb1a09a6d3db7be58673367f168c2f6"
+  },
+  {
+    "path": "resources/art/locart.flood_beach.winter.png.import",
+    "sha256": "13b72385a1cd807dc9c728a0861eea4b6c5ee344a195ef18e7fc7338d86f519a"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.herbs.png",
+    "sha256": "6eb808afcdadb28189e3a6f933e1f8edbfcddb0459cd8c6bcf710bc9667fc3d7"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.herbs.png.import",
+    "sha256": "45f65f8c6ff20c7dcfd297ced5eece170e57e197fea6dd4c308ee735dbd56ccf"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.herbs.winter.png",
+    "sha256": "c950c22f4f8dd2465655be9b7c4bca3c78067a51cb318b0cfa07d323a5c217f8"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.herbs.winter.png.import",
+    "sha256": "ea3b4092681b4fa0029d721fdadb3439f1fde750068137f34aa99047e8d99ff1"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.sun.png",
+    "sha256": "28804de9af1bb07f47dd3ee97e4239c1b16b401ee1897220876fa00a9e74f5fb"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.sun.png.import",
+    "sha256": "bdc881f9e443be70c2bdfb46c117792d62c2ec94ef9532192cc4eabb8fe47905"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.sun.winter.png",
+    "sha256": "fead2f64fd19abad9d2bcdae7734a04f90e12f247d871cbcb6966d626df7635f"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.anim.sun.winter.png.import",
+    "sha256": "0062069226b8e14af9873f2ca0c3dbcb64a8500d1ede9579f9142c7a9db42c70"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.spring.png",
+    "sha256": "6ad3861eee0984a454e1806a59b1a2b966ad2ab2279825335b70b2a1bbb23198"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.spring.png.import",
+    "sha256": "7bc66d6bf3935421a7da19550ace2db2d6ae421245c1499302383f0fc663457d"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.winter.png",
+    "sha256": "7fd44eaf8c761f3184db9a51ac0c0f97c3b254ac6c773aefbeb3e37cbdd1a185"
+  },
+  {
+    "path": "resources/art/locart.flower_slope.winter.png.import",
+    "sha256": "dabe6e96f33d47869c46286346a7a1af09b72d66f6afe0f5cff7d854a854e34d"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.haul.png",
+    "sha256": "0b10d3d85b662852b902a7b3b7c8732a9f13a7de821bad8e86c8b7fdf4f95914"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.haul.png.import",
+    "sha256": "cb63cf361c689e93428a4b5e101bbab92579d9b5186c389edfd5781d5b7db1d3"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.haul.winter.png",
+    "sha256": "b5093bd8911c9124c85f27c4a42e3500d73028b4feb815ba41deb703c10c244b"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.haul.winter.png.import",
+    "sha256": "7377e3ded9bf261050843b938f5982c86c7e034a6169b5fc03377d25727935ee"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.stones.png",
+    "sha256": "67763c238561e5ba65023bebfa9fbe6ce0f40a4d608095be5862499d36d2e435"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.stones.png.import",
+    "sha256": "282a505bfc418c28a354e1745675849a818563cbff530827f45fdde0c76a3150"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.stones.winter.png",
+    "sha256": "0cee5f7a899c08412b53859f2e8dcc24c55dc801cd5f80ae4d152aa49daf4192"
+  },
+  {
+    "path": "resources/art/locart.gravel.anim.stones.winter.png.import",
+    "sha256": "be239c2ab4916fd8bec5787f265099ed5f2c06c1b28f8b8463ca5e4101ed5eaa"
+  },
+  {
+    "path": "resources/art/locart.gravel.spring.png",
+    "sha256": "8dca96ee096805a2df99cb831c24bbe293132f0985ba4c17bb37126c370fdbf2"
+  },
+  {
+    "path": "resources/art/locart.gravel.spring.png.import",
+    "sha256": "6ac171934e76469493f50145b7448249c0ea91b4497744049b21261496e08218"
+  },
+  {
+    "path": "resources/art/locart.gravel.winter.png",
+    "sha256": "b95a5cb6569a66fdb3e5211d4e92453029dc60b13031a2d290b2a4906fa828d8"
+  },
+  {
+    "path": "resources/art/locart.gravel.winter.png.import",
+    "sha256": "5d3ed8f09db8c429f5955ae5866dac2b3cbfd0e881afa74ad6f23d1fd49b7377"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.brew.png",
+    "sha256": "d4a3ca816f42d8d088a3976c452c17418e173af17671a7f81fc45362acb14751"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.brew.png.import",
+    "sha256": "4e9863adabfc07ddbd31f7f2d336b18a50a192bb63e96f84e924f0f0149e3974"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.brew.winter.png",
+    "sha256": "ab6b6f1173e7acac75b67d9a4322a932b3cb7a67f1fa649afa9d5262b0fd4ee4"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.brew.winter.png.import",
+    "sha256": "fc13896ec9aa58c56b26d101a9ede8efc8fe4cb8e8f6946d1edb8be8cd6a4102"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.tea.png",
+    "sha256": "20cf72cfc459949f2d22ce9f1d08d6a0d547d874d48ff1e4e23b04de9b0b2169"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.tea.png.import",
+    "sha256": "3a6b15b6a2af3c72c03f024048b4f78f9027faac8ca9a9a6e33cf601a39afca3"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.tea.winter.png",
+    "sha256": "59dadcd99a2cd6c1ffe8f46fd1567d5b7d61928b619550c0a102e7a31790375f"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.anim.tea.winter.png.import",
+    "sha256": "5d9a9d17780702f2b472f7aa316cc53a1f9e277f9775127520330d3b64ea085e"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.spring.png",
+    "sha256": "4d568491099f55d4416770ccf42257935d95c0c1ed78024ba8c22a44eb307036"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.spring.png.import",
+    "sha256": "67d8c591b8a819a19c1463905c418b830092789e7e9950967c8727bff6001708"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.winter.png",
+    "sha256": "4190973e55b8cc75bc828f9a3991af9a2a73893605a41f8d4a323922b83de42c"
+  },
+  {
+    "path": "resources/art/locart.herb_garden.winter.png.import",
+    "sha256": "a51e183df8554819f3bc79b106d9222de517a93d0b0b25c7d02fdacadc0c6ae6"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.feed.png",
+    "sha256": "e8b56a1fcdb5b6cafb99132ee5c526d4ddf03fec0f2dc0f3c37060c417451dbd"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.feed.png.import",
+    "sha256": "1c6814f412c00acda2594ee40c11904da9de062958da3d93849b706fabbcd64c"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.feed.winter.png",
+    "sha256": "ebda1d4b08cafe52f0aaecd9a4a5a3e8ef7b868893eec8e01ccf420e9f1dddf1"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.feed.winter.png.import",
+    "sha256": "df7a7cb4e730ac913818ef691ee4dfb5236454e258a9c2e889aa2657e2c4f8a1"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.fire.png",
+    "sha256": "a0cdb9d2fdf3227e02531587020d485a2e4e769937a72551018f10aff35ca302"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.fire.png.import",
+    "sha256": "e2684df8d8657172b9224a8f21adba64e2fd0ad3d44ae190c5913d453eab2354"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.fire.winter.png",
+    "sha256": "fd1a1db0e16f1c3ce782a32be0238eb71d6b019b61cab905136a7e3800003b09"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.fire.winter.png.import",
+    "sha256": "6691deb136549a4ab6cc5b3b786c79e80446bdc05368d0dc66480ffa268dad80"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.read_notes.png",
+    "sha256": "1c5606a99b199d86266f186aa06f551e55c705ef829ee9e8e7fad354c4a38613"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.read_notes.png.import",
+    "sha256": "a9a6fe65e9d5abb55d06aa8452ce469cb4196bed81675257bea5d6d2bb33090e"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.read_notes.winter.png",
+    "sha256": "864f08d1a8f85c3eb5bc7ce3217ff51df9cd4250380bb317312b92df160f9697"
+  },
+  {
+    "path": "resources/art/locart.hut.anim.read_notes.winter.png.import",
+    "sha256": "a614a555fc4b9fab201dda23a0c52b8ec18461b54c6259ec23cb893740f245c5"
+  },
+  {
+    "path": "resources/art/locart.hut.spring.png",
+    "sha256": "1122a9084e26e8d0704965b2e329f5678b4b56472553047a339892eab635d14a"
+  },
+  {
+    "path": "resources/art/locart.hut.spring.png.import",
+    "sha256": "547a5fbe367c250b73959e57931d8f2cce9531488d78c47f6c00a2e349bfe881"
+  },
+  {
+    "path": "resources/art/locart.hut.winter.png",
+    "sha256": "b156ed92228cf78c1b063f852144e9494f8ee5122b0b51472fcae220e886a5bf"
+  },
+  {
+    "path": "resources/art/locart.hut.winter.png.import",
+    "sha256": "d9b21a5f8192b95716093fc820283726e93e15ffb55a3ac3edd62261aff8ee79"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.repair_wheel.png",
+    "sha256": "c4ab03bdf391728b94df5224d56a26eebd1cc9cadf3c1415deea70970f48a036"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.repair_wheel.png.import",
+    "sha256": "32e1fe79e4dbe61da492e10a24e273858b6f3ad1128c737975368dbecf75a633"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.repair_wheel.winter.png",
+    "sha256": "f88d61e6f792d6ec9444108301c922b5639eab8c1aadfb9fc2284a0a9e931810"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.repair_wheel.winter.png.import",
+    "sha256": "9a0b78a1776bff29f174b0f4a9daad85171ebf9a2bcb852408bf7ff0523982bb"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.warm_family.png",
+    "sha256": "ac43f12252f92b38f89d304e1e232329b2f4c0c004e9a8e39763ecc35b109afc"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.warm_family.png.import",
+    "sha256": "04c6936aa1a908dfb2eac2b1ed6a409c519e574177bacbf2bdef412126a132e3"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.warm_family.winter.png",
+    "sha256": "08f6b5af72ecc20cbe00f7e8eea401ef8dd9eb87e5fddc460a34432b1a9e8abe"
+  },
+  {
+    "path": "resources/art/locart.mill.anim.warm_family.winter.png.import",
+    "sha256": "2302bcb141d483d750fdd4c1d72c14baa84a96aaa4a07a0c2e8104264b4ff808"
+  },
+  {
+    "path": "resources/art/locart.mill.spring.png",
+    "sha256": "75bec3fe1b95c391a757d59a4585fb6a62ea62050bfb5193ed6db488b481abcc"
+  },
+  {
+    "path": "resources/art/locart.mill.spring.png.import",
+    "sha256": "591a51de83ad0559f7e06f5a450d8b216d451de37d7f5c0ca8a7c05a0c3e1a36"
+  },
+  {
+    "path": "resources/art/locart.mill.winter.png",
+    "sha256": "5ae8bd47686f1eb4b7b69731e4a39b563a2be8a891c376ce4f329c957363851c"
+  },
+  {
+    "path": "resources/art/locart.mill.winter.png.import",
+    "sha256": "b77e2a7632dffd5920150d54d1b588916777dc11dddf59203fabdfcb5754a65c"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.anim.gnaw.png",
+    "sha256": "0743cdaa841f89f048b56744ee4fbbb5ba9f570baa4a1fe831348cb27c889806"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.anim.gnaw.png.import",
+    "sha256": "4994ff358dced58f4b75e7018e03d48c367e56677a9187427d172e9c975e8db0"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.anim.gnaw.winter.png",
+    "sha256": "b346748b662a537341eb684ded085f9f7d732628e29c35e559b63b923ae5d2ad"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.anim.gnaw.winter.png.import",
+    "sha256": "5adc99711b761ce6cf782a00a986e43d445aa70f3f6f0265653de5d4be47caae"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.spring.png",
+    "sha256": "b10bff19e296c201ef7cfd7a76917be32006306f3fa0e2be2e261a051e172928"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.spring.png.import",
+    "sha256": "2d12050787d7fa0e178309ee5e4213e5ae55b007523d1c6f05f8442dadfe567f"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.winter.png",
+    "sha256": "204b3f850cab30814ae820c0614d9d67d6da4040c06c6f7827d43d3010d70400"
+  },
+  {
+    "path": "resources/art/locart.misty_bank.winter.png.import",
+    "sha256": "7a79cda70976cc3948acb7f0aeb58421c77c88d50dda429d05e3467d8cdb7b44"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.reinforce.png",
+    "sha256": "cbe1e1774ab6076730ee80b46dffdcab1ef5100b10f32babcf6a7a2e840fe5ff"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.reinforce.png.import",
+    "sha256": "3425affc258c2fb0a844ccf980422922291bebe3a2a2d53af8e9af253907347a"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.reinforce.winter.png",
+    "sha256": "336db018b280408c3116937233a14dda37adfacb98003eca0be14ff0de966121"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.reinforce.winter.png.import",
+    "sha256": "3e6b048654eccfc6543d5fda4e029c37d11e3580837db00dcd9c685ce0370950"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.watch.png",
+    "sha256": "01a98482da565cc6a90fdde9c7e1118e3bb18ced4f8e67a1c65d3b6014d83644"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.watch.png.import",
+    "sha256": "8471f507ed9cab03f9da7dba95786c1b769d86c3778b3d8ebd52d1f2ef508b2a"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.watch.winter.png",
+    "sha256": "96aa54977275f6d6979d9a19b59b01e90ed81c15d049ed173c234b29e6b206f0"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.anim.watch.winter.png.import",
+    "sha256": "aac757bbb2a716f86c62b22f172df4b8ecc447e8b704282b0d7cead6a065a359"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.spring.png",
+    "sha256": "6e55d725036a811388e593fe886b22b71c98963c058cf105d54b7abdcc163592"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.spring.png.import",
+    "sha256": "40546bad8f51e68640a073e235a2a87fcf303ec492328642a9683485a75e6b56"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.winter.png",
+    "sha256": "42cec3dfc6b3c5b5a8f22b69691b63393132094fea1e28dffdaa7099ba82d5b2"
+  },
+  {
+    "path": "resources/art/locart.old_bridge.winter.png.import",
+    "sha256": "dcb0ae103270463d1b944b72b0c035ac749c14cd87537804bd7ffc04675ddc35"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.chop.png",
+    "sha256": "4fd33b78a69ce8560a8d439e3de6b952088bd99805ff94c4bd363a15fedca530"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.chop.png.import",
+    "sha256": "2618872682c6e4d1a7f067c496c946968e4c4de1c82d0fe0d0c4a12a44a05cbe"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.chop.winter.png",
+    "sha256": "fee05910d68d8f608afb64799f8963273db020628ded34868301a754706d6b55"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.chop.winter.png.import",
+    "sha256": "b1f76051a6bc87683b6a4b3dcac491497061b3e9b48202e77f38bed591d7ad34"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.gather.png",
+    "sha256": "92b4cbc3bee4241099a8dce7b35871feb3ba8a8a1cc14323fda595f049bd4c96"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.gather.png.import",
+    "sha256": "4551f92f2ccf8f9084a97ccdace0dd65b70353a78b8f0276f924032a690f3249"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.gather.winter.png",
+    "sha256": "33f544cc539190c1f3836a34c4995c11d03bab579c82329efa148106f4166152"
+  },
+  {
+    "path": "resources/art/locart.pines.anim.gather.winter.png.import",
+    "sha256": "23483904ea9ab9fd32c77341014ca234e587caa457ca2ad6d3196374c59a615d"
+  },
+  {
+    "path": "resources/art/locart.pines.spring.png",
+    "sha256": "96b0ed5164f5a335f93d5870899a1efbede5f5db1d939429a5d65f13f0603ceb"
+  },
+  {
+    "path": "resources/art/locart.pines.spring.png.import",
+    "sha256": "1a70e2e76713b790ac74eb56f620daee57c4332ae5c2618fc3cf24f9319a8a16"
+  },
+  {
+    "path": "resources/art/locart.pines.winter.png",
+    "sha256": "3e7e5de89b7ff733f8a0374d67b267d4abada00a63addb9a3f22fa5a64bd244c"
+  },
+  {
+    "path": "resources/art/locart.pines.winter.png.import",
+    "sha256": "782d3123b405d2dd5f2ffbc2bf9e193b7806b1926f57d226b3522f2feb71c65f"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.build_dam.png",
+    "sha256": "49138e5b2947ab108857e4e3df6f1358d0c13767621b62bfd5437300eae2fcd6"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.build_dam.png.import",
+    "sha256": "b7abdf2e0d33c5394c964104b6a7c4ddc2ba51069faf1b7e8961064df6304364"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.build_dam.winter.png",
+    "sha256": "5416e5e27730fcd8b0be465ec05b05dc8c4b06ab038533569ed22d9a614ff1b3"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.build_dam.winter.png.import",
+    "sha256": "f42e365d50a7080ab5887fd15b6e2cd31d9dbeb24e17d6674c46eb2339075358"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.chisel.png",
+    "sha256": "c91f1809bfa2dda465e86640f9aae9d3f07805d26879de1502b78e52a81ec134"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.chisel.png.import",
+    "sha256": "fabfa3c5af343237d76dd7954b44ba0952f9fa8db19403de4bc621836799e04e"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.chisel.winter.png",
+    "sha256": "0e5a7684d19437c28478fe405e8816c69da1cd5dd8120c7147d78393e2af381d"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.chisel.winter.png.import",
+    "sha256": "5991fd478508e0f8cf7e6359f3cfc53f8f160b2c6263effa4db800826991b542"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.driftwood.png",
+    "sha256": "6ed31c5c18990d257db96fee7b0eed17b6c61fd04726d153a1780ab63dc9d40c"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.driftwood.png.import",
+    "sha256": "b8cda43da37e877b38f16d477fb20c7198592984ff11293169f1f1f81fd0bc6e"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.driftwood.winter.png",
+    "sha256": "47fa4a9743d97945596db1a2247167a1ccf28fb5f45c2657b57d8de0f21ac2cf"
+  },
+  {
+    "path": "resources/art/locart.river_bend.anim.driftwood.winter.png.import",
+    "sha256": "78c57ffb32f26a0548e88b52676d4a64fc6acaa84ccee03a3bc3c7300f423780"
+  },
+  {
+    "path": "resources/art/locart.river_bend.spring.png",
+    "sha256": "09c3071a03fc27abb42eb516f67854f49b5197ba8189322a2153942a923ec129"
+  },
+  {
+    "path": "resources/art/locart.river_bend.spring.png.import",
+    "sha256": "8ab084d82f0d7edf962c4f602c0404a3abd08e4c3cc3071cc17dd6a611ea3bad"
+  },
+  {
+    "path": "resources/art/locart.river_bend.winter.png",
+    "sha256": "b16ec6c88fc129dfd199773bffc869bf8379ce148f4652394464068786b2cb2d"
+  },
+  {
+    "path": "resources/art/locart.river_bend.winter.png.import",
+    "sha256": "20012c0dd035cc503520beaed8e0aa084f1162f4e8de7f419e606a2417ad7dd3"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.search.png",
+    "sha256": "82476cf5e313345b09e7b62e4ae44577eeb6c3e6f92269910dc0c937e16489f3"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.search.png.import",
+    "sha256": "962442722cdcd84a800a3c23888ac7d38345441e94245b370ea8f65bac83225f"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.search.winter.png",
+    "sha256": "c8aee28b8690d95e93b76387d275d2bc15dfa2e0386a88c30a309c94f0f571c6"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.search.winter.png.import",
+    "sha256": "91c478a711ed1db878e7b04de7858db05f50affc2bf1e4e099500ef8a6ed3b02"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.shelter.png",
+    "sha256": "65c8b88b84841fc1bb5682e4188a8b009475d110a38784a79a01e75cae599368"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.shelter.png.import",
+    "sha256": "15143503869bdc36c953dc1037c08cc75f5521f01fabe38165a40ba79f5b77c4"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.shelter.winter.png",
+    "sha256": "8655d79e20fff66687bda10eac33aa21d1659a94e399ec813d46b414d7660c84"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.anim.shelter.winter.png.import",
+    "sha256": "7b69b4ce22a845a43a6a4d3d5d516008f2c928d99e90410f293cfa4720d1f8cb"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.spring.png",
+    "sha256": "5b9e25d6f966fe9d151533305ff1804c54986cc2a5c6d87b23429fccd349723b"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.spring.png.import",
+    "sha256": "ce9718c46494d66835655cfdf08234d54ab7c236b8a41ad2e569cac7480e9622"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.winter.png",
+    "sha256": "17580929dac72091af6ba31e8cac2cf31d374480d07db23423f2ae0bf986745d"
+  },
+  {
+    "path": "resources/art/locart.tree_hole.winter.png.import",
+    "sha256": "355f90c70971bd431ee1c8317a0c4d107bbd5d8d77e94d1726ca2da270aeffbe"
+  },
+  {
+    "path": "resources/art/manifest.json",
+    "sha256": "affd1c3d85bb88a089df5fa84b5c1f497d01a91718bb170fb95f1d793611eecc"
+  },
+  {
+    "path": "resources/art/note.paper.png",
+    "sha256": "f5388453c2a62f7da45e1aaa88cf311d17549c516b2b57800145ee3e92eb0be7"
+  },
+  {
+    "path": "resources/art/note.paper.png.import",
+    "sha256": "d09763b68f4eff2bb0402733b46ac8a0f7be94aabb59df512c38c342374b156d"
+  },
+  {
+    "path": "resources/art/note.sketch.1.png",
+    "sha256": "5e576eef6d76c79b0b936a4b554f06050cd519a9854ee725b99df3222f3639ee"
+  },
+  {
+    "path": "resources/art/note.sketch.1.png.import",
+    "sha256": "e3fc5434796cdae62a608e8d09179727cb82d7abec838c9029f52d18318a63e4"
+  },
+  {
+    "path": "resources/art/note.sketch.2.png",
+    "sha256": "2336bdace0d2e420123cb274f9ab4e62471e2d9d23853bf01615b3a6c5475b61"
+  },
+  {
+    "path": "resources/art/note.sketch.2.png.import",
+    "sha256": "d3b4c78cd2972df440b7822a01f2cf1b6b116fcb3681a3f07dfd04df7ede2ee2"
+  },
+  {
+    "path": "resources/art/note.sketch.3.png",
+    "sha256": "9c6f75cf2b590f62208efb9114424326216de12f2f162d8e2d50741a99d73b48"
+  },
+  {
+    "path": "resources/art/note.sketch.3.png.import",
+    "sha256": "30f8e3c94db7eb93fdb2062bed8376f39caa68def19ec41aee6668a2950f2594"
+  },
+  {
+    "path": "resources/art/pano.flood_beach.spring.png",
+    "sha256": "4742fa5cbaa993229282beb7e6d1b485f0637506074d41d23aa4463475f09cb8"
+  },
+  {
+    "path": "resources/art/pano.flood_beach.spring.png.import",
+    "sha256": "5ae2f83381f067c909cc72d3add427f5f33b0ccd0892aaafe1a96dc956d0d413"
+  },
+  {
+    "path": "resources/art/pano.flood_beach.winter.png",
+    "sha256": "a8dc6cfdfbb43e5d5f1430dc555a8ee32f67fab3052846148bf74e637e207923"
+  },
+  {
+    "path": "resources/art/pano.flood_beach.winter.png.import",
+    "sha256": "af9eba8272ec816650057ed5fd6c81f845b92e43358209c028d4969a1a849d79"
+  },
+  {
+    "path": "resources/art/pano.flower_slope.spring.png",
+    "sha256": "5a1aa88c0d383f925b3a1e0a5fa58e29299d0685f40d2ec9e25e6ee3b9249116"
+  },
+  {
+    "path": "resources/art/pano.flower_slope.spring.png.import",
+    "sha256": "46457f5d6e3d9dd69dd3e55d762b62cab920b864348c9ca7b91012173ddf1b49"
+  },
+  {
+    "path": "resources/art/pano.flower_slope.winter.png",
+    "sha256": "e4be5776390edb8f187fbcd9981603379bcfce2ccb885c78f715d73488bb86a7"
+  },
+  {
+    "path": "resources/art/pano.flower_slope.winter.png.import",
+    "sha256": "bf34681af9312cb58392191963d26ba4997edaccb9fabf01780b5ffadae950c8"
+  },
+  {
+    "path": "resources/art/pano.gravel.spring.png",
+    "sha256": "50be5c400ec7bd3172fbe8294692f0762b338ed304a6ba62a8e0bd9b3c9cbd7e"
+  },
+  {
+    "path": "resources/art/pano.gravel.spring.png.import",
+    "sha256": "8c2ad07ede40a889de5fc45fb103ef2f0dbbc68bb89936c454634597b6b5bb53"
+  },
+  {
+    "path": "resources/art/pano.gravel.winter.png",
+    "sha256": "467f65b0c8ea7d43d5f25c3bd707d7abf9c3df93b7eb91386b43f454366cc127"
+  },
+  {
+    "path": "resources/art/pano.gravel.winter.png.import",
+    "sha256": "d6b80e01ecb06fc0e48285d64211fdb2f988eec6241ff8bae794e8348df62505"
+  },
+  {
+    "path": "resources/art/pano.herb_garden.spring.png",
+    "sha256": "a5ead6df24510b13fe5817063aa0337e4b737f05b857f8486686ccf9ab40e8de"
+  },
+  {
+    "path": "resources/art/pano.herb_garden.spring.png.import",
+    "sha256": "1e8964740dffcd1b05a1fbafb8319217fc57f5d49850f2a2bae08d877f497358"
+  },
+  {
+    "path": "resources/art/pano.herb_garden.winter.png",
+    "sha256": "21c702c410dca86dccb4abcd0f8a6a580f990c254d0da8a1d4a557b9d6c9a4ec"
+  },
+  {
+    "path": "resources/art/pano.herb_garden.winter.png.import",
+    "sha256": "b2d6d859071b21fbb57246af411c3984ea284bddf8e0f836d30719a6bf3aa92a"
+  },
+  {
+    "path": "resources/art/pano.hut.spring.png",
+    "sha256": "b0ce5083e11f53d36e0d9c6922bd3fe9e44e95348c9409230ff5864f27e7ffa5"
+  },
+  {
+    "path": "resources/art/pano.hut.spring.png.import",
+    "sha256": "ef350f24b6015e94b62fb1fe136ffbab3696c1dc578d01f79aad23743c73c633"
+  },
+  {
+    "path": "resources/art/pano.hut.winter.png",
+    "sha256": "b8612915b948fa57222bcadc14fe02ea97fccbf4e4feaa902cdda5afd191d945"
+  },
+  {
+    "path": "resources/art/pano.hut.winter.png.import",
+    "sha256": "d34c0e99c35fc9f933c6d6407253b92dfcf5353c91f39a3f0fcf0091ed7a2f48"
+  },
+  {
+    "path": "resources/art/pano.mill.spring.png",
+    "sha256": "becc13b9fa2178018c4024557faa83b04a67c8729e47077470534bd58fdbde12"
+  },
+  {
+    "path": "resources/art/pano.mill.spring.png.import",
+    "sha256": "ecd424f98badaa412a50e652e99294659c150a079b7e96b1d70014dcedfc43aa"
+  },
+  {
+    "path": "resources/art/pano.mill.winter.png",
+    "sha256": "a3c47af5e4825d5e82bc0302c18b58f0949f7bf4ba08519a67150c43b05104e7"
+  },
+  {
+    "path": "resources/art/pano.mill.winter.png.import",
+    "sha256": "764bcc42047aa298db50512513eb84a900bf9b23c5f1048d98cc31982749b712"
+  },
+  {
+    "path": "resources/art/pano.misty_bank.spring.png",
+    "sha256": "82a39a2ad1ac4c62fba2b4f25fe44f37ea583c5621812b42ba9684ab6e27619b"
+  },
+  {
+    "path": "resources/art/pano.misty_bank.spring.png.import",
+    "sha256": "59de7097247952898157ca4c97ae679dd2358bb361fde51c9bf3c2c7406e3f38"
+  },
+  {
+    "path": "resources/art/pano.misty_bank.winter.png",
+    "sha256": "f32f88f298385f3f58ba635280697c7c8029cc5d90e7029ac7aac077575fe981"
+  },
+  {
+    "path": "resources/art/pano.misty_bank.winter.png.import",
+    "sha256": "ac82acc06664300afcea0f4938ed5b2dad56d46c27341e8341f5b202f345d5c8"
+  },
+  {
+    "path": "resources/art/pano.old_bridge.spring.png",
+    "sha256": "5f77335bc3f4c7a67f2a8d8f3627c24eb10c30c5b7e53bebc1bef6220c70bf8a"
+  },
+  {
+    "path": "resources/art/pano.old_bridge.spring.png.import",
+    "sha256": "a59603454aa6c14f8c1bcee07e433532650a0253bd56525ffc870a943fe28142"
+  },
+  {
+    "path": "resources/art/pano.old_bridge.winter.png",
+    "sha256": "f33eec5b63bd52b04a2c9522f37812e4a8bd95e9f0369e8bfeddc68ad62727f2"
+  },
+  {
+    "path": "resources/art/pano.old_bridge.winter.png.import",
+    "sha256": "8fbc7828a52166a8b29d42d6f8ad30c4d936d1ba6eb29629373b1ffd240d48fe"
+  },
+  {
+    "path": "resources/art/pano.pines.spring.png",
+    "sha256": "aab6074aba18f736de45a03b47605e26ba46add15f621685f6a5d78937b4e6df"
+  },
+  {
+    "path": "resources/art/pano.pines.spring.png.import",
+    "sha256": "ef7d19480a3d464f71decdbd1796d4527ca0cd5a392f4410320dcc9610582a6c"
+  },
+  {
+    "path": "resources/art/pano.pines.winter.png",
+    "sha256": "48451943d45b382c339601d1c5df8b309a46b260e4bf92c59ae4e4f816775799"
+  },
+  {
+    "path": "resources/art/pano.pines.winter.png.import",
+    "sha256": "3c39618738ece981298c511769f057805c60c00d13f98ff3193e87362eabf3ed"
+  },
+  {
+    "path": "resources/art/pano.river_bend.spring.png",
+    "sha256": "ea2bf3666c210e179b61a4abbc8dcb2bdf12ea72b9581f3bcb5e16b848dcea97"
+  },
+  {
+    "path": "resources/art/pano.river_bend.spring.png.import",
+    "sha256": "9c1e272608d8a1c22e38f861bd62f19519d237d90d40a42cbe2eac0f5e58e566"
+  },
+  {
+    "path": "resources/art/pano.river_bend.winter.png",
+    "sha256": "fddba75742ce89f54d920f049f3e48bd39a7b3d9d31d68b182c23efb97dd3d0f"
+  },
+  {
+    "path": "resources/art/pano.river_bend.winter.png.import",
+    "sha256": "ae7c44c2810307813b80aee9f09e01e81b03e4911c63a8a3ad1077b1297e4bc0"
+  },
+  {
+    "path": "resources/art/pano.tree_hole.spring.png",
+    "sha256": "2ea692aba1a360a751df981339bd222b5db5b108c7e5c681837b03438c5e8d29"
+  },
+  {
+    "path": "resources/art/pano.tree_hole.spring.png.import",
+    "sha256": "56012ca96c5a1937a4d9e15035f71b252436f651715a7f35b40253b019f8f2bf"
+  },
+  {
+    "path": "resources/art/pano.tree_hole.winter.png",
+    "sha256": "e6f2781f55eba4f63d4b596402e5aded02e3cfd3a67717abe2fc5d0b46cb21a9"
+  },
+  {
+    "path": "resources/art/pano.tree_hole.winter.png.import",
+    "sha256": "3c4cb302996d55c28532821e7b552a9bde9f0d79ec3ba1b5966eb6e42962fb7f"
+  },
+  {
+    "path": "resources/art/portrait.anuan.png",
+    "sha256": "7e874a8b5938e607f39b133f8f9b69c9fbb6d9014195e7c80b4924aa0d814224"
+  },
+  {
+    "path": "resources/art/portrait.anuan.png.import",
+    "sha256": "86836b4db9b9ce490e377209ba047267a5c759c1b5c144f729cb8cad67bd40dd"
+  },
+  {
+    "path": "resources/art/portrait.baiweng.png",
+    "sha256": "4890fa572d7f8edcdd292d3ddcbeff45f8923a11deed11bb5c7b176896d5bf05"
+  },
+  {
+    "path": "resources/art/portrait.baiweng.png.import",
+    "sha256": "2a2be99805c35a412194c24e885b3dfb247fbd8647970ea13b3d2be1df4973aa"
+  },
+  {
+    "path": "resources/art/portrait.beavers.png",
+    "sha256": "464c743325cb1038c7d8fd880a562412de4fdb3e8fe863cc6c2622182b771493"
+  },
+  {
+    "path": "resources/art/portrait.beavers.png.import",
+    "sha256": "8feef34a62a2377a4d26a6120f37e6f72c8d27d26337dff45f446cbd15273e17"
+  },
+  {
+    "path": "resources/art/portrait.gutu.png",
+    "sha256": "50e955d13d3972c527c160a1e20093c76d0f71b99645aebb3ec34bf56527ee4e"
+  },
+  {
+    "path": "resources/art/portrait.gutu.png.import",
+    "sha256": "5923cce00b5c791105dad3878cfcdfcd2022f3283b53b6cb32c80b07738702ac"
+  },
+  {
+    "path": "resources/art/portrait.mei.png",
+    "sha256": "b3645012f0b326654df069ad6bee2226b00054aba4097521b9c828742d0e67b7"
+  },
+  {
+    "path": "resources/art/portrait.mei.png.import",
+    "sha256": "6725d8cd687594a0158782d270f2187b2dadc9b65aceebce676e1285dae1a3c2"
+  },
+  {
+    "path": "resources/art/portrait.mill_family.png",
+    "sha256": "7b221e9022afd6724d9acd57ef845fca7a01c7a09b6864b01f40673809c4e6d5"
+  },
+  {
+    "path": "resources/art/portrait.mill_family.png.import",
+    "sha256": "00694b0d8d2628229ff4968e381a7f22cf9ebba268d6a49e62d3ee53607b2511"
+  },
+  {
+    "path": "resources/art/portrait.mira.png",
+    "sha256": "3644c3e405c34a51a1f92a7dd98629634fd0997c8b40b7426789a47cbaf41137"
+  },
+  {
+    "path": "resources/art/portrait.mira.png.import",
+    "sha256": "309dbd0e4a5875a55563e820c10b47dec162e528e098f0a102544b68fa5a3d66"
+  },
+  {
+    "path": "resources/art/portrait.toby.png",
+    "sha256": "9248ff2e40970ddd67e26fcf679b0bf39d15ce03b0049b67cfa9cd000ce8f29d"
+  },
+  {
+    "path": "resources/art/portrait.toby.png.import",
+    "sha256": "c4860a3447679a5f55b3950a94595d39546daca9854d6b83515719d87a196b18"
+  },
+  {
+    "path": "resources/art/portrait.xiaosu.png",
+    "sha256": "f3d02c15a76f0b9b4e845c7565aab8246ef2dca25a8e1edade974d013ecc0da3"
+  },
+  {
+    "path": "resources/art/portrait.xiaosu.png.import",
+    "sha256": "eb9f970920294a51e601976854d2a69d2f02e6c571961f479e1407560425322c"
+  },
+  {
+    "path": "resources/art/still.herb_garden.memory.png",
+    "sha256": "ee563171d2905c2ba4d384c44c80cc8f51a6c9742cc527b8fc681d051c4e3355"
+  },
+  {
+    "path": "resources/art/still.herb_garden.memory.png.import",
+    "sha256": "99580b3d46c29f0aca086eea8a7ef7de5ba467471e7065b909bca3b0c6ef579b"
+  },
+  {
+    "path": "resources/art/still.herb_garden.png",
+    "sha256": "96eb855b531ef6f86d7eaf1cba29ba45e1e0640401b4cc895a42414d40211a1f"
+  },
+  {
+    "path": "resources/art/still.herb_garden.png.import",
+    "sha256": "866798b6274d2c6017c7863a0bc24735fb0252a6354011dc98f9173d07d37866"
+  },
+  {
+    "path": "resources/art/still.hut.memory.png",
+    "sha256": "90d9d3e0b51edb7c1d016cbb5fcdc0ee09583aa20896ca3c2720a2cf4f1dd47e"
+  },
+  {
+    "path": "resources/art/still.hut.memory.png.import",
+    "sha256": "adbf8ac66b5bc53725e04155caf87055da8a26b733f6a3e089955c913031f723"
+  },
+  {
+    "path": "resources/art/still.hut.png",
+    "sha256": "6c8a511b96fb460c32f80f756d4ee18c1a75e5c72c99ed2c56499ea12a8cdd6f"
+  },
+  {
+    "path": "resources/art/still.hut.png.import",
+    "sha256": "20080d505840d62fe12e4ef6700bdbe46a86aa2726be86a60d6b5e6d3ce345cc"
+  },
+  {
+    "path": "resources/art/still.mill.memory.png",
+    "sha256": "e69679d294cfb19298860be511d684dea67c0e9024aebfc0fcb57ac55f50cfd1"
+  },
+  {
+    "path": "resources/art/still.mill.memory.png.import",
+    "sha256": "cab59c6328873804144f2ccd9bdd326f5378e49cc6cad01e8ecbb23d24f91047"
+  },
+  {
+    "path": "resources/art/still.mill.png",
+    "sha256": "b45a14db3e708643df18b6a506b4b88ca2a8aec45a5a7de8eef530f4f73dffb1"
+  },
+  {
+    "path": "resources/art/still.mill.png.import",
+    "sha256": "76cc18b7032576253d5b2e340cc01cca025030910cebe51db2c9b89622f52151"
+  },
+  {
+    "path": "resources/art/still.pines.memory.png",
+    "sha256": "3a625e8621e434c4bea549ecff2d082bd00ccf81ef753e281b90f1f9045f3f47"
+  },
+  {
+    "path": "resources/art/still.pines.memory.png.import",
+    "sha256": "fbdc6146696969a1c52c9b78539f5aa82eecd591fd8abe5177323722b8b785ec"
+  },
+  {
+    "path": "resources/art/still.pines.png",
+    "sha256": "7d6184c17a1fd9813024a9fbc78d2dd08994af68222f5238f15df31b98c54e5e"
+  },
+  {
+    "path": "resources/art/still.pines.png.import",
+    "sha256": "0184b78d19507d8be7a8a29ca4283357f8ca26e301d68d6b11f5c38553920ed0"
+  },
+  {
+    "path": "resources/art/still.river.memory.png",
+    "sha256": "009ce5894fc8b6d5321473cba71da89cff99cc1238c74414ab391104888cb0ee"
+  },
+  {
+    "path": "resources/art/still.river.memory.png.import",
+    "sha256": "cee770943e5ad5e2d023da20afd4da25ddc814ff91223eeb81599216c10a526c"
+  },
+  {
+    "path": "resources/art/still.river.png",
+    "sha256": "726d766c1d758e0fef70b98585f4f5c03c799cb50f818f53949066aa11a076f2"
+  },
+  {
+    "path": "resources/art/still.river.png.import",
+    "sha256": "b1e1d0ed3ad23e0cfcc54d09fff279d9d2d0bdfe0441bb2a9d1d054c5baa6942"
+  },
+  {
+    "path": "resources/art/still.valley_gate.memory.png",
+    "sha256": "adf5d19aa4d22d185ece4945ab012bb8147286f46c225ed7d57763fc593ad179"
+  },
+  {
+    "path": "resources/art/still.valley_gate.memory.png.import",
+    "sha256": "4dba4d1a08f2faff699d2bc017276cc9b90ceb381f51b22763e8d9bf1135e38d"
+  },
+  {
+    "path": "resources/art/still.valley_gate.png",
+    "sha256": "ec38be43563843d40520212b5f45026c1a4e71efdcaa76907dbfffeb5834ec77"
+  },
+  {
+    "path": "resources/art/still.valley_gate.png.import",
+    "sha256": "2453d7e08f41a0142998f43d4b41256af68a313a82aedd8c0303f75e26b85567"
+  },
+  {
+    "path": "resources/art/ui.panel.bubble.png",
+    "sha256": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+  },
+  {
+    "path": "resources/art/ui.panel.bubble.png.import",
+    "sha256": "e657f038813fcba8ad9eda7f0bc0f003f76dae58b8c882e1b7434a68ea6bae17"
+  },
+  {
+    "path": "resources/art/ui.panel.paper.png",
+    "sha256": "5c2c3426d286ef1fbbd383086832863a423e3be45541ee5ee9553e15624e8290"
+  },
+  {
+    "path": "resources/art/ui.panel.paper.png.import",
+    "sha256": "79baf6ba8454a8e6397843846c815a6144cb2a5329d9c8bafa882d2e7fc52670"
+  },
+  {
+    "path": "resources/art/ui.panel.preview.png",
+    "sha256": "3c176e9171d0b532c530ae658fb5f028b38170db6005e2a0b5bfba3aa8a5e14a"
+  },
+  {
+    "path": "resources/art/ui.panel.preview.png.import",
+    "sha256": "f9be973d90b5f990bb133f352f84b90b4814b022cee36337001c09c42ea17413"
+  },
+  {
+    "path": "resources/art/ui.panel.wood.png",
+    "sha256": "d71dce68d05c4ccc3f9122e33a4b15daf94bd8b3bf4974a535dc8320f01f5dd9"
+  },
+  {
+    "path": "resources/art/ui.panel.wood.png.import",
+    "sha256": "76b711c6d4bad87253b9eed77c4159e09d5c0c0dfacad7fd0ca3e13cd0d4d3cf"
+  },
+  {
+    "path": "resources/art/walker.anuan.png",
+    "sha256": "0c9711192d0361c31a2d887b302db5a0417cbaee213e8e5e71feb3cfa3587e39"
+  },
+  {
+    "path": "resources/art/walker.anuan.png.import",
+    "sha256": "bda4bf64af624872895c94ac3b08ad1947ce1e4d66b0212d7bf556a0a0d6ee47"
+  },
+  {
+    "path": "resources/art/walker.baiweng.png",
+    "sha256": "ec738324cf8ff748fd8b5affd8e42ada756a38463f8613d788f4bdae815994f8"
+  },
+  {
+    "path": "resources/art/walker.baiweng.png.import",
+    "sha256": "4f740cefe27e83a944fd658743f5746e7c59f7f8dd470cfc91204ab5962fd14e"
+  },
+  {
+    "path": "resources/art/walker.beavers.png",
+    "sha256": "a7675295b9344262e6f7c7480eee6af46eb0959658a19da86f65b6c576dafd62"
+  },
+  {
+    "path": "resources/art/walker.beavers.png.import",
+    "sha256": "6bad453fc26c9ba72f9cd431991849a6ea6de184c1a8574ad627a03dc66f7b64"
+  },
+  {
+    "path": "resources/art/walker.gutu.png",
+    "sha256": "cb1c46c69d3bfdadfb71719796623cee4aa9e0e621e18f73d5fb9d3d1bbef6de"
+  },
+  {
+    "path": "resources/art/walker.gutu.png.import",
+    "sha256": "69e0359882a85f22d7082390f4e0e7240e2411015c0bb7ccbdded064870a3f93"
+  },
+  {
+    "path": "resources/art/walker.mei.png",
+    "sha256": "1de39656379f5ec58afabe20b143c19db9ec5287bc3f57d6afab0f2a69ec17e7"
+  },
+  {
+    "path": "resources/art/walker.mei.png.import",
+    "sha256": "055130ac53f127a73f27775fac6366a775eed0988a2e18c951a3063188a9d20f"
+  },
+  {
+    "path": "resources/art/walker.mill_family.png",
+    "sha256": "cad36c83cbda3b5f9f4fe7aaba0c1917612cfdfab25f338da5928d997054f1af"
+  },
+  {
+    "path": "resources/art/walker.mill_family.png.import",
+    "sha256": "0a9db25efee0601b32aa63dd404b796a780bd97941a7704cdfc6c18188e475ff"
+  },
+  {
+    "path": "resources/art/walker.mira.png",
+    "sha256": "539302611f59b8771d791e076e7e914f4b51aa8508257a071a6e4ef552d1c4c0"
+  },
+  {
+    "path": "resources/art/walker.mira.png.import",
+    "sha256": "3b5744d4d408e8b76ead61b422292b6fd32d130e730457702e28ef0f05bffb37"
+  },
+  {
+    "path": "resources/art/walker.toby.png",
+    "sha256": "ab930d854667ed390fb0c479d6c34296126e6e5ab8cc040ff2156dd16959a2f5"
+  },
+  {
+    "path": "resources/art/walker.toby.png.import",
+    "sha256": "90b3bb8b5d497c4e393863033c53fc1dd7247db2bea1f16344109eda1c6df378"
+  },
+  {
+    "path": "resources/art/walker.xiaosu.png",
+    "sha256": "cf87181194210d6cfaa1ddfb16cd67d1db9222841ea64c42aec48cd637174b7f"
+  },
+  {
+    "path": "resources/art/walker.xiaosu.png.import",
+    "sha256": "8f24b2e81d4d3ad2a07a8e8d67eded4653cd103a07fc0dfabf3e40084719e775"
+  },
+  {
+    "path": "resources/audio/amb.birds.wav",
+    "sha256": "36b323f82f0bde57fc06423b26e77abcda6e5e6ae6e6e6a344daf66f94387594"
+  },
+  {
+    "path": "resources/audio/amb.birds.wav.import",
+    "sha256": "f02ac7c438a40ab11f0bd6a2f0b790cf06418e1205105398b0df8e5aff6493ba"
+  },
+  {
+    "path": "resources/audio/amb.wind.wav",
+    "sha256": "561e1d9b31d8d411796b98d849b520c7aedf656adaa839d8c84ca9e97b47874a"
+  },
+  {
+    "path": "resources/audio/amb.wind.wav.import",
+    "sha256": "5b03e5f5a90f9fffa4135868b5adb4ea538897687342d9a720a32ac04431a23a"
+  },
+  {
+    "path": "resources/audio/manifest.json",
+    "sha256": "8f9cc17d52b215c52a0746566c16cdc97c832bfe82af1569fd3f764180b98258"
+  },
+  {
+    "path": "resources/audio/music.day.l1.wav",
+    "sha256": "df49c0433bcc74bd75ea726df9ac681d71d91a25abdee90116df9be5cd3ac2ed"
+  },
+  {
+    "path": "resources/audio/music.day.l1.wav.import",
+    "sha256": "38e98c6803dd23eed34a254e2e5d27e99ed9b74da3d51927722c79d4097d8bfe"
+  },
+  {
+    "path": "resources/audio/music.day.l2.wav",
+    "sha256": "424b18d461ae7ec2bcaa6cd66ec3b721006fe6e61bd4315e58462803c0180b7a"
+  },
+  {
+    "path": "resources/audio/music.day.l2.wav.import",
+    "sha256": "869a0487c5a9303c9c1bad6dab50b0f1799fc13ff0e54733631d5cd0fa3b366b"
+  },
+  {
+    "path": "resources/audio/music.day.l3.wav",
+    "sha256": "d340de4ebe2b8a9f5cc3b8dab30e0c7d098397e4eb8e61dfd5e1ea7ea9b63d70"
+  },
+  {
+    "path": "resources/audio/music.day.l3.wav.import",
+    "sha256": "a79a716e33ffec96c75187adce0f9059918785b25850c8b6cd7a46b7709444b9"
+  },
+  {
+    "path": "resources/audio/music.ending.wav",
+    "sha256": "c5368344ead391d3ca162636834ac2c16c3ef51ee5574ca686adfaf76e928863"
+  },
+  {
+    "path": "resources/audio/music.ending.wav.import",
+    "sha256": "c04946337ce812703ee65f96712405b5dacba1c26a5b00b2955ffa784d5dfcbf"
+  },
+  {
+    "path": "resources/audio/music.memory.wav",
+    "sha256": "e6c5c34f3ad570a6de9132c05f6b8efef76130a787c5481095b0740f9c120a6d"
+  },
+  {
+    "path": "resources/audio/music.memory.wav.import",
+    "sha256": "2bb3d01f5f2a1d6ee7b168324d43b07cb4bae39412e38a4d43c1d546cfd80b2a"
+  },
+  {
+    "path": "resources/audio/music.night.wav",
+    "sha256": "0229b419b74313d5f7868d9a503d1f68e26ff8c3289f8afdf15bda2daf43e214"
+  },
+  {
+    "path": "resources/audio/music.night.wav.import",
+    "sha256": "7a040116c11ad32ab4b3a76a6c93af6284aa23008215b882bf4bde02222f275f"
+  },
+  {
+    "path": "resources/audio/music.preview.wav",
+    "sha256": "ccf00763c9891d794ecbc2b11e89e85360a4bca3f5e1c683615f16289ce9987a"
+  },
+  {
+    "path": "resources/audio/music.preview.wav.import",
+    "sha256": "089c1284e3083bd7c18cddb225b0f28c7bcc58c053bdb9e3ccb032620ac6c5d6"
+  },
+  {
+    "path": "resources/audio/music.test.wav",
+    "sha256": "70527613d9fde638a96a61c703f9d9bf69280b8cb3c233e35e782ef240e2da2b"
+  },
+  {
+    "path": "resources/audio/music.test.wav.import",
+    "sha256": "d97d6a1bfa76ca3d546aabe4b5d5dddd245dec26256f37e26d093f77460d31b1"
+  },
+  {
+    "path": "resources/audio/music.title.wav",
+    "sha256": "2b59a47237750829821df73b5c3544078b04508c725aa5e93a43ea39e9f8d184"
+  },
+  {
+    "path": "resources/audio/music.title.wav.import",
+    "sha256": "c03c7d4330029f8994a93eae2c8f642206a4b789f085c03e2cca9d68ecea7a2c"
+  },
+  {
+    "path": "resources/audio/sfx.beaver_gnaw.wav",
+    "sha256": "cdab45847defe06db347500b57a705948020461220a722f30413e435928dbf8f"
+  },
+  {
+    "path": "resources/audio/sfx.beaver_gnaw.wav.import",
+    "sha256": "e73cddeb194171757732cf90e5f7e0fa64a67a02a4cab9a04c25a34537021131"
+  },
+  {
+    "path": "resources/audio/sfx.card_drop.wav",
+    "sha256": "2cb508b68e501754fcab87e7dd9d4a755b62bbbed6c46a06c8a0fc50ffbab562"
+  },
+  {
+    "path": "resources/audio/sfx.card_drop.wav.import",
+    "sha256": "92e965006f85adafb0fbbfdd50b4cf09db35eb9a856dfd28c4f503c7a767ab99"
+  },
+  {
+    "path": "resources/audio/sfx.card_flip.wav",
+    "sha256": "63a015d6e96a5dccc4da405e84ec64616d4f55de638b4fe0ed0de3fe7bf11ea6"
+  },
+  {
+    "path": "resources/audio/sfx.card_flip.wav.import",
+    "sha256": "ed11dab1d6d31695846b265d4c4ab5b6cec922737edb9b183eabb9e3d2a2dccf"
+  },
+  {
+    "path": "resources/audio/sfx.card_pick.wav",
+    "sha256": "5c6d6c341ed43f5c443cefdcf51db6987c29c59e5bdf2e7df6fa9b85e9bc3919"
+  },
+  {
+    "path": "resources/audio/sfx.card_pick.wav.import",
+    "sha256": "cbc421d6fa506b0e427e6f355b1ad6e08657e3e6b3cf5ffb90fe7ad26023f3ec"
+  },
+  {
+    "path": "resources/audio/sfx.card_return.wav",
+    "sha256": "e5a07ee83626ee5c04aaa6b0021380b6d852d63d79e1e7e74c84ef52911efab4"
+  },
+  {
+    "path": "resources/audio/sfx.card_return.wav.import",
+    "sha256": "ecabe35f1998df7cede45a21c0d8c540e8e300b216c5e11af3021c9e8aaa7853"
+  },
+  {
+    "path": "resources/audio/sfx.chop.wav",
+    "sha256": "be6894e2975e6671dc986427abc192c2c6b31c373df3e918561761483f13d5ef"
+  },
+  {
+    "path": "resources/audio/sfx.chop.wav.import",
+    "sha256": "382a15a3c9b9a443b966b51b23e1d9a83fa9c2f41d5bd79aa01d50599db8f713"
+  },
+  {
+    "path": "resources/audio/sfx.clock_tick.wav",
+    "sha256": "934e8bef2aa44a0f7918f5ddb5dbd8c8127a37e83084f9c08b15d0d8a31111a0"
+  },
+  {
+    "path": "resources/audio/sfx.clock_tick.wav.import",
+    "sha256": "87c72dd553f344b16598294ef0e9f654b6bf9a76918e5540f8c8f99e58c17048"
+  },
+  {
+    "path": "resources/audio/sfx.ember_huff.wav",
+    "sha256": "368fb97f4741d275a00c29a2d2b9bca9b6af4cd0eabcb9ffd6059a401968555c"
+  },
+  {
+    "path": "resources/audio/sfx.ember_huff.wav.import",
+    "sha256": "6388148b4a9ded97f5c24a8c72c5e782953047b14f7c8b01328b60c910f88025"
+  },
+  {
+    "path": "resources/audio/sfx.fire_crackle.wav",
+    "sha256": "8e9fcb0e80bc67bc83ec015d497e96c4e0c2f2b787b369bafd8cf794ba36d602"
+  },
+  {
+    "path": "resources/audio/sfx.fire_crackle.wav.import",
+    "sha256": "dd119d3d1c483c049e6a3b01057c58db6e6758339fcd02c5c8a79059f67569cd"
+  },
+  {
+    "path": "resources/audio/sfx.gain_stone.wav",
+    "sha256": "79900972a173c9da461e4018e0f6ac88f98a42f0ce0b656a8b84eb70ffbcc909"
+  },
+  {
+    "path": "resources/audio/sfx.gain_stone.wav.import",
+    "sha256": "be3c55e0bd9767f27a0204fe74eb690083359d0ad7cd83ac374744854fae2d85"
+  },
+  {
+    "path": "resources/audio/sfx.gain_warmth.wav",
+    "sha256": "9d8b05f970e483c3614cb4c8e2bdce7e10479f8366d109f8262be264bf437175"
+  },
+  {
+    "path": "resources/audio/sfx.gain_warmth.wav.import",
+    "sha256": "e2503ba3665b30a90c8ea75ac2eb7070eb095a859774a6b43e600e18ead9b08e"
+  },
+  {
+    "path": "resources/audio/sfx.gain_wood.wav",
+    "sha256": "91764ba0301cb0ff5186b682043dd6303907d5abb24088a83ad00cb0132cd6c7"
+  },
+  {
+    "path": "resources/audio/sfx.gain_wood.wav.import",
+    "sha256": "0bc2968f4c9e82420e375a52bc2dfb9ab9863efc72148c39919257fe6b2f5939"
+  },
+  {
+    "path": "resources/audio/sfx.hammer.wav",
+    "sha256": "8d9867a4eca4aeb44b2bcbd5a8ee2b56d3227d9bf417d7428dcfd49eb8c2be7e"
+  },
+  {
+    "path": "resources/audio/sfx.hammer.wav.import",
+    "sha256": "82f680c19bb940cea417ec11c5cb0393f9864991d382a3a9dfc82990fe3a05cb"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack_high.wav",
+    "sha256": "3929d715871d48a5279f69bcb06b92a0ce4fa8adf26a9324454555bb2789cc39"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack_high.wav.import",
+    "sha256": "505a2362dd08d74a3612fae09558ad00593b2b6de652e0662046e7746b86d9f1"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack_low.wav",
+    "sha256": "4ee9a5143dd7077717ca8f2f52b438c831a404e4fd84d45445b6091d0240a580"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack_low.wav.import",
+    "sha256": "c4d7dd7b956dc0e639c480ba7c2b3f19bde2b17a920778e409b563e0e8cf2daf"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack.wav",
+    "sha256": "be2f2415f30a8a7002785f78c33e236115e884958d4027b7afb7b6e7337b40e9"
+  },
+  {
+    "path": "resources/audio/sfx.ice_crack.wav.import",
+    "sha256": "cd144fa5b70475069e4657bfbd7e1f204e61177a0b7a856147d8db104286314f"
+  },
+  {
+    "path": "resources/audio/sfx.ice_shatter.wav",
+    "sha256": "4832614d5f149b872050bb9f9e4b4db4b9b28fdba66505d8d9a7b148f3079ab2"
+  },
+  {
+    "path": "resources/audio/sfx.ice_shatter.wav.import",
+    "sha256": "7c5a3831b2bcfa4b865a1d8c30829a03ac0a2bb85fa6a9bcbe3eb639bd4fc61c"
+  },
+  {
+    "path": "resources/audio/sfx.page_turn.wav",
+    "sha256": "6cf5a6fdcfe8cc2ab392dbcbcec3bc3e59eefd33447948424711a7eff2413af2"
+  },
+  {
+    "path": "resources/audio/sfx.page_turn.wav.import",
+    "sha256": "b7792c55b1b9ea2a38982cc1e9fe13f845ac7493b7f7fb204e557313a9ec7c53"
+  },
+  {
+    "path": "resources/audio/sfx.pipe_puff.wav",
+    "sha256": "90d8c44e3ba5eb9e3f8e104fb4bc34a27765f6812911d4c9f25c93157c2ed13d"
+  },
+  {
+    "path": "resources/audio/sfx.pipe_puff.wav.import",
+    "sha256": "89fbf834a653db35faed09e0dae7f6da3ab19c03bdaaddb8c3b203d5e968db0c"
+  },
+  {
+    "path": "resources/audio/sfx.preview_tick.wav",
+    "sha256": "4620bd8c49f1d36c7050420c6b8d5624ac690dfe1fea29452c127bda682e505c"
+  },
+  {
+    "path": "resources/audio/sfx.preview_tick.wav.import",
+    "sha256": "35f78813cadde6901ea93aed02009134793c9d6dec0914be646da6679afb9672"
+  },
+  {
+    "path": "resources/audio/sfx.scroll_unroll.wav",
+    "sha256": "c39cc1beec3ec4434f62bc7e162715280817b31588815ae7110ee24a493bd85e"
+  },
+  {
+    "path": "resources/audio/sfx.scroll_unroll.wav.import",
+    "sha256": "f836718a6a35917ae89906353d5ad5a8bb4af2a258b3fae5bdd9a806d1f961c5"
+  },
+  {
+    "path": "resources/audio/sfx.skip_stone.wav",
+    "sha256": "40de3ca3fa70c3dcc4a371133192b553a571cf22a3c90e54edda6611da0898f6"
+  },
+  {
+    "path": "resources/audio/sfx.skip_stone.wav.import",
+    "sha256": "512be3b20af1d5dba7ef01cb03dbcf36d066bf6836a8f3799105d4cce7d82578"
+  },
+  {
+    "path": "resources/audio/sfx.snow_puff.wav",
+    "sha256": "23c81b9b80cd8ae553baa411bae66ccd850857f63b6cac3bd8027a7029feed05"
+  },
+  {
+    "path": "resources/audio/sfx.snow_puff.wav.import",
+    "sha256": "d187f936d7d3927a62f29f97c5ebf61ff3c43fd906b3e4b35ba55dec442ae2b5"
+  },
+  {
+    "path": "resources/audio/sfx.splash.wav",
+    "sha256": "c4c5190b49a34e75202c04e5d7d39a13a81a98894d77ecac562c759310677443"
+  },
+  {
+    "path": "resources/audio/sfx.splash.wav.import",
+    "sha256": "c31a2b3d24d3f7d752e1cc5b53e94085fa17b936fe460a26690d00c898bac049"
+  },
+  {
+    "path": "resources/audio/sfx.stone_clink.wav",
+    "sha256": "ac66328fadaa43861e603cf7aeea9d82dbb6177bc9e5f4270ff5bff9870a31ed"
+  },
+  {
+    "path": "resources/audio/sfx.stone_clink.wav.import",
+    "sha256": "c8a1169342e7fcd648a675d0951ffe3a9d93c1757b54e84784327a3ba6cd7fb6"
+  },
+  {
+    "path": "resources/audio/sfx.teacup.wav",
+    "sha256": "6112aec74953e7268abe37a7942403bf5c7795df0d4ca24e58f188cb05ac084d"
+  },
+  {
+    "path": "resources/audio/sfx.teacup.wav.import",
+    "sha256": "7fea0398955aabb4d6cb097b39f169be5ab7ddc5d32234921d3d4f691bcafbc3"
+  },
+  {
+    "path": "resources/audio/sfx.ui_cancel.wav",
+    "sha256": "89bb7df526e465994859bcea5c03263783b1712ce4a85b41fd08378c15f43c8b"
+  },
+  {
+    "path": "resources/audio/sfx.ui_cancel.wav.import",
+    "sha256": "b508a692b9b4442e9368366aae6332ea37045156dd125b4eb7c2480e728c0402"
+  },
+  {
+    "path": "resources/audio/sfx.ui_click.wav",
+    "sha256": "2ca7a92c2b45a290be3f26b7a79120a7982eaab1c320b8de90db54cc807af255"
+  },
+  {
+    "path": "resources/audio/sfx.ui_click.wav.import",
+    "sha256": "997b6e3fbad576a6b4bc34dadb3f3bc6bd2273509d9937ef9b566847c8fbb624"
+  },
+  {
+    "path": "resources/audio/sfx.ui_deny.wav",
+    "sha256": "9673dc91f3583241a00fd939459c3fb1f119ce8341b86a5a59303a31109f81ed"
+  },
+  {
+    "path": "resources/audio/sfx.ui_deny.wav.import",
+    "sha256": "48711d412fe55739eeea8807d858875f1d9d55da0bf7f49dcecc26fbb1ac6ae9"
+  },
+  {
+    "path": "resources/audio/sfx.ui_hover.wav",
+    "sha256": "85e1e4f19a4fc9c65852c5b572ddfd25467f096ff8d54aca5a3b0b59a8a23538"
+  },
+  {
+    "path": "resources/audio/sfx.ui_hover.wav.import",
+    "sha256": "79af81b1465c3843482aa3954024e3a3731a3e8be89294ba6495b9ac7d88b7ed"
+  },
+  {
+    "path": "resources/audio/sting.awaken.wav",
+    "sha256": "b12bd15dfa4d2073e509d84abbc5af372e09ffb4167a326baf0a1544cd5054ad"
+  },
+  {
+    "path": "resources/audio/sting.awaken.wav.import",
+    "sha256": "02608b55a0e999c7987e6c50de7e3427c7de0a43f57233a62131372268b773ba"
+  },
+  {
+    "path": "resources/audio/sting.combo.wav",
+    "sha256": "cfb3c0665ac697041a3290ffb756fd5822e2480549f70c963bec11e449488601"
+  },
+  {
+    "path": "resources/audio/sting.combo.wav.import",
+    "sha256": "f19e796b77a99bcbf8928acee1efa60484e7d9f8ca0816262908c4c0a8820ee2"
+  },
+  {
+    "path": "resources/audio/sting.dawn.wav",
+    "sha256": "4cee55f740f096b4e284b5cb8669732187353eb8a86b009bc566bb336dec2364"
+  },
+  {
+    "path": "resources/audio/sting.dawn.wav.import",
+    "sha256": "bb2703f52f051f3b35c1cb204f7e3c13a8c34098c4230ba2e110774a499a16cf"
+  },
+  {
+    "path": "resources/audio/sting.event_done.wav",
+    "sha256": "2dbc8eb72dd97ad97bb448d3bb84f223d11f26af42860c977efff3b2e96b30e1"
+  },
+  {
+    "path": "resources/audio/sting.event_done.wav.import",
+    "sha256": "a9a70d094674d106337fdfda9c5907cdce4417306d1af3e7648f7f59558543f2"
+  },
+  {
+    "path": "resources/audio/sting.event_expire.wav",
+    "sha256": "cf7a5c2ff34aec34a3cf09e68c53ff14f7cdbeac0c5a7160b08636174467fd16"
+  },
+  {
+    "path": "resources/audio/sting.event_expire.wav.import",
+    "sha256": "32cced94a7a9620a1a4232ca1bb5bc54eee0d63951c46ac182b9fb27427e59b3"
+  },
+  {
+    "path": "resources/audio/sting.event_new.wav",
+    "sha256": "d1cbda1366365bf923ff1f4c98fcddded290555c684a261d93613885ce2c6efa"
+  },
+  {
+    "path": "resources/audio/sting.event_new.wav.import",
+    "sha256": "68c35e89225522d22eb15d39e874879d3a3ee4205abd29c8a772408cd8791d60"
+  },
+  {
+    "path": "resources/audio/sting.goal_step.wav",
+    "sha256": "74171d5e26376d9ad425f15cafed7c5046a18e9c059e833eac92b6d59559b6e5"
+  },
+  {
+    "path": "resources/audio/sting.goal_step.wav.import",
+    "sha256": "e3a18b16d8a4b57585e36cb9e6eb20d708f51ce581720b467367d97355b3b429"
+  },
+  {
+    "path": "resources/audio/sting.restore.wav",
+    "sha256": "b8c667272f32353756a98f105f7a0132f116a6b47c3b9bfd42399ef15047ae50"
+  },
+  {
+    "path": "resources/audio/sting.restore.wav.import",
+    "sha256": "8a69b168e2d20172f78af3e17e17c7b4448d6b40de0ef6dbd99a2d76952b6d44"
+  },
+  {
+    "path": "resources/audio/talk.anuan.wav",
+    "sha256": "1847e1d25292461a8a7c0aba27351ce74e6924c4f5c2979b5b869d9f121f4f60"
+  },
+  {
+    "path": "resources/audio/talk.anuan.wav.import",
+    "sha256": "e8106a7c77f365c3a2d451babd9090dde4cff6f74cac8c84090ab4284ed55071"
+  },
+  {
+    "path": "resources/audio/talk.anwen.wav.import",
+    "sha256": "b25733abf26076f4da60a6477fe34bb4941cb51e99c696c39b0d45787ba87452"
+  },
+  {
+    "path": "resources/audio/talk.beaver.wav.import",
+    "sha256": "239e6a3626ac8a253759ce61cbf11d455835b942d0b29a0e63aa69116dbfd3e4"
+  },
+  {
+    "path": "resources/audio/talk.beavers.wav",
+    "sha256": "99d03afbabc1234e03b3f5dcb959045b287e8770abc04e8502febfb6415db8de"
+  },
+  {
+    "path": "resources/audio/talk.beavers.wav.import",
+    "sha256": "3338ec80b2c873f914521981d22f5978deee8785c74fd4b75bb0818db958dec0"
+  },
+  {
+    "path": "resources/audio/talk.ember.wav",
+    "sha256": "7e127285865548340e51eafb913a69a57f8609b7b2bcca92269a4b26a7472dc7"
+  },
+  {
+    "path": "resources/audio/talk.ember.wav.import",
+    "sha256": "2303e373ee47d7a39f39661d611e088f92127fe89220d749853d2609a5511a49"
+  },
+  {
+    "path": "resources/audio/talk.mei.wav",
+    "sha256": "077452fb7427d7a9b7e1ce8997df9a11f84b95551a6ac2508f331b6931f02343"
+  },
+  {
+    "path": "resources/audio/talk.mei.wav.import",
+    "sha256": "dfd9404392c27eca7af57c6a9019748097ef79f2bee27dfc970b8994e1b4af05"
+  },
+  {
+    "path": "resources/audio/talk.mira.wav",
+    "sha256": "430bb0b388fce6a15ec7fabfcb8b591bebfd45dbe92d166d190d6f3bdceadaf9"
+  },
+  {
+    "path": "resources/audio/talk.mira.wav.import",
+    "sha256": "42b125d66f0594b0f95cdf6491124b06b673dede9c8069ce33a9f29486ddf626"
+  },
+  {
+    "path": "resources/audio/talk.toby.wav",
+    "sha256": "d62a30e34e3237e6ac8337bd42da0b7b648724078b3e4ce616aeab17955fb8f2"
+  },
+  {
+    "path": "resources/audio/talk.toby.wav.import",
+    "sha256": "11d6f278d36efe2dad661df573a3578663dd0856d0a94d9b1779f053abc836be"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2",
+    "sha256": "0ebd99e6f1e9b650a793a3f759c1c3dfa99f0c5b6502e78569b48ddb43767e40"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/fusion-pixel-12px-proportional-zh_hans.otf.woff2.import",
+    "sha256": "cf652e01e137304d1140b3b97b44b2df573ac45b59f484d6b2b54c0adb7b0b73"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/LICENSES/ark-pixel/OFL.txt",
+    "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/LICENSES/cubic-11/OFL.txt",
+    "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/LICENSES/galmuri/LICENSE.txt",
+    "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/OFL.txt",
+    "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/PROVENANCE.json",
+    "sha256": "520c7ba7991474577b25f47c094a820156d6ac04fe17078b9e359cf83ef7f1b6"
+  },
+  {
+    "path": "resources/fonts/fusion-pixel-12px/README.md",
+    "sha256": "2e5863f7e394de7052c80424cbdebacdaa2b12ff8e94bda41124d66d1e2e356d"
+  },
+  {
+    "path": "scenes/card_table.tscn",
+    "sha256": "ad0a0852b445ac12f65b661d59aff778187f759fd4e3d793c57a3bb58e49c359"
+  },
+  {
+    "path": "scenes/pipeline_preview.tscn",
+    "sha256": "9a195645f3ada0dc4b6f29b51ae7de16ac7d9001edd739821845d8470360d3d5"
+  },
+  {
+    "path": "scenes/title.tscn",
+    "sha256": "c3293bae7bc54236cccfe1552c9bfa27a7455564f01e4b1326389d6f3453c4dd"
+  },
+  {
+    "path": "scripts/content/data_loader.gd",
+    "sha256": "6197c72cd692cb88387f62afa975a4675831f93c4fcd1bd469c2a417c1ae1a37"
+  },
+  {
+    "path": "scripts/content/data_loader.gd.uid",
+    "sha256": "164ac212618d2438ca8daf405b1288a86a165ec8310e1bda2a176bd75a3a894f"
+  },
+  {
+    "path": "scripts/core/bots.gd",
+    "sha256": "a09c22d2d61e41d02f0094e78d27d751ad24b561d3a21865ca7d20a89588caae"
+  },
+  {
+    "path": "scripts/core/bots.gd.uid",
+    "sha256": "938bd6321459dce66ecdd46132d1a486a76e2fd835fc0dabbc63065ab9f13fb4"
+  },
+  {
+    "path": "scripts/core/day_cycle.gd",
+    "sha256": "7db5ee7dc5cd72b7ad2b4d8017b1a62911bc840c0548c6f6c0a6bbb63a90366b"
+  },
+  {
+    "path": "scripts/core/day_cycle.gd.uid",
+    "sha256": "56f01eaaaa6fb7d9b582b2d6f1a9a9a73027374c50be9b3d5c69dc6a6cce3806"
+  },
+  {
+    "path": "scripts/core/day_rules.gd",
+    "sha256": "06d448df5050c69664b5bf43452e53db829058dd2ef15576a73db9feda4d27e7"
+  },
+  {
+    "path": "scripts/core/day_rules.gd.uid",
+    "sha256": "593b9446a254dab0ed86dd7f3db7b41970e04d98f96abb3a58bbde465c4a612b"
+  },
+  {
+    "path": "scripts/core/resource_ledger.gd",
+    "sha256": "d245dfc5181b99fbccc0413492d5b3a28d57ff774e2907090aad70cdb398e274"
+  },
+  {
+    "path": "scripts/core/resource_ledger.gd.uid",
+    "sha256": "c57b3e2dd5d170e01757e2f31e8f1d39146a3ab910a55b762433f2275bfb3f65"
+  },
+  {
+    "path": "scripts/core/rule_data.gd",
+    "sha256": "92d662da899f8791d1d8b4439ba74370cfe0e3f18fc432a2efe1a047e19a71f3"
+  },
+  {
+    "path": "scripts/core/rule_data.gd.uid",
+    "sha256": "5828485ee309b8f9f533603b1f623f7baa2b7fb2d5e0d34091243019d128ab36"
+  },
+  {
+    "path": "scripts/services/asset_catalog.gd",
+    "sha256": "b6692aa80d26a5228d93ad6f93f044063622a9cc8b03550ed81defdcf5802754"
+  },
+  {
+    "path": "scripts/services/asset_catalog.gd.uid",
+    "sha256": "0d2c5c34e0527dd2e022dbc35e24bb320a3ec6f71c1ce1a20d68dc776d3ed197"
+  },
+  {
+    "path": "scripts/services/audio_service.gd",
+    "sha256": "04e4992f14f5745068bbbeb816e93c7af530f44468e88fb412216af3521b8634"
+  },
+  {
+    "path": "scripts/services/audio_service.gd.uid",
+    "sha256": "673c05242b35a601ffbe71d22a1de2617080d018e12d9369f18470798c21d29c"
+  },
+  {
+    "path": "scripts/services/save_service.gd",
+    "sha256": "3e185d75311da5221509da481e5d92da1731de1799f7ba27a3f17be3b2d3825c"
+  },
+  {
+    "path": "scripts/services/save_service.gd.uid",
+    "sha256": "75c67963f160de40d62b8716436936fa43d11f813413fcace60b499054aed1c1"
+  },
+  {
+    "path": "scripts/story/awaken_director.gd",
+    "sha256": "a2a152474c5024cc8bb87a691a7ac8c32993631ed38050ce015e0c90bfc91eb4"
+  },
+  {
+    "path": "scripts/story/awaken_director.gd.uid",
+    "sha256": "7404de32254e7556668b543be387c0a3ed5df3ffd65dff26dd166c3e3672e7c4"
+  },
+  {
+    "path": "scripts/story/banter_director.gd",
+    "sha256": "92d864bfb8fc39864a7439aaee922ebbc35e8a843640bc974e4305d31528daad"
+  },
+  {
+    "path": "scripts/story/banter_director.gd.uid",
+    "sha256": "a3794f43f3270ca453d6f8a8836ae4c937cfcbe5664977632fb056b8a8b4dd0b"
+  },
+  {
+    "path": "scripts/story/story_player.gd",
+    "sha256": "1c9e1f6c1fc5e25564bf1cd58ab226699d379a7a153fc7090ba9992978284172"
+  },
+  {
+    "path": "scripts/story/story_player.gd.uid",
+    "sha256": "8fc766eae3fbdb2dc0a413fc163847a5ff1afef47fa446bd027bf62448e048f7"
+  },
+  {
+    "path": "scripts/story/story_shots.gd",
+    "sha256": "6bfc2123a733b5a4466a68e13cc560d95e41ba16e528f4a965320813d1434de9"
+  },
+  {
+    "path": "scripts/story/story_shots.gd.uid",
+    "sha256": "1e5bbb483b0106b0faec75aa85e8771b531e7974c20848f50e4b443f7a46abc3"
+  },
+  {
+    "path": "scripts/story/story_smoke.gd",
+    "sha256": "190cc2981718d9d2cf95b4577171b6e151810765b90669e3744db758dbba8828"
+  },
+  {
+    "path": "scripts/story/story_smoke.gd.uid",
+    "sha256": "33ddb586b7b1620d0e828bcd54e019d33b51c8c18d4dd018eb3dff95e4f5b955"
+  },
+  {
+    "path": "scripts/view/card_reveal.gd",
+    "sha256": "1774c6d042bd5adb323972cd7218a0c95e0102c6fd57fa60c817bb3df2bf1fb8"
+  },
+  {
+    "path": "scripts/view/card_reveal.gd.uid",
+    "sha256": "296584dd0da78206896e72ad238eb60095bb6ed012908b44809b812bb80bf7d7"
+  },
+  {
+    "path": "scripts/view/card_table.gd",
+    "sha256": "390ddc6faaf50691eb646319c6c6bffbe3ba807c39f3c958949db143a1a8cb67"
+  },
+  {
+    "path": "scripts/view/card_table.gd.uid",
+    "sha256": "cef8f20a8ee3200f67533777b4606c1f46e7005ae594d71d18a4a8719cf99493"
+  },
+  {
+    "path": "scripts/view/layout_check.gd",
+    "sha256": "34014fb1f786db3122a0e6956d5af045d75e820459624263074d25f747379719"
+  },
+  {
+    "path": "scripts/view/layout_check.gd.uid",
+    "sha256": "bee98d16f864e5497845fe4b4dc77770eda416ac23d38bba05bdbeb081b23897"
+  },
+  {
+    "path": "scripts/view/location_card.gd",
+    "sha256": "4360480a061047d5258f67fbdfeca529db5aba17fb299f72cdc10742c06f4561"
+  },
+  {
+    "path": "scripts/view/location_card.gd.uid",
+    "sha256": "8c8c80da13678d6f34532b90d39127cdccda54588f4c22d7332af2d6fd6e9d44"
+  },
+  {
+    "path": "scripts/view/panorama.gd",
+    "sha256": "2645b54c12b0353ecc05cae6aa1c7e26f749850affb98635234f74cf4d851385"
+  },
+  {
+    "path": "scripts/view/panorama.gd.uid",
+    "sha256": "2e0d3cc6c616f7878775c0397fe5675fb5f553d4cfca4ac69f07c769f53bfbf3"
+  },
+  {
+    "path": "scripts/view/pipeline_preview.gd",
+    "sha256": "243e46d1a1f5a6ec1bc7cdb41738c85cdac2ba64c0c62a4025c8f68192a215fc"
+  },
+  {
+    "path": "scripts/view/pipeline_preview.gd.uid",
+    "sha256": "40938692fc6ce02d870581907eb1a035f84b7f6e9cbcbb7e7c62e05c11c2a771"
+  },
+  {
+    "path": "scripts/view/resident_token.gd",
+    "sha256": "b6a52900dff22e919c8734e642a98313559d97a80dbecc3e281eff462ae69737"
+  },
+  {
+    "path": "scripts/view/resident_token.gd.uid",
+    "sha256": "f96f056186a2cfdecc44e3ecb3e2592d845e4b9df7f714d968816fe63b605f27"
+  },
+  {
+    "path": "scripts/view/return_zone.gd",
+    "sha256": "c5079f00b2d77d72caa730194e041c6337a70dec7e626a038a8249c0e03783b4"
+  },
+  {
+    "path": "scripts/view/return_zone.gd.uid",
+    "sha256": "4c263148817f7b328797c4c3b4dd953005f34f74df7377a83f2e0a8d0654ebcc"
+  },
+  {
+    "path": "scripts/view/settings_panel.gd",
+    "sha256": "156df597eb8f70d36ef3c8453f09b96a5b1eb0d5b054e1a47dc7c5ae897a9e19"
+  },
+  {
+    "path": "scripts/view/settings_panel.gd.uid",
+    "sha256": "4d7a5f890434854b1a060e586b879b064f352bead1ab053094f43470a553192b"
+  },
+  {
+    "path": "scripts/view/table_ui.gd",
+    "sha256": "09b04fdf6a87f757af6aaeff564559b1ab68bce790f23d337c965a578f7f2f33"
+  },
+  {
+    "path": "scripts/view/table_ui.gd.uid",
+    "sha256": "893f41a9c20be41820d688bfe66f016fa8b35b98393d8456fd9e0ba97e6a67ad"
+  },
+  {
+    "path": "scripts/view/title.gd",
+    "sha256": "f8f2f740ebe49ae7a7401e5bdd39d962ab2e884636c473b11fc401d718e1074c"
+  },
+  {
+    "path": "scripts/view/title.gd.uid",
+    "sha256": "11221aeacaa201fa05c00095d8a40666d602041e1e8241db31f92c7ad165b1eb"
+  },
+  {
+    "path": "scripts/view/ui_shots.gd",
+    "sha256": "42074b5b02b0e48a865733aae974cc58f80d8fe6c0314ba97e86e46a386162b5"
+  },
+  {
+    "path": "scripts/view/ui_shots.gd.uid",
+    "sha256": "b3496b957ac65bdca74fc45c4953fe40e38056d0e9305ba2b87d988fbd232eb7"
+  },
+  {
+    "path": "scripts/view/ui_smoke.gd",
+    "sha256": "91521e2996130844fd79590d925fe3175203d3ff8857e10a2c1da07b4d9ebf19"
+  },
+  {
+    "path": "scripts/view/ui_smoke.gd.uid",
+    "sha256": "96e400ab71bae526eecdf1e3e90961d55a84fa5bdce5c89e1b169f3bb55fe9a8"
+  },
+  {
+    "path": "tests/presentation.gd",
+    "sha256": "5a733acf75285b176c22772a7a54709cfbb3222f1f01fee5a066bc02e84d7d6a"
+  },
+  {
+    "path": "tests/presentation.gd.uid",
+    "sha256": "f2991f01b04926d3b15357e76b4324043d6cd516034ec7e00da776ecd3a29999"
+  },
+  {
+    "path": "tests/rules_d1.gd",
+    "sha256": "0d0f9957dbf1a949dbf2e61a282c36f605d2e64b68d4bdd679c3418895c67b74"
+  },
+  {
+    "path": "tests/rules_d1.gd.uid",
+    "sha256": "8f617b9add5128d0e8e65c20e0bd695d2d0b464956f61c40244803af1484d5b5"
+  },
+  {
+    "path": "tests/run.gd",
+    "sha256": "035af9f5a7a5982a282c940127b3a229ea105d75cb3e2b0361bdfcbfdcce5d6a"
+  },
+  {
+    "path": "tests/run.gd.uid",
+    "sha256": "981f353f11149c8ef21c3f12e47b5cf9dd0fd4324cef27783cbf34963933193b"
+  },
+  {
+    "path": "tests/save_validation.gd",
+    "sha256": "95a35f4b8dd9e82e61df9fa1445147e5d4f107faf562ebb39a316589bba7ac11"
+  },
+  {
+    "path": "tests/save_validation.gd.uid",
+    "sha256": "7368fb5641c9111e13e1f404789ab27094b93d8186c2b5c97400a74bcdb7cc14"
+  },
+  {
+    "path": "tests/sim.gd",
+    "sha256": "7bef5ede9937de132fb7c8226a206da0223ac07dc0bdd50925d3f3c0b7685c8f"
+  },
+  {
+    "path": "tests/sim.gd.uid",
+    "sha256": "0982d575ac57c5f1865b0752d41f2f275386d8fd082c2530c26e86c6c95c7634"
+  },
+  {
+    "path": "tests/title_smoke.gd",
+    "sha256": "6c5adca4556162bab6d054acd3e7d4b7b00bb5bf90a42a6f894ee12d4150651c"
+  },
+  {
+    "path": "tests/title_smoke.gd.uid",
+    "sha256": "c196cd6c1ccdde1641597216993cbe21090e35b425ebf870d49a2648ec470418"
+  }
+]
