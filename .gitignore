@@ -1,0 +1,9 @@
+.DS_Store
+__MACOSX/
+Godot.app/
+godot/.godot/
+build/
+.cache/
+.local/
+node_modules/
+*.tmp
